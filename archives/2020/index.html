@@ -21,10 +21,10 @@
   var CONFIG = {
     hostname: new URL('http://yoursite.com').hostname,
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Gemini',
     version: '7.7.0',
     exturl: false,
-    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
+    sidebar: {"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},
     copycode: {"enable":false,"show_result":false,"style":null},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
     bookmark: {"enable":false,"color":"#222","save":"auto"},
@@ -137,6 +137,16 @@
     <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
 
   </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
         <li class="menu-item menu-item-archives">
 
     <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
@@ -169,13 +179,33 @@
   <div class="post-block">
     <div class="posts-collapse">
       <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 8 篇日志。 继续努力。</span>
+        <span class="collection-header">嗯..! 目前共计 9 篇日志。 继续努力。</span>
       </div>
 
       
     <div class="collection-year">
       <h1 class="collection-header">2020</h1>
     </div>
+
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2020-01-30T13:33:20+08:00"
+              content="2020-01-30">
+          01-30
+        </time>
+      </div>
+
+      <h2 class="post-title">
+          <a class="post-title-link" href="/2020/01/30/%E6%95%B0%E5%AD%A6%E6%A8%A1%E5%9E%8B%E5%A7%9C%E5%90%AF%E6%BA%90%E7%AC%94%E8%AE%B001/" itemprop="url">
+            <span itemprop="name">数学模型姜启源笔记01</span>
+          </a>
+      </h2>
+
+    </header>
+  </article>
 
   <article itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
@@ -401,6 +431,8 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Author"
+      src="/uploads/avatar.png">
   <p class="site-author-name" itemprop="name">Author</p>
   <div class="site-description" itemprop="description">你怎么这么好看</div>
 </div>
@@ -409,7 +441,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-count">9</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -453,7 +485,7 @@
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.2.0
   </div>
   <span class="post-meta-divider">|</span>
-  <div class="theme-info">主题 – <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.7.0
+  <div class="theme-info">主题 – <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.7.0
   </div>
 
         
@@ -479,7 +511,7 @@
 <script src="/js/motion.js"></script>
 
 
-<script src="/js/schemes/muse.js"></script>
+<script src="/js/schemes/pisces.js"></script>
 
 
 <script src="/js/next-boot.js"></script>
