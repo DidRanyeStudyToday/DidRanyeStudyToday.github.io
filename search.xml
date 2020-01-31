@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>酒</title>
+    <url>/2020/01/31/%E5%8A%A0%E5%AF%86test/</url>
+    <content><![CDATA[<div id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请打钱" data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容."><div class="hbe-input-container"><input type="password" id="hbePass" placeholder="猜猜密码是什么鸭" /><label>猜猜密码是什么鸭</label><div class="bottom-line"></div></div><script id="hbeData" type="hbeData" data-hmacdigest="6633bb3b4ea513c4f76a8d0257fb863f721fb8f66f9f4afbee81ca316327b5cd">9478dc316170dbc0bebfdb816640e379</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+      <tags>
+        <tag>故事的尝试</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>数学模型姜启源笔记01</title>
     <url>/2020/01/30/%E6%95%B0%E5%AD%A6%E6%A8%A1%E5%9E%8B%E5%A7%9C%E5%90%AF%E6%BA%90%E7%AC%94%E8%AE%B001/</url>
     <content><![CDATA[]]></content>
