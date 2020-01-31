@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>酒</title>
+    <title>加密test</title>
     <url>/2020/01/31/%E5%8A%A0%E5%AF%86test/</url>
-    <content><![CDATA[<div id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请打钱" data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容."><div class="hbe-input-container"><input type="password" id="hbePass" placeholder="猜猜密码是什么鸭" /><label>猜猜密码是什么鸭</label><div class="bottom-line"></div></div><script id="hbeData" type="hbeData" data-hmacdigest="72996cd71c588ed9ede21c33fe853f0b5aacdde555fcc7cf4e6309607ee92378">fc58c15c82b34d042fd113dbb9e6e51a2aeaed6255028dcd87ae2876a09e0ac8</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+    <content><![CDATA[<div id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请打钱" data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容."><div class="hbe-input-container"><input type="password" id="hbePass" placeholder="猜猜密码是什么鸭" /><label>猜猜密码是什么鸭</label><div class="bottom-line"></div></div><script id="hbeData" type="hbeData" data-hmacdigest="67052c6a0eaa52c26d7d0cbd2d8ee884fba2b99cb159a58875ee58f97cbd4002">fb19af7e2d0a0a74023aa5687fab6624e4eef4ebff24ba144fba7cebcff6b39c44a8b2d6d2070a8489beee8521177580</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>其他</category>
+        <category>杂谈</category>
+      </categories>
       <tags>
         <tag>故事的尝试</tag>
       </tags>
@@ -29,8 +33,13 @@
 <a id="more"></a>
 
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># -*-coding:utf-8 -*-</span></span><br><span class="line"><span class="keyword">import</span> io</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="comment">#改变标准输出的默认编码</span></span><br><span class="line">sys.stdout=io.TextIOWrapper(sys.stdout.buffer,encoding=<span class="string">'utf8'</span>)</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>其他</category>
+        <category>小问题合集</category>
+      </categories>
       <tags>
-        <tag>VSCode 小问题</tag>
+        <tag>小问题</tag>
+        <tag>VScode</tag>
       </tags>
   </entry>
   <entry>
@@ -236,9 +245,8 @@
 <p>被扩展后的新类具有原来类的全部属性和方法。因此在新类中，只需提供适用于这个新类的新方法和数据域就可以了。通过扩展一个类来建立另外一个类的过程称为 <strong>继承</strong> （inheritance）。</p>
 ]]></content>
       <categories>
-        <category>发表</category>
+        <category>其他</category>
         <category>公众号</category>
-        <category>Java</category>
       </categories>
       <tags>
         <tag>Java</tag>
