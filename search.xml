@@ -1,341 +1,241 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>酒</title>
-    <url>/2020/01/31/%E5%8A%A0%E5%AF%86test/</url>
-    <content><![CDATA[<div id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请打钱" data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容."><div class="hbe-input-container"><input type="password" id="hbePass" placeholder="猜猜密码是什么鸭" /><label>猜猜密码是什么鸭</label><div class="bottom-line"></div></div><script id="hbeData" type="hbeData" data-hmacdigest="72996cd71c588ed9ede21c33fe853f0b5aacdde555fcc7cf4e6309607ee92378">fc58c15c82b34d042fd113dbb9e6e51a2aeaed6255028dcd87ae2876a09e0ac8</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
-      <tags>
-        <tag>故事的尝试</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>数学模型姜启源笔记01</title>
-    <url>/2020/01/30/%E6%95%B0%E5%AD%A6%E6%A8%A1%E5%9E%8B%E5%A7%9C%E5%90%AF%E6%BA%90%E7%AC%94%E8%AE%B001/</url>
-    <content><![CDATA[]]></content>
+<search> 
+  
+  
+    
+    <entry>
+      <title>酒</title>
+      <link href="/2020/01/31/%E5%8A%A0%E5%AF%86test/"/>
+      <url>/2020/01/31/%E5%8A%A0%E5%AF%86test/</url>
+      
+        <content type="html"><![CDATA[<div id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请打钱" data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容."><div class="hbe-input-container"><input type="password" id="hbePass" placeholder="猜猜密码是什么鸭" /><label>猜猜密码是什么鸭</label><div class="bottom-line"></div></div><script id="hbeData" type="hbeData" data-hmacdigest="72996cd71c588ed9ede21c33fe853f0b5aacdde555fcc7cf4e6309607ee92378">fc58c15c82b34d042fd113dbb9e6e51a2aeaed6255028dcd87ae2876a09e0ac8</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 故事的尝试 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>数学模型姜启源笔记01</title>
+      <link href="/2020/01/30/%E6%95%B0%E5%AD%A6%E6%A8%A1%E5%9E%8B%E5%A7%9C%E5%90%AF%E6%BA%90%E7%AC%94%E8%AE%B001/"/>
+      <url>/2020/01/30/%E6%95%B0%E5%AD%A6%E6%A8%A1%E5%9E%8B%E5%A7%9C%E5%90%AF%E6%BA%90%E7%AC%94%E8%AE%B001/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
       <categories>
-        <category>学习</category>
-        <category>数学建模</category>
-        <category>《数学模型》姜启源笔记</category>
+          
+          <category> 学习 </category>
+          
+          <category> 数学建模 </category>
+          
+          <category> 《数学模型》姜启源笔记 </category>
+          
       </categories>
-      <tags>
-        <tag>数学建模</tag>
-        <tag>《数学模型》</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>使用VSCode编写python中文乱码解决</title>
-    <url>/2020/01/29/%E4%BD%BF%E7%94%A8VSCode%E7%BC%96%E5%86%99python%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3/</url>
-    <content><![CDATA[<p>加入代码头</p>
-<a id="more"></a>
-
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># -*-coding:utf-8 -*-</span></span><br><span class="line"><span class="keyword">import</span> io</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="comment">#改变标准输出的默认编码</span></span><br><span class="line">sys.stdout=io.TextIOWrapper(sys.stdout.buffer,encoding=<span class="string">'utf8'</span>)</span><br></pre></td></tr></table></figure>]]></content>
-      <tags>
-        <tag>VSCode 小问题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>python基础北理工MOOC01</title>
-    <url>/2020/01/29/python%E5%9F%BA%E7%A1%80%E5%8C%97%E7%90%86%E5%B7%A5MOOC01/</url>
-    <content><![CDATA[<h2 id="time库"><a href="#time库" class="headerlink" title="time库"></a>time库</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br></pre></td></tr></table></figure>
-
-<a id="more"></a>
-
-<h3 id="time"><a href="#time" class="headerlink" title="time()"></a>time()</h3><p><strong>time.time()</strong> 获取当前时间戳（一个浮点数）</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">print</span> (time.time())</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>1580290639.0466638</p>
-</blockquote>
-<p>只可表示 <strong>1970</strong> ~ <strong>2038</strong>  </p>
-<h3 id="ctime"><a href="#ctime" class="headerlink" title="ctime()"></a>ctime()</h3><p><strong>ctime</strong> 以易读方式表示</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">print</span> (time.ctime())</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>Wed Jan 29 17:50:18 2020</p>
-</blockquote>
-<h3 id="gmtime"><a href="#gmtime" class="headerlink" title="gmtime()"></a>gmtime()</h3><p><strong>time.gmtime()</strong> 返回计算机可处理的时间格式</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">print</span> (time.gmtime())</span><br><span class="line"><span class="comment">#获得的时间是服务器时间</span></span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>time.struct_time(tm_year=2020, tm_mon=1, tm_mday=29, tm_hour=17, tm_min=23, tm_sec=55, tm_wday=2, tm_yday=29, tm_isdst=0)</p>
-</blockquote>
-<h3 id="时间格式化与-strfitime-tpl-ts-、striptime-str-tpl"><a href="#时间格式化与-strfitime-tpl-ts-、striptime-str-tpl" class="headerlink" title="时间格式化与 strfitime ( tpl , ts )、striptime ( str , tpl )"></a>时间格式化与 strfitime ( tpl , ts )、striptime ( str , tpl )</h3><table>
-<thead>
-<tr>
-<th align="center">格式</th>
-<th align="center">意义</th>
-<th align="center">举例</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">%Y</td>
-<td align="center">年</td>
-<td align="center">2020</td>
-</tr>
-<tr>
-<td align="center">%m</td>
-<td align="center">月</td>
-<td align="center">1</td>
-</tr>
-<tr>
-<td align="center">%B</td>
-<td align="center">月</td>
-<td align="center">January</td>
-</tr>
-<tr>
-<td align="center">%b</td>
-<td align="center">月</td>
-<td align="center">Jau</td>
-</tr>
-<tr>
-<td align="center">%d</td>
-<td align="center">日</td>
-<td align="center">29</td>
-</tr>
-<tr>
-<td align="center">%A</td>
-<td align="center">星期几</td>
-<td align="center">Wednesday</td>
-</tr>
-<tr>
-<td align="center">%a</td>
-<td align="center">星期几</td>
-<td align="center">Wed</td>
-</tr>
-<tr>
-<td align="center">%H</td>
-<td align="center">时</td>
-<td align="center">17</td>
-</tr>
-<tr>
-<td align="center">%I</td>
-<td align="center">时</td>
-<td align="center">5</td>
-</tr>
-<tr>
-<td align="center">%p</td>
-<td align="center">上下午</td>
-<td align="center">PM</td>
-</tr>
-<tr>
-<td align="center">%M</td>
-<td align="center">分</td>
-<td align="center">44</td>
-</tr>
-<tr>
-<td align="center">%S</td>
-<td align="center">秒</td>
-<td align="center">26</td>
-</tr>
-</tbody></table>
-<p><strong>striftime（tpl，ts）</strong> 第一个参数是输出的时间格式，第二个是获得的时间<br>返回一个字符串</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">print</span> (time.strftime(<span class="string">"%Y-%m-%d %H:%M:%S"</span>,time.gmtime()))</span><br><span class="line"><span class="comment">#输出服务器当前的时间</span></span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>2020-01-29 09:59:09</p>
-</blockquote>
-<p><strong>striptime（str，tpl）</strong> 的第一个参数是字符串形式的时间值，第二个参数是输入的形式<br>返回一个计算机时间</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">strptime(<span class="string">"2020-01-29 09:59:09"</span>, <span class="string">"%Y-%m-%d %H:%M:%S"</span>)</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>time.struct_time(tm_year=2020, tm_mon=1, tm_mday=29, tm_hour=9, tm_min=59, tm_sec=9, tm_wday=2, tm_yday=29, tm_isdst=-1)</p>
-</blockquote>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 数学建模 </tag>
+            
+            <tag> 《数学模型》 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>使用VSCode编写python中文乱码解决</title>
+      <link href="/2020/01/29/%E4%BD%BF%E7%94%A8VSCode%E7%BC%96%E5%86%99python%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3/"/>
+      <url>/2020/01/29/%E4%BD%BF%E7%94%A8VSCode%E7%BC%96%E5%86%99python%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3/</url>
+      
+        <content type="html"><![CDATA[<p>加入代码头</p><a id="more"></a><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*-coding:utf-8 -*-</span></span><br><span class="line"><span class="keyword">import</span> io</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="comment">#改变标准输出的默认编码</span></span><br><span class="line">sys.stdout=io.TextIOWrapper(sys.stdout.buffer,encoding=<span class="string">'utf8'</span>)</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> VSCode 小问题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>python基础北理工MOOC01</title>
+      <link href="/2020/01/29/python%E5%9F%BA%E7%A1%80%E5%8C%97%E7%90%86%E5%B7%A5MOOC01/"/>
+      <url>/2020/01/29/python%E5%9F%BA%E7%A1%80%E5%8C%97%E7%90%86%E5%B7%A5MOOC01/</url>
+      
+        <content type="html"><![CDATA[<h2 id="time库"><a href="#time库" class="headerlink" title="time库"></a>time库</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br></pre></td></tr></table></figure><a id="more"></a><h3 id="time"><a href="#time" class="headerlink" title="time()"></a>time()</h3><p><strong>time.time()</strong> 获取当前时间戳（一个浮点数）</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">print</span> (time.time())</span><br></pre></td></tr></table></figure><blockquote><p>1580290639.0466638</p></blockquote><p>只可表示 <strong>1970</strong> ~ <strong>2038</strong>  </p><h3 id="ctime"><a href="#ctime" class="headerlink" title="ctime()"></a>ctime()</h3><p><strong>ctime</strong> 以易读方式表示</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">print</span> (time.ctime())</span><br></pre></td></tr></table></figure><blockquote><p>Wed Jan 29 17:50:18 2020</p></blockquote><h3 id="gmtime"><a href="#gmtime" class="headerlink" title="gmtime()"></a>gmtime()</h3><p><strong>time.gmtime()</strong> 返回计算机可处理的时间格式</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">print</span> (time.gmtime())</span><br><span class="line"><span class="comment">#获得的时间是服务器时间</span></span><br></pre></td></tr></table></figure><blockquote><p>time.struct_time(tm_year=2020, tm_mon=1, tm_mday=29, tm_hour=17, tm_min=23, tm_sec=55, tm_wday=2, tm_yday=29, tm_isdst=0)</p></blockquote><h3 id="时间格式化与-strfitime-tpl-ts-、striptime-str-tpl"><a href="#时间格式化与-strfitime-tpl-ts-、striptime-str-tpl" class="headerlink" title="时间格式化与 strfitime ( tpl , ts )、striptime ( str , tpl )"></a>时间格式化与 strfitime ( tpl , ts )、striptime ( str , tpl )</h3><table><thead><tr><th align="center">格式</th><th align="center">意义</th><th align="center">举例</th></tr></thead><tbody><tr><td align="center">%Y</td><td align="center">年</td><td align="center">2020</td></tr><tr><td align="center">%m</td><td align="center">月</td><td align="center">1</td></tr><tr><td align="center">%B</td><td align="center">月</td><td align="center">January</td></tr><tr><td align="center">%b</td><td align="center">月</td><td align="center">Jau</td></tr><tr><td align="center">%d</td><td align="center">日</td><td align="center">29</td></tr><tr><td align="center">%A</td><td align="center">星期几</td><td align="center">Wednesday</td></tr><tr><td align="center">%a</td><td align="center">星期几</td><td align="center">Wed</td></tr><tr><td align="center">%H</td><td align="center">时</td><td align="center">17</td></tr><tr><td align="center">%I</td><td align="center">时</td><td align="center">5</td></tr><tr><td align="center">%p</td><td align="center">上下午</td><td align="center">PM</td></tr><tr><td align="center">%M</td><td align="center">分</td><td align="center">44</td></tr><tr><td align="center">%S</td><td align="center">秒</td><td align="center">26</td></tr></tbody></table><p><strong>striftime（tpl，ts）</strong> 第一个参数是输出的时间格式，第二个是获得的时间<br>返回一个字符串</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">print</span> (time.strftime(<span class="string">"%Y-%m-%d %H:%M:%S"</span>,time.gmtime()))</span><br><span class="line"><span class="comment">#输出服务器当前的时间</span></span><br></pre></td></tr></table></figure><blockquote><p>2020-01-29 09:59:09</p></blockquote><p><strong>striptime（str，tpl）</strong> 的第一个参数是字符串形式的时间值，第二个参数是输入的形式<br>返回一个计算机时间</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">strptime(<span class="string">"2020-01-29 09:59:09"</span>, <span class="string">"%Y-%m-%d %H:%M:%S"</span>)</span><br></pre></td></tr></table></figure><blockquote><p>time.struct_time(tm_year=2020, tm_mon=1, tm_mday=29, tm_hour=9, tm_min=59, tm_sec=9, tm_wday=2, tm_yday=29, tm_isdst=-1)</p></blockquote>]]></content>
+      
+      
       <categories>
-        <category>学习</category>
-        <category>python</category>
-        <category>MOOC笔记</category>
+          
+          <category> 学习 </category>
+          
+          <category> python </category>
+          
+          <category> MOOC笔记 </category>
+          
       </categories>
-      <tags>
-        <tag>python基础</tag>
-        <tag>MOOC笔记</tag>
-        <tag>time库</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java核心技术笔记02</title>
-    <url>/2020/01/29/Java%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B002/</url>
-    <content><![CDATA[<h5 id="page-from-76"><a href="#page-from-76" class="headerlink" title="page from 76"></a>page from 76</h5><h2 id="大数值"><a href="#大数值" class="headerlink" title="大数值"></a>大数值</h2><p>使用 <strong>java.math包</strong> 中的两个类： <strong>BigInteger</strong> 和 <strong>BigDecimal</strong>。  </p>
-<a id="more"></a>
-
-<h3 id="valueOf-NaN"><a href="#valueOf-NaN" class="headerlink" title="valueOf"></a>valueOf</h3><p><strong>静态的valueOf</strong> 方法可以将普通的数值转换为大数值</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">BigInteger a=BigInteger.valueOf(<span class="number">100</span>);</span><br><span class="line">BigDecimal b=BigDecimal.valueOf(<span class="number">100</span>);</span><br></pre></td></tr></table></figure>
-
-
-<h3 id="add、substract、multiply、divide、mod"><a href="#add、substract、multiply、divide、mod" class="headerlink" title="add、substract、multiply、divide、mod"></a>add、substract、multiply、divide、mod</h3><table><tr><td bgcolor=orang>
-不能使用算数运算符处理大数值
-</table></tr></td>
-
-<p>而应使用BigInteger类中的 <strong>add</strong> 、 <strong>substract</strong> 、  <strong>multiply</strong> 、 <strong>divide</strong> 和 <strong>mod</strong> 方法。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">BigInteger c=d.add(e);</span><br><span class="line"><span class="comment">//c=d+e</span></span><br><span class="line"></span><br><span class="line">BigDecimal f=g.multiply(h.add(BigDecimal.valueOf(<span class="number">2</span>)));</span><br><span class="line"><span class="comment">//f=g*(h+2)</span></span><br><span class="line"></span><br><span class="line">BigDecimal a2=b2.divide(c2,BigDecimal.ROUND_HALF_UP);</span><br><span class="line"><span class="comment">//a2=b2/c2 结果四舍五入</span></span><br></pre></td></tr></table></figure>
-
-
-<p><kbd>add</kbd> <kbd>substract</kbd> <kbd>multiply</kbd> <kbd>divide</kbd> <kbd>mod</kbd>  </p>
-<h3 id="compareTo"><a href="#compareTo" class="headerlink" title="compareTo"></a>compareTo</h3><p><strong>int compareTo ( BigInteger other ) :</strong>  </p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">result = a.compareTo(b);</span><br><span class="line"><span class="comment">//若a==b，返回 0；</span></span><br><span class="line"><span class="comment">//若a&lt; b，返回负数；</span></span><br><span class="line"><span class="comment">//若a&gt; b，返回正数</span></span><br></pre></td></tr></table></figure>
-
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> python基础 </tag>
+            
+            <tag> MOOC笔记 </tag>
+            
+            <tag> time库 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Java核心技术笔记02</title>
+      <link href="/2020/01/29/Java%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B002/"/>
+      <url>/2020/01/29/Java%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B002/</url>
+      
+        <content type="html"><![CDATA[<h5 id="page-from-76"><a href="#page-from-76" class="headerlink" title="page from 76"></a>page from 76</h5><h2 id="大数值"><a href="#大数值" class="headerlink" title="大数值"></a>大数值</h2><p>使用 <strong>java.math包</strong> 中的两个类： <strong>BigInteger</strong> 和 <strong>BigDecimal</strong>。  </p><a id="more"></a><h3 id="valueOf-NaN"><a href="#valueOf-NaN" class="headerlink" title="valueOf"></a>valueOf</h3><p><strong>静态的valueOf</strong> 方法可以将普通的数值转换为大数值</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">BigInteger a=BigInteger.valueOf(<span class="number">100</span>);</span><br><span class="line">BigDecimal b=BigDecimal.valueOf(<span class="number">100</span>);</span><br></pre></td></tr></table></figure><h3 id="add、substract、multiply、divide、mod"><a href="#add、substract、multiply、divide、mod" class="headerlink" title="add、substract、multiply、divide、mod"></a>add、substract、multiply、divide、mod</h3><table><tr><td bgcolor=orang>不能使用算数运算符处理大数值</table></tr></td><p>而应使用BigInteger类中的 <strong>add</strong> 、 <strong>substract</strong> 、  <strong>multiply</strong> 、 <strong>divide</strong> 和 <strong>mod</strong> 方法。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">BigInteger c=d.add(e);</span><br><span class="line"><span class="comment">//c=d+e</span></span><br><span class="line"></span><br><span class="line">BigDecimal f=g.multiply(h.add(BigDecimal.valueOf(<span class="number">2</span>)));</span><br><span class="line"><span class="comment">//f=g*(h+2)</span></span><br><span class="line"></span><br><span class="line">BigDecimal a2=b2.divide(c2,BigDecimal.ROUND_HALF_UP);</span><br><span class="line"><span class="comment">//a2=b2/c2 结果四舍五入</span></span><br></pre></td></tr></table></figure><p><kbd>add</kbd> <kbd>substract</kbd> <kbd>multiply</kbd> <kbd>divide</kbd> <kbd>mod</kbd>  </p><h3 id="compareTo"><a href="#compareTo" class="headerlink" title="compareTo"></a>compareTo</h3><p><strong>int compareTo ( BigInteger other ) :</strong>  </p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">result = a.compareTo(b);</span><br><span class="line"><span class="comment">//若a==b，返回 0；</span></span><br><span class="line"><span class="comment">//若a&lt; b，返回负数；</span></span><br><span class="line"><span class="comment">//若a&gt; b，返回正数</span></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
       <categories>
-        <category>学习</category>
-        <category>Java</category>
-        <category>Java核心技术基础篇笔记</category>
+          
+          <category> 学习 </category>
+          
+          <category> Java </category>
+          
+          <category> Java核心技术基础篇笔记 </category>
+          
       </categories>
-      <tags>
-        <tag>Java</tag>
-        <tag>Java核心技术基础</tag>
-        <tag>BigInteger</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java核心技术笔记01</title>
-    <url>/2020/01/29/Java%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B001/</url>
-    <content><![CDATA[<h4 id="page-from-63"><a href="#page-from-63" class="headerlink" title="page from 63"></a>page from 63</h4><h2 id="控制流程"><a href="#控制流程" class="headerlink" title="控制流程"></a>控制流程</h2><a id="more"></a>
-
-<h3 id="块作用域"><a href="#块作用域" class="headerlink" title="块作用域"></a>块作用域</h3><table><tr><td bgcolor=orang>
-不能在嵌套的两个块中声明同名变量
-</td></tr></table>
-
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(string[] args)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n;</span><br><span class="line">    balabalabalabala...</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">int</span> n; <span class="comment">//不可！！！</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="条件语句"><a href="#条件语句" class="headerlink" title="条件语句"></a>条件语句</h3><p><kbd>if</kbd></p>
-<h3 id="循环语句"><a href="#循环语句" class="headerlink" title="循环语句"></a>循环语句</h3><p><kbd>while</kbd>  <kbd>do while</kbd>  <kbd>for</kbd></p>
-<h3 id="多重选择"><a href="#多重选择" class="headerlink" title="多重选择"></a>多重选择</h3><p><kbd>switch</kbd></p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">switch</span>(<span class="keyword">char</span>/<span class="keyword">byte</span>/<span class="keyword">short</span>/<span class="keyword">int</span>/字符串字面量)&#123;</span><br><span class="line">    <span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">    ...</span><br><span class="line">    <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">default</span>:</span><br><span class="line">    ...</span><br><span class="line">    <span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="中断控制流程语句"><a href="#中断控制流程语句" class="headerlink" title="中断控制流程语句"></a>中断控制流程语句</h3><p><kbd>goto</kbd> <kbd>break</kbd> <kbd>continue</kbd></p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+            <tag> Java核心技术基础 </tag>
+            
+            <tag> BigInteger </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Java核心技术笔记01</title>
+      <link href="/2020/01/29/Java%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B001/"/>
+      <url>/2020/01/29/Java%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B001/</url>
+      
+        <content type="html"><![CDATA[<h4 id="page-from-63"><a href="#page-from-63" class="headerlink" title="page from 63"></a>page from 63</h4><h2 id="控制流程"><a href="#控制流程" class="headerlink" title="控制流程"></a>控制流程</h2><a id="more"></a><h3 id="块作用域"><a href="#块作用域" class="headerlink" title="块作用域"></a>块作用域</h3><table><tr><td bgcolor=orang>不能在嵌套的两个块中声明同名变量</td></tr></table><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(string[] args)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n;</span><br><span class="line">    balabalabalabala...</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">int</span> n; <span class="comment">//不可！！！</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="条件语句"><a href="#条件语句" class="headerlink" title="条件语句"></a>条件语句</h3><p><kbd>if</kbd></p><h3 id="循环语句"><a href="#循环语句" class="headerlink" title="循环语句"></a>循环语句</h3><p><kbd>while</kbd>  <kbd>do while</kbd>  <kbd>for</kbd></p><h3 id="多重选择"><a href="#多重选择" class="headerlink" title="多重选择"></a>多重选择</h3><p><kbd>switch</kbd></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">switch</span>(<span class="keyword">char</span>/<span class="keyword">byte</span>/<span class="keyword">short</span>/<span class="keyword">int</span>/字符串字面量)&#123;</span><br><span class="line">    <span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">    ...</span><br><span class="line">    <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">default</span>:</span><br><span class="line">    ...</span><br><span class="line">    <span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="中断控制流程语句"><a href="#中断控制流程语句" class="headerlink" title="中断控制流程语句"></a>中断控制流程语句</h3><p><kbd>goto</kbd> <kbd>break</kbd> <kbd>continue</kbd></p>]]></content>
+      
+      
       <categories>
-        <category>学习</category>
-        <category>Java</category>
-        <category>Java核心技术基础篇笔记</category>
+          
+          <category> 学习 </category>
+          
+          <category> Java </category>
+          
+          <category> Java核心技术基础篇笔记 </category>
+          
       </categories>
-      <tags>
-        <tag>Java</tag>
-        <tag>Java核心技术基础</tag>
-        <tag>控制流程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>公众号发表01</title>
-    <url>/2020/01/28/%E5%85%AC%E4%BC%97%E5%8F%B7%E5%8F%91%E8%A1%A8test1/</url>
-    <content><![CDATA[<h1 id="java-·-对象与类"><a href="#java-·-对象与类" class="headerlink" title="java · 对象与类"></a>java · 对象与类</h1><h2 id="面向对象程序设计-OOP"><a href="#面向对象程序设计-OOP" class="headerlink" title="面向对象程序设计(OOP)"></a>面向对象程序设计(OOP)</h2><p>学过 <strong>C/C++</strong> 的同学们都知道， <strong>Java</strong> 作为一个 <strong>面向对象程序设计</strong>（简称OOP）语言，有着其深刻的独到之处。  </p>
-<p>面向对象的程序是由 <strong>对象</strong> 组成的。每个对象包含对用户 <strong>公开</strong> 的特定 <strong>功能</strong> 部分与 <strong>隐藏</strong> 的 <strong>实现</strong> 部分。  </p>
-<p>程序中，有些对象来自 <strong>标准库</strong>，有些是自定义的。无论他们来自哪里，有一点是相同的，只要对象能够满足要求，就不必关心其功能的具体实现过程。  </p>
-<a id="more"></a>
-
-<table><tr><td bgcolor=orang>在OOP中，不必关心对象的具体实现,只要能够满足用户的需求即可</td></tr></table>  
-
-
-<blockquote>
-<p>传统的结构化程序设计通过设计一系列的（算法）来求解问题。一旦确定了这些过程，就要开始考虑存储数据的方式。这就是 Pascal语言的设计者 Niklaus Wirth将其著作命名为《算法 + 数据结构 = 程序》（  <em>Algorithms + Data Structures = Programs</em> ， Prentice Hall，1975）的原因。需要注意的是，在 Wirth命名的书名中，算法是第一位的，数据结构是第二位的，这就明确地表述了程序员的工作方式。首先要确定如何操作数据，然后再决定如何存储数据，以便于数据操作。而OOP却调换了这个次序，将数据放在第一位，对于一些规模较小的问题，将其分解为过程的开发方式比较理想。而面向对象更加适合于解决规模较大的问题。<br>——《Java核心技术》 【美】凯 S.霍特思曼  </p>
-</blockquote>
-<h2 id="类-class"><a href="#类-class" class="headerlink" title="类(class)"></a>类(class)</h2><p><strong>类</strong> 是构造对象的模板。通过这个模板，可以创建无数个功能相似的 <strong>对象</strong>。由类构造（construct）对象的过程称为创建类的 <strong>实例</strong>（instance）。  </p>
-<p>用Java编写的所有代码都位于某个类的内部。标准的Java库提供了几千个类，可以用于用户界面设计、日期、日历和网络程序设计。尽管如此，还是需要在Java程序中创建一些自己的类，以便描述应用程序所对应的问题域中的对象。  </p>
-<p><strong>封装</strong> （encapsulation，又称数据隐藏），则是将数据和行为组合在一个包中，并对对象的使用者隐藏数据。对象中的数据称为 <strong>实例域</strong>（instance field），操纵数据的过程称为 <strong>方法</strong> （method），对于每个特定的类实例都有一组特定的实例域值。这些值的集合就是这个对象的当前状态（state）。无论何时，只要向对象发送一个消息，它的状态就有可能发生改变。  </p>
-<blockquote>
-<p>实现封装的关键在于。绝对不能让类中的方法直接地访问其他类的实例域。程序仅通过对象的方法与对象数据进行交互。封装给对象赋予了“盒”特征，这是提高重用性和可靠性的关键。这意味着一个类可以全面地改变存储数据的方式，只要仍旧使用同样的方法操作数据，其他对象就不会知道或介意所发生的变化。<br>————《Java核心技术》 【美】凯 S.霍特思曼  </p>
-</blockquote>
-<p>OOP的另一个原则是：可以通过扩展一个类来建立另外一个新的类。事实上，Java中所有的类都源自于一个超类，它就是 Object。这会在后面详细介绍。  </p>
-<table><tr><td bgcolor=orang>可以通过扩展一个类来建立另外一个新的类</td></tr></table>  
-
-<p>被扩展后的新类具有原来类的全部属性和方法。因此在新类中，只需提供适用于这个新类的新方法和数据域就可以了。通过扩展一个类来建立另外一个类的过程称为 <strong>继承</strong> （inheritance）。</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+            <tag> Java核心技术基础 </tag>
+            
+            <tag> 控制流程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>公众号发表01</title>
+      <link href="/2020/01/28/%E5%85%AC%E4%BC%97%E5%8F%B7%E5%8F%91%E8%A1%A8test1/"/>
+      <url>/2020/01/28/%E5%85%AC%E4%BC%97%E5%8F%B7%E5%8F%91%E8%A1%A8test1/</url>
+      
+        <content type="html"><![CDATA[<h1 id="java-·-对象与类"><a href="#java-·-对象与类" class="headerlink" title="java · 对象与类"></a>java · 对象与类</h1><h2 id="面向对象程序设计-OOP"><a href="#面向对象程序设计-OOP" class="headerlink" title="面向对象程序设计(OOP)"></a>面向对象程序设计(OOP)</h2><p>学过 <strong>C/C++</strong> 的同学们都知道， <strong>Java</strong> 作为一个 <strong>面向对象程序设计</strong>（简称OOP）语言，有着其深刻的独到之处。  </p><p>面向对象的程序是由 <strong>对象</strong> 组成的。每个对象包含对用户 <strong>公开</strong> 的特定 <strong>功能</strong> 部分与 <strong>隐藏</strong> 的 <strong>实现</strong> 部分。  </p><p>程序中，有些对象来自 <strong>标准库</strong>，有些是自定义的。无论他们来自哪里，有一点是相同的，只要对象能够满足要求，就不必关心其功能的具体实现过程。  </p><a id="more"></a><table><tr><td bgcolor=orang>在OOP中，不必关心对象的具体实现,只要能够满足用户的需求即可</td></tr></table>  <blockquote><p>传统的结构化程序设计通过设计一系列的（算法）来求解问题。一旦确定了这些过程，就要开始考虑存储数据的方式。这就是 Pascal语言的设计者 Niklaus Wirth将其著作命名为《算法 + 数据结构 = 程序》（  <em>Algorithms + Data Structures = Programs</em> ， Prentice Hall，1975）的原因。需要注意的是，在 Wirth命名的书名中，算法是第一位的，数据结构是第二位的，这就明确地表述了程序员的工作方式。首先要确定如何操作数据，然后再决定如何存储数据，以便于数据操作。而OOP却调换了这个次序，将数据放在第一位，对于一些规模较小的问题，将其分解为过程的开发方式比较理想。而面向对象更加适合于解决规模较大的问题。<br>——《Java核心技术》 【美】凯 S.霍特思曼  </p></blockquote><h2 id="类-class"><a href="#类-class" class="headerlink" title="类(class)"></a>类(class)</h2><p><strong>类</strong> 是构造对象的模板。通过这个模板，可以创建无数个功能相似的 <strong>对象</strong>。由类构造（construct）对象的过程称为创建类的 <strong>实例</strong>（instance）。  </p><p>用Java编写的所有代码都位于某个类的内部。标准的Java库提供了几千个类，可以用于用户界面设计、日期、日历和网络程序设计。尽管如此，还是需要在Java程序中创建一些自己的类，以便描述应用程序所对应的问题域中的对象。  </p><p><strong>封装</strong> （encapsulation，又称数据隐藏），则是将数据和行为组合在一个包中，并对对象的使用者隐藏数据。对象中的数据称为 <strong>实例域</strong>（instance field），操纵数据的过程称为 <strong>方法</strong> （method），对于每个特定的类实例都有一组特定的实例域值。这些值的集合就是这个对象的当前状态（state）。无论何时，只要向对象发送一个消息，它的状态就有可能发生改变。  </p><blockquote><p>实现封装的关键在于。绝对不能让类中的方法直接地访问其他类的实例域。程序仅通过对象的方法与对象数据进行交互。封装给对象赋予了“盒”特征，这是提高重用性和可靠性的关键。这意味着一个类可以全面地改变存储数据的方式，只要仍旧使用同样的方法操作数据，其他对象就不会知道或介意所发生的变化。<br>————《Java核心技术》 【美】凯 S.霍特思曼  </p></blockquote><p>OOP的另一个原则是：可以通过扩展一个类来建立另外一个新的类。事实上，Java中所有的类都源自于一个超类，它就是 Object。这会在后面详细介绍。  </p><table><tr><td bgcolor=orang>可以通过扩展一个类来建立另外一个新的类</td></tr></table>  <p>被扩展后的新类具有原来类的全部属性和方法。因此在新类中，只需提供适用于这个新类的新方法和数据域就可以了。通过扩展一个类来建立另外一个类的过程称为 <strong>继承</strong> （inheritance）。</p>]]></content>
+      
+      
       <categories>
-        <category>发表</category>
-        <category>公众号</category>
-        <category>Java</category>
+          
+          <category> 发表 </category>
+          
+          <category> 公众号 </category>
+          
+          <category> Java </category>
+          
       </categories>
-      <tags>
-        <tag>Java</tag>
-        <tag>尝试</tag>
-        <tag>对象与类</tag>
-        <tag>公众号</tag>
-        <tag>《Java核心技术》</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>markdown语法练习</title>
-    <url>/2020/01/27/markdown%E8%AF%AD%E6%B3%95%E7%BB%83%E4%B9%A0/</url>
-    <content><![CDATA[<h1 id="markdown笔记"><a href="#markdown笔记" class="headerlink" title="markdown笔记"></a>markdown笔记</h1><h2 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h2><p><em>斜体</em><br><strong>粗体文本</strong><br><strong><em>粗斜体文本</em></strong>  </p>
-<p><del>狗逼</del></p>
-<a id="more"></a>
-
-<p>分割线：    </p>
-<hr>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> a,b;</span><br><span class="line">    <span class="built_in">cin</span>&gt;&gt;a&gt;&gt;b;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;a+b&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><u>下划线</u>  </p>
-<ul>
-<li>马木木是个总裁</li>
-<li>马木木还是个娱乐圈天王</li>
-<li>马木木更是一个有一点点帅的小哥哥</li>
-</ul>
-<ol>
-<li>马木木是个沙雕<ul>
-<li>就一点点</li>
-<li>就二点点</li>
-<li>就三点点</li>
-</ul>
-</li>
-<li>马木木是个冰雕<ul>
-<li>就一雕雕</li>
-<li>就二雕雕</li>
-<li>就三雕雕</li>
-</ul>
-</li>
-<li>马木木是个石雕</li>
-</ol>
-<blockquote>
-<p>生活需要微笑，是微笑让这个世界变得更加温暖，变得更加的美丽生动，变得丰富多彩了有了微笑河流才那么清澈，有了微笑天空才那么蔚蓝。</p>
-<blockquote>
-<p>抬头三尺，即有神明。落寞或无助时，心中有希望;迷失时，心中有方向……</p>
-</blockquote>
-<p>风不懂云的漂泊，天不懂雨的落魄，眼不懂泪的懦弱，所以你不懂我的选择，也可以不懂我的难过，不是每个人都一定快乐，不是每种痛都一定要述说。</p>
-</blockquote>
-<p><a href="http://www.baidu.com" target="_blank" rel="noopener">百度</a></p>
-<p><a href="http://www.baidu.com" target="_blank" rel="noopener">www.baidu.com</a></p>
-<p><img src="http://i2.tiimg.com/708356/9ec5126e91dca4e7.png" alt="因为老板打赏了，就换一张图啦"></p>
-<table>
-<thead>
-<tr>
-<th>表头</th>
-<th>表头</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>单元格</td>
-<td>单元格</td>
-</tr>
-<tr>
-<td>单元格</td>
-<td>单元格</td>
-</tr>
-</tbody></table>
-<table>
-<thead>
-<tr>
-<th align="left">左对齐</th>
-<th align="right">右对齐</th>
-<th align="center">居中对齐</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">单元格</td>
-<td align="right">单元格</td>
-<td align="center">单元格</td>
-</tr>
-<tr>
-<td align="left">单元格</td>
-<td align="right">单元格</td>
-<td align="center">单元格</td>
-</tr>
-</tbody></table>
-<p>链接也可以用变量来代替，文档末尾附带变量地址：<br>这个链接用 1 作为网址变量 <a href="http://www.google.com/" target="_blank" rel="noopener">Google</a><br>这个链接用 runoob 作为网址变量 <a href="http://www.runoob.com/" target="_blank" rel="noopener">Runoob</a><br>然后在文档的结尾为变量赋值（网址）</p>
-<p>使用 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd> 重启电脑</p>
-<p>** 正常显示星号 **</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+            <tag> 尝试 </tag>
+            
+            <tag> 对象与类 </tag>
+            
+            <tag> 公众号 </tag>
+            
+            <tag> 《Java核心技术》 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>markdown语法练习</title>
+      <link href="/2020/01/27/markdown%E8%AF%AD%E6%B3%95%E7%BB%83%E4%B9%A0/"/>
+      <url>/2020/01/27/markdown%E8%AF%AD%E6%B3%95%E7%BB%83%E4%B9%A0/</url>
+      
+        <content type="html"><![CDATA[<h1 id="markdown笔记"><a href="#markdown笔记" class="headerlink" title="markdown笔记"></a>markdown笔记</h1><h2 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h2><p><em>斜体</em><br><strong>粗体文本</strong><br><strong><em>粗斜体文本</em></strong>  </p><p><del>狗逼</del></p><a id="more"></a><p>分割线：    </p><hr><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> a,b;</span><br><span class="line">    <span class="built_in">cin</span>&gt;&gt;a&gt;&gt;b;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;a+b&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><u>下划线</u>  </p><ul><li>马木木是个总裁</li><li>马木木还是个娱乐圈天王</li><li>马木木更是一个有一点点帅的小哥哥</li></ul><ol><li>马木木是个沙雕<ul><li>就一点点</li><li>就二点点</li><li>就三点点</li></ul></li><li>马木木是个冰雕<ul><li>就一雕雕</li><li>就二雕雕</li><li>就三雕雕</li></ul></li><li>马木木是个石雕</li></ol><blockquote><p>生活需要微笑，是微笑让这个世界变得更加温暖，变得更加的美丽生动，变得丰富多彩了有了微笑河流才那么清澈，有了微笑天空才那么蔚蓝。</p><blockquote><p>抬头三尺，即有神明。落寞或无助时，心中有希望;迷失时，心中有方向……</p></blockquote><p>风不懂云的漂泊，天不懂雨的落魄，眼不懂泪的懦弱，所以你不懂我的选择，也可以不懂我的难过，不是每个人都一定快乐，不是每种痛都一定要述说。</p></blockquote><p><a href="http://www.baidu.com" target="_blank" rel="noopener">百度</a></p><p><a href="http://www.baidu.com" target="_blank" rel="noopener">www.baidu.com</a></p><p><img src="http://i2.tiimg.com/708356/9ec5126e91dca4e7.png" alt="因为老板打赏了，就换一张图啦"></p><table><thead><tr><th>表头</th><th>表头</th></tr></thead><tbody><tr><td>单元格</td><td>单元格</td></tr><tr><td>单元格</td><td>单元格</td></tr></tbody></table><table><thead><tr><th align="left">左对齐</th><th align="right">右对齐</th><th align="center">居中对齐</th></tr></thead><tbody><tr><td align="left">单元格</td><td align="right">单元格</td><td align="center">单元格</td></tr><tr><td align="left">单元格</td><td align="right">单元格</td><td align="center">单元格</td></tr></tbody></table><p>链接也可以用变量来代替，文档末尾附带变量地址：<br>这个链接用 1 作为网址变量 <a href="http://www.google.com/" target="_blank" rel="noopener">Google</a><br>这个链接用 runoob 作为网址变量 <a href="http://www.runoob.com/" target="_blank" rel="noopener">Runoob</a><br>然后在文档的结尾为变量赋值（网址）</p><p>使用 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd> 重启电脑</p><p>** 正常显示星号 **</p>]]></content>
+      
+      
       <categories>
-        <category>学习</category>
-        <category>其他</category>
-        <category>markdown</category>
+          
+          <category> 学习 </category>
+          
+          <category> 其他 </category>
+          
+          <category> markdown </category>
+          
       </categories>
-      <tags>
-        <tag>markdown</tag>
-      </tags>
-  </entry>
+      
+      
+        <tags>
+            
+            <tag> markdown </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
 </search>
