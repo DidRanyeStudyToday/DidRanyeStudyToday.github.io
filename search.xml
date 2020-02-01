@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>计算机组成原理笔记01</title>
+    <url>/2020/02/01/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E7%AC%94%E8%AE%B001/</url>
+    <content><![CDATA[<h3 id="存储器怎么工作？"><a href="#存储器怎么工作？" class="headerlink" title="存储器怎么工作？"></a>存储器怎么工作？</h3><p>存储器 = 存储体 + MAR + MDR<br>MAR: 存储器地址寄存器<br>MDR: 存储器数据寄存器<br>存储体: 由存储单元（存字）组成，是一个具体的电路。存储单元由存储元（存位）。组成储存的一组数据叫存储字</p>
+<h3 id="存储器和CPU怎么连接？"><a href="#存储器和CPU怎么连接？" class="headerlink" title="存储器和CPU怎么连接？"></a>存储器和CPU怎么连接？</h3>]]></content>
+      <categories>
+        <category>计算机组成原理</category>
+      </categories>
+      <tags>
+        <tag>组成原理</tag>
+        <tag>存储器与CPU的协同工作</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>加密test</title>
     <url>/2020/01/31/%E5%8A%A0%E5%AF%86test/</url>
-    <content><![CDATA[<div id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请打钱" data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容."><div class="hbe-input-container"><input type="password" id="hbePass" placeholder="猜猜密码是什么鸭" /><label>猜猜密码是什么鸭</label><div class="bottom-line"></div></div><script id="hbeData" type="hbeData" data-hmacdigest="67052c6a0eaa52c26d7d0cbd2d8ee884fba2b99cb159a58875ee58f97cbd4002">fb19af7e2d0a0a74023aa5687fab6624e4eef4ebff24ba144fba7cebcff6b39c44a8b2d6d2070a8489beee8521177580</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+    <content><![CDATA[<div id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请打钱" data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容."><div class="hbe-input-container"><input type="password" id="hbePass" placeholder="猜猜密码是什么鸭" /><label>猜猜密码是什么鸭</label><div class="bottom-line"></div></div><script id="hbeData" type="hbeData" data-hmacdigest="b42c5406f7f68954ce3cabcf487aa4293f896e33421fd697234671980102fd8a">fb19af7e2d0a0a74023aa5687fab6624e4eef4ebff24ba144fba7cebcff6b39c388ff82fe58cf3db193452759f3d3871d6e6285ad6c6ccec70da89096bb224429b3251e10c59e3c64ab50b358367e76e4102960979090410accd71674b7eebe6a307dee2a6cdb293b308f72c36641ff946990f4ed940de697c20944f229fe2e1</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
       <categories>
         <category>其他</category>
         <category>杂谈</category>
