@@ -1,6 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>思修笔记(腿姐)</title>
+    <url>/2020/02/15/%E6%80%9D%E4%BF%AE%E7%AC%94%E8%AE%B0-%E8%85%BF%E5%A7%90/</url>
+    <content><![CDATA[<h2 id="绪论-（选择）"><a href="#绪论-（选择）" class="headerlink" title="绪论 （选择）"></a>绪论 （选择）</h2><h3 id="时代新人以民族复兴为己任"><a href="#时代新人以民族复兴为己任" class="headerlink" title="时代新人以民族复兴为己任"></a>时代新人以民族复兴为己任</h3><p>新时代——时代新人</p>
+<p><strong>钙</strong>、<strong>软骨病</strong>——<strong>理想信念</strong><br><strong>担当</strong>精神——决定人生价值的<strong>最大砝码</strong></p>
+<h3 id="思想道德素质与法治修养"><a href="#思想道德素质与法治修养" class="headerlink" title="思想道德素质与法治修养"></a>思想道德素质与法治修养</h3><table>
+<thead>
+<tr>
+<th>区别</th>
+<th>思想道德</th>
+<th>法律</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>调节领域</td>
+<td>大</td>
+<td>小</td>
+</tr>
+<tr>
+<td>调节方式</td>
+<td>说服教育</td>
+<td>国家强制力</td>
+</tr>
+<tr>
+<td>调节目标</td>
+<td>希望改正</td>
+<td>强制改正</td>
+</tr>
+</tbody></table>
+<ul>
+<li>都是基本素质（<font color="#00dd00">先有道德，后有法律</font>）</li>
+<li>都是调节思想行为、人际关系、维护社会秩序的重要手段（平等的，不是谁是谁的目的）</li>
+<li>都是上层建筑，由经济基础决定并服务于它</li>
+<li>思想道德为法律提供<font color="#dddd00">思想</font>指引和价值基础，法律为道德建设提供制度保障</li>
+<li>道德滋养法律、丰富法律、支撑法律（相互也可）。以道德精神和价值促进引领全社会信仰法律</li>
+</ul>
+<h2 id="第一章-人生的青春之问"><a href="#第一章-人生的青春之问" class="headerlink" title="第一章 人生的青春之问"></a>第一章 人生的青春之问</h2><ul>
+<li>人生观（选择）</li>
+<li>人生价值（选择、分析）</li>
+<li>人生矛盾（选择）</li>
+</ul>
+<h3 id="人生观（选择）"><a href="#人生观（选择）" class="headerlink" title="人生观（选择）"></a>人生观（选择）</h3><ol>
+<li>人生观是世界观在对待人生问题上的具体体现，是世界观的重要组成部分</li>
+<li>世界观决定人生观，人生观从属于世界观，没有</li>
+</ol>
+]]></content>
+      <categories>
+        <category>学习</category>
+        <category>其他</category>
+        <category>政治</category>
+      </categories>
+      <tags>
+        <tag>思修</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>test</title>
+    <url>/2020/02/14/test/</url>
+    <content><![CDATA[<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="">
+    <style type="text/css">
+        p{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>]]></content>
+  </entry>
+  <entry>
+    <title>Web前端开发</title>
+    <url>/2020/02/14/Web%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/</url>
+    <content><![CDATA[<h2 id="css样式"><a href="#css样式" class="headerlink" title="css样式"></a>css样式</h2><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">p</span>&#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">12px</span>;</span><br><span class="line">  <span class="comment">/* 字号 */</span></span><br><span class="line">  <span class="attribute">color</span>: blue;</span><br><span class="line">  <span class="comment">/* 文字颜色 */</span></span><br><span class="line">  <span class="attribute">font-weight</span>: bold;</span><br><span class="line">  <span class="comment">/* 加粗 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="css添加方法"><a href="#css添加方法" class="headerlink" title="css添加方法"></a>css添加方法</h3><p>优先级：行内&gt;内嵌&gt;链接&gt;浏览器默认</p>
+<h4 id="行内"><a href="#行内" class="headerlink" title="行内"></a>行内</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span> = <span class="string">"color:red"</span>&gt;</span></span><br><span class="line">     balabala</span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="内嵌"><a href="#内嵌" class="headerlink" title="内嵌"></a>内嵌</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span></span><br><span class="line">        p&#123;</span><br><span class="line"><span class="css">  <span class="comment">/* 选择器 */</span></span></span><br><span class="line">            color: red;</span><br><span class="line">        &#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="文件"><a href="#文件" class="headerlink" title="文件"></a>文件</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"css/style.css"</span> /&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 链接到  样式表型的文件   路径为css/style.css --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="css选择器"><a href="#css选择器" class="headerlink" title="css选择器"></a>css选择器</h3><h4 id="标签选择器"><a href="#标签选择器" class="headerlink" title="标签选择器"></a>标签选择器</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span></span><br><span class="line">  body&#123;</span><br><span class="line"><span class="css">    <span class="selector-tag">background-color</span>: <span class="selector-id">#ccc</span>;</span></span><br><span class="line">    text-align: center;</span><br><span class="line">    font-size: 12px;</span><br><span class="line">    font: "黑体";</span><br><span class="line">    color: red;</span><br><span class="line">  &#125;</span><br><span class="line">  hr&#123;</span><br><span class="line">    width: 200px;</span><br><span class="line">  &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="类别选择器"><a href="#类别选择器" class="headerlink" title="类别选择器"></a>类别选择器</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span></span><br><span class="line"><span class="css">  <span class="selector-tag">p</span>&#123;<span class="attribute">font-size</span>:<span class="number">12px</span>;&#125;</span></span><br><span class="line"><span class="css">  <span class="selector-class">.one</span>&#123;<span class="attribute">font-size</span>:<span class="number">18px</span>;&#125;</span></span><br><span class="line"><span class="css">  <span class="selector-class">.two</span>&#123;<span class="attribute">font-size</span>:<span class="number">24px</span>&#125;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span> bala <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"one"</span>&gt;</span>bala<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"two"</span>&gt;</span>bala<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="ID选择器"><a href="#ID选择器" class="headerlink" title="ID选择器"></a>ID选择器</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span></span><br><span class="line"><span class="css">  <span class="selector-id">#one</span>&#123;<span class="attribute">font-size</span>:<span class="number">12px</span>;&#125;</span></span><br><span class="line"><span class="css">  <span class="selector-id">#two</span>&#123;<span class="attribute">font-size</span>:<span class="number">24px</span>;&#125;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">"one"</span>&gt;</span>bala<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">"two"</span>&gt;</span>bala<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="ID选择器与类别选择器的区别"><a href="#ID选择器与类别选择器的区别" class="headerlink" title="ID选择器与类别选择器的区别"></a>ID选择器与类别选择器的区别</h4><p>类别选择器可以多次被引用，作用于多个网页元素上面。<br>ID选择器在当前页面是“唯一的引用一次”</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+        <category>其他</category>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>Web前端</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>速记 2020-02-14</title>
     <url>/2020/02/14/%E9%80%9F%E8%AE%B0-2020-02-14/</url>
     <content><![CDATA[<div id="hexo-blog-encrypt" data-wpm="密码是39位随机字符哟，加油！一定可以试出来哒！" data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容"><div class="hbe-input-container"><input type="password" id="hbePass" placeholder="猜猜密码是什么鸭" /><label>猜猜密码是什么鸭</label><div class="bottom-line"></div></div><script id="hbeData" type="hbeData" data-hmacdigest="f2e3e98afc94d318c6188e44a082d8516993582bb6f97f4a11179f7a956c7c0c">f4751c08a455ede7e815097a2e10c2105ad559a6de0d705f175ec5cb8ca87af93e3584fec341a62c2316ef0fea8fa6d219f6f042294203c4b9321e3db43a7bf47f38666b6745aec8839fca7ff94238d47c161bf68824f6964395b42b626fe35c26e4fe18cf11fe5508a7d7a33fd3facb2985f149642b6618263f982423779076241e6d48b7370452c4b978d5a974646ecccfc35796a42f6b9ad985932fdd0f93482221d505fc35b2014ec80dd611c38f5379a421956dec07f01e4165a20a1da3a6814ea75298196fe9559434fd7c777f6aa8d66baf328a19d8a19914bb292357f2f58cb61685c5643f2606d70e52fa268f93ed82cfd915a8cd0dd5999683c3c7ccc5c572f538e8ab9eb8a59703913c43a3adcdb085719a0c2d76866da66a7b0db5ef0b3dfd91195c71b98af6acf985bb6f077404e8c1fcba0bb2459368692e04002167255a69ff03c0594863e0c2b3abbb37037de2a31c815cbd42042730b357af37152292c1e39736d7e46d9df10a669841dfaea4824b663db9582a8dc780d655de16888633250bbf5f058048ce8ef31eaf2490731aaf7c0e723099115fb2d63a30ad276bb23e4f8b266c9dd5184de854e35ea309fdfa9a9c4098491d2b1df071ca40f2da5741e71606f1676ccdf73ff95a1fc56c18e15dbccdef3057673bae8ef81f39f8fe5a674c65ed5663dc4745af79ba1c8f7fd5265a32fc3ffa342857d2fb97dbd533214a1d1c8b39ed93b6cf2db0d09e5a6dc91c75ec7851869be521d2768a305939e31a01e20e690234457e2f84e71cd765f9b3a96f4cd5e4e98e3d7eef1451a139c2077caadf5fd81cfe8ad625df5ee6f5f6db2a0c3281cfba55c6c0a1dbabbb2156b0daef0b3199aae40f14feac6f1a9622eda43a5fe00e2da9eca23d24d3b21272515c13cfff625feeda5c6faf8bb8223fc59f7c89c55bf71127b545fd18ed5d6cf95804d206a051bfd36983c50456450151e34b40df8563cff24768c267f3c1b311bc6eff89426378faa50364bb37f6b922eef805ada76a9ac3ef1f07f76eb29487a66d69c8a3b96ee0cc826bae8b399c8a8302e3e4ad7f0857fa38268a122b1a1bc46c9ffb07268dad8196e59e476aa7e1749475353544370ed812492eb5b3aa9c9239ad99b4a9bc36d7d683392d33af5c74f949b0c46b8d37f29f8170e32f818bd91d50ca59619f6307219a6a99d3b94657fea0c02142fa6900f6da54ce5d0547d1e94a6fd4258957f703c95961d3d953659c0775db974027b50401441dba462939cf6d1f1d680a26954d5cf7348e8f3c4bf3076b8990342f8da0a62f4df53d01f80a77b2acf1439ed6ab38adc5c40ae3adc5a48036a8e986fbf07c85cd4118026de89eed04ba549c4db8363c41288c275dc4ad766a036e84f807ec5fcd809b204425f8a386d3229ea5ec0e383a5debab7607c1907417fbcbbfe9296cd4fea1b6668c5dcbd96e26e1627f9dfd16beb5fb7269d921a59324649f09bef66fabee4e9a3dfadaac926b14de43ac169c41f7f1d995635d9c41a05f1fc5ef899dd9ca66d0b6965aaa8af5e45f0857cf340f3651a1ae81ef3962d931ec0a2124758be4252c525375ea070df97861587b3a9ee9918efd1d63b03011494f3390024aabd7a2ef6414a686b9f38a25d5e0a0627a9b66d07195cff1d5d37da6ce103e504736fea5af508cecae9f7af3ceb93604b9004b018fb3b0b18b9e6b35ffbd52765142c5840ef492e6158a0a</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
@@ -51,7 +155,7 @@
   <entry>
     <title>日记 2020-02-06</title>
     <url>/2020/02/06/%E6%97%A5%E8%AE%B0-2020-02-06/</url>
-    <content><![CDATA[<div id="hexo-blog-encrypt" data-wpm="密码是39位随机字符哟，加油！一定可以试出来哒！" data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容"><div class="hbe-input-container"><input type="password" id="hbePass" placeholder="猜猜密码是什么鸭" /><label>猜猜密码是什么鸭</label><div class="bottom-line"></div></div><script id="hbeData" type="hbeData" data-hmacdigest="347f481d34f19bedd416f1fe19b61e06f05b300baf54e4a7489fde2794fa386e">e2d9d5180b52c2b1e5f4fd1e44a9ace2c313d6ae06a0fd2838d716f63bf1af23631cdf5f0b71d054685620729ec6629a3135213a646b8f264af4c18a410b6b77a4199f553578a6c409975f8b2f4c0e496a19786f2b1cf80eaee9d61e9798f3cb085e7baf3f580501572d108c88b7ad1af1b0555e80be8d98c3eee8ed7d54a848b8855843994f684fb5202eaf3820b1c2fc4ca24cbd4103036343f73bacfacbb3850c16fb1cf1cfa25581c43f8b480acb5bd0e1d281982507b205223ba8eeb51ae3a769057703438482fa80892ddb34d573b79c3d034db7de00c8dc20124ec839130a5ca600f086fb98468bf7ae8e2f7df71e9753902bf15c4906452e49481f59c7f41ce905ccc412122a0eca6e784c618abe26ced484770431f60d2dad4d743167dcd3e1e6821fc5bf5f0e86f8f16927476d6d43db710018b8a81d0180142177df08408d5793d967ff9fa3e36f5ed45f4746fe33dd05906a70e36b3d8745f4d3db0de017446db09d4f59868784ab6a0e4892588430e13500255d0b3bfc149bd6dfe4283045a936672a3eb3f02c4bc79b7be8f2e68e054c34b3f4df0dd371c9ee2074b56b783188ae6e23e0847ac2a59f0dd04c1f7551b6d7625c296e735880fab84ea690404c57fc954f12ed0645c387ab84868ab461a718a0dc5cd559f632b779dae7e6a63609387f487adf79ede1903e15e006190fcb92eb3a9650daf9e8b97e9452ba3c6f0b6c501399be767a2bbf42c4415b74a12d90eb74e345aa0b2b7143216f6b6db91b2084aa51af58f0addc2450f31ebaad4f95c196687300c7a9285068162616266ee034bd356d6a60ad64a335668b5f2581cbc858033a90185384ed7f61cc77f7c610d15aef1e312b34a0a3bb12f0eae02c0ea3720e18752f073a5a3d53856b2480d3c3c20b4b9664b8aedabb203d09bcebdb6cbafb282dc6bec3e0cf05bf03b1e16e8e5261f69cb81591d74762e8bd3868c68ba0695f9d6a5270938b7e4b4e5cc75d7361aac6d792d29c9b24bd0aba83dd63712800404f01284a66473ff821f664136c2d3c3b03123aacb50caaafee72b893f83a7f128242212f8d7b807dcf58e089af4dd1c68c14b177af682ce4ac4db6d16d6e1ef5b4bb459b5e40102c045110ac1a4a9cfd2b1b5f44d526cefc83736c6322bf8dc02aaaafa813c93f00e47cc92873d99ac783bedf11b7f080ba1b6dd3534dde3c2fe4cd04f3bc417310095c7a93e52035f371cbcf961d60ab8362d8058ce749bc8b716c35337d8486c57995cb698ddb20de86e41bede0be39c8c933c9cf5fdc70a2029a252b87728a49f7483272c818fcf9f9d4b4c3363805d40fa5d2673ce30cec2cf350f4cf2169fdc68ba3a45991cf6f937717586b591cfe423547ad6261992ec1e7c485f321e115cac17ff7983da966919e10ff08a095729378792f7d500623308cfe2233a51955f49967f058cddfc49cc14b364fc9eba86fec75d173bcb7770624760cf88846ef12eb1539343b93411811ca5e6e6c2082e9459ddd79473e06da6f73b73c9b810c0bea05ff8707ebf03ae5e4b9124a5f73c1bfd0e8cfdb6cf2445c33748810e0aceaf58bf84edacf958a98375d72584176169b03b46038f3b1264d5f54b4b08af3539a47439bfcf7c36ac963c7cc45b810754c8de0179b7aef743a41b04bbebb914d7e54c68ae80104a9bfad279d4530770d3c8b3a93ec4a7507d5dd4a97fedf691fca9f170da4aeeff3c9ed1238fe87827de3d10f1c3823f9b1e9448f21d7a0b1c2bb9b543ecd8998522df0c7e5e8e979e1be49c798f263d1752457df07193d2697fbadeb3658427a332fecf3bcf090cfac34699cfe8cd675b22f7d04400a5cf429b74ce2e799575f19bd3de348ed13b41e7fe30e08e64aada794da3579c84e62654793b257dae0c58ee4f9a64b89577c4e5b842c3ab7931b3b343be34a5004481b6702e2e6bca527f9cbb047fe162ff8cd72e42f5be56b2247fa84f85be05eded876375f11a78bf857e346358154fdb477e16c46d384d169adc65e9906785fa2d9c90fdb6b60d64059add04abe86d4103795bcf6cb1cacfe046a9ae0ae986158dbb1a132b46b0819efe20966b8d8d98ca3be7084f6afc97d59e7b043f4390480954f75c2b9f454cf264a47d7d5d5c8c1c8e3b2a39334de6ddccf199964ba3fe339c2ed55ebe49127a956b4a94dbf33a651774582c4139aab4c6ff1b96f7a38506520c57d72d3dd8be591b6ba3053be446f9ebfde01d0aee8e4cd7d12c896eb2a3568884256f910fb3fe074f4c3b67e346fc290cd014f77b3e4dcc3f9b15f24349d8e582110d229ce1f49681980d0e8b310068d5651fa312be8709b427f657d32c0f18d1024141f05bda7d4344f36e23f1c7245c4a12c347ce8f8adf9891eb8c7f1135f0f9cde4ff68ae8f8e991cefc13de32a438f25a26e890ff782f691a8b95955ee1d59ab6eb2dea30c14a39487a38715e47160b886b9a67f3a45b87e57e6a616a237915c9d65fd9ca95087f955b0e42289a198eb8ce9315088c0e959250ce731e87e8d08869d3616536ddc3f9257c9174097b7c31653534703664ce7cbe16e3ae090c2de4b89ca4e21c31192fc1a82bddb1f3289cbea3723e5a0993014ecf092aa96d927eb824ea8e1a3a31e7a201e8f355ecfdfe3cd37e9da4e3b8076523a547337fc3fc1b4765baf5fba378756208c8de19bc184b08b02cfaba8c525e02bfbf066a97911f360fef960401435bbc6dd578f0c664c7d5646ad309a7e2a3ddda2a7b210e4f5b878bed334d6a0763ecd972e1e529a15a54a0b9e27b</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+    <content><![CDATA[<div id="hexo-blog-encrypt" data-wpm="密码是39位随机字符哟，加油！一定可以试出来哒！" data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容"><div class="hbe-input-container"><input type="password" id="hbePass" placeholder="猜猜密码是什么鸭" /><label>猜猜密码是什么鸭</label><div class="bottom-line"></div></div><script id="hbeData" type="hbeData" data-hmacdigest="eaf246fa35409599230d38150c9bb7ea94c460196cc56efcb5c4133fe95dfdff">e523fdfb0154da6737f214f86c39c08db4666c5a85c059e6a3837178d51a5039787ae1c1977476f028c95b7f70be02f13e98bc9a6fff3761e8d69373cedc60032ed5ba7a9d65b17af785fb80164cf12f3a4519576e9cb2da5c9e43074ed6808d6c2d9a2111a25893733c662b61feca2cd55f038197211fd42225e03234ad57dbf89ab6a4a76e3fff4290b98276dc967ec29ab02805e9c6ec65fd9cc76d3dd9ee38c77bbb2ac8cd184742f1370285039de0701c642fa03074f51bc604c710b63bb2ee350e1f8091d3c436dd016ca24cbab74e0123f9f50b260ba348bb3991773ea041965f16e011e2fe5759319f68bf67f1517b0a7bc8b1a76649c642013b66aeb3a9e5a492afbc8726d46d3cfdb8d545018c66a13d943c863bf63068a3d6ef043c0ee242688e48cbf3c2740bd45ced0d1f73d4341d77efcd6544ce8334050c6df322d337efd024b4a8d73b6078e08590612237e309be4feb026d081073d12a782f961107e1daa9ca719ed5421a7bc6168623a5b03ee04ecc84ad19277cb0bb22ae20333575521345b0c4f76691d6b9659a8912bbccfd20998b9ca073474d6bd4cf3a9258c1b309545123560e22b288831a745824bb7313ab740ab6b967619fa003c72b855207816cbd9c59630bf274a740af5d27443e9805a248ca4bbe07e8f6c3fb027383d45e9dadf3c78546bfeff1e36aff7473739c5c48e616aadeb5fe79c530e2813c2b8b17abf325d278455ada9c5b45dc380853e29dd7275e24b2a1ec9e2b508f715c026448dc863942ec6a8ff04d8d95fb6eee2f2e8f188e92fc6a5dae5963221fc001916535daee2c6f1de226d775f35af868b0604fa4e81761e7ba97ee9416f797c84bc52da38253592d1136eb0be4f1854ee47bdb6b527791e36f82bc0b498c9c00d9dcdf8b25531fe07b158fbeb9d219e6e2396fe01d07eb88ee240faf8d4f6ff1907c271d9b65cf4347e02a756d684dfcc5668437df4eaaaa50457d2f9219cb0eb8d2d2d2dca4a27b51c4bde848c7ee4fa13bfb8b256b132b8924f28f3924366646b06756b30586d193dadb8397d929a10d4af7c31ccad62c9e70a7d7dfd9c2d43f56755c6eafb6e186e53f092c98b6a9a641cd6f04f21b9c0d9a9aedf2e5aa4cdbd2f9754fcc0251e3f4e53eaecf179b7df9b457c35e43f42d3e368fa53b3a2e401b7f3a929eeff061eb7c32717d511902d28251471a391c3f0bbe1fb71a2b38f415f2ee2d92296cd5b8b90f0ad9106f953e8cf1a3b133bd3df877cb4f7e66dc33e9b54b4ef0138238c22bd1008130438884b12c80472d0fd692997936c63176c681b50288a870d69ea8c7b445e939df70e6d28b51290e958ce2905f9fbc11fa855fb9e0292e27e6143beaa8eff675fabb2a89df4225e9e048ac0263cfb846437e21ea8180fe6f3eaa10f1b68f6b34374c1a72f7619538db3e5c6324f08adb9b04b55034cc6c14d2956a36865646ca391403aa97e05df3e3a789153684a87c2f2b204665a35450ad0fa9a44eb2bc22505072afd4e57e80c17296d30664cfc51c828ec5a08aeab1cb2ccdf91bd4de3015360aed49d93d4a08dea4e0c8c9925d44cb577835079d9e310d4fa2c0f605f051eb0906fdfc08038785bca8346da024d21ded14900472d6a304d62f6bb22f302db03251632ab580fcf95c5693f694d950c0445a4ade79f2ea1e3f3a5d4f2756f26bde8d8ae35ba7ed40c44b5f82fca957d61b5e12713be967f8fa60c262f24bb1910494d53f11ed99c2f1cfd8d0a67e12a5d9a29265565648070c2c9c3deb36676c48cea39e77b14da7eeb80fb0e43112ad7d9127856c0c5651cbc3d2ebe7a415ecf842389008afdb11f2975b2f82d624a469a741bcc9b71740f629d2bcc5e848826041ff7b5bd7c3b14aff378bc4078cada96dd3f76b1d37a45616484279cbd7835dd01cc2a5c6549da13be711e10297b1cb9ffcd4dfe10372a33e625badce90cbdb6aeae4f6d4de5ca5e14d000e4d6e3bbd7abb0d817637bb267b98d81a23fd2121095ee72c17ba8dc42dc90eb52987aa6c549599cdaa1144499841f2327bdbe18f438ef39b2ca6bf517c2faba371f9da7132134d327c5565830c2b3a8d01bc5cc0f4128eaf03c59a8aeca2bf9e7b51ddd07d8a95a6e25c6f3be9f4937f7c74ee61119ae8ee3561787b60e41aa4e4404c52c447c1b6d41246aa01e68af438da4b11df7a3db4d036740ca790ba255e480eaa2e30d02506eebc9896b25a3bc753af4cb2479e18727be574d4d9fd00543fbfbd205074a07d5e6f0e5059d24299f74949a45fefb108d9f25e55d40b03f137d09a51aecec9af505ddfd6484d095f2c7cc70d2909a013efd73a0f06ffcdbc8823cf38d1b917ddd7099c72917e70d0d1db0aff2175668904073e20929e7053a582def01ebc337e259a871469c2f5fb634886ad80e89b4b5737246dd0af37d6cdcfaac683a708e8a6ab6a0c11268f3563410a9dd40ae5bf3ecc2042487c8d0b43839987c21a3684c1ed7d22971e4c4b857ef49123d0aead289740b5ed32e19bd9fda2d7ac0d5c688bf0c44ccfc3b33125e245b40bbb46dc6daf9c28b9ddfc1c7c853015993d7eb96152abfde422967a0a4edb7942547e23ad709af2c3b373db45db49ba84cda6db16ded0b53ac50e2d6c2210d8c2db5bddd83f44095adb56f3340d64fa51d8a56966749a50554ada9298a49e1053ed6f2fd32791c247139ed6b76fe27b4e18b6c854def1f69fb885524435c7003496ff4b386888869a66e9931be9c56a82ef4c56002b06f3b464b4e04c880a5e885fb6cb70b6</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
       <tags>
         <tag>真实的尝试</tag>
       </tags>
@@ -422,7 +526,12 @@
 <p>链接也可以用变量来代替，文档末尾附带变量地址：<br>这个链接用 1 作为网址变量 <a href="http://www.google.com/" target="_blank" rel="noopener">Google</a><br>这个链接用 runoob 作为网址变量 <a href="http://www.runoob.com/" target="_blank" rel="noopener">Runoob</a><br>然后在文档的结尾为变量赋值（网址）</p>
 <p>使用 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd> 重启电脑</p>
 <p>** 正常显示星号 **</p>
-]]></content>
+<p>浅红色文字：<font color="#dd0000">浅红色文字</font><br>深红色文字：<font color="#660000">深红色文字</font><br>浅绿色文字：<font color="#00dd00">浅绿色文字</font><br>深绿色文字：<font color="#006600">深绿色文字</font><br>浅蓝色文字：<font color="#0000dd">浅蓝色文字</font><br>深蓝色文字：<font color="#000066">深蓝色文字</font><br>浅黄色文字：<font color="#dddd00">浅黄色文字</font><br>深黄色文字：<font color="#666600">深黄色文字</font><br>浅青色文字：<font color="#00dddd">浅青色文字</font><br>深青色文字：<font color="#006666">深青色文字</font><br>浅紫色文字：<font color="#dd00dd">浅紫色文字</font><br>深紫色文字：<font color="#660066">深紫色文字</font>  </p>
+<table><tr><td bgcolor=#FF00FF>背景色的设置是按照十六进制颜色值：#7FFFD4</td></tr></table>
+<table><tr><td bgcolor=#FF83FA>背景色的设置是按照十六进制颜色值：#FF83FA</td></tr></table>
+<table><tr><td bgcolor=#D1EEEE>背景色的设置是按照十六进制颜色值：#D1EEEE</td></tr></table>
+<table><tr><td bgcolor=#C0FF3E>背景色的设置是按照十六进制颜色值：#C0FF3E</td></tr></table>
+<table><tr><td bgcolor=#54FF9F>背景色的设置是按照十六进制颜色值：#54FF9F</td></tr></table>]]></content>
       <categories>
         <category>学习</category>
         <category>其他</category>
