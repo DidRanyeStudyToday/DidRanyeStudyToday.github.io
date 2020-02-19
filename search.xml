@@ -1,487 +1,916 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-  
-    
-    <entry>
-      <title>日记 2020-02-15</title>
-      <link href="/2020/02/15/%E6%97%A5%E8%AE%B0-2020-02-15/"/>
-      <url>/2020/02/15/%E6%97%A5%E8%AE%B0-2020-02-15/</url>
-      
-        <content type="html"><![CDATA[<div id="hexo-blog-encrypt" data-wpm="密码是39位随机字符哟，加油！一定可以试出来哒！" data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容"><div class="hbe-input-container"><input type="password" id="hbePass" placeholder="猜猜密码是什么鸭" /><label>猜猜密码是什么鸭</label><div class="bottom-line"></div></div><script id="hbeData" type="hbeData" data-hmacdigest="3f355156f45f560f8c44c31e744f227f07c38d4fff34326d5a1bcf8847529510">97a8dbe95071315ff747a71fcdc28e32a564d1f5ddd502f3a67aaa3daba8a2f9c70da49a338bafa3fd926e1110d57ade59d32e9c346bdfce47499cc8cc6a51fb1ef61cb25dfec41e7865142ff3edf85c7bb0d57b3604c28b4211f1c66dcf4da52fa5a33cae95355120b5058ab6c31ddc</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 真实的尝试 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>思修笔记(腿姐)</title>
-      <link href="/2020/02/15/%E6%80%9D%E4%BF%AE%E7%AC%94%E8%AE%B0-%E8%85%BF%E5%A7%90/"/>
-      <url>/2020/02/15/%E6%80%9D%E4%BF%AE%E7%AC%94%E8%AE%B0-%E8%85%BF%E5%A7%90/</url>
-      
-        <content type="html"><![CDATA[<h2 id="绪论-（选择）"><a href="#绪论-（选择）" class="headerlink" title="绪论 （选择）"></a>绪论 （选择）</h2><h3 id="时代新人以民族复兴为己任"><a href="#时代新人以民族复兴为己任" class="headerlink" title="时代新人以民族复兴为己任"></a>时代新人以民族复兴为己任</h3><p>新时代——时代新人</p><p><strong>钙</strong>、<strong>软骨病</strong>——<strong>理想信念</strong><br><strong>担当</strong>精神——决定人生价值的<strong>最大砝码</strong></p><a id="more"></a><h3 id="思想道德素质与法治修养"><a href="#思想道德素质与法治修养" class="headerlink" title="思想道德素质与法治修养"></a>思想道德素质与法治修养</h3><table><thead><tr><th>区别</th><th>思想道德</th><th>法律</th></tr></thead><tbody><tr><td>调节领域</td><td>大</td><td>小</td></tr><tr><td>调节方式</td><td>说服教育</td><td>国家强制力</td></tr><tr><td>调节目标</td><td>希望改正</td><td>强制改正</td></tr></tbody></table><ul><li>都是基本素质（<font color="#00dd00">先有道德，后有法律</font>）</li><li>都是调节思想行为、人际关系、维护社会秩序的重要手段（平等的，不是谁是谁的目的）</li><li>都是上层建筑，由经济基础决定并服务于它</li><li>思想道德为法律提供<font color="#dddd00">思想</font>指引和价值基础，法律为道德建设提供制度保障</li><li>道德滋养法律、丰富法律、支撑法律（相互也可）。以道德精神和价值促进引领全社会信仰法律</li></ul><h2 id="第一章-人生的青春之问"><a href="#第一章-人生的青春之问" class="headerlink" title="第一章 人生的青春之问"></a>第一章 人生的青春之问</h2><ul><li>人生观（选择）</li><li>人生价值（选择、分析）</li><li>人生矛盾（选择）</li></ul><h3 id="人生观（选择）"><a href="#人生观（选择）" class="headerlink" title="人生观（选择）"></a>人生观（选择）</h3><ol><li>人生观是世界观在对待人生问题上的具体体现，是世界观的重要组成部分</li><li>世界观决定人生观，人生观从属于世界观，没有</li></ol>]]></content>
-      
-      
+<search>
+  <entry>
+    <title>Web前端开发 MOOC 02</title>
+    <url>/2020/02/17/Web%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91-MOOC-02/</url>
+    <content><![CDATA[<h2 id="css布局和定位"><a href="#css布局和定位" class="headerlink" title="css布局和定位"></a>css布局和定位</h2><h3 id="盒子模型"><a href="#盒子模型" class="headerlink" title="盒子模型"></a>盒子模型</h3><h4 id="盒子"><a href="#盒子" class="headerlink" title="盒子"></a>盒子</h4><ul>
+<li>content 内容</li>
+<li>height 高度</li>
+<li>width 宽度</li>
+<li>border 边框</li>
+<li>padding 内边距</li>
+<li>margin 外边距</li>
+</ul>
+<p><img src="http://i1.fuimg.com/708356/93b482f97694cc7b.jpg" alt="Markdown"></p>
+<p><img src="http://i1.fuimg.com/708356/47491f259de30cdc.jpg" alt="Markdown"></p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-id">#box</span>&#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">1px</span> solid</span><br><span class="line">    <span class="comment">/* 边框为1px，实线框 */</span></span><br><span class="line">    ·····</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"box"</span>&gt;</span></span><br><span class="line">    balabala···</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="overflow属性"><a href="#overflow属性" class="headerlink" title="overflow属性"></a>overflow属性</h4><p>内容溢出盒子框，怎么显示</p>
+<ul>
+<li><kbd>overflow: hidden</kbd> 超出部分不显示</li>
+<li><kbd>overflow: scoll</kbd> 显示滚动条</li>
+<li><kbd>overflow: auto</kbd> 如果有超出部分，显示滚动条</li>
+</ul>
+<h4 id="border属性-边框的效果"><a href="#border属性-边框的效果" class="headerlink" title="border属性(边框的效果)"></a>border属性(边框的效果)</h4><ul>
+<li>border-width 宽度 取值有px/thin(细)/medium(中)/thick(粗)</li>
+<li>border-style 取值有dashed(虚线)/dotted(一排点点)/solid(实线)/double(双实线)</li>
+<li>border-color</li>
+</ul>
+<p>border: width style color</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">    <span class="attribute">border</span>:<span class="number">2px</span> solid red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">    <span class="attribute">border-bottom</span>:<span class="number">1px</span> solid red;</span><br><span class="line">    <span class="comment">/* 只设置底部边框 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>应用：水平分割线</p>
+<h4 id="padding（内边距）-margin（外边距）"><a href="#padding（内边距）-margin（外边距）" class="headerlink" title="padding（内边距） margin（外边距）"></a>padding（内边距） margin（外边距）</h4><p>对浏览器默认的设置清零</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">* &#123;</span><br><span class="line">    <span class="attribute">margin</span>:<span class="number">0</span>;</span><br><span class="line">    <span class="attribute">padding</span>:<span class="number">0</span>;</span><br><span class="line">    <span class="comment">/* 只有在取值为0的时候才可以省略单位 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>取值：px，%（外层盒子的宽度和高度）</p>
+<p>分开的：<br><kbd>padding-top</kbd><br><kbd>padding-right</kbd><br><kbd>padding-bottom</kbd><br><kbd>padding-left</kbd></p>
+<p>合在一起：<br>上右下左 (顺时针)</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">margin</span>: 1<span class="selector-tag">px</span> 2<span class="selector-tag">px</span> 3<span class="selector-tag">px</span> 4<span class="selector-tag">px</span>;</span><br><span class="line"><span class="comment">/*      👆  👉  👇  👈 */</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">margin</span>: 1<span class="selector-tag">px</span> 2<span class="selector-tag">px</span>;</span><br><span class="line"><span class="comment">/*     👆👇 👈👉 */</span></span><br></pre></td></tr></table></figure>
+
+<p>将padding换成margin同样</p>
+<p>Tips：</p>
+<ol>
+<li>如果定标签（div）作为样式的名字，每一个盒子独占一行</li>
+<li>上下两个相邻的外边距合并成一个外边距，合并的结果是取两个的最大值</li>
+<li>水平方向上不合并</li>
+</ol>
+<p>水平居中</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* 图片、文字水平居中 */</span></span><br><span class="line"><span class="selector-tag">text-align</span>: <span class="selector-tag">center</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* div水平居中 */</span></span><br><span class="line"><span class="selector-tag">margin</span>: 0 <span class="selector-tag">auto</span>; </span><br><span class="line"><span class="comment">/* 上下可以随便设置，左右设置auto，浏览器根据外层盒子宽度和div区域的宽度再除以二，算出margin-left margin-right */</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h5><p><img src="http://i2.tiimg.com/708356/8f9a5c547725e48b.jpg" alt="Markdown"></p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-id">#newsimglist</span>&#123;</span><br><span class="line">    <span class="attribute">text-align</span>:center;</span><br><span class="line">    <span class="attribute">font-size</span>:<span class="number">0</span>; <span class="comment">/*否则图间有空隙*/</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#newsimglist</span> <span class="selector-tag">img</span>&#123;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">    width:100px; .</span><br><span class="line">    <span class="selector-tag">margin-left</span><span class="selector-pseudo">:5px</span>;</span><br><span class="line">    <span class="selector-tag">border</span>: 1<span class="selector-tag">px</span> <span class="selector-tag">solid</span> <span class="selector-id">#0cf</span>;</span><br><span class="line">    <span class="selector-tag">padding</span><span class="selector-pseudo">:5px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]]></content>
       <categories>
-          
-          <category> 学习 </category>
-          
-          <category> 其他 </category>
-          
-          <category> 政治 </category>
-          
+        <category>学习</category>
+        <category>其他</category>
+        <category>前端</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 思修 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Web前端开发</title>
-      <link href="/2020/02/14/Web%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-      <url>/2020/02/14/Web%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/</url>
-      
-        <content type="html"><![CDATA[<p>更新至 3.css样式 3-4css样式(1)文字样式</p><a id="more"></a><h2 id="css样式"><a href="#css样式" class="headerlink" title="css样式"></a>css样式</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span>&#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">12px</span>;</span><br><span class="line">  <span class="comment">/* 字号 */</span></span><br><span class="line">  <span class="attribute">color</span>: blue;</span><br><span class="line">  <span class="comment">/* 文字颜色 */</span></span><br><span class="line">  <span class="attribute">font-weight</span>: bold;</span><br><span class="line">  <span class="comment">/* 加粗 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="css添加方法"><a href="#css添加方法" class="headerlink" title="css添加方法"></a>css添加方法</h3><p>优先级：行内&gt;内嵌&gt;链接&gt;浏览器默认</p><h4 id="行内"><a href="#行内" class="headerlink" title="行内"></a>行内</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span> = <span class="string">"color:red"</span>&gt;</span></span><br><span class="line">     balabala</span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure><h4 id="内嵌"><a href="#内嵌" class="headerlink" title="内嵌"></a>内嵌</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span></span><br><span class="line">        p&#123;</span><br><span class="line"><span class="css">  <span class="comment">/* 选择器 */</span></span></span><br><span class="line">            color: red;</span><br><span class="line">        &#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure><h4 id="文件"><a href="#文件" class="headerlink" title="文件"></a>文件</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"css/style.css"</span> /&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 链接到  样式表型的文件   路径为css/style.css --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure><h3 id="css选择器"><a href="#css选择器" class="headerlink" title="css选择器"></a>css选择器</h3><h4 id="标签选择器"><a href="#标签选择器" class="headerlink" title="标签选择器"></a>标签选择器</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span></span><br><span class="line">  body&#123;</span><br><span class="line"><span class="css">    <span class="selector-tag">background-color</span>: <span class="selector-id">#ccc</span>;</span></span><br><span class="line">    text-align: center;</span><br><span class="line">    font-size: 12px;</span><br><span class="line">    font: "黑体";</span><br><span class="line">    color: red;</span><br><span class="line">  &#125;</span><br><span class="line">  hr&#123;</span><br><span class="line">    width: 200px;</span><br><span class="line">  &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure><h4 id="类别选择器"><a href="#类别选择器" class="headerlink" title="类别选择器"></a>类别选择器</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span></span><br><span class="line"><span class="css">  <span class="selector-tag">p</span>&#123;<span class="attribute">font-size</span>:<span class="number">12px</span>;&#125;</span></span><br><span class="line"><span class="css">  <span class="selector-class">.one</span>&#123;<span class="attribute">font-size</span>:<span class="number">18px</span>;&#125;</span></span><br><span class="line"><span class="css">  <span class="selector-class">.two</span>&#123;<span class="attribute">font-size</span>:<span class="number">24px</span>&#125;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span> bala <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"one"</span>&gt;</span>bala<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"two"</span>&gt;</span>bala<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure><h4 id="ID选择器"><a href="#ID选择器" class="headerlink" title="ID选择器"></a>ID选择器</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span></span><br><span class="line"><span class="css">  <span class="selector-id">#one</span>&#123;<span class="attribute">font-size</span>:<span class="number">12px</span>;&#125;</span></span><br><span class="line"><span class="css">  <span class="selector-id">#two</span>&#123;<span class="attribute">font-size</span>:<span class="number">24px</span>;&#125;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">"one"</span>&gt;</span>bala<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">"two"</span>&gt;</span>bala<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure><p>ID选择器与类别选择器的区别：</p><ul><li>类别选择器可以多次引用、混用。混用以空格分开</li><li>ID选择器在当前页面是“唯一的引用一次”，可以与class混用，但是不可以多个同时使用 </li></ul><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"id1"</span> <span class="attr">class</span>=<span class="string">"class1 class2"</span>&gt;</span></span><br></pre></td></tr></table></figure><h4 id="嵌套声明"><a href="#嵌套声明" class="headerlink" title="嵌套声明"></a>嵌套声明</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span></span><br><span class="line">  p span&#123;</span><br><span class="line">    color: red;</span><br><span class="line">  &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>bala<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure><h4 id="集体声明"><a href="#集体声明" class="headerlink" title="集体声明"></a>集体声明</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span></span><br><span class="line">  h1,p&#123;</span><br><span class="line"><span class="css">    <span class="selector-tag">text-align</span><span class="selector-pseudo">:center</span>;</span></span><br><span class="line">  &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>bala<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>bala<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure><h4 id="全局声明"><a href="#全局声明" class="headerlink" title="全局声明"></a>全局声明</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span></span><br><span class="line">* &#123;</span><br><span class="line"><span class="css">  <span class="selector-tag">text-align</span><span class="selector-pseudo">:center</span>;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure><h3 id="css的文字样式"><a href="#css的文字样式" class="headerlink" title="css的文字样式"></a>css的文字样式</h3><h4 id="单位与颜色"><a href="#单位与颜色" class="headerlink" title="单位与颜色"></a>单位与颜色</h4><table><thead><tr><th>单位</th><th>描述</th></tr></thead><tbody><tr><td>px</td><td>像素</td></tr><tr><td>em</td><td>字符</td></tr><tr><td>%</td><td>百分比</td></tr></tbody></table><p>层次：<br>html —&gt; head/body —&gt; div —&gt; h1/p</p><table><thead><tr><th>颜色</th><th>描述</th></tr></thead><tbody><tr><td>red</td><td>颜色名</td></tr><tr><td>rgb(255,0,0)</td><td>RGB值 0,0,0为黑</td></tr><tr><td>rgb(100%,0%,0%)</td><td>RGB百分比值</td></tr><tr><td>rgba(255,0,0,1.0)</td><td>RGB值和透明度 0透明，1完全不透明</td></tr><tr><td>#ff0000</td><td>十六进制数 去掉重复位#f00</td></tr></tbody></table><h4 id="文本"><a href="#文本" class="headerlink" title="文本"></a>文本</h4><table><thead><tr><th>属性</th><th>描述</th><th>取值</th></tr></thead><tbody><tr><td>color</td><td>文本颜色</td><td>red #f00 rgb(255,0,0)</td></tr><tr><td>letter-spacing</td><td>字符间距</td><td>2px -3px</td></tr><tr><td>line-height</td><td>行高</td><td>14px 1.5em 120%</td></tr><tr><td>text-align</td><td>对齐</td><td>center left right justify</td></tr><tr><td>text-decoration</td><td>装饰线</td><td>none overline underline line-though</td></tr><tr><td>text-incent</td><td>首行缩进</td><td>2em</td></tr></tbody></table><p>当line-height==height时，文字垂直居中</p><table><thead><tr><th>属性</th><th>描述</th><th>举例</th></tr></thead><tbody><tr><td>font</td><td>所有字体属性一块设置</td><td>font:italic bond 18px/1.5em ‘幼圆’</td></tr><tr><td>font-family</td><td>字体系列</td><td>第一个没有就加载第二个…</td></tr><tr><td>font-size</td><td>字号</td><td>14px 120%</td></tr><tr><td>font-style</td><td>斜体</td><td>italic</td></tr><tr><td>font-weight</td><td>粗体</td><td>bold</td></tr></tbody></table><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">font:italic bond 18px/1.5em '幼圆';</span><br><span class="line">//   斜体   粗体  字号/行高   字体</span><br></pre></td></tr></table></figure><h3 id="css的背景与超链接"><a href="#css的背景与超链接" class="headerlink" title="css的背景与超链接"></a>css的背景与超链接</h3><table><thead><tr><th>背景属性</th><th>举例</th></tr></thead><tbody><tr><td>background</td><td>background: #00FF00 url(bgimage.gif) no-repeat fixed top;</td></tr><tr><td>background-color</td><td></td></tr><tr><td>background-image</td><td>background-image: url(“../../media/examples/lizard.png”);</td></tr><tr><td>background-repeat</td><td>repeat 棋盘状填充 </br> repeat-x/y 横/纵向填充一排/列</br> no-repeat 就一个</td></tr></tbody></table><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">  <span class="attribute">height</span>:<span class="number">30px</span>;</span><br><span class="line">  <span class="attribute">width</span>:<span class="number">600px</span>;</span><br><span class="line">  <span class="attribute">background</span>: <span class="built_in">url</span>(<span class="string">"images/bg1.gif"</span>) repeat-x;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><table><thead><tr><th>链接</th><th>状态</th></tr></thead><tbody><tr><td>a</td><td>所有链接</td></tr><tr><td>a:link</td><td>普通、未被访问的链接</td></tr><tr><td>a:visited</td><td>用户已访问的链接</td></tr><tr><td>a:hover</td><td>鼠标指针位于链接上方悬停</td></tr><tr><td>a:active</td><td>链接被点击的时刻</td></tr></tbody></table><p><kbd>:</kbd> 伪类选择器</p><p>顺序：<br>a:link/visited -&gt; a:hover -&gt; a:active</p><h3 id="列表与表格"><a href="#列表与表格" class="headerlink" title="列表与表格"></a>列表与表格</h3><h4 id="css列表"><a href="#css列表" class="headerlink" title="css列表"></a>css列表</h4><table><thead><tr><th>列表属性</th><th>描述</th></tr></thead><tbody><tr><td>list-style</td><td>所有列表属性</td></tr><tr><td>list-style-image</td><td>为列表项标志设置图像</td></tr><tr><td>list-style-position</td><td>标志的位置</td></tr><tr><td>list-style-type</td><td>标志的类型</td></tr></tbody></table><table><thead><tr><th>list-style-type的取值</th><th>样式</th></tr></thead><tbody><tr><td>none</td><td>无</td></tr><tr><td>disc</td><td>默认，空心圆</td></tr><tr><td>circle</td><td>空心圆</td></tr><tr><td>square</td><td>实心方块</td></tr><tr><td>decimal</td><td>数字</td></tr><tr><td>lower-roman</td><td>小写罗马数字</td></tr><tr><td>upper-roman</td><td>大写罗马数字</td></tr><tr><td>lower-alpha</td><td>小写英文字母</td></tr><tr><td>upper-alpha</td><td>大写英文字母</td></tr><tr><td>lower-Greek</td><td>小写希腊字母</td></tr><tr><td>lower-latin</td><td>小写拉丁字母</td></tr><tr><td>upper-latin</td><td>大写拉丁字母</td></tr></tbody></table><p>|list-style-positionq取值||<br>|inside|列表项标号在文字里|<br>|outside|列表项标号在文字外|</p><p><img src="http://i2.tiimg.com/708356/657cda18144b8cf6.jpg" alt="Markdown"></p><h4 id="css表格"><a href="#css表格" class="headerlink" title="css表格"></a>css表格</h4><p>设置表格的宽和高</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">table</span>&#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">500px</span>;</span><br><span class="line">  <span class="comment">/* 表格宽 */</span></span><br><span class="line">  <span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">  <span class="comment">/* 表格高 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>设置表格的框</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">table</span>,<span class="selector-tag">td</span>,<span class="selector-tag">th</span>&#123;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#eee</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/* table:外框  td:单个小框  th:表头 */</span></span><br></pre></td></tr></table></figure><p>表格框合并</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">table</span>&#123;</span><br><span class="line">  <span class="attribute">border-collapse</span>:collapse;</span><br><span class="line"><span class="comment">/* 将框与框合并，（要不然就有两个框了） */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>奇偶选择器<br><kbd>tr:nth-child(odd)</kbd>:奇数<br><kbd>tr:nth-child(even)</kbd>:偶数</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment">/* 将奇数行都变成#EAF2D3颜色，表头也算一行 */</span></span><br><span class="line"><span class="selector-tag">tr</span><span class="selector-pseudo">:nth-child(odd)</span>&#123;</span><br><span class="line">  <span class="attribute">background</span>: <span class="number">#EAF2D3</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-      
-      
+      <tags>
+        <tag>Web前端</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日记 2020-02-15</title>
+    <url>/2020/02/15/%E6%97%A5%E8%AE%B0-2020-02-15/</url>
+    <content><![CDATA[<div id="hexo-blog-encrypt" data-wpm="密码是39位随机字符哟，加油！一定可以试出来哒！" data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容"><div class="hbe-input-container"><input type="password" id="hbePass" placeholder="猜猜密码是什么鸭" /><label>猜猜密码是什么鸭</label><div class="bottom-line"></div></div><script id="hbeData" type="hbeData" data-hmacdigest="3f355156f45f560f8c44c31e744f227f07c38d4fff34326d5a1bcf8847529510">97a8dbe95071315ff747a71fcdc28e32a564d1f5ddd502f3a67aaa3daba8a2f9c70da49a338bafa3fd926e1110d57ade59d32e9c346bdfce47499cc8cc6a51fb1ef61cb25dfec41e7865142ff3edf85c7bb0d57b3604c28b4211f1c66dcf4da52fa5a33cae95355120b5058ab6c31ddc</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+      <tags>
+        <tag>真实的尝试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>思修笔记(腿姐)</title>
+    <url>/2020/02/15/%E6%80%9D%E4%BF%AE%E7%AC%94%E8%AE%B0-%E8%85%BF%E5%A7%90/</url>
+    <content><![CDATA[<h2 id="绪论-（选择）"><a href="#绪论-（选择）" class="headerlink" title="绪论 （选择）"></a>绪论 （选择）</h2><h3 id="时代新人以民族复兴为己任"><a href="#时代新人以民族复兴为己任" class="headerlink" title="时代新人以民族复兴为己任"></a>时代新人以民族复兴为己任</h3><p>新时代——时代新人</p>
+<p><strong>钙</strong>、<strong>软骨病</strong>——<strong>理想信念</strong><br><strong>担当</strong>精神——决定人生价值的<strong>最大砝码</strong></p>
+<a id="more"></a>
+
+<h3 id="思想道德素质与法治修养"><a href="#思想道德素质与法治修养" class="headerlink" title="思想道德素质与法治修养"></a>思想道德素质与法治修养</h3><table>
+<thead>
+<tr>
+<th>区别</th>
+<th>思想道德</th>
+<th>法律</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>调节领域</td>
+<td>大</td>
+<td>小</td>
+</tr>
+<tr>
+<td>调节方式</td>
+<td>说服教育</td>
+<td>国家强制力</td>
+</tr>
+<tr>
+<td>调节目标</td>
+<td>希望改正</td>
+<td>强制改正</td>
+</tr>
+</tbody></table>
+<ul>
+<li>都是基本素质（<font color="#00dd00">先有道德，后有法律</font>）</li>
+<li>都是调节思想行为、人际关系、维护社会秩序的重要手段（平等的，不是谁是谁的目的）</li>
+<li>都是上层建筑，由经济基础决定并服务于它</li>
+<li>思想道德为法律提供<font color="#dddd00">思想</font>指引和价值基础，法律为道德建设提供制度保障</li>
+<li>道德滋养法律、丰富法律、支撑法律（相互也可）。以道德精神和价值促进引领全社会信仰法律</li>
+</ul>
+<h2 id="第一章-人生的青春之问"><a href="#第一章-人生的青春之问" class="headerlink" title="第一章 人生的青春之问"></a>第一章 人生的青春之问</h2><ul>
+<li>人生观（选择）</li>
+<li>人生价值（选择、分析）</li>
+<li>人生矛盾（选择）</li>
+</ul>
+<h3 id="人生观（选择）"><a href="#人生观（选择）" class="headerlink" title="人生观（选择）"></a>人生观（选择）</h3><ol>
+<li>人生观是世界观在对待人生问题上的具体体现，是世界观的重要组成部分</li>
+<li>世界观决定人生观，人生观从属于世界观，没有</li>
+</ol>
+]]></content>
       <categories>
-          
-          <category> 学习 </category>
-          
-          <category> 其他 </category>
-          
-          <category> 前端 </category>
-          
+        <category>学习</category>
+        <category>其他</category>
+        <category>政治</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> Web前端 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>速记 2020-02-14</title>
-      <link href="/2020/02/14/%E9%80%9F%E8%AE%B0-2020-02-14/"/>
-      <url>/2020/02/14/%E9%80%9F%E8%AE%B0-2020-02-14/</url>
-      
-        <content type="html"><![CDATA[<div id="hexo-blog-encrypt" data-wpm="密码是39位随机字符哟，加油！一定可以试出来哒！" data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容"><div class="hbe-input-container"><input type="password" id="hbePass" placeholder="猜猜密码是什么鸭" /><label>猜猜密码是什么鸭</label><div class="bottom-line"></div></div><script id="hbeData" type="hbeData" data-hmacdigest="f2e3e98afc94d318c6188e44a082d8516993582bb6f97f4a11179f7a956c7c0c">f4751c08a455ede7e815097a2e10c2105ad559a6de0d705f175ec5cb8ca87af93e3584fec341a62c2316ef0fea8fa6d219f6f042294203c4b9321e3db43a7bf47f38666b6745aec8839fca7ff94238d47c161bf68824f6964395b42b626fe35c26e4fe18cf11fe5508a7d7a33fd3facb2985f149642b6618263f982423779076241e6d48b7370452c4b978d5a974646ecccfc35796a42f6b9ad985932fdd0f93482221d505fc35b2014ec80dd611c38f5379a421956dec07f01e4165a20a1da3a6814ea75298196fe9559434fd7c777f6aa8d66baf328a19d8a19914bb292357f2f58cb61685c5643f2606d70e52fa268f93ed82cfd915a8cd0dd5999683c3c7ccc5c572f538e8ab9eb8a59703913c43a3adcdb085719a0c2d76866da66a7b0db5ef0b3dfd91195c71b98af6acf985bb6f077404e8c1fcba0bb2459368692e04002167255a69ff03c0594863e0c2b3abbb37037de2a31c815cbd42042730b357af37152292c1e39736d7e46d9df10a669841dfaea4824b663db9582a8dc780d655de16888633250bbf5f058048ce8ef31eaf2490731aaf7c0e723099115fb2d63a30ad276bb23e4f8b266c9dd5184de854e35ea309fdfa9a9c4098491d2b1df071ca40f2da5741e71606f1676ccdf73ff95a1fc56c18e15dbccdef3057673bae8ef81f39f8fe5a674c65ed5663dc4745af79ba1c8f7fd5265a32fc3ffa342857d2fb97dbd533214a1d1c8b39ed93b6cf2db0d09e5a6dc91c75ec7851869be521d2768a305939e31a01e20e690234457e2f84e71cd765f9b3a96f4cd5e4e98e3d7eef1451a139c2077caadf5fd81cfe8ad625df5ee6f5f6db2a0c3281cfba55c6c0a1dbabbb2156b0daef0b3199aae40f14feac6f1a9622eda43a5fe00e2da9eca23d24d3b21272515c13cfff625feeda5c6faf8bb8223fc59f7c89c55bf71127b545fd18ed5d6cf95804d206a051bfd36983c50456450151e34b40df8563cff24768c267f3c1b311bc6eff89426378faa50364bb37f6b922eef805ada76a9ac3ef1f07f76eb29487a66d69c8a3b96ee0cc826bae8b399c8a8302e3e4ad7f0857fa38268a122b1a1bc46c9ffb07268dad8196e59e476aa7e1749475353544370ed812492eb5b3aa9c9239ad99b4a9bc36d7d683392d33af5c74f949b0c46b8d37f29f8170e32f818bd91d50ca59619f6307219a6a99d3b94657fea0c02142fa6900f6da54ce5d0547d1e94a6fd4258957f703c95961d3d953659c0775db974027b50401441dba462939cf6d1f1d680a26954d5cf7348e8f3c4bf3076b8990342f8da0a62f4df53d01f80a77b2acf1439ed6ab38adc5c40ae3adc5a48036a8e986fbf07c85cd4118026de89eed04ba549c4db8363c41288c275dc4ad766a036e84f807ec5fcd809b204425f8a386d3229ea5ec0e383a5debab7607c1907417fbcbbfe9296cd4fea1b6668c5dcbd96e26e1627f9dfd16beb5fb7269d921a59324649f09bef66fabee4e9a3dfadaac926b14de43ac169c41f7f1d995635d9c41a05f1fc5ef899dd9ca66d0b6965aaa8af5e45f0857cf340f3651a1ae81ef3962d931ec0a2124758be4252c525375ea070df97861587b3a9ee9918efd1d63b03011494f3390024aabd7a2ef6414a686b9f38a25d5e0a0627a9b66d07195cff1d5d37da6ce103e504736fea5af508cecae9f7af3ceb93604b9004b018fb3b0b18b9e6b35ffbd52765142c5840ef492e6158a0a</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 思考的尝试 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>日记 2020-02-14</title>
-      <link href="/2020/02/14/%E6%97%A5%E8%AE%B0-2020-02-14/"/>
-      <url>/2020/02/14/%E6%97%A5%E8%AE%B0-2020-02-14/</url>
-      
-        <content type="html"><![CDATA[<div id="hexo-blog-encrypt" data-wpm="密码是39位随机字符哟，加油！一定可以试出来哒！" data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容"><div class="hbe-input-container"><input type="password" id="hbePass" placeholder="猜猜密码是什么鸭" /><label>猜猜密码是什么鸭</label><div class="bottom-line"></div></div><script id="hbeData" type="hbeData" data-hmacdigest="61979f7180852951cbe87aed817cbcac3339c600eef6cd0a1850e7d5e359db02">39fc8cdbcb12a5dc9eb1b1e2e6b1a6652d7d3869a87ffea3cdd833aab85dc9ac21b6a4e3415a8e9d2e8960441d2b0a9c1e35ef041093880422d151fe3d894b87cc9884e675ff9e2e3ba15a3e55375463d23e7745960ce1c2e7bfa324886e8e52fd44d08fbaf70fb8b4007477107489642c0ae94b332f480c1dd2dfec8a0c672059ea47ad350b645c27705d7b831f382e09e11ed1e315d42cdf215feb134fa9176888449442add2fcf412009dc80f94a122df18dad3d89b799715e5398043170ff903ee273932619622c8a028ec184f189d4b4c3408a849717d1ff128e433d3c6389f3df1f6012c173e6f266a0f7da1b968a62af3a9e551c49dd34c81c2b30d3796f0fe4c774348e16ce65439ab7ba522f11fac00e7f8bf41712814c9ef8d9148d3002de56b7b296825a97227038f6c166ee5351e216779886fed7933c84e53a63d773048e887ce8ae1ff85b312fc009366745151da3236501c44f43ec65aeb29b59ae4c6578b23e476d9266dc19a08fc2b6901c0530c3a7ebc95b6df79042f5b7ed88a6624eda8de47466bc04e102cc33f73e50d410b06bcdb3d37d7736222f1b962a2877108705961e22d5ab76bbb8ea6c908e9e768f759a639944314000ea7b0e093e1441d9a11bbb907a5ec12da9ce7b53737a36d1d572bba4a0824f2a75b6e7723459303289ccadb0a23b955ba065bbbf5db70e5437788ed11e7de1235226ff3c67d8667b84d077ec96b99215cabae83ddb447e09d8b6bdd73cd4e49b783b6517c3adca2f13bc889fc0f18be1c39</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 真实的尝试 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>日记 2020-02-13</title>
-      <link href="/2020/02/13/%E6%97%A5%E8%AE%B0-2020-02-13/"/>
-      <url>/2020/02/13/%E6%97%A5%E8%AE%B0-2020-02-13/</url>
-      
-        <content type="html"><![CDATA[<div id="hexo-blog-encrypt" data-wpm="密码是39位随机字符哟，加油！一定可以试出来哒！" data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容"><div class="hbe-input-container"><input type="password" id="hbePass" placeholder="猜猜密码是什么鸭" /><label>猜猜密码是什么鸭</label><div class="bottom-line"></div></div><script id="hbeData" type="hbeData" data-hmacdigest="2b1d58012982ad825fc3400802eb7e39445bab46fa0276d9b676dc842e276e3b">4ff004efb94f35f0721b7f93df9d3fb033a5fbdfeb99f05a142e2af294a6cfd36f9c3e34642f5321a24096ca1f12e6390f6778d07ffbf4e8f8aac8d8a1cdba95abcfa8ea1a836a27a019f0954b561a40dd781560465be58ae76c07561f6f927a9e5ae79d85c15c7111f1779e3f999b192020b2514282680788897925fa61bade002d192650cf650708edc3ee71499f96044b53b7449cee703c051ec161abba3421c52f4413762b6a88e969c6e395caa566ad635845ff0252d4bc8d8744db75e910cbe3fedd4f4149d0107fe7ac036d9265f1f8067c779d25bcfa2fb38c66f13d36a2432690a3f9198d9dcfd615565d947b1b67cd69159fe350a8ad3fbd20133255869aae3848878e2f53de9f7a296823e1ec0bde1347c31cd306075b6ee105d620cd6e59db4a100600cad7c4fa62ff8578eff732381bc15166c126ab73b090837f11896d5055f9d614ecf92f86a03642925112d76093ce5964754d01681c0d2145a557389067be746ea093b3ad807987e3874e1fdc935d3803fa832302317ba4906e527542cfb0a1a7505846ecdb0105a3b0257d30ba2edb841d197828bc5b14ca0bac556bfe5755830e2f046c451c657f11f028685aa107d5a944fbf1674a5ca7399799d8e6352d2dcb7957864fe49c7b6662d4576bedd06a0d6324a5c51f08de3f09ca90bd8aacabec9759e7a90e153453f2055f93e15c312426d6ec6bbd0eced20afcd817fab54f7c2208ddc06cc7473fe6d7fbebb6ccdf483a523edcca98d0ca35033661e55e6c7ce774e69ed0f62d8327380e2baf1bcaed0511a8146554323fff7f4a16e65dbae36b42684ac3b349e586f8e9bd810c0f51a5ac7e45552a99cf28383bc72cbb10d26eaa680fdd6b386d341c05c681d2d91953b1b3b3618a882ce8d94297a41805acd90b0586374cae12d12fd4c9fb1394e41f416c15a991ce5ac432fc90714e4dcfb7d6c007991eacd5703028c3cd101eeb8a7dbb963ab18191b0de8e1294ad800dce5a6e89ae27cc5a8f913a98f493806e674fad799f97d907d4851bfc25adbf09e53e4af2007278ba57cc279d50bdc3963ec03d38b65eb119cc2d3e42ad6ac3fec104cfd23ae9081c9a040499874645d2a6b41f1def909af925d00312a5e2b986517f1512185655c9ffa7343bdf1e819b54bf661aa08861b000634d33e9f94faa7d31f18498c7d848d04b40cdaccb12590fc8e796aa7ffa1767afa5bfd368802ada738a5cf1d192fdddf0418bc9a9a2b111e5387d3192fa8c7afc8b1e12e4da9a299c1e35bbe0d9fb06ba09c8db7566138a6fa30438d88e786cce3bdc15f444a69d5e2baa03df6814ab179bf2ffaaa34f4a7012b575f20941e2dfedb17812a06d442d255b2843d9f1b189256bd580c0f91010fc7352303c4243486dc9d52e4516ab053bf95ab4fe631e839bbe6a0e2e752a34a938fa46d9b1b3ec0b8d40397c47074c6bfff031405aa68958f49516c1077f3f5ad23852c8f6a8fa9f54eb60763d704c512e02a9d1ee17611063c1b13fc00638741dc12e51bfe694b746edce3ee81bc828d60c54980b15b0f512de5b98a5a7044bbbb4f5051d17a7633ee760befc74dca0879b1871e7f9fe3c10b0fb6ee563087a45443ab0fb0af88bbd5a53ada49d01954ed3ba5fa69016d09ff8366d72ac95c77667ba99ce7a01a95c6463e34ea0e58faf7e4e24b725f2b26310c555f02d7301614f36669f56089a7b065b00ff9c9c5ed4c454a055600f87158c18137edcee3024e3c9cac751da5b694ee2ebbfdd64896d2b57426a513ca5f74593e2b1137dbb371b620c67709dffecf862d5c11093f4084abc177fcf2431335e3229a29cb45e23a9a85758fd3431335785c9c28b73b4ce56dcf648e8e3aa9a0504af9b071a8d10c7f2d9b1644626c884f30951419946731d5f4adfd87d6e9410bc35e635444259e4323d46169b8fd30f623f8ae213b431a2b7e20e37d4cfc7bb8dc00e94b73feeb8493acd59789f449383a2008675d35c58b856640a72967d20771177538460a84357fd5d87e777a8b72e723edeb9b700b16f45fe0251957fcb691dcef9305ebeeccb13701b87d6b080ccd5733f00a96cbd9d73e78286054198a441343092172002b9bb158413df62b952f3dc3541bda18111c4ccb4400f75aa2194beb9dfb45b191b2b9455fe7a8ca0c128466d3b23da252f1a2af8d978ef96a4ddfb8359ee2c9c6f6cec19694b22a6346a99322eecb2cfa247f7f6280547f58b6d425abdcb7e8fea64502be061a143dd70dd8945ff352d6ab8dad262c41210969963890513164b1e60c16cc814a58fc794b6dcd02c830658c88ce1c6fe7e132983e93235f6467ac70dd18a0df5e06a5391e16ae16e8ad02ec27cc0043f1b240cafe02e2fc39df9548663c3a1cbbf6aeb86fc57acc4815c8e757b01015957c01fa9fcde251225b979e511c01fac66d0a5c24412970b18271df6acd235fe7fc40471d5f5a63520acb71b47643b610a5702310bfe7b1c54caa5a99468a46de5e221abe54a7fe1eeab7c4a485b83ac16d2e37930c9e4e6c24eeb36591434bf0ee5bbfbeed9a50c27e284498f5fb4d2d717f74aad4eb5935c5956c74ecd3e8f92742ebe28d969416ff7551e425245443dda116a80d6ef28f38fb4105939ef9e3fc5a16a463899ab45518f1349b0597cc8137785c2e7035e1cf1fae2ac48ef427b8c13f4c99eee9f7cf97ab1796500dee64767fe784cd267b6e97244b4a2c8124376bd924d10dba4fecce832afe8db4d3c6c40d0c31023240c2c4315fe9bc4e592002601f564b8294a479c91c839614df412cc97bc6c289e32f0396f7d4cd1a34d747c2af833d9c4248377a9e9154e5e91770ca550c883c4b10ad5805bd37963273e93d92c9bf894693b50b0ec3a61de1d330b016bec02e4fb65185c743e0f2cec3f4d6274f6cf7e082dc3dd98f00c0b07c951a939366e1a803420099cef9aac8bb67599dd54f4e4ee7e2f9aebf64fbeb00d2f2224381860ad02d242faab73cdaea04f920ab7ca635733db3108da5aa0f613b38527eef77433a2e9a75a494cf8448410b24938b36041d1dbf73cd867c8e40f713f95af0dc0b718df551e8bd5eea75afbe1b66a5d82834f5e7606115766b92cc28a7d6a27ffe8e4d27dd607f19b49d4b341062b88e9d5b907c915ad62f86773ed3f62c82395f36f46aa56be0493b173deaad6c9b06acd122cb566e0cc1081a1a6848c8b68f420a05e4caa7c5431d58416a08a72a92de0554568647b2182d70caebbec6a62f7d3db9cfb5eecc584b2f9988e6cfbd1b103ee9b231ca9301d6fbdd445c7c55b8215da3fc02c7765852022e6109cd6bd49a7d00a1fa3c5ad9013fe2b40a5b737ab20ae648bb6a0c1ae14852b772417fd4df24e0ecbe80e3204a9954c849276136f9fc267c0c8fa5a1c1356318fd39b2b6bab4cc4b5f8eb6ebf0e2747efea6eb7e9ea170c6bca4d77edd48e051c5df1748ce7c899daccf020e2ce323821dec3c61c395238887586c48826f3ed589d8dd44441d35efab4f354a458380ef5319ee5343a94b508c9035859e5cf1516941dfe6258b697473eac4ef3e3130e2ba10a0cac39b6284c30f9ede4c50b91a7a66a554938528e8e272d69a60890606b8575f44a6b3af9</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 真实的尝试 </tag>
-            
-            <tag> 新型冠状病毒 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>日记 2020-02-07</title>
-      <link href="/2020/02/07/%E6%97%A5%E8%AE%B0-2020-02-07/"/>
-      <url>/2020/02/07/%E6%97%A5%E8%AE%B0-2020-02-07/</url>
-      
-        <content type="html"><![CDATA[<div id="hexo-blog-encrypt" data-wpm="密码是39位随机字符哟，加油！一定可以试出来哒！" data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容"><div class="hbe-input-container"><input type="password" id="hbePass" placeholder="猜猜密码是什么鸭" /><label>猜猜密码是什么鸭</label><div class="bottom-line"></div></div><script id="hbeData" type="hbeData" data-hmacdigest="666e97a62197b93cfeba1de42d723b538070a845fc96651fddda60f839c5a246">75bbd52578c558b499637e471bb74528eb2041d1fdace9fb3cbe2f96b21782ef7ade2221b6330d9990ff20ce2921533e35d1e3ac4522f2acbfdb5127d4a41f94a92c2de13418acfbbd10489f97aaa349d9fb97019c01f02696be4d1b6d7302446d92fb31d98dbda3ba01db24c84e446ee0804d78e738d55f4303719de693633265babba00daee45270e402271e11866ceaca19ad89f86a0e7df2b619cd90053b3babb5ce8d624b9e5d0144834ea053b0e894c318cb819a22e931e891dc0d7ca9814946647511e27fd8039847b82d510595e3f26b0edf5500d903858298c79629b72f7359d1c821383d560ca5da2c3a2e880e85d94729ca4cbb21619782aae8bb22cf90d00f858d09134bc93f6e5110dd0f23a8682259ebf0efb47fbc4b4e3a58d7a2bb2c2352f51ab3bffb9a551db759</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 真实的尝试 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>日记 2020-02-06</title>
-      <link href="/2020/02/06/%E6%97%A5%E8%AE%B0-2020-02-06/"/>
-      <url>/2020/02/06/%E6%97%A5%E8%AE%B0-2020-02-06/</url>
-      
-        <content type="html"><![CDATA[<div id="hexo-blog-encrypt" data-wpm="密码是39位随机字符哟，加油！一定可以试出来哒！" data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容"><div class="hbe-input-container"><input type="password" id="hbePass" placeholder="猜猜密码是什么鸭" /><label>猜猜密码是什么鸭</label><div class="bottom-line"></div></div><script id="hbeData" type="hbeData" data-hmacdigest="eaf246fa35409599230d38150c9bb7ea94c460196cc56efcb5c4133fe95dfdff">e523fdfb0154da6737f214f86c39c08db4666c5a85c059e6a3837178d51a5039787ae1c1977476f028c95b7f70be02f13e98bc9a6fff3761e8d69373cedc60032ed5ba7a9d65b17af785fb80164cf12f3a4519576e9cb2da5c9e43074ed6808d6c2d9a2111a25893733c662b61feca2cd55f038197211fd42225e03234ad57dbf89ab6a4a76e3fff4290b98276dc967ec29ab02805e9c6ec65fd9cc76d3dd9ee38c77bbb2ac8cd184742f1370285039de0701c642fa03074f51bc604c710b63bb2ee350e1f8091d3c436dd016ca24cbab74e0123f9f50b260ba348bb3991773ea041965f16e011e2fe5759319f68bf67f1517b0a7bc8b1a76649c642013b66aeb3a9e5a492afbc8726d46d3cfdb8d545018c66a13d943c863bf63068a3d6ef043c0ee242688e48cbf3c2740bd45ced0d1f73d4341d77efcd6544ce8334050c6df322d337efd024b4a8d73b6078e08590612237e309be4feb026d081073d12a782f961107e1daa9ca719ed5421a7bc6168623a5b03ee04ecc84ad19277cb0bb22ae20333575521345b0c4f76691d6b9659a8912bbccfd20998b9ca073474d6bd4cf3a9258c1b309545123560e22b288831a745824bb7313ab740ab6b967619fa003c72b855207816cbd9c59630bf274a740af5d27443e9805a248ca4bbe07e8f6c3fb027383d45e9dadf3c78546bfeff1e36aff7473739c5c48e616aadeb5fe79c530e2813c2b8b17abf325d278455ada9c5b45dc380853e29dd7275e24b2a1ec9e2b508f715c026448dc863942ec6a8ff04d8d95fb6eee2f2e8f188e92fc6a5dae5963221fc001916535daee2c6f1de226d775f35af868b0604fa4e81761e7ba97ee9416f797c84bc52da38253592d1136eb0be4f1854ee47bdb6b527791e36f82bc0b498c9c00d9dcdf8b25531fe07b158fbeb9d219e6e2396fe01d07eb88ee240faf8d4f6ff1907c271d9b65cf4347e02a756d684dfcc5668437df4eaaaa50457d2f9219cb0eb8d2d2d2dca4a27b51c4bde848c7ee4fa13bfb8b256b132b8924f28f3924366646b06756b30586d193dadb8397d929a10d4af7c31ccad62c9e70a7d7dfd9c2d43f56755c6eafb6e186e53f092c98b6a9a641cd6f04f21b9c0d9a9aedf2e5aa4cdbd2f9754fcc0251e3f4e53eaecf179b7df9b457c35e43f42d3e368fa53b3a2e401b7f3a929eeff061eb7c32717d511902d28251471a391c3f0bbe1fb71a2b38f415f2ee2d92296cd5b8b90f0ad9106f953e8cf1a3b133bd3df877cb4f7e66dc33e9b54b4ef0138238c22bd1008130438884b12c80472d0fd692997936c63176c681b50288a870d69ea8c7b445e939df70e6d28b51290e958ce2905f9fbc11fa855fb9e0292e27e6143beaa8eff675fabb2a89df4225e9e048ac0263cfb846437e21ea8180fe6f3eaa10f1b68f6b34374c1a72f7619538db3e5c6324f08adb9b04b55034cc6c14d2956a36865646ca391403aa97e05df3e3a789153684a87c2f2b204665a35450ad0fa9a44eb2bc22505072afd4e57e80c17296d30664cfc51c828ec5a08aeab1cb2ccdf91bd4de3015360aed49d93d4a08dea4e0c8c9925d44cb577835079d9e310d4fa2c0f605f051eb0906fdfc08038785bca8346da024d21ded14900472d6a304d62f6bb22f302db03251632ab580fcf95c5693f694d950c0445a4ade79f2ea1e3f3a5d4f2756f26bde8d8ae35ba7ed40c44b5f82fca957d61b5e12713be967f8fa60c262f24bb1910494d53f11ed99c2f1cfd8d0a67e12a5d9a29265565648070c2c9c3deb36676c48cea39e77b14da7eeb80fb0e43112ad7d9127856c0c5651cbc3d2ebe7a415ecf842389008afdb11f2975b2f82d624a469a741bcc9b71740f629d2bcc5e848826041ff7b5bd7c3b14aff378bc4078cada96dd3f76b1d37a45616484279cbd7835dd01cc2a5c6549da13be711e10297b1cb9ffcd4dfe10372a33e625badce90cbdb6aeae4f6d4de5ca5e14d000e4d6e3bbd7abb0d817637bb267b98d81a23fd2121095ee72c17ba8dc42dc90eb52987aa6c549599cdaa1144499841f2327bdbe18f438ef39b2ca6bf517c2faba371f9da7132134d327c5565830c2b3a8d01bc5cc0f4128eaf03c59a8aeca2bf9e7b51ddd07d8a95a6e25c6f3be9f4937f7c74ee61119ae8ee3561787b60e41aa4e4404c52c447c1b6d41246aa01e68af438da4b11df7a3db4d036740ca790ba255e480eaa2e30d02506eebc9896b25a3bc753af4cb2479e18727be574d4d9fd00543fbfbd205074a07d5e6f0e5059d24299f74949a45fefb108d9f25e55d40b03f137d09a51aecec9af505ddfd6484d095f2c7cc70d2909a013efd73a0f06ffcdbc8823cf38d1b917ddd7099c72917e70d0d1db0aff2175668904073e20929e7053a582def01ebc337e259a871469c2f5fb634886ad80e89b4b5737246dd0af37d6cdcfaac683a708e8a6ab6a0c11268f3563410a9dd40ae5bf3ecc2042487c8d0b43839987c21a3684c1ed7d22971e4c4b857ef49123d0aead289740b5ed32e19bd9fda2d7ac0d5c688bf0c44ccfc3b33125e245b40bbb46dc6daf9c28b9ddfc1c7c853015993d7eb96152abfde422967a0a4edb7942547e23ad709af2c3b373db45db49ba84cda6db16ded0b53ac50e2d6c2210d8c2db5bddd83f44095adb56f3340d64fa51d8a56966749a50554ada9298a49e1053ed6f2fd32791c247139ed6b76fe27b4e18b6c854def1f69fb885524435c7003496ff4b386888869a66e9931be9c56a82ef4c56002b06f3b464b4e04c880a5e885fb6cb70b6</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 真实的尝试 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>git用法</title>
-      <link href="/2020/02/02/git%E7%94%A8%E6%B3%95/"/>
-      <url>/2020/02/02/git%E7%94%A8%E6%B3%95/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
+      <tags>
+        <tag>思修</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Web前端开发 MOOC 01</title>
+    <url>/2020/02/14/Web%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91-MOOC-01/</url>
+    <content><![CDATA[<p>第三章 css样式 笔记 已完成</p>
+<a id="more"></a>
+
+<h2 id="css样式"><a href="#css样式" class="headerlink" title="css样式"></a>css样式</h2><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">p</span>&#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">12px</span>;</span><br><span class="line">  <span class="comment">/* 字号 */</span></span><br><span class="line">  <span class="attribute">color</span>: blue;</span><br><span class="line">  <span class="comment">/* 文字颜色 */</span></span><br><span class="line">  <span class="attribute">font-weight</span>: bold;</span><br><span class="line">  <span class="comment">/* 加粗 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="css添加方法"><a href="#css添加方法" class="headerlink" title="css添加方法"></a>css添加方法</h3><p>优先级：行内&gt;内嵌&gt;链接&gt;浏览器默认</p>
+<h4 id="行内"><a href="#行内" class="headerlink" title="行内"></a>行内</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span> = <span class="string">"color:red"</span>&gt;</span></span><br><span class="line">     balabala</span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="内嵌"><a href="#内嵌" class="headerlink" title="内嵌"></a>内嵌</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span></span><br><span class="line">        p&#123;</span><br><span class="line"><span class="css">  <span class="comment">/* 选择器 */</span></span></span><br><span class="line">            color: red;</span><br><span class="line">        &#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="文件"><a href="#文件" class="headerlink" title="文件"></a>文件</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"css/style.css"</span> /&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 链接到  样式表型的文件   路径为css/style.css --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="css选择器"><a href="#css选择器" class="headerlink" title="css选择器"></a>css选择器</h3><h4 id="标签选择器"><a href="#标签选择器" class="headerlink" title="标签选择器"></a>标签选择器</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span></span><br><span class="line">  body&#123;</span><br><span class="line"><span class="css">    <span class="selector-tag">background-color</span>: <span class="selector-id">#ccc</span>;</span></span><br><span class="line">    text-align: center;</span><br><span class="line">    font-size: 12px;</span><br><span class="line">    font: "黑体";</span><br><span class="line">    color: red;</span><br><span class="line">  &#125;</span><br><span class="line"><span class="css">  <span class="comment">/* 主体 */</span></span></span><br><span class="line">  hr&#123;</span><br><span class="line">    width: 200px;</span><br><span class="line">  &#125;</span><br><span class="line"><span class="css">  <span class="comment">/* 分割线 */</span></span></span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="类别选择器"><a href="#类别选择器" class="headerlink" title="类别选择器"></a>类别选择器</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span></span><br><span class="line"><span class="css">  <span class="selector-tag">p</span>&#123;<span class="attribute">font-size</span>:<span class="number">12px</span>;&#125;</span></span><br><span class="line"><span class="css">  <span class="selector-class">.one</span>&#123;<span class="attribute">font-size</span>:<span class="number">18px</span>;&#125;</span></span><br><span class="line"><span class="css">  <span class="selector-class">.two</span>&#123;<span class="attribute">font-size</span>:<span class="number">24px</span>&#125;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span> bala <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"one"</span>&gt;</span>bala<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"two"</span>&gt;</span>bala<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="ID选择器"><a href="#ID选择器" class="headerlink" title="ID选择器"></a>ID选择器</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span></span><br><span class="line"><span class="css">  <span class="selector-id">#one</span>&#123;<span class="attribute">font-size</span>:<span class="number">12px</span>;&#125;</span></span><br><span class="line"><span class="css">  <span class="selector-id">#two</span>&#123;<span class="attribute">font-size</span>:<span class="number">24px</span>;&#125;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">"one"</span>&gt;</span>bala<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">"two"</span>&gt;</span>bala<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>ID选择器与类别选择器的区别：</p>
+<ul>
+<li>类别选择器可以多次引用、混用。混用以空格分开</li>
+<li>ID选择器在当前页面是“唯一的引用一次”，可以与class混用，但是不可以多个同时使用 </li>
+</ul>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"id1"</span> <span class="attr">class</span>=<span class="string">"class1 class2"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+<h4 id="嵌套声明"><a href="#嵌套声明" class="headerlink" title="嵌套声明"></a>嵌套声明</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span></span><br><span class="line">  p span&#123;</span><br><span class="line">    color: red;</span><br><span class="line">  &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>bala<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="集体声明"><a href="#集体声明" class="headerlink" title="集体声明"></a>集体声明</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span></span><br><span class="line">  h1,p&#123;</span><br><span class="line"><span class="css">    <span class="selector-tag">text-align</span><span class="selector-pseudo">:center</span>;</span></span><br><span class="line">  &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>bala<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>bala<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="全局声明"><a href="#全局声明" class="headerlink" title="全局声明"></a>全局声明</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span></span><br><span class="line">* &#123;</span><br><span class="line"><span class="css">  <span class="selector-tag">text-align</span><span class="selector-pseudo">:center</span>;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="css的文字样式"><a href="#css的文字样式" class="headerlink" title="css的文字样式"></a>css的文字样式</h3><h4 id="单位与颜色"><a href="#单位与颜色" class="headerlink" title="单位与颜色"></a>单位与颜色</h4><table>
+<thead>
+<tr>
+<th>单位</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>px</td>
+<td>像素</td>
+</tr>
+<tr>
+<td>em</td>
+<td>字符</td>
+</tr>
+<tr>
+<td>%</td>
+<td>百分比</td>
+</tr>
+</tbody></table>
+<p>层次：<br>html —&gt; head/body —&gt; div —&gt; h1/p</p>
+<table>
+<thead>
+<tr>
+<th>颜色</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>red</td>
+<td>颜色名</td>
+</tr>
+<tr>
+<td>rgb(255,0,0)</td>
+<td>RGB值 0,0,0为黑</td>
+</tr>
+<tr>
+<td>rgb(100%,0%,0%)</td>
+<td>RGB百分比值</td>
+</tr>
+<tr>
+<td>rgba(255,0,0,1.0)</td>
+<td>RGB值和透明度 0透明，1完全不透明</td>
+</tr>
+<tr>
+<td>#ff0000</td>
+<td>十六进制数 去掉重复位#f00</td>
+</tr>
+</tbody></table>
+<h4 id="文本"><a href="#文本" class="headerlink" title="文本"></a>文本</h4><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+<th>取值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>color</td>
+<td>文本颜色</td>
+<td>red #f00 rgb(255,0,0)</td>
+</tr>
+<tr>
+<td>letter-spacing</td>
+<td>字符间距</td>
+<td>2px -3px</td>
+</tr>
+<tr>
+<td>line-height</td>
+<td>行高</td>
+<td>14px 1.5em 120%</td>
+</tr>
+<tr>
+<td>text-align</td>
+<td>对齐</td>
+<td>center left right justify</td>
+</tr>
+<tr>
+<td>text-decoration</td>
+<td>装饰线</td>
+<td>none overline underline line-though</td>
+</tr>
+<tr>
+<td>text-incent</td>
+<td>首行缩进</td>
+<td>2em</td>
+</tr>
+</tbody></table>
+<p>当line-height==height时，文字垂直居中</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+<th>举例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>font</td>
+<td>所有字体属性一块设置</td>
+<td>font:italic bond 18px/1.5em ‘幼圆’</td>
+</tr>
+<tr>
+<td>font-family</td>
+<td>字体系列</td>
+<td>第一个没有就加载第二个…</td>
+</tr>
+<tr>
+<td>font-size</td>
+<td>字号</td>
+<td>14px 120%</td>
+</tr>
+<tr>
+<td>font-style</td>
+<td>斜体</td>
+<td>italic</td>
+</tr>
+<tr>
+<td>font-weight</td>
+<td>粗体</td>
+<td>bold</td>
+</tr>
+</tbody></table>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">font:italic bond 18px/1.5em '幼圆';</span><br><span class="line">//   斜体   粗体  字号/行高   字体</span><br></pre></td></tr></table></figure>
+
+<h3 id="css的背景与超链接"><a href="#css的背景与超链接" class="headerlink" title="css的背景与超链接"></a>css的背景与超链接</h3><table>
+<thead>
+<tr>
+<th>背景属性</th>
+<th>举例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>background</td>
+<td>background: #00FF00 url(bgimage.gif) no-repeat fixed top;</td>
+</tr>
+<tr>
+<td>background-color</td>
+<td></td>
+</tr>
+<tr>
+<td>background-image</td>
+<td>background-image: url(“../../media/examples/lizard.png”);</td>
+</tr>
+<tr>
+<td>background-repeat</td>
+<td>repeat 棋盘状填充 </br> repeat-x/y 横/纵向填充一排/列</br> no-repeat 就一个</td>
+</tr>
+</tbody></table>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">  <span class="attribute">height</span>:<span class="number">30px</span>;</span><br><span class="line">  <span class="attribute">width</span>:<span class="number">600px</span>;</span><br><span class="line">  <span class="attribute">background</span>: <span class="built_in">url</span>(<span class="string">"images/bg1.gif"</span>) repeat-x;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>链接</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>a</td>
+<td>所有链接</td>
+</tr>
+<tr>
+<td>a:link</td>
+<td>普通、未被访问的链接</td>
+</tr>
+<tr>
+<td>a:visited</td>
+<td>用户已访问的链接</td>
+</tr>
+<tr>
+<td>a:hover</td>
+<td>鼠标指针位于链接上方悬停</td>
+</tr>
+<tr>
+<td>a:active</td>
+<td>链接被点击的时刻</td>
+</tr>
+</tbody></table>
+<p><kbd>:</kbd> 伪类选择器</p>
+<p>顺序：<br>a:link/visited -&gt; a:hover -&gt; a:active</p>
+<h3 id="列表与表格"><a href="#列表与表格" class="headerlink" title="列表与表格"></a>列表与表格</h3><h4 id="css列表"><a href="#css列表" class="headerlink" title="css列表"></a>css列表</h4><table>
+<thead>
+<tr>
+<th>列表属性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>list-style</td>
+<td>所有列表属性</td>
+</tr>
+<tr>
+<td>list-style-image</td>
+<td>为列表项标志设置图像</td>
+</tr>
+<tr>
+<td>list-style-position</td>
+<td>标志的位置</td>
+</tr>
+<tr>
+<td>list-style-type</td>
+<td>标志的类型</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>list-style-type的取值</th>
+<th>样式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>none</td>
+<td>无</td>
+</tr>
+<tr>
+<td>disc</td>
+<td>默认，空心圆</td>
+</tr>
+<tr>
+<td>circle</td>
+<td>空心圆</td>
+</tr>
+<tr>
+<td>square</td>
+<td>实心方块</td>
+</tr>
+<tr>
+<td>decimal</td>
+<td>数字</td>
+</tr>
+<tr>
+<td>lower-roman</td>
+<td>小写罗马数字</td>
+</tr>
+<tr>
+<td>upper-roman</td>
+<td>大写罗马数字</td>
+</tr>
+<tr>
+<td>lower-alpha</td>
+<td>小写英文字母</td>
+</tr>
+<tr>
+<td>upper-alpha</td>
+<td>大写英文字母</td>
+</tr>
+<tr>
+<td>lower-Greek</td>
+<td>小写希腊字母</td>
+</tr>
+<tr>
+<td>lower-latin</td>
+<td>小写拉丁字母</td>
+</tr>
+<tr>
+<td>upper-latin</td>
+<td>大写拉丁字母</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>list-style-positionq取值</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>inside</td>
+<td>列表项标号在文字里</td>
+</tr>
+<tr>
+<td>outside</td>
+<td>列表项标号在文字外</td>
+</tr>
+</tbody></table>
+<p><img src="http://i2.tiimg.com/708356/657cda18144b8cf6.jpg" alt="Markdown"></p>
+<h4 id="css表格"><a href="#css表格" class="headerlink" title="css表格"></a>css表格</h4><p>设置表格的宽和高</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">table</span>&#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">500px</span>;</span><br><span class="line">  <span class="comment">/* 表格宽 */</span></span><br><span class="line">  <span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">  <span class="comment">/* 表格高 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>设置表格的框</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">table</span>,<span class="selector-tag">td</span>,<span class="selector-tag">th</span>&#123;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#eee</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/* table:外框  td:单个小框  th:表头 */</span></span><br></pre></td></tr></table></figure>
+<p>表格框合并</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">table</span>&#123;</span><br><span class="line">  <span class="attribute">border-collapse</span>:collapse;</span><br><span class="line"><span class="comment">/* 将框与框合并，（要不然就有两个框了） */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>奇偶选择器<br><kbd>tr:nth-child(odd)</kbd>:奇数<br><kbd>tr:nth-child(even)</kbd>:偶数</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"> <span class="comment">/* 将奇数行都变成#EAF2D3颜色，表头也算一行 */</span></span><br><span class="line"><span class="selector-tag">tr</span><span class="selector-pseudo">:nth-child(odd)</span>&#123;</span><br><span class="line">  <span class="attribute">background</span>: <span class="number">#EAF2D3</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
       <categories>
-          
-          <category> 学习 </category>
-          
-          <category> 其他 </category>
-          
-          <category> git </category>
-          
+        <category>学习</category>
+        <category>其他</category>
+        <category>前端</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> git </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>计算机组成原理笔记01</title>
-      <link href="/2020/02/01/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E7%AC%94%E8%AE%B001/"/>
-      <url>/2020/02/01/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E7%AC%94%E8%AE%B001/</url>
-      
-        <content type="html"><![CDATA[<h3 id="存储器怎么工作？"><a href="#存储器怎么工作？" class="headerlink" title="存储器怎么工作？"></a>存储器怎么工作？</h3><p>存储器 = 存储体 + MAR + MDR<br>MAR: 存储器地址寄存器<br>MDR: 存储器数据寄存器<br>存储体: 由存储单元（存字）组成，是一个具体的电路。存储单元由存储元（存位）。组成储存的一组数据叫存储字</p><h3 id="存储器和CPU怎么连接？"><a href="#存储器和CPU怎么连接？" class="headerlink" title="存储器和CPU怎么连接？"></a>存储器和CPU怎么连接？</h3>]]></content>
-      
-      
+      <tags>
+        <tag>Web前端</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>速记 2020-02-14</title>
+    <url>/2020/02/14/%E9%80%9F%E8%AE%B0-2020-02-14/</url>
+    <content><![CDATA[<div id="hexo-blog-encrypt" data-wpm="密码是39位随机字符哟，加油！一定可以试出来哒！" data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容"><div class="hbe-input-container"><input type="password" id="hbePass" placeholder="猜猜密码是什么鸭" /><label>猜猜密码是什么鸭</label><div class="bottom-line"></div></div><script id="hbeData" type="hbeData" data-hmacdigest="f2e3e98afc94d318c6188e44a082d8516993582bb6f97f4a11179f7a956c7c0c">f4751c08a455ede7e815097a2e10c2105ad559a6de0d705f175ec5cb8ca87af93e3584fec341a62c2316ef0fea8fa6d219f6f042294203c4b9321e3db43a7bf47f38666b6745aec8839fca7ff94238d47c161bf68824f6964395b42b626fe35c26e4fe18cf11fe5508a7d7a33fd3facb2985f149642b6618263f982423779076241e6d48b7370452c4b978d5a974646ecccfc35796a42f6b9ad985932fdd0f93482221d505fc35b2014ec80dd611c38f5379a421956dec07f01e4165a20a1da3a6814ea75298196fe9559434fd7c777f6aa8d66baf328a19d8a19914bb292357f2f58cb61685c5643f2606d70e52fa268f93ed82cfd915a8cd0dd5999683c3c7ccc5c572f538e8ab9eb8a59703913c43a3adcdb085719a0c2d76866da66a7b0db5ef0b3dfd91195c71b98af6acf985bb6f077404e8c1fcba0bb2459368692e04002167255a69ff03c0594863e0c2b3abbb37037de2a31c815cbd42042730b357af37152292c1e39736d7e46d9df10a669841dfaea4824b663db9582a8dc780d655de16888633250bbf5f058048ce8ef31eaf2490731aaf7c0e723099115fb2d63a30ad276bb23e4f8b266c9dd5184de854e35ea309fdfa9a9c4098491d2b1df071ca40f2da5741e71606f1676ccdf73ff95a1fc56c18e15dbccdef3057673bae8ef81f39f8fe5a674c65ed5663dc4745af79ba1c8f7fd5265a32fc3ffa342857d2fb97dbd533214a1d1c8b39ed93b6cf2db0d09e5a6dc91c75ec7851869be521d2768a305939e31a01e20e690234457e2f84e71cd765f9b3a96f4cd5e4e98e3d7eef1451a139c2077caadf5fd81cfe8ad625df5ee6f5f6db2a0c3281cfba55c6c0a1dbabbb2156b0daef0b3199aae40f14feac6f1a9622eda43a5fe00e2da9eca23d24d3b21272515c13cfff625feeda5c6faf8bb8223fc59f7c89c55bf71127b545fd18ed5d6cf95804d206a051bfd36983c50456450151e34b40df8563cff24768c267f3c1b311bc6eff89426378faa50364bb37f6b922eef805ada76a9ac3ef1f07f76eb29487a66d69c8a3b96ee0cc826bae8b399c8a8302e3e4ad7f0857fa38268a122b1a1bc46c9ffb07268dad8196e59e476aa7e1749475353544370ed812492eb5b3aa9c9239ad99b4a9bc36d7d683392d33af5c74f949b0c46b8d37f29f8170e32f818bd91d50ca59619f6307219a6a99d3b94657fea0c02142fa6900f6da54ce5d0547d1e94a6fd4258957f703c95961d3d953659c0775db974027b50401441dba462939cf6d1f1d680a26954d5cf7348e8f3c4bf3076b8990342f8da0a62f4df53d01f80a77b2acf1439ed6ab38adc5c40ae3adc5a48036a8e986fbf07c85cd4118026de89eed04ba549c4db8363c41288c275dc4ad766a036e84f807ec5fcd809b204425f8a386d3229ea5ec0e383a5debab7607c1907417fbcbbfe9296cd4fea1b6668c5dcbd96e26e1627f9dfd16beb5fb7269d921a59324649f09bef66fabee4e9a3dfadaac926b14de43ac169c41f7f1d995635d9c41a05f1fc5ef899dd9ca66d0b6965aaa8af5e45f0857cf340f3651a1ae81ef3962d931ec0a2124758be4252c525375ea070df97861587b3a9ee9918efd1d63b03011494f3390024aabd7a2ef6414a686b9f38a25d5e0a0627a9b66d07195cff1d5d37da6ce103e504736fea5af508cecae9f7af3ceb93604b9004b018fb3b0b18b9e6b35ffbd52765142c5840ef492e6158a0a</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+      <tags>
+        <tag>思考的尝试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日记 2020-02-14</title>
+    <url>/2020/02/14/%E6%97%A5%E8%AE%B0-2020-02-14/</url>
+    <content><![CDATA[<div id="hexo-blog-encrypt" data-wpm="密码是39位随机字符哟，加油！一定可以试出来哒！" data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容"><div class="hbe-input-container"><input type="password" id="hbePass" placeholder="猜猜密码是什么鸭" /><label>猜猜密码是什么鸭</label><div class="bottom-line"></div></div><script id="hbeData" type="hbeData" data-hmacdigest="61979f7180852951cbe87aed817cbcac3339c600eef6cd0a1850e7d5e359db02">39fc8cdbcb12a5dc9eb1b1e2e6b1a6652d7d3869a87ffea3cdd833aab85dc9ac21b6a4e3415a8e9d2e8960441d2b0a9c1e35ef041093880422d151fe3d894b87cc9884e675ff9e2e3ba15a3e55375463d23e7745960ce1c2e7bfa324886e8e52fd44d08fbaf70fb8b4007477107489642c0ae94b332f480c1dd2dfec8a0c672059ea47ad350b645c27705d7b831f382e09e11ed1e315d42cdf215feb134fa9176888449442add2fcf412009dc80f94a122df18dad3d89b799715e5398043170ff903ee273932619622c8a028ec184f189d4b4c3408a849717d1ff128e433d3c6389f3df1f6012c173e6f266a0f7da1b968a62af3a9e551c49dd34c81c2b30d3796f0fe4c774348e16ce65439ab7ba522f11fac00e7f8bf41712814c9ef8d9148d3002de56b7b296825a97227038f6c166ee5351e216779886fed7933c84e53a63d773048e887ce8ae1ff85b312fc009366745151da3236501c44f43ec65aeb29b59ae4c6578b23e476d9266dc19a08fc2b6901c0530c3a7ebc95b6df79042f5b7ed88a6624eda8de47466bc04e102cc33f73e50d410b06bcdb3d37d7736222f1b962a2877108705961e22d5ab76bbb8ea6c908e9e768f759a639944314000ea7b0e093e1441d9a11bbb907a5ec12da9ce7b53737a36d1d572bba4a0824f2a75b6e7723459303289ccadb0a23b955ba065bbbf5db70e5437788ed11e7de1235226ff3c67d8667b84d077ec96b99215cabae83ddb447e09d8b6bdd73cd4e49b783b6517c3adca2f13bc889fc0f18be1c39</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+      <tags>
+        <tag>真实的尝试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日记 2020-02-13</title>
+    <url>/2020/02/13/%E6%97%A5%E8%AE%B0-2020-02-13/</url>
+    <content><![CDATA[<div id="hexo-blog-encrypt" data-wpm="密码是39位随机字符哟，加油！一定可以试出来哒！" data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容"><div class="hbe-input-container"><input type="password" id="hbePass" placeholder="猜猜密码是什么鸭" /><label>猜猜密码是什么鸭</label><div class="bottom-line"></div></div><script id="hbeData" type="hbeData" data-hmacdigest="2b1d58012982ad825fc3400802eb7e39445bab46fa0276d9b676dc842e276e3b">4ff004efb94f35f0721b7f93df9d3fb033a5fbdfeb99f05a142e2af294a6cfd36f9c3e34642f5321a24096ca1f12e6390f6778d07ffbf4e8f8aac8d8a1cdba95abcfa8ea1a836a27a019f0954b561a40dd781560465be58ae76c07561f6f927a9e5ae79d85c15c7111f1779e3f999b192020b2514282680788897925fa61bade002d192650cf650708edc3ee71499f96044b53b7449cee703c051ec161abba3421c52f4413762b6a88e969c6e395caa566ad635845ff0252d4bc8d8744db75e910cbe3fedd4f4149d0107fe7ac036d9265f1f8067c779d25bcfa2fb38c66f13d36a2432690a3f9198d9dcfd615565d947b1b67cd69159fe350a8ad3fbd20133255869aae3848878e2f53de9f7a296823e1ec0bde1347c31cd306075b6ee105d620cd6e59db4a100600cad7c4fa62ff8578eff732381bc15166c126ab73b090837f11896d5055f9d614ecf92f86a03642925112d76093ce5964754d01681c0d2145a557389067be746ea093b3ad807987e3874e1fdc935d3803fa832302317ba4906e527542cfb0a1a7505846ecdb0105a3b0257d30ba2edb841d197828bc5b14ca0bac556bfe5755830e2f046c451c657f11f028685aa107d5a944fbf1674a5ca7399799d8e6352d2dcb7957864fe49c7b6662d4576bedd06a0d6324a5c51f08de3f09ca90bd8aacabec9759e7a90e153453f2055f93e15c312426d6ec6bbd0eced20afcd817fab54f7c2208ddc06cc7473fe6d7fbebb6ccdf483a523edcca98d0ca35033661e55e6c7ce774e69ed0f62d8327380e2baf1bcaed0511a8146554323fff7f4a16e65dbae36b42684ac3b349e586f8e9bd810c0f51a5ac7e45552a99cf28383bc72cbb10d26eaa680fdd6b386d341c05c681d2d91953b1b3b3618a882ce8d94297a41805acd90b0586374cae12d12fd4c9fb1394e41f416c15a991ce5ac432fc90714e4dcfb7d6c007991eacd5703028c3cd101eeb8a7dbb963ab18191b0de8e1294ad800dce5a6e89ae27cc5a8f913a98f493806e674fad799f97d907d4851bfc25adbf09e53e4af2007278ba57cc279d50bdc3963ec03d38b65eb119cc2d3e42ad6ac3fec104cfd23ae9081c9a040499874645d2a6b41f1def909af925d00312a5e2b986517f1512185655c9ffa7343bdf1e819b54bf661aa08861b000634d33e9f94faa7d31f18498c7d848d04b40cdaccb12590fc8e796aa7ffa1767afa5bfd368802ada738a5cf1d192fdddf0418bc9a9a2b111e5387d3192fa8c7afc8b1e12e4da9a299c1e35bbe0d9fb06ba09c8db7566138a6fa30438d88e786cce3bdc15f444a69d5e2baa03df6814ab179bf2ffaaa34f4a7012b575f20941e2dfedb17812a06d442d255b2843d9f1b189256bd580c0f91010fc7352303c4243486dc9d52e4516ab053bf95ab4fe631e839bbe6a0e2e752a34a938fa46d9b1b3ec0b8d40397c47074c6bfff031405aa68958f49516c1077f3f5ad23852c8f6a8fa9f54eb60763d704c512e02a9d1ee17611063c1b13fc00638741dc12e51bfe694b746edce3ee81bc828d60c54980b15b0f512de5b98a5a7044bbbb4f5051d17a7633ee760befc74dca0879b1871e7f9fe3c10b0fb6ee563087a45443ab0fb0af88bbd5a53ada49d01954ed3ba5fa69016d09ff8366d72ac95c77667ba99ce7a01a95c6463e34ea0e58faf7e4e24b725f2b26310c555f02d7301614f36669f56089a7b065b00ff9c9c5ed4c454a055600f87158c18137edcee3024e3c9cac751da5b694ee2ebbfdd64896d2b57426a513ca5f74593e2b1137dbb371b620c67709dffecf862d5c11093f4084abc177fcf2431335e3229a29cb45e23a9a85758fd3431335785c9c28b73b4ce56dcf648e8e3aa9a0504af9b071a8d10c7f2d9b1644626c884f30951419946731d5f4adfd87d6e9410bc35e635444259e4323d46169b8fd30f623f8ae213b431a2b7e20e37d4cfc7bb8dc00e94b73feeb8493acd59789f449383a2008675d35c58b856640a72967d20771177538460a84357fd5d87e777a8b72e723edeb9b700b16f45fe0251957fcb691dcef9305ebeeccb13701b87d6b080ccd5733f00a96cbd9d73e78286054198a441343092172002b9bb158413df62b952f3dc3541bda18111c4ccb4400f75aa2194beb9dfb45b191b2b9455fe7a8ca0c128466d3b23da252f1a2af8d978ef96a4ddfb8359ee2c9c6f6cec19694b22a6346a99322eecb2cfa247f7f6280547f58b6d425abdcb7e8fea64502be061a143dd70dd8945ff352d6ab8dad262c41210969963890513164b1e60c16cc814a58fc794b6dcd02c830658c88ce1c6fe7e132983e93235f6467ac70dd18a0df5e06a5391e16ae16e8ad02ec27cc0043f1b240cafe02e2fc39df9548663c3a1cbbf6aeb86fc57acc4815c8e757b01015957c01fa9fcde251225b979e511c01fac66d0a5c24412970b18271df6acd235fe7fc40471d5f5a63520acb71b47643b610a5702310bfe7b1c54caa5a99468a46de5e221abe54a7fe1eeab7c4a485b83ac16d2e37930c9e4e6c24eeb36591434bf0ee5bbfbeed9a50c27e284498f5fb4d2d717f74aad4eb5935c5956c74ecd3e8f92742ebe28d969416ff7551e425245443dda116a80d6ef28f38fb4105939ef9e3fc5a16a463899ab45518f1349b0597cc8137785c2e7035e1cf1fae2ac48ef427b8c13f4c99eee9f7cf97ab1796500dee64767fe784cd267b6e97244b4a2c8124376bd924d10dba4fecce832afe8db4d3c6c40d0c31023240c2c4315fe9bc4e592002601f564b8294a479c91c839614df412cc97bc6c289e32f0396f7d4cd1a34d747c2af833d9c4248377a9e9154e5e91770ca550c883c4b10ad5805bd37963273e93d92c9bf894693b50b0ec3a61de1d330b016bec02e4fb65185c743e0f2cec3f4d6274f6cf7e082dc3dd98f00c0b07c951a939366e1a803420099cef9aac8bb67599dd54f4e4ee7e2f9aebf64fbeb00d2f2224381860ad02d242faab73cdaea04f920ab7ca635733db3108da5aa0f613b38527eef77433a2e9a75a494cf8448410b24938b36041d1dbf73cd867c8e40f713f95af0dc0b718df551e8bd5eea75afbe1b66a5d82834f5e7606115766b92cc28a7d6a27ffe8e4d27dd607f19b49d4b341062b88e9d5b907c915ad62f86773ed3f62c82395f36f46aa56be0493b173deaad6c9b06acd122cb566e0cc1081a1a6848c8b68f420a05e4caa7c5431d58416a08a72a92de0554568647b2182d70caebbec6a62f7d3db9cfb5eecc584b2f9988e6cfbd1b103ee9b231ca9301d6fbdd445c7c55b8215da3fc02c7765852022e6109cd6bd49a7d00a1fa3c5ad9013fe2b40a5b737ab20ae648bb6a0c1ae14852b772417fd4df24e0ecbe80e3204a9954c849276136f9fc267c0c8fa5a1c1356318fd39b2b6bab4cc4b5f8eb6ebf0e2747efea6eb7e9ea170c6bca4d77edd48e051c5df1748ce7c899daccf020e2ce323821dec3c61c395238887586c48826f3ed589d8dd44441d35efab4f354a458380ef5319ee5343a94b508c9035859e5cf1516941dfe6258b697473eac4ef3e3130e2ba10a0cac39b6284c30f9ede4c50b91a7a66a554938528e8e272d69a60890606b8575f44a6b3af9</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+      <tags>
+        <tag>真实的尝试</tag>
+        <tag>新型冠状病毒</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日记 2020-02-07</title>
+    <url>/2020/02/07/%E6%97%A5%E8%AE%B0-2020-02-07/</url>
+    <content><![CDATA[<div id="hexo-blog-encrypt" data-wpm="密码是39位随机字符哟，加油！一定可以试出来哒！" data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容"><div class="hbe-input-container"><input type="password" id="hbePass" placeholder="猜猜密码是什么鸭" /><label>猜猜密码是什么鸭</label><div class="bottom-line"></div></div><script id="hbeData" type="hbeData" data-hmacdigest="666e97a62197b93cfeba1de42d723b538070a845fc96651fddda60f839c5a246">75bbd52578c558b499637e471bb74528eb2041d1fdace9fb3cbe2f96b21782ef7ade2221b6330d9990ff20ce2921533e35d1e3ac4522f2acbfdb5127d4a41f94a92c2de13418acfbbd10489f97aaa349d9fb97019c01f02696be4d1b6d7302446d92fb31d98dbda3ba01db24c84e446ee0804d78e738d55f4303719de693633265babba00daee45270e402271e11866ceaca19ad89f86a0e7df2b619cd90053b3babb5ce8d624b9e5d0144834ea053b0e894c318cb819a22e931e891dc0d7ca9814946647511e27fd8039847b82d510595e3f26b0edf5500d903858298c79629b72f7359d1c821383d560ca5da2c3a2e880e85d94729ca4cbb21619782aae8bb22cf90d00f858d09134bc93f6e5110dd0f23a8682259ebf0efb47fbc4b4e3a58d7a2bb2c2352f51ab3bffb9a551db759</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+      <tags>
+        <tag>真实的尝试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>日记 2020-02-06</title>
+    <url>/2020/02/06/%E6%97%A5%E8%AE%B0-2020-02-06/</url>
+    <content><![CDATA[<div id="hexo-blog-encrypt" data-wpm="密码是39位随机字符哟，加油！一定可以试出来哒！" data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容"><div class="hbe-input-container"><input type="password" id="hbePass" placeholder="猜猜密码是什么鸭" /><label>猜猜密码是什么鸭</label><div class="bottom-line"></div></div><script id="hbeData" type="hbeData" data-hmacdigest="eaf246fa35409599230d38150c9bb7ea94c460196cc56efcb5c4133fe95dfdff">e523fdfb0154da6737f214f86c39c08db4666c5a85c059e6a3837178d51a5039787ae1c1977476f028c95b7f70be02f13e98bc9a6fff3761e8d69373cedc60032ed5ba7a9d65b17af785fb80164cf12f3a4519576e9cb2da5c9e43074ed6808d6c2d9a2111a25893733c662b61feca2cd55f038197211fd42225e03234ad57dbf89ab6a4a76e3fff4290b98276dc967ec29ab02805e9c6ec65fd9cc76d3dd9ee38c77bbb2ac8cd184742f1370285039de0701c642fa03074f51bc604c710b63bb2ee350e1f8091d3c436dd016ca24cbab74e0123f9f50b260ba348bb3991773ea041965f16e011e2fe5759319f68bf67f1517b0a7bc8b1a76649c642013b66aeb3a9e5a492afbc8726d46d3cfdb8d545018c66a13d943c863bf63068a3d6ef043c0ee242688e48cbf3c2740bd45ced0d1f73d4341d77efcd6544ce8334050c6df322d337efd024b4a8d73b6078e08590612237e309be4feb026d081073d12a782f961107e1daa9ca719ed5421a7bc6168623a5b03ee04ecc84ad19277cb0bb22ae20333575521345b0c4f76691d6b9659a8912bbccfd20998b9ca073474d6bd4cf3a9258c1b309545123560e22b288831a745824bb7313ab740ab6b967619fa003c72b855207816cbd9c59630bf274a740af5d27443e9805a248ca4bbe07e8f6c3fb027383d45e9dadf3c78546bfeff1e36aff7473739c5c48e616aadeb5fe79c530e2813c2b8b17abf325d278455ada9c5b45dc380853e29dd7275e24b2a1ec9e2b508f715c026448dc863942ec6a8ff04d8d95fb6eee2f2e8f188e92fc6a5dae5963221fc001916535daee2c6f1de226d775f35af868b0604fa4e81761e7ba97ee9416f797c84bc52da38253592d1136eb0be4f1854ee47bdb6b527791e36f82bc0b498c9c00d9dcdf8b25531fe07b158fbeb9d219e6e2396fe01d07eb88ee240faf8d4f6ff1907c271d9b65cf4347e02a756d684dfcc5668437df4eaaaa50457d2f9219cb0eb8d2d2d2dca4a27b51c4bde848c7ee4fa13bfb8b256b132b8924f28f3924366646b06756b30586d193dadb8397d929a10d4af7c31ccad62c9e70a7d7dfd9c2d43f56755c6eafb6e186e53f092c98b6a9a641cd6f04f21b9c0d9a9aedf2e5aa4cdbd2f9754fcc0251e3f4e53eaecf179b7df9b457c35e43f42d3e368fa53b3a2e401b7f3a929eeff061eb7c32717d511902d28251471a391c3f0bbe1fb71a2b38f415f2ee2d92296cd5b8b90f0ad9106f953e8cf1a3b133bd3df877cb4f7e66dc33e9b54b4ef0138238c22bd1008130438884b12c80472d0fd692997936c63176c681b50288a870d69ea8c7b445e939df70e6d28b51290e958ce2905f9fbc11fa855fb9e0292e27e6143beaa8eff675fabb2a89df4225e9e048ac0263cfb846437e21ea8180fe6f3eaa10f1b68f6b34374c1a72f7619538db3e5c6324f08adb9b04b55034cc6c14d2956a36865646ca391403aa97e05df3e3a789153684a87c2f2b204665a35450ad0fa9a44eb2bc22505072afd4e57e80c17296d30664cfc51c828ec5a08aeab1cb2ccdf91bd4de3015360aed49d93d4a08dea4e0c8c9925d44cb577835079d9e310d4fa2c0f605f051eb0906fdfc08038785bca8346da024d21ded14900472d6a304d62f6bb22f302db03251632ab580fcf95c5693f694d950c0445a4ade79f2ea1e3f3a5d4f2756f26bde8d8ae35ba7ed40c44b5f82fca957d61b5e12713be967f8fa60c262f24bb1910494d53f11ed99c2f1cfd8d0a67e12a5d9a29265565648070c2c9c3deb36676c48cea39e77b14da7eeb80fb0e43112ad7d9127856c0c5651cbc3d2ebe7a415ecf842389008afdb11f2975b2f82d624a469a741bcc9b71740f629d2bcc5e848826041ff7b5bd7c3b14aff378bc4078cada96dd3f76b1d37a45616484279cbd7835dd01cc2a5c6549da13be711e10297b1cb9ffcd4dfe10372a33e625badce90cbdb6aeae4f6d4de5ca5e14d000e4d6e3bbd7abb0d817637bb267b98d81a23fd2121095ee72c17ba8dc42dc90eb52987aa6c549599cdaa1144499841f2327bdbe18f438ef39b2ca6bf517c2faba371f9da7132134d327c5565830c2b3a8d01bc5cc0f4128eaf03c59a8aeca2bf9e7b51ddd07d8a95a6e25c6f3be9f4937f7c74ee61119ae8ee3561787b60e41aa4e4404c52c447c1b6d41246aa01e68af438da4b11df7a3db4d036740ca790ba255e480eaa2e30d02506eebc9896b25a3bc753af4cb2479e18727be574d4d9fd00543fbfbd205074a07d5e6f0e5059d24299f74949a45fefb108d9f25e55d40b03f137d09a51aecec9af505ddfd6484d095f2c7cc70d2909a013efd73a0f06ffcdbc8823cf38d1b917ddd7099c72917e70d0d1db0aff2175668904073e20929e7053a582def01ebc337e259a871469c2f5fb634886ad80e89b4b5737246dd0af37d6cdcfaac683a708e8a6ab6a0c11268f3563410a9dd40ae5bf3ecc2042487c8d0b43839987c21a3684c1ed7d22971e4c4b857ef49123d0aead289740b5ed32e19bd9fda2d7ac0d5c688bf0c44ccfc3b33125e245b40bbb46dc6daf9c28b9ddfc1c7c853015993d7eb96152abfde422967a0a4edb7942547e23ad709af2c3b373db45db49ba84cda6db16ded0b53ac50e2d6c2210d8c2db5bddd83f44095adb56f3340d64fa51d8a56966749a50554ada9298a49e1053ed6f2fd32791c247139ed6b76fe27b4e18b6c854def1f69fb885524435c7003496ff4b386888869a66e9931be9c56a82ef4c56002b06f3b464b4e04c880a5e885fb6cb70b6</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+      <tags>
+        <tag>真实的尝试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>git用法</title>
+    <url>/2020/02/02/git%E7%94%A8%E6%B3%95/</url>
+    <content><![CDATA[]]></content>
       <categories>
-          
-          <category> 计算机组成原理 </category>
-          
+        <category>学习</category>
+        <category>其他</category>
+        <category>git</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 组成原理 </tag>
-            
-            <tag> 存储器与CPU的协同工作 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>加密test</title>
-      <link href="/2020/01/31/%E5%8A%A0%E5%AF%86test/"/>
-      <url>/2020/01/31/%E5%8A%A0%E5%AF%86test/</url>
-      
-        <content type="html"><![CDATA[<div id="hexo-blog-encrypt" data-wpm="密码是39位随机字符哟，加油！一定可以试出来哒！" data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容"><div class="hbe-input-container"><input type="password" id="hbePass" placeholder="猜猜密码是什么鸭" /><label>猜猜密码是什么鸭</label><div class="bottom-line"></div></div><script id="hbeData" type="hbeData" data-hmacdigest="6972062e891259d37af418f47be34262b6d8da3cd2de420c0f0118e5e3231588">46237a7cab32573df0cb193282e0e596d48c77eb95cc532909eda912da157f527f028b4abf21a44a80605eafceabec13e192d26c8c61989e302a74598b5f78e0eec6c411efff59f5fd1f3dd0dc63f5088edf8e03bc9d034ee40e48a4849dac7c3cb29dde11c4ecb5b4de5720820d9e487e3d8ab12e52dd390315050edcde8c41</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
-      
-      
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算机组成原理笔记01</title>
+    <url>/2020/02/01/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E7%AC%94%E8%AE%B001/</url>
+    <content><![CDATA[<h3 id="存储器怎么工作？"><a href="#存储器怎么工作？" class="headerlink" title="存储器怎么工作？"></a>存储器怎么工作？</h3><p>存储器 = 存储体 + MAR + MDR<br>MAR: 存储器地址寄存器<br>MDR: 存储器数据寄存器<br>存储体: 由存储单元（存字）组成，是一个具体的电路。存储单元由存储元（存位）。组成储存的一组数据叫存储字</p>
+<h3 id="存储器和CPU怎么连接？"><a href="#存储器和CPU怎么连接？" class="headerlink" title="存储器和CPU怎么连接？"></a>存储器和CPU怎么连接？</h3>]]></content>
       <categories>
-          
-          <category> 其他 </category>
-          
-          <category> 杂谈 </category>
-          
+        <category>计算机组成原理</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 故事的尝试 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>数学模型姜启源笔记01</title>
-      <link href="/2020/01/30/%E6%95%B0%E5%AD%A6%E6%A8%A1%E5%9E%8B%E5%A7%9C%E5%90%AF%E6%BA%90%E7%AC%94%E8%AE%B001/"/>
-      <url>/2020/01/30/%E6%95%B0%E5%AD%A6%E6%A8%A1%E5%9E%8B%E5%A7%9C%E5%90%AF%E6%BA%90%E7%AC%94%E8%AE%B001/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
+      <tags>
+        <tag>组成原理</tag>
+        <tag>存储器与CPU的协同工作</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>加密test</title>
+    <url>/2020/01/31/%E5%8A%A0%E5%AF%86test/</url>
+    <content><![CDATA[<div id="hexo-blog-encrypt" data-wpm="密码是39位随机字符哟，加油！一定可以试出来哒！" data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容"><div class="hbe-input-container"><input type="password" id="hbePass" placeholder="猜猜密码是什么鸭" /><label>猜猜密码是什么鸭</label><div class="bottom-line"></div></div><script id="hbeData" type="hbeData" data-hmacdigest="6972062e891259d37af418f47be34262b6d8da3cd2de420c0f0118e5e3231588">46237a7cab32573df0cb193282e0e596d48c77eb95cc532909eda912da157f527f028b4abf21a44a80605eafceabec13e192d26c8c61989e302a74598b5f78e0eec6c411efff59f5fd1f3dd0dc63f5088edf8e03bc9d034ee40e48a4849dac7c3cb29dde11c4ecb5b4de5720820d9e487e3d8ab12e52dd390315050edcde8c41</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
       <categories>
-          
-          <category> 学习 </category>
-          
-          <category> 数学建模 </category>
-          
-          <category> 《数学模型》姜启源笔记 </category>
-          
+        <category>其他</category>
+        <category>杂谈</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 数学建模 </tag>
-            
-            <tag> 《数学模型》 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>使用VSCode编写python中文乱码解决</title>
-      <link href="/2020/01/29/%E4%BD%BF%E7%94%A8VSCode%E7%BC%96%E5%86%99python%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3/"/>
-      <url>/2020/01/29/%E4%BD%BF%E7%94%A8VSCode%E7%BC%96%E5%86%99python%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3/</url>
-      
-        <content type="html"><![CDATA[<p>加入代码头</p><a id="more"></a><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*-coding:utf-8 -*-</span></span><br><span class="line"><span class="keyword">import</span> io</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="comment">#改变标准输出的默认编码</span></span><br><span class="line">sys.stdout=io.TextIOWrapper(sys.stdout.buffer,encoding=<span class="string">'utf8'</span>)</span><br></pre></td></tr></table></figure>]]></content>
-      
-      
+      <tags>
+        <tag>故事的尝试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数学模型姜启源笔记01</title>
+    <url>/2020/01/30/%E6%95%B0%E5%AD%A6%E6%A8%A1%E5%9E%8B%E5%A7%9C%E5%90%AF%E6%BA%90%E7%AC%94%E8%AE%B001/</url>
+    <content><![CDATA[]]></content>
       <categories>
-          
-          <category> 其他 </category>
-          
-          <category> 小问题合集 </category>
-          
+        <category>学习</category>
+        <category>数学建模</category>
+        <category>《数学模型》姜启源笔记</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 小问题 </tag>
-            
-            <tag> VScode </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>python基础北理工MOOC01</title>
-      <link href="/2020/01/29/python%E5%9F%BA%E7%A1%80%E5%8C%97%E7%90%86%E5%B7%A5MOOC01/"/>
-      <url>/2020/01/29/python%E5%9F%BA%E7%A1%80%E5%8C%97%E7%90%86%E5%B7%A5MOOC01/</url>
-      
-        <content type="html"><![CDATA[<h2 id="time库"><a href="#time库" class="headerlink" title="time库"></a>time库</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br></pre></td></tr></table></figure><a id="more"></a><h3 id="time"><a href="#time" class="headerlink" title="time()"></a>time()</h3><p><strong>time.time()</strong> 获取当前时间戳（一个浮点数）</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">print</span> (time.time())</span><br></pre></td></tr></table></figure><blockquote><p>1580290639.0466638</p></blockquote><p>只可表示 <strong>1970</strong> ~ <strong>2038</strong>  </p><h3 id="ctime"><a href="#ctime" class="headerlink" title="ctime()"></a>ctime()</h3><p><strong>ctime</strong> 以易读方式表示</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">print</span> (time.ctime())</span><br></pre></td></tr></table></figure><blockquote><p>Wed Jan 29 17:50:18 2020</p></blockquote><h3 id="gmtime"><a href="#gmtime" class="headerlink" title="gmtime()"></a>gmtime()</h3><p><strong>time.gmtime()</strong> 返回计算机可处理的时间格式</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">print</span> (time.gmtime())</span><br><span class="line"><span class="comment">#获得的时间是服务器时间</span></span><br></pre></td></tr></table></figure><blockquote><p>time.struct_time(tm_year=2020, tm_mon=1, tm_mday=29, tm_hour=17, tm_min=23, tm_sec=55, tm_wday=2, tm_yday=29, tm_isdst=0)</p></blockquote><h3 id="时间格式化与-strfitime-tpl-ts-、striptime-str-tpl"><a href="#时间格式化与-strfitime-tpl-ts-、striptime-str-tpl" class="headerlink" title="时间格式化与 strfitime ( tpl , ts )、striptime ( str , tpl )"></a>时间格式化与 strfitime ( tpl , ts )、striptime ( str , tpl )</h3><table><thead><tr><th align="center">格式</th><th align="center">意义</th><th align="center">举例</th></tr></thead><tbody><tr><td align="center">%Y</td><td align="center">年</td><td align="center">2020</td></tr><tr><td align="center">%m</td><td align="center">月</td><td align="center">1</td></tr><tr><td align="center">%B</td><td align="center">月</td><td align="center">January</td></tr><tr><td align="center">%b</td><td align="center">月</td><td align="center">Jau</td></tr><tr><td align="center">%d</td><td align="center">日</td><td align="center">29</td></tr><tr><td align="center">%A</td><td align="center">星期几</td><td align="center">Wednesday</td></tr><tr><td align="center">%a</td><td align="center">星期几</td><td align="center">Wed</td></tr><tr><td align="center">%H</td><td align="center">时</td><td align="center">17</td></tr><tr><td align="center">%I</td><td align="center">时</td><td align="center">5</td></tr><tr><td align="center">%p</td><td align="center">上下午</td><td align="center">PM</td></tr><tr><td align="center">%M</td><td align="center">分</td><td align="center">44</td></tr><tr><td align="center">%S</td><td align="center">秒</td><td align="center">26</td></tr></tbody></table><p><strong>striftime（tpl，ts）</strong> 第一个参数是输出的时间格式，第二个是获得的时间<br>返回一个字符串</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">print</span> (time.strftime(<span class="string">"%Y-%m-%d %H:%M:%S"</span>,time.gmtime()))</span><br><span class="line"><span class="comment">#输出服务器当前的时间</span></span><br></pre></td></tr></table></figure><blockquote><p>2020-01-29 09:59:09</p></blockquote><p><strong>striptime（str，tpl）</strong> 的第一个参数是字符串形式的时间值，第二个参数是输入的形式<br>返回一个计算机时间</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">strptime(<span class="string">"2020-01-29 09:59:09"</span>, <span class="string">"%Y-%m-%d %H:%M:%S"</span>)</span><br></pre></td></tr></table></figure><blockquote><p>time.struct_time(tm_year=2020, tm_mon=1, tm_mday=29, tm_hour=9, tm_min=59, tm_sec=9, tm_wday=2, tm_yday=29, tm_isdst=-1)</p></blockquote><p><strong>pref_counter()</strong> 程序计时函数，返回一个CPU级别的精确时间计数值，单位为秒，由于这个计数值起点不确定，连续调用差值才有意义</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>start = time.pref_counter()</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>end = time.pref_counter()</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>end - start</span><br></pre></td></tr></table></figure><p><strong>sleep(s)</strong> 使程序休眠s秒。s可以是浮点数</p>]]></content>
-      
-      
+      <tags>
+        <tag>数学建模</tag>
+        <tag>《数学模型》</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用VSCode编写python中文乱码解决</title>
+    <url>/2020/01/29/%E4%BD%BF%E7%94%A8VSCode%E7%BC%96%E5%86%99python%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3/</url>
+    <content><![CDATA[<p>加入代码头</p>
+<a id="more"></a>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># -*-coding:utf-8 -*-</span></span><br><span class="line"><span class="keyword">import</span> io</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="comment">#改变标准输出的默认编码</span></span><br><span class="line">sys.stdout=io.TextIOWrapper(sys.stdout.buffer,encoding=<span class="string">'utf8'</span>)</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
-          
-          <category> 学习 </category>
-          
-          <category> python </category>
-          
-          <category> MOOC笔记 </category>
-          
+        <category>其他</category>
+        <category>小问题合集</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> python基础 </tag>
-            
-            <tag> MOOC笔记 </tag>
-            
-            <tag> time库 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Java核心技术笔记02</title>
-      <link href="/2020/01/29/Java%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B002/"/>
-      <url>/2020/01/29/Java%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B002/</url>
-      
-        <content type="html"><![CDATA[<h5 id="page-from-76"><a href="#page-from-76" class="headerlink" title="page from 76"></a>page from 76</h5><h2 id="大数值"><a href="#大数值" class="headerlink" title="大数值"></a>大数值</h2><p>使用 <strong>java.math包</strong> 中的两个类： <strong>BigInteger</strong> 和 <strong>BigDecimal</strong>。  </p><a id="more"></a><h3 id="valueOf-NaN"><a href="#valueOf-NaN" class="headerlink" title="valueOf"></a>valueOf</h3><p><strong>静态的valueOf</strong> 方法可以将普通的数值转换为大数值</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">BigInteger a=BigInteger.valueOf(<span class="number">100</span>);</span><br><span class="line">BigDecimal b=BigDecimal.valueOf(<span class="number">100</span>);</span><br></pre></td></tr></table></figure><h3 id="add、substract、multiply、divide、mod"><a href="#add、substract、multiply、divide、mod" class="headerlink" title="add、substract、multiply、divide、mod"></a>add、substract、multiply、divide、mod</h3><table><tr><td bgcolor=orang>不能使用算数运算符处理大数值</table></tr></td><p>而应使用BigInteger类中的 <strong>add</strong> 、 <strong>substract</strong> 、  <strong>multiply</strong> 、 <strong>divide</strong> 和 <strong>mod</strong> 方法。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">BigInteger c=d.add(e);</span><br><span class="line"><span class="comment">//c=d+e</span></span><br><span class="line"></span><br><span class="line">BigDecimal f=g.multiply(h.add(BigDecimal.valueOf(<span class="number">2</span>)));</span><br><span class="line"><span class="comment">//f=g*(h+2)</span></span><br><span class="line"></span><br><span class="line">BigDecimal a2=b2.divide(c2,BigDecimal.ROUND_HALF_UP);</span><br><span class="line"><span class="comment">//a2=b2/c2 结果四舍五入</span></span><br></pre></td></tr></table></figure><p><kbd>add</kbd> <kbd>substract</kbd> <kbd>multiply</kbd> <kbd>divide</kbd> <kbd>mod</kbd>  </p><h3 id="compareTo"><a href="#compareTo" class="headerlink" title="compareTo"></a>compareTo</h3><p><strong>int compareTo ( BigInteger other ) :</strong>  </p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">result = a.compareTo(b);</span><br><span class="line"><span class="comment">//若a==b，返回 0；</span></span><br><span class="line"><span class="comment">//若a&lt; b，返回负数；</span></span><br><span class="line"><span class="comment">//若a&gt; b，返回正数</span></span><br></pre></td></tr></table></figure>]]></content>
-      
-      
+      <tags>
+        <tag>小问题</tag>
+        <tag>VScode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python基础北理工MOOC01</title>
+    <url>/2020/01/29/python%E5%9F%BA%E7%A1%80%E5%8C%97%E7%90%86%E5%B7%A5MOOC01/</url>
+    <content><![CDATA[<h2 id="time库"><a href="#time库" class="headerlink" title="time库"></a>time库</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<h3 id="time"><a href="#time" class="headerlink" title="time()"></a>time()</h3><p><strong>time.time()</strong> 获取当前时间戳（一个浮点数）</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">print</span> (time.time())</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>1580290639.0466638</p>
+</blockquote>
+<p>只可表示 <strong>1970</strong> ~ <strong>2038</strong>  </p>
+<h3 id="ctime"><a href="#ctime" class="headerlink" title="ctime()"></a>ctime()</h3><p><strong>ctime</strong> 以易读方式表示</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">print</span> (time.ctime())</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>Wed Jan 29 17:50:18 2020</p>
+</blockquote>
+<h3 id="gmtime"><a href="#gmtime" class="headerlink" title="gmtime()"></a>gmtime()</h3><p><strong>time.gmtime()</strong> 返回计算机可处理的时间格式</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">print</span> (time.gmtime())</span><br><span class="line"><span class="comment">#获得的时间是服务器时间</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>time.struct_time(tm_year=2020, tm_mon=1, tm_mday=29, tm_hour=17, tm_min=23, tm_sec=55, tm_wday=2, tm_yday=29, tm_isdst=0)</p>
+</blockquote>
+<h3 id="时间格式化与-strfitime-tpl-ts-、striptime-str-tpl"><a href="#时间格式化与-strfitime-tpl-ts-、striptime-str-tpl" class="headerlink" title="时间格式化与 strfitime ( tpl , ts )、striptime ( str , tpl )"></a>时间格式化与 strfitime ( tpl , ts )、striptime ( str , tpl )</h3><table>
+<thead>
+<tr>
+<th align="center">格式</th>
+<th align="center">意义</th>
+<th align="center">举例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">%Y</td>
+<td align="center">年</td>
+<td align="center">2020</td>
+</tr>
+<tr>
+<td align="center">%m</td>
+<td align="center">月</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">%B</td>
+<td align="center">月</td>
+<td align="center">January</td>
+</tr>
+<tr>
+<td align="center">%b</td>
+<td align="center">月</td>
+<td align="center">Jau</td>
+</tr>
+<tr>
+<td align="center">%d</td>
+<td align="center">日</td>
+<td align="center">29</td>
+</tr>
+<tr>
+<td align="center">%A</td>
+<td align="center">星期几</td>
+<td align="center">Wednesday</td>
+</tr>
+<tr>
+<td align="center">%a</td>
+<td align="center">星期几</td>
+<td align="center">Wed</td>
+</tr>
+<tr>
+<td align="center">%H</td>
+<td align="center">时</td>
+<td align="center">17</td>
+</tr>
+<tr>
+<td align="center">%I</td>
+<td align="center">时</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="center">%p</td>
+<td align="center">上下午</td>
+<td align="center">PM</td>
+</tr>
+<tr>
+<td align="center">%M</td>
+<td align="center">分</td>
+<td align="center">44</td>
+</tr>
+<tr>
+<td align="center">%S</td>
+<td align="center">秒</td>
+<td align="center">26</td>
+</tr>
+</tbody></table>
+<p><strong>striftime（tpl，ts）</strong> 第一个参数是输出的时间格式，第二个是获得的时间<br>返回一个字符串</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">print</span> (time.strftime(<span class="string">"%Y-%m-%d %H:%M:%S"</span>,time.gmtime()))</span><br><span class="line"><span class="comment">#输出服务器当前的时间</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>2020-01-29 09:59:09</p>
+</blockquote>
+<p><strong>striptime（str，tpl）</strong> 的第一个参数是字符串形式的时间值，第二个参数是输入的形式<br>返回一个计算机时间</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">strptime(<span class="string">"2020-01-29 09:59:09"</span>, <span class="string">"%Y-%m-%d %H:%M:%S"</span>)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>time.struct_time(tm_year=2020, tm_mon=1, tm_mday=29, tm_hour=9, tm_min=59, tm_sec=9, tm_wday=2, tm_yday=29, tm_isdst=-1)</p>
+</blockquote>
+<p><strong>pref_counter()</strong> 程序计时函数，返回一个CPU级别的精确时间计数值，单位为秒，由于这个计数值起点不确定，连续调用差值才有意义</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>start = time.pref_counter()</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>end = time.pref_counter()</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>end - start</span><br></pre></td></tr></table></figure>
+
+<p><strong>sleep(s)</strong> 使程序休眠s秒。s可以是浮点数</p>
+]]></content>
       <categories>
-          
-          <category> 学习 </category>
-          
-          <category> Java </category>
-          
-          <category> Java核心技术基础篇笔记 </category>
-          
+        <category>学习</category>
+        <category>python</category>
+        <category>MOOC笔记</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> Java </tag>
-            
-            <tag> Java核心技术基础 </tag>
-            
-            <tag> BigInteger </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Java核心技术笔记01</title>
-      <link href="/2020/01/29/Java%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B001/"/>
-      <url>/2020/01/29/Java%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B001/</url>
-      
-        <content type="html"><![CDATA[<h4 id="page-from-63"><a href="#page-from-63" class="headerlink" title="page from 63"></a>page from 63</h4><h2 id="控制流程"><a href="#控制流程" class="headerlink" title="控制流程"></a>控制流程</h2><a id="more"></a><h3 id="块作用域"><a href="#块作用域" class="headerlink" title="块作用域"></a>块作用域</h3><table><tr><td bgcolor=orang>不能在嵌套的两个块中声明同名变量</td></tr></table><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(string[] args)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n;</span><br><span class="line">    balabalabalabala...</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">int</span> n; <span class="comment">//不可！！！</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="条件语句"><a href="#条件语句" class="headerlink" title="条件语句"></a>条件语句</h3><p><kbd>if</kbd></p><h3 id="循环语句"><a href="#循环语句" class="headerlink" title="循环语句"></a>循环语句</h3><p><kbd>while</kbd>  <kbd>do while</kbd>  <kbd>for</kbd></p><h3 id="多重选择"><a href="#多重选择" class="headerlink" title="多重选择"></a>多重选择</h3><p><kbd>switch</kbd></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">switch</span>(<span class="keyword">char</span>/<span class="keyword">byte</span>/<span class="keyword">short</span>/<span class="keyword">int</span>/字符串字面量)&#123;</span><br><span class="line">    <span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">    ...</span><br><span class="line">    <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">default</span>:</span><br><span class="line">    ...</span><br><span class="line">    <span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="中断控制流程语句"><a href="#中断控制流程语句" class="headerlink" title="中断控制流程语句"></a>中断控制流程语句</h3><p><kbd>goto</kbd> <kbd>break</kbd> <kbd>continue</kbd></p>]]></content>
-      
-      
+      <tags>
+        <tag>python基础</tag>
+        <tag>MOOC笔记</tag>
+        <tag>time库</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java核心技术笔记02</title>
+    <url>/2020/01/29/Java%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B002/</url>
+    <content><![CDATA[<h5 id="page-from-76"><a href="#page-from-76" class="headerlink" title="page from 76"></a>page from 76</h5><h2 id="大数值"><a href="#大数值" class="headerlink" title="大数值"></a>大数值</h2><p>使用 <strong>java.math包</strong> 中的两个类： <strong>BigInteger</strong> 和 <strong>BigDecimal</strong>。  </p>
+<a id="more"></a>
+
+<h3 id="valueOf-NaN"><a href="#valueOf-NaN" class="headerlink" title="valueOf"></a>valueOf</h3><p><strong>静态的valueOf</strong> 方法可以将普通的数值转换为大数值</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">BigInteger a=BigInteger.valueOf(<span class="number">100</span>);</span><br><span class="line">BigDecimal b=BigDecimal.valueOf(<span class="number">100</span>);</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="add、substract、multiply、divide、mod"><a href="#add、substract、multiply、divide、mod" class="headerlink" title="add、substract、multiply、divide、mod"></a>add、substract、multiply、divide、mod</h3><table><tr><td bgcolor=orang>
+不能使用算数运算符处理大数值
+</table></tr></td>
+
+<p>而应使用BigInteger类中的 <strong>add</strong> 、 <strong>substract</strong> 、  <strong>multiply</strong> 、 <strong>divide</strong> 和 <strong>mod</strong> 方法。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">BigInteger c=d.add(e);</span><br><span class="line"><span class="comment">//c=d+e</span></span><br><span class="line"></span><br><span class="line">BigDecimal f=g.multiply(h.add(BigDecimal.valueOf(<span class="number">2</span>)));</span><br><span class="line"><span class="comment">//f=g*(h+2)</span></span><br><span class="line"></span><br><span class="line">BigDecimal a2=b2.divide(c2,BigDecimal.ROUND_HALF_UP);</span><br><span class="line"><span class="comment">//a2=b2/c2 结果四舍五入</span></span><br></pre></td></tr></table></figure>
+
+
+<p><kbd>add</kbd> <kbd>substract</kbd> <kbd>multiply</kbd> <kbd>divide</kbd> <kbd>mod</kbd>  </p>
+<h3 id="compareTo"><a href="#compareTo" class="headerlink" title="compareTo"></a>compareTo</h3><p><strong>int compareTo ( BigInteger other ) :</strong>  </p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">result = a.compareTo(b);</span><br><span class="line"><span class="comment">//若a==b，返回 0；</span></span><br><span class="line"><span class="comment">//若a&lt; b，返回负数；</span></span><br><span class="line"><span class="comment">//若a&gt; b，返回正数</span></span><br></pre></td></tr></table></figure>
+
+]]></content>
       <categories>
-          
-          <category> 学习 </category>
-          
-          <category> Java </category>
-          
-          <category> Java核心技术基础篇笔记 </category>
-          
+        <category>学习</category>
+        <category>Java</category>
+        <category>Java核心技术基础篇笔记</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> Java </tag>
-            
-            <tag> Java核心技术基础 </tag>
-            
-            <tag> 控制流程 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>公众号发表01</title>
-      <link href="/2020/01/28/%E5%85%AC%E4%BC%97%E5%8F%B7%E5%8F%91%E8%A1%A8test1/"/>
-      <url>/2020/01/28/%E5%85%AC%E4%BC%97%E5%8F%B7%E5%8F%91%E8%A1%A8test1/</url>
-      
-        <content type="html"><![CDATA[<h1 id="java-·-对象与类"><a href="#java-·-对象与类" class="headerlink" title="java · 对象与类"></a>java · 对象与类</h1><h2 id="面向对象程序设计-OOP"><a href="#面向对象程序设计-OOP" class="headerlink" title="面向对象程序设计(OOP)"></a>面向对象程序设计(OOP)</h2><p>学过 <strong>C/C++</strong> 的同学们都知道， <strong>Java</strong> 作为一个 <strong>面向对象程序设计</strong>（简称OOP）语言，有着其深刻的独到之处。  </p><p>面向对象的程序是由 <strong>对象</strong> 组成的。每个对象包含对用户 <strong>公开</strong> 的特定 <strong>功能</strong> 部分与 <strong>隐藏</strong> 的 <strong>实现</strong> 部分。  </p><p>程序中，有些对象来自 <strong>标准库</strong>，有些是自定义的。无论他们来自哪里，有一点是相同的，只要对象能够满足要求，就不必关心其功能的具体实现过程。  </p><a id="more"></a><table><tr><td bgcolor=orang>在OOP中，不必关心对象的具体实现,只要能够满足用户的需求即可</td></tr></table>  <blockquote><p>传统的结构化程序设计通过设计一系列的（算法）来求解问题。一旦确定了这些过程，就要开始考虑存储数据的方式。这就是 Pascal语言的设计者 Niklaus Wirth将其著作命名为《算法 + 数据结构 = 程序》（  <em>Algorithms + Data Structures = Programs</em> ， Prentice Hall，1975）的原因。需要注意的是，在 Wirth命名的书名中，算法是第一位的，数据结构是第二位的，这就明确地表述了程序员的工作方式。首先要确定如何操作数据，然后再决定如何存储数据，以便于数据操作。而OOP却调换了这个次序，将数据放在第一位，对于一些规模较小的问题，将其分解为过程的开发方式比较理想。而面向对象更加适合于解决规模较大的问题。<br>——《Java核心技术》 【美】凯 S.霍特思曼  </p></blockquote><h2 id="类-class"><a href="#类-class" class="headerlink" title="类(class)"></a>类(class)</h2><p><strong>类</strong> 是构造对象的模板。通过这个模板，可以创建无数个功能相似的 <strong>对象</strong>。由类构造（construct）对象的过程称为创建类的 <strong>实例</strong>（instance）。  </p><p>用Java编写的所有代码都位于某个类的内部。标准的Java库提供了几千个类，可以用于用户界面设计、日期、日历和网络程序设计。尽管如此，还是需要在Java程序中创建一些自己的类，以便描述应用程序所对应的问题域中的对象。  </p><p><strong>封装</strong> （encapsulation，又称数据隐藏），则是将数据和行为组合在一个包中，并对对象的使用者隐藏数据。对象中的数据称为 <strong>实例域</strong>（instance field），操纵数据的过程称为 <strong>方法</strong> （method），对于每个特定的类实例都有一组特定的实例域值。这些值的集合就是这个对象的当前状态（state）。无论何时，只要向对象发送一个消息，它的状态就有可能发生改变。  </p><blockquote><p>实现封装的关键在于。绝对不能让类中的方法直接地访问其他类的实例域。程序仅通过对象的方法与对象数据进行交互。封装给对象赋予了“盒”特征，这是提高重用性和可靠性的关键。这意味着一个类可以全面地改变存储数据的方式，只要仍旧使用同样的方法操作数据，其他对象就不会知道或介意所发生的变化。<br>————《Java核心技术》 【美】凯 S.霍特思曼  </p></blockquote><p>OOP的另一个原则是：可以通过扩展一个类来建立另外一个新的类。事实上，Java中所有的类都源自于一个超类，它就是 Object。这会在后面详细介绍。  </p><table><tr><td bgcolor=orang>可以通过扩展一个类来建立另外一个新的类</td></tr></table>  <p>被扩展后的新类具有原来类的全部属性和方法。因此在新类中，只需提供适用于这个新类的新方法和数据域就可以了。通过扩展一个类来建立另外一个类的过程称为 <strong>继承</strong> （inheritance）。</p>]]></content>
-      
-      
+      <tags>
+        <tag>Java</tag>
+        <tag>Java核心技术基础</tag>
+        <tag>BigInteger</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java核心技术笔记01</title>
+    <url>/2020/01/29/Java%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B001/</url>
+    <content><![CDATA[<h4 id="page-from-63"><a href="#page-from-63" class="headerlink" title="page from 63"></a>page from 63</h4><h2 id="控制流程"><a href="#控制流程" class="headerlink" title="控制流程"></a>控制流程</h2><a id="more"></a>
+
+<h3 id="块作用域"><a href="#块作用域" class="headerlink" title="块作用域"></a>块作用域</h3><table><tr><td bgcolor=orang>
+不能在嵌套的两个块中声明同名变量
+</td></tr></table>
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(string[] args)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n;</span><br><span class="line">    balabalabalabala...</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">int</span> n; <span class="comment">//不可！！！</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="条件语句"><a href="#条件语句" class="headerlink" title="条件语句"></a>条件语句</h3><p><kbd>if</kbd></p>
+<h3 id="循环语句"><a href="#循环语句" class="headerlink" title="循环语句"></a>循环语句</h3><p><kbd>while</kbd>  <kbd>do while</kbd>  <kbd>for</kbd></p>
+<h3 id="多重选择"><a href="#多重选择" class="headerlink" title="多重选择"></a>多重选择</h3><p><kbd>switch</kbd></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">switch</span>(<span class="keyword">char</span>/<span class="keyword">byte</span>/<span class="keyword">short</span>/<span class="keyword">int</span>/字符串字面量)&#123;</span><br><span class="line">    <span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">    ...</span><br><span class="line">    <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">default</span>:</span><br><span class="line">    ...</span><br><span class="line">    <span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="中断控制流程语句"><a href="#中断控制流程语句" class="headerlink" title="中断控制流程语句"></a>中断控制流程语句</h3><p><kbd>goto</kbd> <kbd>break</kbd> <kbd>continue</kbd></p>
+]]></content>
       <categories>
-          
-          <category> 其他 </category>
-          
-          <category> 公众号 </category>
-          
+        <category>学习</category>
+        <category>Java</category>
+        <category>Java核心技术基础篇笔记</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> Java </tag>
-            
-            <tag> 尝试 </tag>
-            
-            <tag> 对象与类 </tag>
-            
-            <tag> 公众号 </tag>
-            
-            <tag> 《Java核心技术》 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>markdown语法练习</title>
-      <link href="/2020/01/27/markdown%E8%AF%AD%E6%B3%95%E7%BB%83%E4%B9%A0/"/>
-      <url>/2020/01/27/markdown%E8%AF%AD%E6%B3%95%E7%BB%83%E4%B9%A0/</url>
-      
-        <content type="html"><![CDATA[<h1 id="markdown笔记"><a href="#markdown笔记" class="headerlink" title="markdown笔记"></a>markdown笔记</h1><h2 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h2><p><em>斜体</em><br><strong>粗体文本</strong><br><strong><em>粗斜体文本</em></strong>  </p><p><del>狗逼</del></p><a id="more"></a><p>分割线：    </p><hr><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> a,b;</span><br><span class="line">    <span class="built_in">cin</span>&gt;&gt;a&gt;&gt;b;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;a+b&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><u>下划线</u>  </p><ul><li>马木木是个总裁</li><li>马木木还是个娱乐圈天王</li><li>马木木更是一个有一点点帅的小哥哥</li></ul><ol><li>马木木是个沙雕<ul><li>就一点点</li><li>就二点点</li><li>就三点点</li></ul></li><li>马木木是个冰雕<ul><li>就一雕雕</li><li>就二雕雕</li><li>就三雕雕</li></ul></li><li>马木木是个石雕</li></ol><blockquote><p>生活需要微笑，是微笑让这个世界变得更加温暖，变得更加的美丽生动，变得丰富多彩了有了微笑河流才那么清澈，有了微笑天空才那么蔚蓝。</p><blockquote><p>抬头三尺，即有神明。落寞或无助时，心中有希望;迷失时，心中有方向……</p></blockquote><p>风不懂云的漂泊，天不懂雨的落魄，眼不懂泪的懦弱，所以你不懂我的选择，也可以不懂我的难过，不是每个人都一定快乐，不是每种痛都一定要述说。</p></blockquote><p><a href="http://www.baidu.com" target="_blank" rel="noopener">百度</a></p><p><a href="http://www.baidu.com" target="_blank" rel="noopener">www.baidu.com</a></p><p><img src="http://i2.tiimg.com/708356/9ec5126e91dca4e7.png" alt="因为老板打赏了，就换一张图啦"></p><table><thead><tr><th>表头</th><th>表头</th></tr></thead><tbody><tr><td>单元格</td><td>单元格</td></tr><tr><td>单元格</td><td>单元格</td></tr></tbody></table><table><thead><tr><th align="left">左对齐</th><th align="right">右对齐</th><th align="center">居中对齐</th></tr></thead><tbody><tr><td align="left">单元格</td><td align="right">单元格</td><td align="center">单元格</td></tr><tr><td align="left">单元格</td><td align="right">单元格</td><td align="center">单元格</td></tr></tbody></table><p>链接也可以用变量来代替，文档末尾附带变量地址：<br>这个链接用 1 作为网址变量 <a href="http://www.google.com/" target="_blank" rel="noopener">Google</a><br>这个链接用 runoob 作为网址变量 <a href="http://www.runoob.com/" target="_blank" rel="noopener">Runoob</a><br>然后在文档的结尾为变量赋值（网址）</p><p>使用 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd> 重启电脑</p><p>** 正常显示星号 **</p><p>浅红色文字：<font color="#dd0000">浅红色</br>文字</font><br>深红色文字：<font color="#660000">深红色文字</font><br>浅绿色文字：<font color="#00dd00">浅绿色文字</font><br>深绿色文字：<font color="#006600">深绿色文字</font><br>浅蓝色文字：<font color="#0000dd">浅蓝色文字</font><br>深蓝色文字：<font color="#000066">深蓝色文字</font><br>浅黄色文字：<font color="#dddd00">浅黄色文字</font><br>深黄色文字：<font color="#666600">深黄色文字</font><br>浅青色文字：<font color="#00dddd">浅青色文字</font><br>深青色文字：<font color="#006666">深青色文字</font><br>浅紫色文字：<font color="#dd00dd">浅紫色文字</font><br>深紫色文字：<font color="#660066">深紫色文字</font>  </p><table><tr><td bgcolor=#FF00FF>背景色的设置是按照十六进制颜色值：#7FFFD4</td></tr></table><table><tr><td bgcolor=#FF83FA>背景色的设置是按照十六进制颜色值：#FF83FA</td></tr></table><table><tr><td bgcolor=#D1EEEE>背景色的设置是按照十六进制颜色值：#D1EEEE</td></tr></table><table><tr><td bgcolor=#C0FF3E>背景色的设置是按照十六进制颜色值：#C0FF3E</td></tr></table><table><tr><td bgcolor=#54FF9F>背景色的设置是按照十六进制颜色值：#54FF9F</td></tr></table>]]></content>
-      
-      
+      <tags>
+        <tag>Java</tag>
+        <tag>Java核心技术基础</tag>
+        <tag>控制流程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>公众号发表01</title>
+    <url>/2020/01/28/%E5%85%AC%E4%BC%97%E5%8F%B7%E5%8F%91%E8%A1%A8test1/</url>
+    <content><![CDATA[<h1 id="java-·-对象与类"><a href="#java-·-对象与类" class="headerlink" title="java · 对象与类"></a>java · 对象与类</h1><h2 id="面向对象程序设计-OOP"><a href="#面向对象程序设计-OOP" class="headerlink" title="面向对象程序设计(OOP)"></a>面向对象程序设计(OOP)</h2><p>学过 <strong>C/C++</strong> 的同学们都知道， <strong>Java</strong> 作为一个 <strong>面向对象程序设计</strong>（简称OOP）语言，有着其深刻的独到之处。  </p>
+<p>面向对象的程序是由 <strong>对象</strong> 组成的。每个对象包含对用户 <strong>公开</strong> 的特定 <strong>功能</strong> 部分与 <strong>隐藏</strong> 的 <strong>实现</strong> 部分。  </p>
+<p>程序中，有些对象来自 <strong>标准库</strong>，有些是自定义的。无论他们来自哪里，有一点是相同的，只要对象能够满足要求，就不必关心其功能的具体实现过程。  </p>
+<a id="more"></a>
+
+<table><tr><td bgcolor=orang>在OOP中，不必关心对象的具体实现,只要能够满足用户的需求即可</td></tr></table>  
+
+
+<blockquote>
+<p>传统的结构化程序设计通过设计一系列的（算法）来求解问题。一旦确定了这些过程，就要开始考虑存储数据的方式。这就是 Pascal语言的设计者 Niklaus Wirth将其著作命名为《算法 + 数据结构 = 程序》（  <em>Algorithms + Data Structures = Programs</em> ， Prentice Hall，1975）的原因。需要注意的是，在 Wirth命名的书名中，算法是第一位的，数据结构是第二位的，这就明确地表述了程序员的工作方式。首先要确定如何操作数据，然后再决定如何存储数据，以便于数据操作。而OOP却调换了这个次序，将数据放在第一位，对于一些规模较小的问题，将其分解为过程的开发方式比较理想。而面向对象更加适合于解决规模较大的问题。<br>——《Java核心技术》 【美】凯 S.霍特思曼  </p>
+</blockquote>
+<h2 id="类-class"><a href="#类-class" class="headerlink" title="类(class)"></a>类(class)</h2><p><strong>类</strong> 是构造对象的模板。通过这个模板，可以创建无数个功能相似的 <strong>对象</strong>。由类构造（construct）对象的过程称为创建类的 <strong>实例</strong>（instance）。  </p>
+<p>用Java编写的所有代码都位于某个类的内部。标准的Java库提供了几千个类，可以用于用户界面设计、日期、日历和网络程序设计。尽管如此，还是需要在Java程序中创建一些自己的类，以便描述应用程序所对应的问题域中的对象。  </p>
+<p><strong>封装</strong> （encapsulation，又称数据隐藏），则是将数据和行为组合在一个包中，并对对象的使用者隐藏数据。对象中的数据称为 <strong>实例域</strong>（instance field），操纵数据的过程称为 <strong>方法</strong> （method），对于每个特定的类实例都有一组特定的实例域值。这些值的集合就是这个对象的当前状态（state）。无论何时，只要向对象发送一个消息，它的状态就有可能发生改变。  </p>
+<blockquote>
+<p>实现封装的关键在于。绝对不能让类中的方法直接地访问其他类的实例域。程序仅通过对象的方法与对象数据进行交互。封装给对象赋予了“盒”特征，这是提高重用性和可靠性的关键。这意味着一个类可以全面地改变存储数据的方式，只要仍旧使用同样的方法操作数据，其他对象就不会知道或介意所发生的变化。<br>————《Java核心技术》 【美】凯 S.霍特思曼  </p>
+</blockquote>
+<p>OOP的另一个原则是：可以通过扩展一个类来建立另外一个新的类。事实上，Java中所有的类都源自于一个超类，它就是 Object。这会在后面详细介绍。  </p>
+<table><tr><td bgcolor=orang>可以通过扩展一个类来建立另外一个新的类</td></tr></table>  
+
+<p>被扩展后的新类具有原来类的全部属性和方法。因此在新类中，只需提供适用于这个新类的新方法和数据域就可以了。通过扩展一个类来建立另外一个类的过程称为 <strong>继承</strong> （inheritance）。</p>
+]]></content>
       <categories>
-          
-          <category> 学习 </category>
-          
-          <category> 其他 </category>
-          
-          <category> markdown </category>
-          
+        <category>其他</category>
+        <category>公众号</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> markdown </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-  
-  
+      <tags>
+        <tag>Java</tag>
+        <tag>尝试</tag>
+        <tag>对象与类</tag>
+        <tag>公众号</tag>
+        <tag>《Java核心技术》</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>markdown语法练习</title>
+    <url>/2020/01/27/markdown%E8%AF%AD%E6%B3%95%E7%BB%83%E4%B9%A0/</url>
+    <content><![CDATA[<h1 id="markdown笔记"><a href="#markdown笔记" class="headerlink" title="markdown笔记"></a>markdown笔记</h1><h2 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h2><p><em>斜体</em><br><strong>粗体文本</strong><br><strong><em>粗斜体文本</em></strong>  </p>
+<p><del>狗逼</del></p>
+<a id="more"></a>
+
+<p>分割线：    </p>
+<hr>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> a,b;</span><br><span class="line">    <span class="built_in">cin</span>&gt;&gt;a&gt;&gt;b;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;a+b&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><u>下划线</u>  </p>
+<ul>
+<li>马木木是个总裁</li>
+<li>马木木还是个娱乐圈天王</li>
+<li>马木木更是一个有一点点帅的小哥哥</li>
+</ul>
+<ol>
+<li>马木木是个沙雕<ul>
+<li>就一点点</li>
+<li>就二点点</li>
+<li>就三点点</li>
+</ul>
+</li>
+<li>马木木是个冰雕<ul>
+<li>就一雕雕</li>
+<li>就二雕雕</li>
+<li>就三雕雕</li>
+</ul>
+</li>
+<li>马木木是个石雕</li>
+</ol>
+<blockquote>
+<p>生活需要微笑，是微笑让这个世界变得更加温暖，变得更加的美丽生动，变得丰富多彩了有了微笑河流才那么清澈，有了微笑天空才那么蔚蓝。</p>
+<blockquote>
+<p>抬头三尺，即有神明。落寞或无助时，心中有希望;迷失时，心中有方向……</p>
+</blockquote>
+<p>风不懂云的漂泊，天不懂雨的落魄，眼不懂泪的懦弱，所以你不懂我的选择，也可以不懂我的难过，不是每个人都一定快乐，不是每种痛都一定要述说。</p>
+</blockquote>
+<p><a href="http://www.baidu.com" target="_blank" rel="noopener">百度</a></p>
+<p><a href="http://www.baidu.com" target="_blank" rel="noopener">www.baidu.com</a></p>
+<p><img src="http://i2.tiimg.com/708356/9ec5126e91dca4e7.png" alt="因为老板打赏了，就换一张图啦"></p>
+<table>
+<thead>
+<tr>
+<th>表头</th>
+<th>表头</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+<tr>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th align="left">左对齐</th>
+<th align="right">右对齐</th>
+<th align="center">居中对齐</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">单元格</td>
+<td align="right">单元格</td>
+<td align="center">单元格</td>
+</tr>
+<tr>
+<td align="left">单元格</td>
+<td align="right">单元格</td>
+<td align="center">单元格</td>
+</tr>
+</tbody></table>
+<p>链接也可以用变量来代替，文档末尾附带变量地址：<br>这个链接用 1 作为网址变量 <a href="http://www.google.com/" target="_blank" rel="noopener">Google</a><br>这个链接用 runoob 作为网址变量 <a href="http://www.runoob.com/" target="_blank" rel="noopener">Runoob</a><br>然后在文档的结尾为变量赋值（网址）</p>
+<p>使用 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd> 重启电脑</p>
+<p>** 正常显示星号 **</p>
+<p>浅红色文字：<font color="#dd0000">浅红色</br>文字</font><br>深红色文字：<font color="#660000">深红色文字</font><br>浅绿色文字：<font color="#00dd00">浅绿色文字</font><br>深绿色文字：<font color="#006600">深绿色文字</font><br>浅蓝色文字：<font color="#0000dd">浅蓝色文字</font><br>深蓝色文字：<font color="#000066">深蓝色文字</font><br>浅黄色文字：<font color="#dddd00">浅黄色文字</font><br>深黄色文字：<font color="#666600">深黄色文字</font><br>浅青色文字：<font color="#00dddd">浅青色文字</font><br>深青色文字：<font color="#006666">深青色文字</font><br>浅紫色文字：<font color="#dd00dd">浅紫色文字</font><br>深紫色文字：<font color="#660066">深紫色文字</font>  </p>
+<table><tr><td bgcolor=#FF00FF>背景色的设置是按照十六进制颜色值：#7FFFD4</td></tr></table>
+<table><tr><td bgcolor=#FF83FA>背景色的设置是按照十六进制颜色值：#FF83FA</td></tr></table>
+<table><tr><td bgcolor=#D1EEEE>背景色的设置是按照十六进制颜色值：#D1EEEE</td></tr></table>
+<table><tr><td bgcolor=#C0FF3E>背景色的设置是按照十六进制颜色值：#C0FF3E</td></tr></table>
+<table><tr><td bgcolor=#54FF9F>背景色的设置是按照十六进制颜色值：#54FF9F</td></tr></table>]]></content>
+      <categories>
+        <category>学习</category>
+        <category>其他</category>
+        <category>markdown</category>
+      </categories>
+      <tags>
+        <tag>markdown</tag>
+      </tags>
+  </entry>
 </search>

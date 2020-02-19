@@ -203,6 +203,159 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/17/Web%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91-MOOC-02/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/avatar.png">
+      <meta itemprop="name" content="Author">
+      <meta itemprop="description" content="你怎么这么好看">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ranye的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/02/17/Web%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91-MOOC-02/" class="post-title-link" itemprop="url">Web前端开发 MOOC 02</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-02-17 21:45:27" itemprop="dateCreated datePublished" datetime="2020-02-17T21:45:27+08:00">2020-02-17</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-02-19 17:26:45" itemprop="dateModified" datetime="2020-02-19T17:26:45+08:00">2020-02-19</time>
+              </span>
+
+          
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+              <span>1.2k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+              <span>2 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="css布局和定位"><a href="#css布局和定位" class="headerlink" title="css布局和定位"></a>css布局和定位</h2><h3 id="盒子模型"><a href="#盒子模型" class="headerlink" title="盒子模型"></a>盒子模型</h3><h4 id="盒子"><a href="#盒子" class="headerlink" title="盒子"></a>盒子</h4><ul>
+<li>content 内容</li>
+<li>height 高度</li>
+<li>width 宽度</li>
+<li>border 边框</li>
+<li>padding 内边距</li>
+<li>margin 外边距</li>
+</ul>
+<p><img src="http://i1.fuimg.com/708356/93b482f97694cc7b.jpg" alt="Markdown"></p>
+<p><img src="http://i1.fuimg.com/708356/47491f259de30cdc.jpg" alt="Markdown"></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-id">#box</span>&#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">1px</span> solid</span><br><span class="line">    <span class="comment">/* 边框为1px，实线框 */</span></span><br><span class="line">    ·····</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"box"</span>&gt;</span></span><br><span class="line">    balabala···</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="overflow属性"><a href="#overflow属性" class="headerlink" title="overflow属性"></a>overflow属性</h4><p>内容溢出盒子框，怎么显示</p>
+<ul>
+<li><kbd>overflow: hidden</kbd> 超出部分不显示</li>
+<li><kbd>overflow: scoll</kbd> 显示滚动条</li>
+<li><kbd>overflow: auto</kbd> 如果有超出部分，显示滚动条</li>
+</ul>
+<h4 id="border属性-边框的效果"><a href="#border属性-边框的效果" class="headerlink" title="border属性(边框的效果)"></a>border属性(边框的效果)</h4><ul>
+<li>border-width 宽度 取值有px/thin(细)/medium(中)/thick(粗)</li>
+<li>border-style 取值有dashed(虚线)/dotted(一排点点)/solid(实线)/double(双实线)</li>
+<li>border-color</li>
+</ul>
+<p>border: width style color</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">    <span class="attribute">border</span>:<span class="number">2px</span> solid red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">    <span class="attribute">border-bottom</span>:<span class="number">1px</span> solid red;</span><br><span class="line">    <span class="comment">/* 只设置底部边框 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>应用：水平分割线</p>
+<h4 id="padding（内边距）-margin（外边距）"><a href="#padding（内边距）-margin（外边距）" class="headerlink" title="padding（内边距） margin（外边距）"></a>padding（内边距） margin（外边距）</h4><p>对浏览器默认的设置清零</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">* &#123;</span><br><span class="line">    <span class="attribute">margin</span>:<span class="number">0</span>;</span><br><span class="line">    <span class="attribute">padding</span>:<span class="number">0</span>;</span><br><span class="line">    <span class="comment">/* 只有在取值为0的时候才可以省略单位 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>取值：px，%（外层盒子的宽度和高度）</p>
+<p>分开的：<br><kbd>padding-top</kbd><br><kbd>padding-right</kbd><br><kbd>padding-bottom</kbd><br><kbd>padding-left</kbd></p>
+<p>合在一起：<br>上右下左 (顺时针)</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">margin</span>: 1<span class="selector-tag">px</span> 2<span class="selector-tag">px</span> 3<span class="selector-tag">px</span> 4<span class="selector-tag">px</span>;</span><br><span class="line"><span class="comment">/*      👆  👉  👇  👈 */</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">margin</span>: 1<span class="selector-tag">px</span> 2<span class="selector-tag">px</span>;</span><br><span class="line"><span class="comment">/*     👆👇 👈👉 */</span></span><br></pre></td></tr></table></figure>
+
+<p>将padding换成margin同样</p>
+<p>Tips：</p>
+<ol>
+<li>如果定标签（div）作为样式的名字，每一个盒子独占一行</li>
+<li>上下两个相邻的外边距合并成一个外边距，合并的结果是取两个的最大值</li>
+<li>水平方向上不合并</li>
+</ol>
+<p>水平居中</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 图片、文字水平居中 */</span></span><br><span class="line"><span class="selector-tag">text-align</span>: <span class="selector-tag">center</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* div水平居中 */</span></span><br><span class="line"><span class="selector-tag">margin</span>: 0 <span class="selector-tag">auto</span>; </span><br><span class="line"><span class="comment">/* 上下可以随便设置，左右设置auto，浏览器根据外层盒子宽度和div区域的宽度再除以二，算出margin-left margin-right */</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h5><p><img src="http://i2.tiimg.com/708356/8f9a5c547725e48b.jpg" alt="Markdown"></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-id">#newsimglist</span>&#123;</span><br><span class="line">    <span class="attribute">text-align</span>:center;</span><br><span class="line">    <span class="attribute">font-size</span>:<span class="number">0</span>; <span class="comment">/*否则图间有空隙*/</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#newsimglist</span> <span class="selector-tag">img</span>&#123;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">    width:100px; .</span><br><span class="line">    <span class="selector-tag">margin-left</span><span class="selector-pseudo">:5px</span>;</span><br><span class="line">    <span class="selector-tag">border</span>: 1<span class="selector-tag">px</span> <span class="selector-tag">solid</span> <span class="selector-id">#0cf</span>;</span><br><span class="line">    <span class="selector-tag">padding</span><span class="selector-pseudo">:5px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/15/%E6%97%A5%E8%AE%B0-2020-02-15/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -360,7 +513,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/14/Web%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/14/Web%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91-MOOC-01/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/uploads/avatar.png">
@@ -374,7 +527,7 @@
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           
-            <a href="/2020/02/14/Web%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/" class="post-title-link" itemprop="url">Web前端开发</a>
+            <a href="/2020/02/14/Web%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91-MOOC-01/" class="post-title-link" itemprop="url">Web前端开发 MOOC 01</a>
         </h1>
 
         <div class="post-meta">
@@ -391,7 +544,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-02-17 19:21:27" itemprop="dateModified" datetime="2020-02-17T19:21:27+08:00">2020-02-17</time>
+                <time title="修改时间：2020-02-18 06:30:30" itemprop="dateModified" datetime="2020-02-18T06:30:30+08:00">2020-02-18</time>
               </span>
 
           
@@ -417,10 +570,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>更新至 3.css样式 3-4css样式(1)文字样式</p>
+          <p>第三章 css样式 笔记 已完成</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2020/02/14/Web%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/#more" rel="contents">
+              <a class="btn" href="/2020/02/14/Web%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91-MOOC-01/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -912,77 +1065,6 @@
   
   
 
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/01/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E7%AC%94%E8%AE%B001/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/uploads/avatar.png">
-      <meta itemprop="name" content="Author">
-      <meta itemprop="description" content="你怎么这么好看">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Ranye的博客">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/02/01/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E7%AC%94%E8%AE%B001/" class="post-title-link" itemprop="url">计算机组成原理笔记01</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-02-01 12:28:56 / 修改时间：13:31:36" itemprop="dateCreated datePublished" datetime="2020-02-01T12:28:56+08:00">2020-02-01</time>
-            </span>
-
-          
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-              <span>110</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="存储器怎么工作？"><a href="#存储器怎么工作？" class="headerlink" title="存储器怎么工作？"></a>存储器怎么工作？</h3><p>存储器 = 存储体 + MAR + MDR<br>MAR: 存储器地址寄存器<br>MDR: 存储器数据寄存器<br>存储体: 由存储单元（存字）组成，是一个具体的电路。存储单元由存储元（存位）。组成储存的一组数据叫存储字</p>
-<h3 id="存储器和CPU怎么连接？"><a href="#存储器和CPU怎么连接？" class="headerlink" title="存储器和CPU怎么连接？"></a>存储器和CPU怎么连接？</h3>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
   </div>
 
   
@@ -1055,7 +1137,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">18</span>
+          <span class="site-state-item-count">19</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1110,12 +1192,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="站点总字数">10k</span>
+    <span title="站点总字数">11k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">16 分钟</span>
+    <span title="站点阅读时长">18 分钟</span>
 </div>
 
         
