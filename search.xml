@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>计算机组成原理01</title>
+    <url>/2020/02/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%8601/</url>
+    <content><![CDATA[<h3 id="计算机系统的性能评价"><a href="#计算机系统的性能评价" class="headerlink" title="计算机系统的性能评价"></a>计算机系统的性能评价</h3><h4 id="非时间指标"><a href="#非时间指标" class="headerlink" title="非时间指标"></a>非时间指标</h4><ul>
+<li>机器字长（精确度）</li>
+<li>总线宽度</li>
+<li>主存容量  存储带宽</li>
+</ul>
+<p>计算机系统从功能上可划分为哪些层次？各层次在计算机系统中起什么作用？<br>五个层次：微程序设计级、一般机器级、操作系统级、汇编语言级、高级程序级<br>第一级是微程序设计级，这是一个实在的硬件级，它</p>
+<p>第四级是汇编语言级。它给程序人员提供一种符号形式的语言，以降低程序编写的复杂性。这一级由汇编程序支持和执行。如果应用程序采用汇编语言编写，则机器必须有这一级的功能才能运行；如果应用程序不采用汇编语言编写，则这一级可以不要。<br>第五级是高级语言级。这是面向用户的，为方便用户编写应用程序面设置的。这一级由名种高级语言编译程序支持。</p>
+<p>** 层次之间的关系紧密，上层是下层的扩展，下层是上层的基础，这是层次结构的一个特点。层次结构的另一个特点是，站在不同的层次馆床计算机系统，会得到不同的概念，例如，程序员**</p>
+]]></content>
+  </entry>
+  <entry>
     <title>Web前端开发 MOOC 02</title>
     <url>/2020/02/17/Web%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91-MOOC-02/</url>
     <content><![CDATA[<h2 id="css布局和定位"><a href="#css布局和定位" class="headerlink" title="css布局和定位"></a>css布局和定位</h2><h3 id="盒子模型"><a href="#盒子模型" class="headerlink" title="盒子模型"></a>盒子模型</h3><h4 id="盒子"><a href="#盒子" class="headerlink" title="盒子"></a>盒子</h4><ul>
@@ -11,8 +24,8 @@
 <li>padding 内边距</li>
 <li>margin 外边距</li>
 </ul>
-<p><img src="http://i1.fuimg.com/708356/93b482f97694cc7b.jpg" alt="Markdown"></p>
-<p><img src="http://i1.fuimg.com/708356/47491f259de30cdc.jpg" alt="Markdown"></p>
+<p><img src="https://s2.ax1x.com/2020/02/20/3mpBIP.jpg" alt="3mpBIP.jpg"></p>
+<p><img src="https://s2.ax1x.com/2020/02/20/3mpwVI.jpg" alt="3mpwVI.jpg"></p>
 <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-id">#box</span>&#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">1px</span> solid</span><br><span class="line">    <span class="comment">/* 边框为1px，实线框 */</span></span><br><span class="line">    ·····</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"box"</span>&gt;</span></span><br><span class="line">    balabala···</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
@@ -51,35 +64,38 @@
 <p>水平居中</p>
 <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* 图片、文字水平居中 */</span></span><br><span class="line"><span class="selector-tag">text-align</span>: <span class="selector-tag">center</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* div水平居中 */</span></span><br><span class="line"><span class="selector-tag">margin</span>: 0 <span class="selector-tag">auto</span>; </span><br><span class="line"><span class="comment">/* 上下可以随便设置，左右设置auto，浏览器根据外层盒子宽度和div区域的宽度再除以二，算出margin-left margin-right */</span></span><br></pre></td></tr></table></figure>
 
-<h5 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h5><p><img src="http://i2.tiimg.com/708356/8f9a5c547725e48b.jpg" alt="Markdown"></p>
+<h5 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h5><p><img src="https://s2.ax1x.com/2020/02/20/3mp156.jpg" alt="3mp156.jpg"></p>
 <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-id">#newsimglist</span>&#123;</span><br><span class="line">    <span class="attribute">text-align</span>:center;</span><br><span class="line">    <span class="attribute">font-size</span>:<span class="number">0</span>; <span class="comment">/*否则图间有空隙*/</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#newsimglist</span> <span class="selector-tag">img</span>&#123;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">    width:100px; .</span><br><span class="line">    <span class="selector-tag">margin-left</span><span class="selector-pseudo">:5px</span>;</span><br><span class="line">    <span class="selector-tag">border</span>: 1<span class="selector-tag">px</span> <span class="selector-tag">solid</span> <span class="selector-id">#0cf</span>;</span><br><span class="line">    <span class="selector-tag">padding</span><span class="selector-pseudo">:5px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<h3 id="css定位机制"><a href="#css定位机制" class="headerlink" title="css定位机制"></a>css定位机制</h3><ul>
+<li>文档流 flow （默认方式）</li>
+<li>浮动 float</li>
+<li>层 layer</li>
+</ul>
+<p><img src="https://s2.ax1x.com/2020/02/20/3mSRN6.jpg" alt="3mSRN6.jpg"></p>
+<h4 id="文档流定位（flow）"><a href="#文档流定位（flow）" class="headerlink" title="文档流定位（flow）"></a>文档流定位（flow）</h4><p>元素类型转换：</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">a</span>&#123;</span><br><span class="line">    <span class="attribute">display</span>: none/block/inline/inline-block;</span><br><span class="line">         <span class="comment">/* 不显示/block/inline/inline-block */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<h5 id="block元素"><a href="#block元素" class="headerlink" title="block元素"></a>block元素</h5><ul>
+<li>独占一行</li>
+<li>元素的height、width、margin、padding都可设置</li>
+</ul>
+<p><kbd>&lt;div&gt;</kbd><br><kbd>&lt;p&gt;</kbd><br><kbd>&lt;h1/h2...h6&gt;</kbd><br><kbd>&lt;ol&gt;</kbd><br><kbd>&lt;ul&gt;</kbd><br><kbd>&lt;table&gt;</kbd><br><kbd>&lt;form&gt;</kbd></p>
+<h5 id="inline元素"><a href="#inline元素" class="headerlink" title="inline元素"></a>inline元素</h5><ul>
+<li>不独占行</li>
+<li>width、height不可设置</li>
+<li>width就是所包含的文字/图片的宽度</li>
+</ul>
+<p><kbd>&lt;span&gt;</kbd><br><kbd>&lt;a&gt;</kbd></p>
+<p>两个inline类型的元素中间有间距。要想去除这个间距，可以将之转换成block等元素表示。做导航条的时候，采用<p>或<ul>/<li>标签包裹起来,来防止间距产生</p>
+<h5 id="inline-block元素"><a href="#inline-block元素" class="headerlink" title="inline-block元素"></a>inline-block元素</h5><ul>
+<li>不独占行</li>
+<li>元素的height、width、margin、padding都可设置</li>
+</ul>
+<p><kbd>&lt;img&gt;</kbd></p>
+<h4 id="浮动定位"><a href="#浮动定位" class="headerlink" title="浮动定位"></a>浮动定位</h4><p>div实现横向多列布局</p>
+<p><kbd>&lt;&gt;</kbd><br><kbd>&lt;&gt;</kbd><br><kbd>&lt;&gt;</kbd></p>
 ]]></content>
       <categories>
         <category>学习</category>
@@ -471,7 +487,7 @@
 <td>列表项标号在文字外</td>
 </tr>
 </tbody></table>
-<p><img src="http://i2.tiimg.com/708356/657cda18144b8cf6.jpg" alt="Markdown"></p>
+<p><img src="https://s2.ax1x.com/2020/02/20/3mpaqA.jpg" alt="3mpaqA.jpg"></p>
 <h4 id="css表格"><a href="#css表格" class="headerlink" title="css表格"></a>css表格</h4><p>设置表格的宽和高</p>
 <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">table</span>&#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">500px</span>;</span><br><span class="line">  <span class="comment">/* 表格宽 */</span></span><br><span class="line">  <span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">  <span class="comment">/* 表格高 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>设置表格的框</p>
