@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('http://yoursite.com').hostname,
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.7.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"always","padding":18,"offset":12,"onmobile":false,"author":"ranye"},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
+
+  <meta name="description" content="笔记至第3章【完】">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java程序设计01">
+<meta property="og:url" content="http://yoursite.com/2020/02/22/Java%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A101/index.html">
+<meta property="og:site_name" content="Ranye的博客">
+<meta property="og:description" content="笔记至第3章【完】">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-02-22T11:16:42.000Z">
+<meta property="article:modified_time" content="2020-02-22T18:18:41.793Z">
+<meta property="article:author" content="Ranye">
+<meta property="article:tag" content="Java">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://yoursite.com/2020/02/22/Java%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A101/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true
+  };
+</script>
+
+  <title>Java程序设计01 | Ranye的博客</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Ranye的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">你好鸭~</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="搜索..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/22/Java%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A101/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/avatar.png">
+      <meta itemprop="name" content="Author">
+      <meta itemprop="description" content="你怎么这么好看">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ranye的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Java程序设计01
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-02-22 19:16:42" itemprop="dateCreated datePublished" datetime="2020-02-22T19:16:42+08:00">2020-02-22</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-02-23 02:18:41" itemprop="dateModified" datetime="2020-02-23T02:18:41+08:00">2020-02-23</time>
+              </span>
+
+          
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+              <span>3.5k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+              <span>6 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>笔记至第3章【完】</p>
+<a id="more"></a>
+
+<p>课程重点：</p>
+<ul>
+<li>类</li>
+<li>集合  </li>
+<li>图形用户界面</li>
+<li>文件操作</li>
+<li>多线程</li>
+<li>数据库</li>
+</ul>
+<h2 id="第一章-Java程序设计概述"><a href="#第一章-Java程序设计概述" class="headerlink" title="第一章 Java程序设计概述"></a>第一章 Java程序设计概述</h2><h3 id="命令行执行Java程序"><a href="#命令行执行Java程序" class="headerlink" title="命令行执行Java程序"></a>命令行执行Java程序</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">javac Test.java   &#x2F;&#x2F;java compile 编译java程序 .java-&gt;.class</span><br><span class="line">java Test    &#x2F;&#x2F;运行java程序</span><br></pre></td></tr></table></figure>
+
+<h2 id="第二章-Java语言基础"><a href="#第二章-Java语言基础" class="headerlink" title="第二章 Java语言基础"></a>第二章 Java语言基础</h2><h3 id="标识符和关键字"><a href="#标识符和关键字" class="headerlink" title="标识符和关键字"></a>标识符和关键字</h3><p>标识符：首字符必须是字母、下划线或美元符号$，后面可跟字母、数字、下划线和美元符号$。</p>
+<p>关键字:Java预定义的单词。</p>
+<ul>
+<li>数据类型：byte、short、int、long、char、float、double、boolean</li>
+<li>包引入和包声明：import、package</li>
+<li>类和接口的声明：class、extends、implement、interface</li>
+<li>流程控制：if、else、switch、case、break、default、while、for、do、continue、return</li>
+<li>异常处理：try、catch、finally、throw、throws</li>
+<li>修饰符：abstract、final、private、protected、public、static、synchronized</li>
+<li>其他：new、instanceof、this、super、void、enum</li>
+</ul>
+<h3 id="基本数据类型、变量、常量"><a href="#基本数据类型、变量、常量" class="headerlink" title="基本数据类型、变量、常量"></a>基本数据类型、变量、常量</h3><h4 id="符号常量"><a href="#符号常量" class="headerlink" title="符号常量"></a>符号常量</h4><p>用<kbd>final</kbd>声明符号常量<br>表示这个变量只能被赋值一次，一旦赋值后就不能够再更改。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// final 数据类型 常量名 = 缺省值;</span></span><br><span class="line">    <span class="keyword">final</span> <span class="keyword">int</span> STUDENT_NUM = <span class="number">10</span>;</span><br></pre></td></tr></table></figure>
+
+<p>习惯上，符号常量名采用全部<strong>大写</strong>，词与词之间用<strong>下划线</strong>分隔。</p>
+<h4 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h4><p>变量形式：maMuMu。一般不使用下划线。</p>
+<h3 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h3><p><kbd>&&</kbd>是短路与，<kbd>||</kbd>是短路或<br><kbd>&</kbd>是逻辑与，<kbd>|</kbd>是逻辑或</p>
+<h3 id="表达式的类型转换"><a href="#表达式的类型转换" class="headerlink" title="表达式的类型转换"></a>表达式的类型转换</h3><p>将长的类型赋予较短的类型要先强制类型转换</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">long</span> <span class="keyword">long</span> x = <span class="number">100</span>;</span><br><span class="line"><span class="keyword">int</span> y = (<span class="keyword">int</span>) x;</span><br></pre></td></tr></table></figure>
+
+<h3 id="流程控制"><a href="#流程控制" class="headerlink" title="流程控制"></a>流程控制</h3><h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><p><strong>函数</strong>=<strong>方法</strong>=<strong>模块化设计</strong><br>Java中所有的方法都必须封装在类中，不能单独出现、使用。</p>
+<h4 id="方法的定义"><a href="#方法的定义" class="headerlink" title="方法的定义"></a>方法的定义</h4><p>Java中方法定义的基本格式为：<br>[修饰符] 返回值类型 方法名([形式参数列表]){<br>    [方法体]<br>}<br>修饰符：定义方法在类中的存在属性（如公有/私有、是否可以被重载等）</p>
+<h4 id="方法的重载"><a href="#方法的重载" class="headerlink" title="方法的重载"></a>方法的重载</h4><p>重载只与参数有关，与返回值无关</p>
+<ul>
+<li>参数的类型不同</li>
+<li>参数的个数不同</li>
+</ul>
+<h4 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.*;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        Scanner input = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">        <span class="keyword">double</span> r,perimeter,area;</span><br><span class="line">        System.out.print(<span class="string">"Please enter a radius for a circle: "</span>);</span><br><span class="line">        <span class="comment">// System.out.println是输出并换行 print不换行</span></span><br><span class="line">        r = input.nextDouble();</span><br><span class="line">        input.close();</span><br><span class="line">        <span class="comment">//记得关闭输入</span></span><br><span class="line">        perimeter = <span class="number">2</span>*Math.PI*r;</span><br><span class="line">        area = Math.PI*r*r;</span><br><span class="line">        System.out.print(<span class="string">"The perimeter is "</span>+ perimeter+<span class="string">" and the area is "</span>+area);</span><br><span class="line">        <span class="comment">// “+”将变量值转换为字符串</span></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="第三章-数组"><a href="#第三章-数组" class="headerlink" title="第三章 数组"></a>第三章 数组</h2><h3 id="数组的声明、创建、引用"><a href="#数组的声明、创建、引用" class="headerlink" title="数组的声明、创建、引用"></a>数组的声明、创建、引用</h3><p>Java中的数组是对象，属于引用类型。</p>
+<p>法一：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[] muyArray;</span><br><span class="line">myArray = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">5</span>];</span><br></pre></td></tr></table></figure>
+
+<p>法二：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[] myArray = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">5</span>];</span><br></pre></td></tr></table></figure>
+
+<p>法三 <strong>匿名数组</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> <span class="keyword">int</span>[]&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>&#125;</span><br></pre></td></tr></table></figure>
+<p>用于函数的实参等</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> sum = getSum(<span class="keyword">new</span> <span class="keyword">int</span>[]&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>数组的属性<kbd>length</kbd>，存储数组元素的个数</p>
+<p>Java能自动检查数组是否越界</p>
+<h4 id="一维数组"><a href="#一维数组" class="headerlink" title="一维数组"></a>一维数组</h4><h4 id="不定长参数与数组"><a href="#不定长参数与数组" class="headerlink" title="不定长参数与数组"></a>不定长参数与数组</h4><p>某些方法的参数个数事先无法确定。<br>可使用数组参数</p>
+<ul>
+<li>不定长形参只能处于形参列表的最后</li>
+<li>一个方法只能包含一个不定长参数<br>法一<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">fun</span><span class="params">(String... args)</span></span>;</span><br></pre></td></tr></table></figure>
+法二<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">fun</span><span class="params">(String[] args)</span></span>;</span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ul>
+<h4 id="二维数组"><a href="#二维数组" class="headerlink" title="二维数组"></a>二维数组</h4><ul>
+<li>规则二维数组</li>
+<li>不规则二维数组</li>
+</ul>
+<h5 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[][] myArray;</span><br></pre></td></tr></table></figure>
+
+<h5 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">myArray = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">2</span>][<span class="number">3</span>];</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">myArray = <span class="keyword">new</span> <span class="keyword">int</span>[][]&#123;&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;,&#123;<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>&#125;&#125;;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">myArray = &#123;&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;,&#123;<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>&#125;&#125;;</span><br></pre></td></tr></table></figure>
+
+<h5 id="不规则二维数组"><a href="#不规则二维数组" class="headerlink" title="不规则二维数组"></a>不规则二维数组</h5><p>创建二维数组对象可以进行动态分配</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[][] b = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">2</span>][];</span><br><span class="line">b[<span class="number">0</span>] = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">3</span>];</span><br><span class="line">b[<span class="number">1</span>] = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">5</span>];</span><br></pre></td></tr></table></figure>
+
+<h3 id="for-each循环"><a href="#for-each循环" class="headerlink" title="for each循环"></a>for each循环</h3><p>用于遍历数组元素</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> ( 数据类型 迭代变量: 数组 )&#123;</span><br><span class="line">    ···</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span>[] rows:twoDArray)&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> element:rows)&#123;</span><br><span class="line">        ···</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Arrays类"><a href="#Arrays类" class="headerlink" title="Arrays类"></a>Arrays类</h3><h4 id="sort-方法"><a href="#sort-方法" class="headerlink" title="sort()方法"></a>sort()方法</h4><p>优化的快速排序方法</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Array.sort(myArray);</span><br><span class="line">System.out.println(Array.toString(myArray));</span><br></pre></td></tr></table></figure>
+
+<h4 id="copyOf-方法"><a href="#copyOf-方法" class="headerlink" title="copyOf()方法"></a>copyOf()方法</h4><p>实现数组复制<br>得到的是一个新的数组对象</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">copyOf(<span class="keyword">int</span>[] myArray,<span class="keyword">int</span> length)</span><br><span class="line">或</span><br><span class="line">copyOf(<span class="keyword">int</span>[] myArray, <span class="keyword">int</span> start, <span class="keyword">int</span> end)</span><br></pre></td></tr></table></figure>
+<h3 id="案例-1"><a href="#案例-1" class="headerlink" title="案例"></a>案例</h3><p>显示成绩方法</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">show</span><span class="params">()</span></span>&#123;  <span class="comment">//显示成绩</span></span><br><span class="line">    System.out.print(<span class="string">"\t"</span>);  <span class="comment">//留出显示姓名的位置</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;courses.length; i++)&#123;<span class="comment">//输出课程名称</span></span><br><span class="line">        System.out.print(courses[i]+<span class="string">"\t"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    System.out.println();</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;score.length; i++)&#123;</span><br><span class="line">        <span class="comment">//显示学生姓名</span></span><br><span class="line">        System.out.print(students[i]+<span class="string">"\t"</span>);</span><br><span class="line">        <span class="comment">//显示该学生成绩</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>; j&lt;score[i].length; j++)&#123;</span><br><span class="line">            System.out.print(score[i][j]+<span class="string">"\t"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">字符串比较方法：&lt;kbd&gt;equalsIgnoreCase()&lt;/kbd&gt;</span><br><span class="line"></span><br><span class="line">控制台命令的读取和控制</span><br><span class="line">```java</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span></span>&#123;</span><br><span class="line">    Scanner scn=<span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">    <span class="keyword">while</span>(<span class="keyword">true</span>)&#123;</span><br><span class="line">        System.out.print(<span class="string">"请输入命令:"</span>);</span><br><span class="line">        String command=scn.next();</span><br><span class="line">        <span class="keyword">if</span>(command.equalsIgnoreCase(<span class="string">"avg"</span>))&#123;<span class="comment">//"avg"命令需要一个参数</span></span><br><span class="line">            String parameter=scn.next();</span><br><span class="line">            avg(parameter);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(command.equalsIgnoreCase(<span class="string">"get"</span>))&#123;<span class="comment">//"get"命令需要两个参数</span></span><br><span class="line">            String parameter1=scn.next();</span><br><span class="line">            String parameter2=scn.next();</span><br><span class="line">            get(parameter1,parameter2);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(command.equalsIgnoreCase(<span class="string">"sort"</span>))&#123;<span class="comment">//"sort"命令需要一个参数</span></span><br><span class="line">            String parameter=scn.next();</span><br><span class="line">            sortByScore(parameter);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (command.equalsIgnoreCase(<span class="string">"exit"</span>))&#123;<span class="comment">//退出查询系统</span></span><br><span class="line">            System.out.println(<span class="string">"退出查询系统！byebye！"</span>);</span><br><span class="line">            System.exit(<span class="number">0</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>查询某人某门课成绩</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">get(String[] students, String[] courses)&#123;</span><br><span class="line">    ···</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+    </div>
+
+    
+    
+    
+        <div class="reward-container">
+  <div>点我打钱，球球你啦👇</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.png" alt="Author 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.png" alt="Author 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
+
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/Java/" rel="tag"><i class="fa fa-tag"></i> Java</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/02/22/%E5%BE%90%E6%B6%9B%E6%80%9D%E4%BF%AE01/" rel="prev" title="徐涛思修01">
+      <i class="fa fa-chevron-left"></i> 徐涛思修01
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#第一章-Java程序设计概述"><span class="nav-number">1.</span> <span class="nav-text">第一章 Java程序设计概述</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#命令行执行Java程序"><span class="nav-number">1.1.</span> <span class="nav-text">命令行执行Java程序</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第二章-Java语言基础"><span class="nav-number">2.</span> <span class="nav-text">第二章 Java语言基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#标识符和关键字"><span class="nav-number">2.1.</span> <span class="nav-text">标识符和关键字</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基本数据类型、变量、常量"><span class="nav-number">2.2.</span> <span class="nav-text">基本数据类型、变量、常量</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#符号常量"><span class="nav-number">2.2.1.</span> <span class="nav-text">符号常量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#变量"><span class="nav-number">2.2.2.</span> <span class="nav-text">变量</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#运算符"><span class="nav-number">2.3.</span> <span class="nav-text">运算符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#表达式的类型转换"><span class="nav-number">2.4.</span> <span class="nav-text">表达式的类型转换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#流程控制"><span class="nav-number">2.5.</span> <span class="nav-text">流程控制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方法"><span class="nav-number">2.6.</span> <span class="nav-text">方法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#方法的定义"><span class="nav-number">2.6.1.</span> <span class="nav-text">方法的定义</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#方法的重载"><span class="nav-number">2.6.2.</span> <span class="nav-text">方法的重载</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#案例"><span class="nav-number">2.6.3.</span> <span class="nav-text">案例</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第三章-数组"><span class="nav-number">3.</span> <span class="nav-text">第三章 数组</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#数组的声明、创建、引用"><span class="nav-number">3.1.</span> <span class="nav-text">数组的声明、创建、引用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#一维数组"><span class="nav-number">3.1.1.</span> <span class="nav-text">一维数组</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#不定长参数与数组"><span class="nav-number">3.1.2.</span> <span class="nav-text">不定长参数与数组</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二维数组"><span class="nav-number">3.1.3.</span> <span class="nav-text">二维数组</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#声明"><span class="nav-number">3.1.3.1.</span> <span class="nav-text">声明</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#创建"><span class="nav-number">3.1.3.2.</span> <span class="nav-text">创建</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#不规则二维数组"><span class="nav-number">3.1.3.3.</span> <span class="nav-text">不规则二维数组</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#for-each循环"><span class="nav-number">3.2.</span> <span class="nav-text">for each循环</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Arrays类"><span class="nav-number">3.3.</span> <span class="nav-text">Arrays类</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#sort-方法"><span class="nav-number">3.3.1.</span> <span class="nav-text">sort()方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#copyOf-方法"><span class="nav-number">3.3.2.</span> <span class="nav-text">copyOf()方法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#案例-1"><span class="nav-number">3.4.</span> <span class="nav-text">案例</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Author"
+      src="/uploads/avatar.png">
+  <p class="site-author-name" itemprop="name">Author</p>
+  <div class="site-description" itemprop="description">你怎么这么好看</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">24</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">28</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/DidRanyeStudyToday" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;DidRanyeStudyToday" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:2377210091@gmail.com" title="E-Mail → mailto:2377210091@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Ranye</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    <span title="站点总字数">18k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">30 分钟</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+<script>
+  var disqus_config = function() {
+    this.page.url = "http://yoursite.com/2020/02/22/Java%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A101/";
+    this.page.identifier = "2020/02/22/Java程序设计01/";
+    this.page.title = "Java程序设计01";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://ranye.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
