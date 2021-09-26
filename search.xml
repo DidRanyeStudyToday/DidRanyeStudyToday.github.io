@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>曲线曲面积分</title>
+      <link href="/2021/09/26/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E6%9B%B2%E7%BA%BF%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/"/>
+      <url>/2021/09/26/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E6%9B%B2%E7%BA%BF%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/</url>
+      
+        <content type="html"><![CDATA[<p>考题类型包括：</p><ol><li>Ⅰ类曲线积分的计算：对弧长的曲线积分 $\int_L f(x,y)ds$</li><li>Ⅱ类曲线积分的计算：对坐标的曲线积分 $\int_L Pdx + Qdy$</li><li>Ⅰ类曲面积分的计算：对面积的曲面积分 $\int_S f(x,y)d \sigma$</li><li>Ⅱ类曲面积分的计算：对坐标的曲面积分 $\int_S Pdydz+Qdxdz+Rdxdy$</li><li>积分与路径无关的证明；无关求$u(x,y)$ / 无关求$\int_c Pdx+Qdy$；无关求$P$、$Q$</li><li>物理应用：旋度、散度、梯度</li></ol><span id="more"></span><h2 id="Ⅰ类曲线积分的计算：对弧长的曲线积分-int-L-f-x-y-ds"><a href="#Ⅰ类曲线积分的计算：对弧长的曲线积分-int-L-f-x-y-ds" class="headerlink" title="Ⅰ类曲线积分的计算：对弧长的曲线积分 $\int_L f(x,y)ds$"></a>Ⅰ类曲线积分的计算：对弧长的曲线积分 $\int_L f(x,y)ds$</h2><h4 id="替代法"><a href="#替代法" class="headerlink" title="替代法"></a>替代法</h4><ol><li>$\int_L f(x,y)ds = \int_{t1}^{t2} f[] x(t), y(t)] \sqrt{(x’)^2 + (y’)^2} dt$ </li><li>$\int_L f(x,y)ds = \int_a^b f[x, y(x)] \sqrt{1 + (y’)^2}dx$</li><li>$\int_L f(x,y)ds = \int_\alpha^\beta f[r(\theta)cos\theta, r(\theta)sin\theta]\sqrt{r^2(\theta) + [r’(\theta)]^2}$</li></ol><h4 id="对称"><a href="#对称" class="headerlink" title="对称"></a>对称</h4><ol><li>轴对称：曲线沿着$x/y$轴对称<ul><li>若$f_1=f_2$，$ \int_L f=2\int_{L_1} f $</li><li>若$f_1=-f_2$, $\int_L f=0$</li></ul></li><li>轮换对称性：$f(x,y) = f(y,x)$<ul><li>$\int_L f(x,y)ds = \frac{1}{2} \int_L [f(x,y) + f(y,x)]ds$</li><li>$\int_L f(x,y,z)ds = \frac{1}{3} \int_L [f(x,y,z) + f(y,z,x) + f(z,x,y)]ds$</li></ul></li></ol><h2 id="Ⅱ类曲线积分的计算：对坐标的曲线积分-int-L-Pdx-Qdy"><a href="#Ⅱ类曲线积分的计算：对坐标的曲线积分-int-L-Pdx-Qdy" class="headerlink" title="Ⅱ类曲线积分的计算：对坐标的曲线积分 $\int_L Pdx + Qdy$"></a>Ⅱ类曲线积分的计算：对坐标的曲线积分 $\int_L Pdx + Qdy$</h2><h3 id="2dim：-int-L-Pdx-Qdy"><a href="#2dim：-int-L-Pdx-Qdy" class="headerlink" title="2dim：$\int_L Pdx + Qdy$"></a>2dim：$\int_L Pdx + Qdy$</h3>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 曲线曲面积分 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2021/09/23/hello-world/"/>
       <url>/2021/09/23/hello-world/</url>

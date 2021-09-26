@@ -20,22 +20,20 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":300,"display":"post","padding":50,"offset":12,"onmobile":true},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"gitalk":{"order":-2}},"activeClass":"gitalk"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="更新至第1次课">
+  <meta name="description" content="考题类型包括：  Ⅰ类曲线积分的计算：对弧长的曲线积分 $\int_L f(x,y)ds$ Ⅱ类曲线积分的计算：对坐标的曲线积分 $\int_L Pdx + Qdy$ Ⅰ类曲面积分的计算：对面积的曲面积分 $\int_S f(x,y)d \sigma$ Ⅱ类曲面积分的计算：对坐标的曲面积分 $\int_S Pdydz+Qdxdz+Rdxdy$ 积分与路径无关的证明；无关求$u(x,y)$ &#x2F; 无关">
 <meta property="og:type" content="article">
-<meta property="og:title" content="统一建模语言UML01">
-<meta property="og:url" content="http://example.com/2020/02/21/%E7%BB%9F%E4%B8%80%E5%BB%BA%E6%A8%A1%E8%AF%AD%E8%A8%80UML01/index.html">
+<meta property="og:title" content="曲线曲面积分">
+<meta property="og:url" content="http://example.com/2021/09/26/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E6%9B%B2%E7%BA%BF%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/index.html">
 <meta property="og:site_name" content="Ranye">
-<meta property="og:description" content="更新至第1次课">
+<meta property="og:description" content="考题类型包括：  Ⅰ类曲线积分的计算：对弧长的曲线积分 $\int_L f(x,y)ds$ Ⅱ类曲线积分的计算：对坐标的曲线积分 $\int_L Pdx + Qdy$ Ⅰ类曲面积分的计算：对面积的曲面积分 $\int_S f(x,y)d \sigma$ Ⅱ类曲面积分的计算：对坐标的曲面积分 $\int_S Pdydz+Qdxdz+Rdxdy$ 积分与路径无关的证明；无关求$u(x,y)$ &#x2F; 无关">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://s2.ax1x.com/2020/02/21/3uoQHS.png">
-<meta property="article:published_time" content="2020-02-21T08:10:48.000Z">
-<meta property="article:modified_time" content="2021-09-23T15:57:22.859Z">
+<meta property="article:published_time" content="2021-09-26T11:01:09.000Z">
+<meta property="article:modified_time" content="2021-09-26T12:04:02.062Z">
 <meta property="article:author" content="Ranye">
-<meta property="article:tag" content="UML">
+<meta property="article:tag" content="曲线曲面积分">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://s2.ax1x.com/2020/02/21/3uoQHS.png">
 
-<link rel="canonical" href="http://example.com/2020/02/21/%E7%BB%9F%E4%B8%80%E5%BB%BA%E6%A8%A1%E8%AF%AD%E8%A8%80UML01/">
+<link rel="canonical" href="http://example.com/2021/09/26/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E6%9B%B2%E7%BA%BF%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/">
 
 
 <script id="page-configurations">
@@ -48,7 +46,7 @@
   };
 </script>
 
-  <title>统一建模语言UML01 | Ranye</title>
+  <title>曲线曲面积分 | Ranye</title>
   
 
 
@@ -186,7 +184,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/02/21/%E7%BB%9F%E4%B8%80%E5%BB%BA%E6%A8%A1%E8%AF%AD%E8%A8%80UML01/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/09/26/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/%E6%9B%B2%E7%BA%BF%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar_my.gif">
@@ -199,7 +197,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          统一建模语言UML01
+          曲线曲面积分
         </h1>
 
         <div class="post-meta">
@@ -208,28 +206,9 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2020-02-21 16:10:48" itemprop="dateCreated datePublished" datetime="2020-02-21T16:10:48+08:00">2020-02-21</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-09-23 23:57:22" itemprop="dateModified" datetime="2021-09-23T23:57:22+08:00">2021-09-23</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%AD%A6%E4%B9%A0/%E7%BB%9F%E4%B8%80%E5%BB%BA%E6%A8%A1%E8%AF%AD%E8%A8%80UML/" itemprop="url" rel="index"><span itemprop="name">统一建模语言UML</span></a>
-                </span>
+              <time title="创建时间：2021-09-26 19:01:09 / 修改时间：20:04:02" itemprop="dateCreated datePublished" datetime="2021-09-26T19:01:09+08:00">2021-09-26</time>
             </span>
 
           
@@ -243,40 +222,35 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>更新至第1次课</p>
+        <p>考题类型包括：</p>
+<ol>
+<li>Ⅰ类曲线积分的计算：对弧长的曲线积分 $\int_L f(x,y)ds$</li>
+<li>Ⅱ类曲线积分的计算：对坐标的曲线积分 $\int_L Pdx + Qdy$</li>
+<li>Ⅰ类曲面积分的计算：对面积的曲面积分 $\int_S f(x,y)d \sigma$</li>
+<li>Ⅱ类曲面积分的计算：对坐标的曲面积分 $\int_S Pdydz+Qdxdz+Rdxdy$</li>
+<li>积分与路径无关的证明；无关求$u(x,y)$ / 无关求$\int_c Pdx+Qdy$；无关求$P$、$Q$</li>
+<li>物理应用：旋度、散度、梯度</li>
+</ol>
 <span id="more"></span>
 
-<h2 id="UML模型"><a href="#UML模型" class="headerlink" title="UML模型"></a>UML模型</h2><p><strong>UML</strong>（Unified Modeling Language）是一门<strong>语言</strong></p>
-<p><img src="https://s2.ax1x.com/2020/02/21/3uoQHS.png" alt="3uoQHS.png"></p>
-<p>这些图分为<strong>结构图</strong>和<strong>行为图</strong>。</p>
-<h4 id="结构图"><a href="#结构图" class="headerlink" title="结构图"></a>结构图</h4><ul>
-<li><strong>类图</strong><br>  静态事物的<strong>结构</strong>以及它们之间的<strong>相互关系</strong>。逻辑设计和物理设计。  </li>
-<li><strong>构件图</strong><br>  一组构件的组织和彼此间的依赖关系。构件图说明系统如何实现，软件系统内构件如何协同工作。  </li>
-<li><strong>对象图</strong><br>  对象图展示系统中的一组对象。它是系统在某一时刻的快照。对象图是图在某时刻的快照。  </li>
-<li><strong>部署图</strong><br>  物理系统运行时的架构。描述系统中的硬件和硬件上驻留的软件。</li>
-<li><strong>组合结构图</strong><br>  展示模型元素的内部结构</li>
-<li><strong>包图</strong></li>
-<li><strong>用例图</strong>   </li>
-</ul>
-<h4 id="行为图"><a href="#行为图" class="headerlink" title="行为图"></a>行为图</h4><ul>
-<li><strong>活动图</strong><br>  系统内的活动流</li>
-<li><strong>状态图</strong><br>  状态与状态间的转换</li>
-<li><strong>合作图</strong><br>  对象间的合作与交互</li>
-<li><strong>顺序图</strong><br>  强调时间顺序</li>
-<li><strong>时间图</strong><br>  强调时间信息</li>
-<li><strong>交互概述图</strong><br>  高层视图，从整体上显示交互序列之间的控制流</li>
-</ul>
-<h2 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h2><p>面向对象最重要特点：<strong>自然性</strong>、<strong>重用性</strong><br>面向对象的基本特征：<strong>抽象</strong>、<strong>封装</strong>、<strong>继承</strong>、<strong>多态</strong></p>
-<p>面向对象技术设计系统的步骤：  </p>
-<ol>
-<li>描述需求</li>
-<li>根据需求建立系统的静态模型，以构造系统的结构</li>
-<li>描述系统的行为</li>
+<h2 id="Ⅰ类曲线积分的计算：对弧长的曲线积分-int-L-f-x-y-ds"><a href="#Ⅰ类曲线积分的计算：对弧长的曲线积分-int-L-f-x-y-ds" class="headerlink" title="Ⅰ类曲线积分的计算：对弧长的曲线积分 $\int_L f(x,y)ds$"></a>Ⅰ类曲线积分的计算：对弧长的曲线积分 $\int_L f(x,y)ds$</h2><h4 id="替代法"><a href="#替代法" class="headerlink" title="替代法"></a>替代法</h4><ol>
+<li>$\int_L f(x,y)ds = \int_{t1}^{t2} f[] x(t), y(t)] \sqrt{(x’)^2 + (y’)^2} dt$ </li>
+<li>$\int_L f(x,y)ds = \int_a^b f[x, y(x)] \sqrt{1 + (y’)^2}dx$</li>
+<li>$\int_L f(x,y)ds = \int_\alpha^\beta f[r(\theta)cos\theta, r(\theta)sin\theta]\sqrt{r^2(\theta) + [r’(\theta)]^2}$</li>
 </ol>
-<p>前两步都是静态的，包括用例图、类图(包含包)、对象图、组件图和配置图，是UML的静态建模机制。  </p>
-<p>第三步中建立的模型，或者可以执行，或者表示执行时的时序状态或交互关系。包括状态图、活动图、顺序图和合作图，是UML的动态建模机制。</p>
-<p>因此，UML的主要内容也可以归纳为静态建模机制和动态建模机制两大类。</p>
-
+<h4 id="对称"><a href="#对称" class="headerlink" title="对称"></a>对称</h4><ol>
+<li>轴对称：曲线沿着$x/y$轴对称<ul>
+<li>若$f_1=f_2$，$ \int_L f=2\int_{L_1} f $</li>
+<li>若$f_1=-f_2$, $\int_L f=0$</li>
+</ul>
+</li>
+<li>轮换对称性：$f(x,y) = f(y,x)$<ul>
+<li>$\int_L f(x,y)ds = \frac{1}{2} \int_L [f(x,y) + f(y,x)]ds$</li>
+<li>$\int_L f(x,y,z)ds = \frac{1}{3} \int_L [f(x,y,z) + f(y,z,x) + f(z,x,y)]ds$</li>
+</ul>
+</li>
+</ol>
+<h2 id="Ⅱ类曲线积分的计算：对坐标的曲线积分-int-L-Pdx-Qdy"><a href="#Ⅱ类曲线积分的计算：对坐标的曲线积分-int-L-Pdx-Qdy" class="headerlink" title="Ⅱ类曲线积分的计算：对坐标的曲线积分 $\int_L Pdx + Qdy$"></a>Ⅱ类曲线积分的计算：对坐标的曲线积分 $\int_L Pdx + Qdy$</h2><h3 id="2dim：-int-L-Pdx-Qdy"><a href="#2dim：-int-L-Pdx-Qdy" class="headerlink" title="2dim：$\int_L Pdx + Qdy$"></a>2dim：$\int_L Pdx + Qdy$</h3>
     </div>
 
     
@@ -305,7 +279,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/UML/" rel="tag"># UML</a>
+              <a href="/tags/%E6%9B%B2%E7%BA%BF%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/" rel="tag"># 曲线曲面积分</a>
           </div>
 
         
@@ -314,13 +288,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/02/21/%E6%95%B0%E6%8D%AE%E5%BA%9301/" rel="prev" title="数据库01">
-      <i class="fa fa-chevron-left"></i> 数据库01
+    <a href="/2021/09/23/hello-world/" rel="prev" title="Hello World">
+      <i class="fa fa-chevron-left"></i> Hello World
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2020/02/22/%E5%BE%90%E6%B6%9B%E6%80%9D%E4%BF%AE01/" rel="next" title="徐涛思修01">
-      徐涛思修01 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -380,7 +351,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#UML%E6%A8%A1%E5%9E%8B"><span class="nav-number">1.</span> <span class="nav-text">UML模型</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BB%93%E6%9E%84%E5%9B%BE"><span class="nav-number">1.0.1.</span> <span class="nav-text">结构图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%A1%8C%E4%B8%BA%E5%9B%BE"><span class="nav-number">1.0.2.</span> <span class="nav-text">行为图</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1"><span class="nav-number">2.</span> <span class="nav-text">面向对象</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E2%85%A0%E7%B1%BB%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86%E7%9A%84%E8%AE%A1%E7%AE%97%EF%BC%9A%E5%AF%B9%E5%BC%A7%E9%95%BF%E7%9A%84%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86-int-L-f-x-y-ds"><span class="nav-number">1.</span> <span class="nav-text">Ⅰ类曲线积分的计算：对弧长的曲线积分 $\int_L f(x,y)ds$</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9B%BF%E4%BB%A3%E6%B3%95"><span class="nav-number">1.0.1.</span> <span class="nav-text">替代法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AF%B9%E7%A7%B0"><span class="nav-number">1.0.2.</span> <span class="nav-text">对称</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E2%85%A1%E7%B1%BB%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86%E7%9A%84%E8%AE%A1%E7%AE%97%EF%BC%9A%E5%AF%B9%E5%9D%90%E6%A0%87%E7%9A%84%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86-int-L-Pdx-Qdy"><span class="nav-number">2.</span> <span class="nav-text">Ⅱ类曲线积分的计算：对坐标的曲线积分 $\int_L Pdx + Qdy$</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2dim%EF%BC%9A-int-L-Pdx-Qdy"><span class="nav-number">2.1.</span> <span class="nav-text">2dim：$\int_L Pdx + Qdy$</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -496,7 +467,7 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
       repo        : 'blog_comment_repo',
       owner       : 'DidRanyeStudyToday',
       admin       : ['DidRanyeStudyToday'],
-      id          : '86c4b01c157805013a358641c176eb91',
+      id          : '78e1f31a0cb75248fb1935acaf5ff744',
         language: 'zh-CN',
       distractionFreeMode: false
     });
