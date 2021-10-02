@@ -17,7 +17,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":300,"display":"post","padding":50,"offset":12,"onmobile":true},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"gitalk":{"order":-2}},"activeClass":"gitalk"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":400,"display":"hide","padding":50,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"gitalk":{"order":-2}},"activeClass":"gitalk"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="更新至第3章">
@@ -241,72 +241,78 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>更新至第3章</p>
-<span id="more"></span>
-
-<h1 id="第一章-数据库概览"><a href="#第一章-数据库概览" class="headerlink" title="第一章 数据库概览"></a>第一章 数据库概览</h1><h2 id="数据库管理技术的进展"><a href="#数据库管理技术的进展" class="headerlink" title="数据库管理技术的进展"></a>数据库管理技术的进展</h2><h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><p><strong>数据</strong>：描述事物的符号记录<br>数据的种类很多，<strong>文本</strong>、<strong>图形</strong>、<strong>图像</strong>、<strong>声音</strong>等都是数据。<br>数据的特点：  </p>
-<ol>
-<li>数据有 “型” 和 “值” 之分  </li>
-<li>数据与其语义是不可分的</li>
-</ol>
-<p><strong>语义</strong>：数据的含义<br><strong>数据与其语义是不可分的</strong></p>
-<p><strong>数据管理</strong>：对数据进行收集、分类、组织、编码、存储、检索和传输，是数据处理的<strong>中心问题</strong><br>（分类、组织、编码、存储、检索、维护）</p>
+        <p>更新至第3章 <span id="more"></span></p>
+<h1 id="第一章-数据库概览">第一章 数据库概览</h1>
+<h2 id="数据库管理技术的进展">数据库管理技术的进展</h2>
+<h3 id="基本概念">基本概念</h3>
+<p><strong>数据</strong>：描述事物的符号记录<br />
+数据的种类很多，<strong>文本</strong>、<strong>图形</strong>、<strong>图像</strong>、<strong>声音</strong>等都是数据。<br />
+数据的特点：<br />
+1. 数据有 “型” 和 “值” 之分<br />
+2. 数据与其语义是不可分的</p>
+<p><strong>语义</strong>：数据的含义<br />
+<strong>数据与其语义是不可分的</strong></p>
+<p><strong>数据管理</strong>：对数据进行收集、分类、组织、编码、存储、检索和传输，是数据处理的<strong>中心问题</strong> （分类、组织、编码、存储、检索、维护）</p>
 <p><strong>数据库</strong>：长期存在计算机内、有组织、可共享的数据集合</p>
 <p><strong>数据库管理系统</strong>（<strong>DBMS</strong>）是位于用户与操作系统之间的系统软件。</p>
-<h3 id="数据管理技术三个阶段"><a href="#数据管理技术三个阶段" class="headerlink" title="数据管理技术三个阶段"></a>数据管理技术三个阶段</h3><p>数据管理技术三个阶段：<strong>人工管理阶段</strong>、<strong>文件系统阶段</strong>、<strong>数据库系统阶段</strong></p>
+<h3 id="数据管理技术三个阶段">数据管理技术三个阶段</h3>
+<p>数据管理技术三个阶段：<strong>人工管理阶段</strong>、<strong>文件系统阶段</strong>、<strong>数据库系统阶段</strong></p>
 <ul>
-<li><p>人工管理阶段：</p>
-<ol>
+<li>人工管理阶段：
+<ol type="1">
 <li>数据不保存</li>
 <li>应用程序管理数据</li>
 <li>数据不共享</li>
 <li>数据不具有独立性</li>
-</ol>
-</li>
-<li><p>文件系统阶段：</p>
-<ol>
+</ol></li>
+<li>文件系统阶段：
+<ol type="1">
 <li>数据可以长期保存</li>
 <li>由文件系统管理数据</li>
 <li>数据共享性差，冗余度大</li>
 <li>数据独立性差</li>
-</ol>
-</li>
-<li><p>数据库阶段：</p>
-<ol>
+</ol></li>
+<li>数据库阶段：
+<ol type="1">
 <li>数据整体结构化</li>
 <li>数据共享性高、冗余度低、易于扩充</li>
 <li>数据独立性高</li>
 <li>数据由DBMS统一管理和控制</li>
-</ol>
-</li>
+</ol></li>
 </ul>
 <p>数据库系统实现整体数据的<strong>结构化</strong>。这是数据库系统与文件系统的根本区别。</p>
-<h3 id="数据独立性"><a href="#数据独立性" class="headerlink" title="数据独立性"></a>数据独立性</h3><p><strong>数据独立性</strong>包括数据的<strong>逻辑独立性</strong>和数据的<strong>物理独立性</strong></p>
+<h3 id="数据独立性">数据独立性</h3>
+<p><strong>数据独立性</strong>包括数据的<strong>逻辑独立性</strong>和数据的<strong>物理独立性</strong></p>
 <ul>
-<li>逻辑独立性：数据的逻辑结构改变了，程序不用改变  </li>
-<li>物理独立性：数据的物理存储改变了，程序不用改变  </li>
+<li>逻辑独立性：数据的逻辑结构改变了，程序不用改变<br />
+</li>
+<li>物理独立性：数据的物理存储改变了，程序不用改变</li>
 </ul>
 <p>（由DBMS处理这种改变）</p>
-<h1 id="关系代数"><a href="#关系代数" class="headerlink" title="关系代数"></a>关系代数</h1><ul>
-<li>投影：一属性的所有值 $\pi_{Sdept}(Student)$</li>
-<li>连接：在R$\times$S中取满足关系的元组<ul>
+<h1 id="关系代数">关系代数</h1>
+<ul>
+<li>投影：一属性的所有值 <span class="math inline">\(\pi_{Sdept}(Student)\)</span></li>
+<li>连接：在R<span class="math inline">\(\times\)</span>S中取满足关系的元组
+<ul>
 <li>一般连接：随便什么关系</li>
 <li>等值连接：R的A属性与S的B属性相同</li>
 <li>自然连接：R的B属性与S的B属性相同</li>
+</ul></li>
+<li>除：R<span class="math inline">\(\div\)</span>S：R(X,Y)，S(Y,Z) R中的X的像集要包含S中的Y的所有值</li>
 </ul>
-</li>
-<li>除：R$\div$S：R(X,Y)，S(Y,Z) R中的X的像集要包含S中的Y的所有值</li>
-</ul>
-<h1 id="基本表"><a href="#基本表" class="headerlink" title="基本表"></a>基本表</h1><h3 id="基本表定义"><a href="#基本表定义" class="headerlink" title="基本表定义"></a>基本表定义</h3><p>CREATE TABLE &lt;基本表名&gt;(<br>    &lt;列名&gt; &lt;数据类型&gt; [ &lt;列级完整性约束条件&gt; ],<br>    &lt;表级完整性约束条件&gt;;<br>);</p>
+<h1 id="基本表">基本表</h1>
+<h3 id="基本表定义">基本表定义</h3>
+<p>CREATE TABLE <基本表名>( <列名> <数据类型> [ <列级完整性约束条件> ], <表级完整性约束条件>; );</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> SPDGB (</span><br><span class="line">    客户编号 <span class="type">char</span>(<span class="number">5</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">    数量 <span class="type">int</span>,</span><br><span class="line">    单价 <span class="type">float</span>,</span><br><span class="line">    保质期 datetime <span class="keyword">DEFAULT</span> <span class="string">&#x27;2000-1-1&#x27;</span>,</span><br><span class="line">    送货方式 <span class="type">varchar</span>(<span class="number">50</span>),</span><br><span class="line">    备注 text,</span><br><span class="line">    <span class="keyword">PRIMARY</span> KEY (客户编号，商品编号，订购时间),</span><br><span class="line">    <span class="comment">-- 主码</span></span><br><span class="line">    <span class="keyword">FOREIGN</span> KEY (客户编号) <span class="keyword">REFERENCES</span> KHB(客户编号),</span><br><span class="line">    <span class="keyword">FOREIGN</span> KEY (商品编号) <span class="keyword">REFERENCES</span> SPB(商品编号)</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
-
 <p>定长字符串: char 变长字符串: varchar</p>
-<h3 id="修改基本表"><a href="#修改基本表" class="headerlink" title="修改基本表"></a>修改基本表</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> <span class="operator">&lt;</span>基本表名<span class="operator">&gt;</span></span><br><span class="line">    <span class="keyword">COLUMN</span> <span class="operator">&lt;</span>列名<span class="operator">&gt;</span> <span class="operator">&lt;</span>新数据类型<span class="operator">&gt;</span> <span class="keyword">NULL</span><span class="operator">|</span><span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="comment">-- 修改已有列定义</span></span><br><span class="line">    <span class="keyword">ADD</span> <span class="operator">&lt;</span>列名<span class="operator">&gt;</span> <span class="operator">&lt;</span>数据类型<span class="operator">&gt;</span> 约束 <span class="comment">-- 增加新列</span></span><br><span class="line">    <span class="keyword">DROP</span> <span class="keyword">COLUMN</span> <span class="operator">&lt;</span>列名<span class="operator">&gt;</span> <span class="comment">-- 删除列</span></span><br><span class="line">    <span class="keyword">ADD</span> <span class="keyword">CONSTRAINT</span> <span class="operator">&lt;</span>约束名<span class="operator">&gt;</span> <span class="operator">&lt;</span>约束定义<span class="operator">&gt;</span><span class="comment">-- 添加约束</span></span><br><span class="line">    <span class="keyword">DROP</span> <span class="keyword">CONSTRAINT</span> <span class="operator">&lt;</span>约束名<span class="operator">&gt;</span> <span class="comment">-- 删除约束constraint</span></span><br></pre></td></tr></table></figure>
+<h3 id="修改基本表">修改基本表</h3>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> <span class="operator">&lt;</span>基本表名<span class="operator">&gt;</span></span><br><span class="line">    <span class="keyword">COLUMN</span> <span class="operator">&lt;</span>列名<span class="operator">&gt;</span> <span class="operator">&lt;</span>新数据类型<span class="operator">&gt;</span> <span class="keyword">NULL</span><span class="operator">|</span><span class="keyword">NOT</span> <span class="keyword">NULL</span> <span class="comment">-- 修改已有列定义</span></span><br><span class="line">    <span class="keyword">ADD</span> <span class="operator">&lt;</span>列名<span class="operator">&gt;</span> <span class="operator">&lt;</span>数据类型<span class="operator">&gt;</span> 约束 <span class="comment">-- 增加新列</span></span><br><span class="line">    <span class="keyword">DROP</span> <span class="keyword">COLUMN</span> <span class="operator">&lt;</span>列名<span class="operator">&gt;</span> <span class="comment">-- 删除列</span></span><br><span class="line">    <span class="keyword">ADD</span> <span class="keyword">CONSTRAINT</span> <span class="operator">&lt;</span>约束名<span class="operator">&gt;</span> <span class="operator">&lt;</span>约束定义<span class="operator">&gt;</span><span class="comment">-- 添加约束</span></span><br><span class="line">    <span class="keyword">DROP</span> <span class="keyword">CONSTRAINT</span> <span class="operator">&lt;</span>约束名<span class="operator">&gt;</span> <span class="comment">-- 删除约束constraint</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> SPB <span class="keyword">ADD</span> 商品图片 image</span><br><span class="line"><span class="comment">-- 不论基本表中原来是否已有数据，新增加的列一律为空值。</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> SPB</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">COLUMN</span> 保质期 smalldatetime</span><br><span class="line"><span class="comment">-- 修改原有的列定义有可能会破坏已有数据</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> SPB <span class="keyword">DROP</span> <span class="keyword">COLUMN</span> 商品图片</span><br></pre></td></tr></table></figure>
-
-<h3 id="删除基本表"><a href="#删除基本表" class="headerlink" title="删除基本表"></a>删除基本表</h3><p>DROP TABLE &lt;基本表名&gt;</p>
-<h3 id="数据查询"><a href="#数据查询" class="headerlink" title="数据查询"></a>数据查询</h3><h4 id="单表查询"><a href="#单表查询" class="headerlink" title="单表查询"></a>单表查询</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">ALL</span><span class="operator">|</span><span class="keyword">DISTINCT</span> <span class="operator">&lt;</span>目标列表达式<span class="operator">&gt;</span></span><br><span class="line"><span class="keyword">FROM</span> <span class="operator">&lt;</span>表名或视图名<span class="operator">&gt;</span></span><br><span class="line">    <span class="keyword">WHERE</span> <span class="operator">&lt;</span>条件表达式<span class="operator">&gt;</span></span><br><span class="line">    <span class="keyword">GROUP</span> <span class="keyword">BY</span> <span class="operator">&lt;</span>列名<span class="number">1</span><span class="operator">&gt;</span> <span class="keyword">HAVING</span> <span class="operator">&lt;</span>条件表达式<span class="operator">&gt;</span></span><br><span class="line">    <span class="keyword">ORDER</span> <span class="keyword">BY</span> <span class="operator">&lt;</span>列名<span class="number">2</span><span class="operator">&gt;</span> <span class="keyword">ASC</span><span class="operator">|</span><span class="keyword">DESC</span>;</span><br></pre></td></tr></table></figure>
-
+<h3 id="删除基本表">删除基本表</h3>
+<p>DROP TABLE <基本表名></p>
+<h3 id="数据查询">数据查询</h3>
+<h4 id="单表查询">单表查询</h4>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">ALL</span><span class="operator">|</span><span class="keyword">DISTINCT</span> <span class="operator">&lt;</span>目标列表达式<span class="operator">&gt;</span></span><br><span class="line"><span class="keyword">FROM</span> <span class="operator">&lt;</span>表名或视图名<span class="operator">&gt;</span></span><br><span class="line">    <span class="keyword">WHERE</span> <span class="operator">&lt;</span>条件表达式<span class="operator">&gt;</span></span><br><span class="line">    <span class="keyword">GROUP</span> <span class="keyword">BY</span> <span class="operator">&lt;</span>列名<span class="number">1</span><span class="operator">&gt;</span> <span class="keyword">HAVING</span> <span class="operator">&lt;</span>条件表达式<span class="operator">&gt;</span></span><br><span class="line">    <span class="keyword">ORDER</span> <span class="keyword">BY</span> <span class="operator">&lt;</span>列名<span class="number">2</span><span class="operator">&gt;</span> <span class="keyword">ASC</span><span class="operator">|</span><span class="keyword">DESC</span>;</span><br></pre></td></tr></table></figure>
 <ul>
 <li>SELECT：指定要显示的属性列</li>
 <li>FROM：指定查询对象(基本表或视图)</li>
