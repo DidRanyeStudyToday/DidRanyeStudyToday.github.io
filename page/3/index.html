@@ -180,7 +180,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/03/05/tex%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/05/07/%E5%B7%A5%E5%85%B7/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar_my.gif">
@@ -194,7 +194,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2020/03/05/tex%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">tex学习笔记</a>
+            <a href="/2020/05/07/%E5%B7%A5%E5%85%B7/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" class="post-title-link" itemprop="url">正则表达式</a>
         </h2>
 
         <div class="post-meta">
@@ -204,15 +204,24 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2020-03-05 12:20:33" itemprop="dateCreated datePublished" datetime="2020-03-05T12:20:33+08:00">2020-03-05</time>
+              <time title="创建时间：2020-05-07 23:21:40" itemprop="dateCreated datePublished" datetime="2020-05-07T23:21:40+08:00">2020-05-07</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-09-23 23:57:13" itemprop="dateModified" datetime="2021-09-23T23:57:13+08:00">2021-09-23</time>
+                <time title="修改时间：2021-10-03 21:55:03" itemprop="dateModified" datetime="2021-10-03T21:55:03+08:00">2021-10-03</time>
               </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%B7%A5%E5%85%B7/" itemprop="url" rel="index"><span itemprop="name">工具</span></a>
+                </span>
+            </span>
 
           
 
@@ -225,13 +234,24 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="整体框架">整体框架</h2>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">\documentclass&#123;article&#125;</span><br><span class="line">% 这里是导言区</span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line">% 内容</span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="导言区">导言区</h2>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">\title&#123;你好，world!&#125;</span><br><span class="line">\author&#123;Liam&#125;</span><br><span class="line">\date&#123;\today&#125;</span><br><span class="line">\begin&#123;document&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="内容">内容</h2>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">% 将导言区标题、作者、日期按照格式展现</span><br><span class="line">\maketitle</span><br><span class="line">% 目录</span><br><span class="line">\tableofcontents</span><br></pre></td></tr></table></figure>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">\section&#123;·&#125;</span><br><span class="line">\subsection&#123;·&#125;</span><br><span class="line">\subsubsection&#123;·&#125;</span><br><span class="line">\paragraph&#123;·&#125;</span><br><span class="line">\subparagraph&#123;·&#125;</span><br></pre></td></tr></table></figure>
+          <figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">let testRegex = <span class="regexp">/Code/</span></span><br><span class="line">testRegex.test(testStr);</span><br><span class="line"><span class="regexp">//</span> Returns true</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>使用<kbd>|</kbd>匹配多个规则</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="regexp">/yes|no|maybe/</span></span><br></pre></td></tr></table></figure></li>
+<li><p>使用<kbd>i</kbd>忽略大小写</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="regexp">/ignorecase/i</span></span><br></pre></td></tr></table></figure></li>
+<li><p>.match()方法提取匹配项</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">let ourStr = <span class="string">&quot;Regular expressions&quot;</span>;</span><br><span class="line">let ourRegex = <span class="regexp">/expressions/</span>;</span><br><span class="line">ourStr.match(ourRegex);</span><br><span class="line"><span class="regexp">//</span> Returns [<span class="string">&quot;expressions&quot;</span>]</span><br></pre></td></tr></table></figure></li>
+<li><p>使用<kbd>g</kbd>多次匹配</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">let repeatRegex = <span class="regexp">/Repeat/g</span>;</span><br><span class="line">testStr.match(repeatRegex);</span><br><span class="line"><span class="regexp">//</span> Returns [<span class="string">&quot;Repeat&quot;</span>, <span class="string">&quot;Repeat&quot;</span>, <span class="string">&quot;Repeat&quot;</span>]</span><br></pre></td></tr></table></figure></li>
+<li><p>使用<kbd>.</kbd>匹配任意一个字符</p>
+</li>
+<li><p>使用<kbd>[]</kbd>单个字符匹配多种可能性</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="regexp">/b[aiu]g/</span></span><br></pre></td></tr></table></figure></li>
+<li><p>使用<kbd>-</kbd>单个字符匹配连续范围</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="regexp">/[a-e]at/</span></span><br></pre></td></tr></table></figure></li>
+</ul>
 
       
     </div>
@@ -251,7 +271,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/02/22/Java%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A101/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/05/07/%E5%85%B6%E4%BB%96/%E5%89%8D%E7%AB%AF/node-js%E7%AC%94%E8%AE%B0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar_my.gif">
@@ -265,7 +285,355 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2020/02/22/Java%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A101/" class="post-title-link" itemprop="url">Java程序设计01</a>
+            <a href="/2020/05/07/%E5%85%B6%E4%BB%96/%E5%89%8D%E7%AB%AF/node-js%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">node.js笔记</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-07 08:27:28" itemprop="dateCreated datePublished" datetime="2020-05-07T08:27:28+08:00">2020-05-07</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-10-03 21:25:38" itemprop="dateModified" datetime="2021-10-03T21:25:38+08:00">2021-10-03</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="node-js的REPL"><a href="#node-js的REPL" class="headerlink" title="node.js的REPL"></a>node.js的REPL</h1><ul>
+<li>简单运算</li>
+<li>使用变量<ul>
+<li>var: 不显示（undefined）</li>
+<li>不适用var: 直接显示结果</li>
+</ul>
+</li>
+<li>支持多行表达式</li>
+<li>下划线<kbd>_</kbd>获取上一个表达式的运算结果</li>
+<li>ctrl + c - 退出当前终端</li>
+<li>向上/向下键 - 查看输入的历史命令</li>
+<li>tab 键 - 列出当前命令</li>
+<li>.help</li>
+<li>.break</li>
+<li>.save + filename</li>
+<li>.load + filename</li>
+</ul>
+<h1 id="node-js-回调函数"><a href="#node-js-回调函数" class="headerlink" title="node.js 回调函数"></a>node.js 回调函数</h1>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/05/05/%E5%85%B6%E4%BB%96/%E5%90%8E%E7%AB%AF/Java/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Java%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar_my.gif">
+      <meta itemprop="name" content="Ranye">
+      <meta itemprop="description" content="弱小和无知不是生存的障碍，傲慢才是">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ranye">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/05/05/%E5%85%B6%E4%BB%96/%E5%90%8E%E7%AB%AF/Java/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Java%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">深入理解Java虚拟机笔记</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-05 21:01:31" itemprop="dateCreated datePublished" datetime="2020-05-05T21:01:31+08:00">2020-05-05</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-10-03 21:25:23" itemprop="dateModified" datetime="2021-10-03T21:25:23+08:00">2021-10-03</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="第二章-Java内存区域与内存溢出异常"><a href="#第二章-Java内存区域与内存溢出异常" class="headerlink" title="第二章 Java内存区域与内存溢出异常"></a>第二章 Java内存区域与内存溢出异常</h1><h2 id="2-2-运行时数据区域"><a href="#2-2-运行时数据区域" class="headerlink" title="2.2 运行时数据区域"></a>2.2 运行时数据区域</h2><ul>
+<li><p>程序计数器：</p>
+<ul>
+<li>当前线程所执行的字节码的行号指示器</li>
+<li>线程私有</li>
+</ul>
+</li>
+<li><p>Java虚拟机栈：</p>
+<ul>
+<li>虚拟机执行Java方法（字节码）服务</li>
+<li>栈帧：每个方法被执行，Java虚拟机都会创建一个栈帧用于存储局部变量表、操作数栈、动态连接、方法出口等信息。每一个方法被调用直至执行完毕的过程，就对应着一个栈帧在虚拟机栈中从入栈到出栈的过程</li>
+<li>线程私有</li>
+</ul>
+</li>
+<li><p>本地方法栈：</p>
+<ul>
+<li>虚拟机使用到的本地方法服务</li>
+</ul>
+</li>
+<li><p>Java堆</p>
+<ul>
+<li>被所有线程共享</li>
+<li>存放对象实例</li>
+<li>是垃圾收集器管理的内存区域</li>
+</ul>
+</li>
+<li><p>方法区</p>
+<ul>
+<li>被所有线程共享</li>
+</ul>
+</li>
+<li><p>运行时常量池</p>
+<ul>
+<li>属于方法区</li>
+<li>常量不一定要在编译时放入</li>
+</ul>
+</li>
+<li><p>直接内存</p>
+<ul>
+<li>不属于Java虚拟机运行时数据区，不在虚拟机内存</li>
+<li>只受本机内存限制</li>
+</ul>
+</li>
+</ul>
+<h2 id="2-3-HotSpot虚拟机对象探秘"><a href="#2-3-HotSpot虚拟机对象探秘" class="headerlink" title="2.3 HotSpot虚拟机对象探秘"></a>2.3 HotSpot虚拟机对象探秘</h2><ul>
+<li><p>创建</p>
+<ul>
+<li>【类加载检查】当Java虚拟机遇到一条字节码new指令时，首先将去检查这个指令的参数是否能在常量池中定位到 一个类的符号引用，并且检查这个符号引用代表的类是否已被加载、解析和初始化过。如果没有，那 必须先执行相应的类加载过程</li>
+<li>【分配内存：指针碰撞/空闲列表】虚拟机将为新生对象分配内存。对象所需内存的大小在类加载完成 后便可完全确定。为对象分配空间的任务实际上便等同于把一块确定 大小的内存块从Java堆中划分出来。假设Java堆中内存是绝对规整的，所有被使用过的内存都被放在一 边，空闲的内存被放在另一边，中间放着一个指针作为分界点的指示器，那所分配内存就仅仅是把那 个指针向空闲空间方向挪动一段与对象大小相等的距离，这种分配方式称为“指针碰撞”。但如果Java堆中的内存并不是规整的，已被使用的内存和空闲的内存相互交错在一起，那 就没有办法简单地进行指针碰撞了，虚拟机就必须维护一个列表，记录上哪些内存块是可用的，在分 配的时候从列表中找到一块足够大的空间划分给对象实例，并更新列表上的记录，这种分配方式称 为“空闲列表”</li>
+</ul>
+</li>
+<li><p>对象的内存布局</p>
+<ul>
+<li>对象头</li>
+<li>实例数据</li>
+<li>对齐填充</li>
+</ul>
+</li>
+<li><p>对象的访问定位</p>
+<ul>
+<li>句柄访问</li>
+<li>直接指针访问</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/04/03/%E5%B7%A5%E5%85%B7/latex%E5%AD%A6%E4%B9%A0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar_my.gif">
+      <meta itemprop="name" content="Ranye">
+      <meta itemprop="description" content="弱小和无知不是生存的障碍，傲慢才是">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ranye">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/04/03/%E5%B7%A5%E5%85%B7/latex%E5%AD%A6%E4%B9%A0/" class="post-title-link" itemprop="url">latex学习</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-04-03 15:20:42" itemprop="dateCreated datePublished" datetime="2020-04-03T15:20:42+08:00">2020-04-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-10-03 21:25:33" itemprop="dateModified" datetime="2021-10-03T21:25:33+08:00">2021-10-03</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>$\Gamma$、$\iota$、$\sigma$、$\phi$、$\upsilon$、$\Pi$、$\Bbbk$、$\heartsuit$、$\int$、$\oint$</p>
+<p>$\tan$、$\sin$、$\cos$、$\lg$、$\arcsin$、$\arctan$、$\min$、$\max$、$\exp$、$\log$</p>
+<p>$+$、$-$、$=$、$&gt;$、$&lt;$、$\times$、$\div$、$\equiv$、$\leq$、$\geq$、$\neq$  </p>
+<p>$\cup$、$\cap$、$\in$、$\notin$、$\ni$、$\subset$、$\subseteq$、$\supset$、$\supseteq$、$\infty$</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$\Gamma$、$\iota$、$\sigma$、$\phi$、$\upsilon$、$\Pi$、$\Bbbk$、$\heartsuit$、$\int$、$\oint$</span><br><span class="line"></span><br><span class="line">$\tan$、$\sin$、$\cos$、$\lg$、$\arcsin$、$\arctan$、$\min$、$\max$、$\exp$、$\log$</span><br><span class="line"></span><br><span class="line">$+$、$-$、$=$、$&gt;$、$&lt;$、$\times$、$\div$、$\equiv$、$\leq$、$\geq$、$\neq$  </span><br><span class="line"></span><br><span class="line">$\cup$、$\cap$、$\in$、$\notin$、$\ni$、$\subset$、$\subseteq$、$\supset$、$\supseteq$、$\infty$</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/03/05/%E5%B7%A5%E5%85%B7/tex%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar_my.gif">
+      <meta itemprop="name" content="Ranye">
+      <meta itemprop="description" content="弱小和无知不是生存的障碍，傲慢才是">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ranye">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/03/05/%E5%B7%A5%E5%85%B7/tex%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">tex学习笔记</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-03-05 12:20:33" itemprop="dateCreated datePublished" datetime="2020-03-05T12:20:33+08:00">2020-03-05</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-10-03 21:26:38" itemprop="dateModified" datetime="2021-10-03T21:26:38+08:00">2021-10-03</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="整体框架"><a href="#整体框架" class="headerlink" title="整体框架"></a>整体框架</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">\documentclass&#123;article&#125;</span><br><span class="line">% 这里是导言区</span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line">% 内容</span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="导言区"><a href="#导言区" class="headerlink" title="导言区"></a>导言区</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">\title&#123;你好，world!&#125;</span><br><span class="line">\author&#123;Liam&#125;</span><br><span class="line">\date&#123;\today&#125;</span><br><span class="line">\begin&#123;document&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">% 将导言区标题、作者、日期按照格式展现</span><br><span class="line">\maketitle</span><br><span class="line">% 目录</span><br><span class="line">\tableofcontents</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">\section&#123;·&#125;</span><br><span class="line">\subsection&#123;·&#125;</span><br><span class="line">\subsubsection&#123;·&#125;</span><br><span class="line">\paragraph&#123;·&#125;</span><br><span class="line">\subparagraph&#123;·&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/02/22/%E5%85%B6%E4%BB%96/%E5%90%8E%E7%AB%AF/Java/Java%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A101/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar_my.gif">
+      <meta itemprop="name" content="Ranye">
+      <meta itemprop="description" content="弱小和无知不是生存的障碍，傲慢才是">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ranye">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/02/22/%E5%85%B6%E4%BB%96/%E5%90%8E%E7%AB%AF/Java/Java%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A101/" class="post-title-link" itemprop="url">Java程序设计01</a>
         </h2>
 
         <div class="post-meta">
@@ -282,7 +650,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-09-23 23:57:10" itemprop="dateModified" datetime="2021-09-23T23:57:10+08:00">2021-09-23</time>
+                <time title="修改时间：2021-10-03 21:25:23" itemprop="dateModified" datetime="2021-10-03T21:25:23+08:00">2021-10-03</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -309,10 +677,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>笔记至第3章【完】
+          <p>笔记至第3章【完】</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2020/02/22/Java%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A101/#more" rel="contents">
+              <a class="btn" href="/2020/02/22/%E5%85%B6%E4%BB%96/%E5%90%8E%E7%AB%AF/Java/Java%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A101/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -336,7 +704,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/02/22/%E5%BE%90%E6%B6%9B%E6%80%9D%E4%BF%AE01/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/02/22/%E6%94%BF%E6%B2%BB/%E5%BE%90%E6%B6%9B%E6%80%9D%E4%BF%AE01/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar_my.gif">
@@ -350,7 +718,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2020/02/22/%E5%BE%90%E6%B6%9B%E6%80%9D%E4%BF%AE01/" class="post-title-link" itemprop="url">徐涛思修01</a>
+            <a href="/2020/02/22/%E6%94%BF%E6%B2%BB/%E5%BE%90%E6%B6%9B%E6%80%9D%E4%BF%AE01/" class="post-title-link" itemprop="url">徐涛思修01</a>
         </h2>
 
         <div class="post-meta">
@@ -367,7 +735,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-09-23 23:57:22" itemprop="dateModified" datetime="2021-09-23T23:57:22+08:00">2021-09-23</time>
+                <time title="修改时间：2021-10-03 21:24:54" itemprop="dateModified" datetime="2021-10-03T21:24:54+08:00">2021-10-03</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -394,10 +762,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>更新至第一章 理想信念
+          <p>更新至第一章 理想信念</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2020/02/22/%E5%BE%90%E6%B6%9B%E6%80%9D%E4%BF%AE01/#more" rel="contents">
+              <a class="btn" href="/2020/02/22/%E6%94%BF%E6%B2%BB/%E5%BE%90%E6%B6%9B%E6%80%9D%E4%BF%AE01/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -421,7 +789,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/02/21/%E7%BB%9F%E4%B8%80%E5%BB%BA%E6%A8%A1%E8%AF%AD%E8%A8%80UML01/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/02/21/%E5%85%B6%E4%BB%96/%E5%BE%85%E5%AD%A6%E8%AF%BE%E7%A8%8B/%E7%BB%9F%E4%B8%80%E5%BB%BA%E6%A8%A1%E8%AF%AD%E8%A8%80UML01/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar_my.gif">
@@ -435,7 +803,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2020/02/21/%E7%BB%9F%E4%B8%80%E5%BB%BA%E6%A8%A1%E8%AF%AD%E8%A8%80UML01/" class="post-title-link" itemprop="url">统一建模语言UML01</a>
+            <a href="/2020/02/21/%E5%85%B6%E4%BB%96/%E5%BE%85%E5%AD%A6%E8%AF%BE%E7%A8%8B/%E7%BB%9F%E4%B8%80%E5%BB%BA%E6%A8%A1%E8%AF%AD%E8%A8%80UML01/" class="post-title-link" itemprop="url">统一建模语言UML01</a>
         </h2>
 
         <div class="post-meta">
@@ -452,7 +820,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-09-23 23:57:22" itemprop="dateModified" datetime="2021-09-23T23:57:22+08:00">2021-09-23</time>
+                <time title="修改时间：2021-10-03 21:27:30" itemprop="dateModified" datetime="2021-10-03T21:27:30+08:00">2021-10-03</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -479,10 +847,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>更新至第1次课
+          <p>更新至第1次课</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2020/02/21/%E7%BB%9F%E4%B8%80%E5%BB%BA%E6%A8%A1%E8%AF%AD%E8%A8%80UML01/#more" rel="contents">
+              <a class="btn" href="/2020/02/21/%E5%85%B6%E4%BB%96/%E5%BE%85%E5%AD%A6%E8%AF%BE%E7%A8%8B/%E7%BB%9F%E4%B8%80%E5%BB%BA%E6%A8%A1%E8%AF%AD%E8%A8%80UML01/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -506,7 +874,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/02/21/%E6%95%B0%E6%8D%AE%E5%BA%9301/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/02/21/%E5%85%B6%E4%BB%96/%E5%90%8E%E7%AB%AF/%E6%95%B0%E6%8D%AE%E5%BA%93/%E6%95%B0%E6%8D%AE%E5%BA%9301/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar_my.gif">
@@ -520,7 +888,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2020/02/21/%E6%95%B0%E6%8D%AE%E5%BA%9301/" class="post-title-link" itemprop="url">数据库01</a>
+            <a href="/2020/02/21/%E5%85%B6%E4%BB%96/%E5%90%8E%E7%AB%AF/%E6%95%B0%E6%8D%AE%E5%BA%93/%E6%95%B0%E6%8D%AE%E5%BA%9301/" class="post-title-link" itemprop="url">数据库01</a>
         </h2>
 
         <div class="post-meta">
@@ -537,7 +905,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-09-23 23:57:21" itemprop="dateModified" datetime="2021-09-23T23:57:21+08:00">2021-09-23</time>
+                <time title="修改时间：2021-10-03 21:23:05" itemprop="dateModified" datetime="2021-10-03T21:23:05+08:00">2021-10-03</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -564,10 +932,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>更新至第3章
+          <p>更新至第3章</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2020/02/21/%E6%95%B0%E6%8D%AE%E5%BA%9301/#more" rel="contents">
+              <a class="btn" href="/2020/02/21/%E5%85%B6%E4%BB%96/%E5%90%8E%E7%AB%AF/%E6%95%B0%E6%8D%AE%E5%BA%93/%E6%95%B0%E6%8D%AE%E5%BA%9301/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -591,7 +959,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/02/21/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%8601/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/02/21/%E5%85%B6%E4%BB%96/%E5%BE%85%E5%AD%A6%E8%AF%BE%E7%A8%8B/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%8601/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar_my.gif">
@@ -605,7 +973,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2020/02/21/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%8601/" class="post-title-link" itemprop="url">数字图像处理01</a>
+            <a href="/2020/02/21/%E5%85%B6%E4%BB%96/%E5%BE%85%E5%AD%A6%E8%AF%BE%E7%A8%8B/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%8601/" class="post-title-link" itemprop="url">数字图像处理01</a>
         </h2>
 
         <div class="post-meta">
@@ -622,7 +990,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-09-23 23:57:21" itemprop="dateModified" datetime="2021-09-23T23:57:21+08:00">2021-09-23</time>
+                <time title="修改时间：2021-10-03 21:27:30" itemprop="dateModified" datetime="2021-10-03T21:27:30+08:00">2021-10-03</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -652,437 +1020,7 @@
           <p>待更新</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2020/02/21/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%8601/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/02/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%8601/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar_my.gif">
-      <meta itemprop="name" content="Ranye">
-      <meta itemprop="description" content="弱小和无知不是生存的障碍，傲慢才是">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Ranye">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/02/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%8601/" class="post-title-link" itemprop="url">计算机组成原理01</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-02-20 11:00:28" itemprop="dateCreated datePublished" datetime="2020-02-20T11:00:28+08:00">2020-02-20</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-09-23 23:57:16" itemprop="dateModified" datetime="2021-09-23T23:57:16+08:00">2021-09-23</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%AD%A6%E4%B9%A0/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/" itemprop="url" rel="index"><span itemprop="name">计算机组成原理</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>待更新
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/02/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%8601/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/02/17/Web%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91-MOOC-02/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar_my.gif">
-      <meta itemprop="name" content="Ranye">
-      <meta itemprop="description" content="弱小和无知不是生存的障碍，傲慢才是">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Ranye">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/02/17/Web%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91-MOOC-02/" class="post-title-link" itemprop="url">Web前端开发 MOOC 02</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-02-17 21:45:27" itemprop="dateCreated datePublished" datetime="2020-02-17T21:45:27+08:00">2020-02-17</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-09-23 23:57:14" itemprop="dateModified" datetime="2021-09-23T23:57:14+08:00">2021-09-23</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>更新至第四章 第2节 css定位机制 待更新</p>
-<!-- more  -->
-<h2 id="css布局和定位">css布局和定位</h2>
-<h3 id="盒子模型">盒子模型</h3>
-<h4 id="盒子">盒子</h4>
-<ul>
-<li>content 内容</li>
-<li>height 高度</li>
-<li>width 宽度</li>
-<li>border 边框</li>
-<li>padding 内边距</li>
-<li>margin 外边距</li>
-</ul>
-<figure>
-<img src="https://s2.ax1x.com/2020/02/20/3mpBIP.jpg" alt="3mpBIP.jpg" /><figcaption aria-hidden="true">3mpBIP.jpg</figcaption>
-</figure>
-<figure>
-<img src="https://s2.ax1x.com/2020/02/20/3mpwVI.jpg" alt="3mpwVI.jpg" /><figcaption aria-hidden="true">3mpwVI.jpg</figcaption>
-</figure>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-id">#box</span>&#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">1px</span> solid</span><br><span class="line">    /* 边框为<span class="number">1px</span>，实线框 */</span><br><span class="line">    ·····</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;box&quot;</span>&gt;</span></span><br><span class="line">    balabala···</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h4 id="overflow属性">overflow属性</h4>
-<p>内容溢出盒子框，怎么显示</p>
-<ul>
-<li><kbd>overflow: hidden</kbd> 超出部分不显示</li>
-<li><kbd>overflow: scoll</kbd> 显示滚动条</li>
-<li><kbd>overflow: auto</kbd> 如果有超出部分，显示滚动条</li>
-</ul>
-<h4 id="border属性边框的效果">border属性(边框的效果)</h4>
-<ul>
-<li>border-width 宽度 取值有px/thin(细)/medium(中)/thick(粗)</li>
-<li>border-style 取值有dashed(虚线)/dotted(一排点点)/solid(实线)/double(双实线)</li>
-<li>border-color</li>
-</ul>
-<p>border: width style color</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">    <span class="attribute">border</span>:<span class="number">2px</span> solid red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">    <span class="attribute">border-bottom</span>:<span class="number">1px</span> solid red;</span><br><span class="line">    <span class="comment">/* 只设置底部边框 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>应用：水平分割线</p>
-<h4 id="padding内边距-margin外边距">padding（内边距） margin（外边距）</h4>
-<p>对浏览器默认的设置清零</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">* &#123;</span><br><span class="line">    <span class="attribute">margin</span>:<span class="number">0</span>;</span><br><span class="line">    <span class="attribute">padding</span>:<span class="number">0</span>;</span><br><span class="line">    <span class="comment">/* 只有在取值为0的时候才可以省略单位 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>取值：px，%（外层盒子的宽度和高度）</p>
-<p>分开的： <kbd>padding-top</kbd> <kbd>padding-right</kbd> <kbd>padding-bottom</kbd> <kbd>padding-left</kbd></p>
-<p>合在一起： 上右下左 (顺时针)</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">margin</span>: <span class="number">1px</span> <span class="number">2px</span> <span class="number">3px</span> <span class="number">4px</span>;</span><br><span class="line"><span class="comment">/*      👆  👉  👇  👈 */</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">margin</span>: <span class="number">1px</span> <span class="number">2px</span>;</span><br><span class="line"><span class="comment">/*     👆👇 👈👉 */</span></span><br></pre></td></tr></table></figure>
-<p>将padding换成margin同样</p>
-<p>Tips： 1. 如果定标签（div）作为样式的名字，每一个盒子独占一行 2. 上下两个相邻的外边距合并成一个外边距，合并的结果是取两个的最大值 3. 水平方向上不合并</p>
-<p>水平居中 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 图片、文字水平居中 */</span></span><br><span class="line"><span class="attribute">text-align</span>: center;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* div水平居中 */</span></span><br><span class="line"><span class="attribute">margin</span>: <span class="number">0</span> auto; </span><br><span class="line"><span class="comment">/* 上下可以随便设置，左右设置auto，浏览器根据外层盒子宽度和div区域的宽度再除以二，算出margin-left margin-right */</span></span><br></pre></td></tr></table></figure></p>
-<h5 id="案例">案例</h5>
-<figure>
-<img src="https://s2.ax1x.com/2020/02/20/3mp156.jpg" alt="3mp156.jpg" /><figcaption aria-hidden="true">3mp156.jpg</figcaption>
-</figure>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-id">#newsimglist</span>&#123;</span><br><span class="line">    <span class="attribute">text-align</span>:center;</span><br><span class="line">    <span class="attribute">font-size</span>:<span class="number">0</span>; <span class="comment">/*否则图间有空隙*/</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#newsimglist</span> <span class="selector-tag">img</span>&#123;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">width</span>:<span class="number">100px</span>; .</span><br><span class="line">    <span class="attribute">margin-left</span>:<span class="number">5px</span>;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#0cf</span>;</span><br><span class="line">    <span class="attribute">padding</span>:<span class="number">5px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="css定位机制">css定位机制</h3>
-<ul>
-<li>文档流 flow （默认方式）</li>
-<li>浮动 float</li>
-<li>层 layer</li>
-</ul>
-<figure>
-<img src="https://s2.ax1x.com/2020/02/20/3mSRN6.jpg" alt="3mSRN6.jpg" /><figcaption aria-hidden="true">3mSRN6.jpg</figcaption>
-</figure>
-<h4 id="文档流定位flow">文档流定位（flow）</h4>
-<p>元素类型转换： <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span>&#123;</span><br><span class="line">    <span class="attribute">display</span>: none/block/inline/inline-block;</span><br><span class="line">         <span class="comment">/* 不显示/block/inline/inline-block */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h5 id="block元素">block元素</h5>
-<ul>
-<li>独占一行</li>
-<li>元素的height、width、margin、padding都可设置</li>
-</ul>
-<p><kbd>&lt;div&gt;</kbd> <kbd>&lt;p&gt;</kbd> <kbd>&lt;h1/h2...h6&gt;</kbd> <kbd>&lt;ol&gt;</kbd> <kbd>&lt;ul&gt;</kbd> <kbd>&lt;table&gt;</kbd> <kbd>&lt;form&gt;</kbd></p>
-<h5 id="inline元素">inline元素</h5>
-<ul>
-<li>不独占行</li>
-<li>width、height不可设置</li>
-<li>width就是所包含的文字/图片的宽度</li>
-</ul>
-<p><kbd>&lt;span&gt;</kbd> <kbd>&lt;a&gt;</kbd></p>
-两个inline类型的元素中间有间距。要想去除这个间距，可以将之转换成block等元素表示。做导航条的时候，采用
-<p>
-或
-<ul>
-/
-<li>
-<p>标签包裹起来,来防止间距产生</p>
-<h5 id="inline-block元素">inline-block元素</h5>
-<ul>
-<li>不独占行</li>
-<li>元素的height、width、margin、padding都可设置</li>
-</ul>
-<p><kbd>&lt;img&gt;</kbd></p>
-<h4 id="浮动定位">浮动定位</h4>
-<p>div实现横向多列布局</p>
-<p><kbd>&lt;&gt;</kbd> <kbd>&lt;&gt;</kbd> <kbd>&lt;&gt;</kbd></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/02/15/%E6%80%9D%E4%BF%AE%E7%AC%94%E8%AE%B0-%E8%85%BF%E5%A7%90/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar_my.gif">
-      <meta itemprop="name" content="Ranye">
-      <meta itemprop="description" content="弱小和无知不是生存的障碍，傲慢才是">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Ranye">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/02/15/%E6%80%9D%E4%BF%AE%E7%AC%94%E8%AE%B0-%E8%85%BF%E5%A7%90/" class="post-title-link" itemprop="url">思修笔记(腿姐)</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-02-15 19:47:55" itemprop="dateCreated datePublished" datetime="2020-02-15T19:47:55+08:00">2020-02-15</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-09-23 23:57:22" itemprop="dateModified" datetime="2021-09-23T23:57:22+08:00">2021-09-23</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%AD%A6%E4%B9%A0/%E6%80%9D%E4%BF%AE/" itemprop="url" rel="index"><span itemprop="name">思修</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="绪论-选择">绪论 （选择）</h2>
-<h3 id="时代新人以民族复兴为己任">时代新人以民族复兴为己任</h3>
-<p>新时代——时代新人</p>
-<p><strong>钙</strong>、<strong>软骨病</strong>——<strong>理想信念</strong><br />
-<strong>担当</strong>精神——决定人生价值的<strong>最大砝码</strong></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/02/15/%E6%80%9D%E4%BF%AE%E7%AC%94%E8%AE%B0-%E8%85%BF%E5%A7%90/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/02/14/Web%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91-MOOC-01/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar_my.gif">
-      <meta itemprop="name" content="Ranye">
-      <meta itemprop="description" content="弱小和无知不是生存的障碍，傲慢才是">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Ranye">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/02/14/Web%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91-MOOC-01/" class="post-title-link" itemprop="url">Web前端开发 MOOC 01</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-02-14 22:34:10" itemprop="dateCreated datePublished" datetime="2020-02-14T22:34:10+08:00">2020-02-14</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-09-23 23:57:13" itemprop="dateModified" datetime="2021-09-23T23:57:13+08:00">2021-09-23</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>更新至第三章 css样式 【完】</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/02/14/Web%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91-MOOC-01/#more" rel="contents">
+              <a class="btn" href="/2020/02/21/%E5%85%B6%E4%BB%96/%E5%BE%85%E5%AD%A6%E8%AF%BE%E7%A8%8B/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%8601/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -1105,7 +1043,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -1259,6 +1197,59 @@
   
 
   
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 

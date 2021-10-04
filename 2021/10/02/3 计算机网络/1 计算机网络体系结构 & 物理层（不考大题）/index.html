@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":400,"display":"hide","padding":50,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"gitalk":{"order":-2}},"activeClass":"gitalk"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="（一）通信基础  信道、信号、带宽、码元、波特、速率、信源与信宿等基本概念 奈奎斯特定理与香农定理 编码与调制 电路交换、报文交换与分组交换 数据报与虚电路  （二）传输介质  双绞线、同轴电缆、光纤与无线传输介质 物理层接口的特性  （三）物理层设备  中继器 集线器">
+<meta property="og:type" content="article">
+<meta property="og:title" content="计算机网络体系结构&amp;物理层（不考大题）">
+<meta property="og:url" content="http://example.com/2021/10/02/3%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/1%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%20&%20%E7%89%A9%E7%90%86%E5%B1%82%EF%BC%88%E4%B8%8D%E8%80%83%E5%A4%A7%E9%A2%98%EF%BC%89/index.html">
+<meta property="og:site_name" content="Ranye">
+<meta property="og:description" content="（一）通信基础  信道、信号、带宽、码元、波特、速率、信源与信宿等基本概念 奈奎斯特定理与香农定理 编码与调制 电路交换、报文交换与分组交换 数据报与虚电路  （二）传输介质  双绞线、同轴电缆、光纤与无线传输介质 物理层接口的特性  （三）物理层设备  中继器 集线器">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-10-02T13:25:25.000Z">
+<meta property="article:modified_time" content="2021-10-03T13:43:40.716Z">
+<meta property="article:author" content="Ranye">
+<meta property="article:tag" content="考研">
+<meta property="article:tag" content="计算机网络">
+<meta property="article:tag" content="物理层">
+<meta property="article:tag" content="计算机网络体系结构">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/2021/10/02/3%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/1%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%20&%20%E7%89%A9%E7%90%86%E5%B1%82%EF%BC%88%E4%B8%8D%E8%80%83%E5%A4%A7%E9%A2%98%EF%BC%89/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>计算机网络体系结构&物理层（不考大题） | Ranye</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Ranye</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/10/02/3%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/1%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%20&%20%E7%89%A9%E7%90%86%E5%B1%82%EF%BC%88%E4%B8%8D%E8%80%83%E5%A4%A7%E9%A2%98%EF%BC%89/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar_my.gif">
+      <meta itemprop="name" content="Ranye">
+      <meta itemprop="description" content="弱小和无知不是生存的障碍，傲慢才是">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ranye">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          计算机网络体系结构&物理层（不考大题）
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-10-02 21:25:25" itemprop="dateCreated datePublished" datetime="2021-10-02T21:25:25+08:00">2021-10-02</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-10-03 21:43:40" itemprop="dateModified" datetime="2021-10-03T21:43:40+08:00">2021-10-03</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" itemprop="url" rel="index"><span itemprop="name">计算机网络</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>（一）通信基础</p>
+<ol>
+<li>信道、信号、带宽、码元、波特、速率、信源与信宿等基本概念</li>
+<li>奈奎斯特定理与香农定理</li>
+<li>编码与调制</li>
+<li>电路交换、报文交换与分组交换</li>
+<li>数据报与虚电路</li>
+</ol>
+<p>（二）传输介质</p>
+<ol>
+<li>双绞线、同轴电缆、光纤与无线传输介质</li>
+<li>物理层接口的特性</li>
+</ol>
+<p>（三）物理层设备</p>
+<ol>
+<li>中继器</li>
+<li>集线器</li>
+</ol>
+<span id="more"></span>
+
+<h1 id="计算机网络体系结构"><a href="#计算机网络体系结构" class="headerlink" title="计算机网络体系结构"></a>计算机网络体系结构</h1><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><ol>
+<li>什么是计算机网络</li>
+<li>计算机网络组成</li>
+<li>计算机网络功能</li>
+<li>计算机网络分类</li>
+</ol>
+<h2 id="体系结构参考模型"><a href="#体系结构参考模型" class="headerlink" title="体系结构参考模型"></a>体系结构参考模型</h2><ol>
+<li>协议、接口、服务</li>
+<li>ISO/OSI</li>
+<li>TCP/IP</li>
+</ol>
+<h1 id="物理层"><a href="#物理层" class="headerlink" title="物理层"></a>物理层</h1><h2 id="通信基础"><a href="#通信基础" class="headerlink" title="通信基础"></a>通信基础</h2><h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><ol>
+<li>信道、信号、信源、信宿</li>
+<li>带宽、速率、码元、波特</li>
+</ol>
+<h3 id="🔺奈氏准则和香农定理"><a href="#🔺奈氏准则和香农定理" class="headerlink" title="🔺奈氏准则和香农定理"></a>🔺奈氏准则和香农定理</h3><ol>
+<li>奈氏准则：极限数据传输率 $= 2W *log_2V$<ul>
+<li>$W$：信道带宽（Hz）</li>
+<li>$V$：码元种类</li>
+</ul>
+</li>
+<li>香农定理：极限数据传输率 $= W log_2(1+S/N)$<ul>
+<li>$1dB = 10lg(S/N)$</li>
+<li>$S/N$：信噪比</li>
+</ul>
+</li>
+</ol>
+<h3 id="🔺编码与调制"><a href="#🔺编码与调制" class="headerlink" title="🔺编码与调制"></a>🔺编码与调制</h3><ol>
+<li>编码：变为数字信号<ul>
+<li>归零编码</li>
+<li>非归零编码</li>
+<li>曼彻斯特编码</li>
+<li>差分曼彻斯特编码</li>
+</ul>
+</li>
+<li>调制：变为模拟信号</li>
+</ol>
+<h3 id="🔺数据交换方式"><a href="#🔺数据交换方式" class="headerlink" title="🔺数据交换方式"></a>🔺数据交换方式</h3><ol>
+<li>考察交换之间的差别（电路交换和分组交换的差别、数据报方式和虚电路方式的区别等）</li>
+<li>给出网络拓扑图，问用电路交换方式和分组交换方式分别时间是多少（抓住第一个和最后一个）</li>
+</ol>
+<ul>
+<li>电路交换（连接建立+数据传输+连接释放）</li>
+<li>报文交换（大报文为单位）</li>
+<li>分组交换（小分组为单位）<ul>
+<li>数据报方式（无连接）</li>
+<li>虚电路方式（建立连接）</li>
+</ul>
+</li>
+</ul>
+<h2 id="传输介质"><a href="#传输介质" class="headerlink" title="传输介质"></a>传输介质</h2><ol>
+<li>导引型：双绞线、同轴电缆、光纤<ul>
+<li>光纤：单模光纤、多模光纤</li>
+</ul>
+</li>
+<li>非导引型：无线电波、微波</li>
+</ol>
+<h3 id="🔺物理层接口的特性（泄气工程）"><a href="#🔺物理层接口的特性（泄气工程）" class="headerlink" title="🔺物理层接口的特性（泄气工程）"></a>🔺物理层接口的特性（泄气工程）</h3><ol>
+<li>机械特性 引线的数目、 引脚的数量和排列情况等</li>
+<li>电气特性 信号的电压高低、 阻抗匹配、 传输速率和距离限制等。</li>
+<li>功能特性 某条线上出现的某一电平的电压表示何种意义 ， 接口部件的信号线（ 数据线、 控制线、 定时线等 ） 的用途</li>
+<li>规程特性 工作规程、时序关系</li>
+</ol>
+<h2 id="物理层设备：中继器、集线器"><a href="#物理层设备：中继器、集线器" class="headerlink" title="物理层设备：中继器、集线器"></a>物理层设备：中继器、集线器</h2>
+    </div>
+
+    
+    
+    
+        <div class="reward-container">
+  <div>看到这里的姐妹一看就要暴富暴美，为什么不让这一天提前一点呢ヾ(≧▽≦*)o</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.png" alt="Ranye 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.png" alt="Ranye 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E8%80%83%E7%A0%94/" rel="tag"># 考研</a>
+              <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" rel="tag"># 计算机网络</a>
+              <a href="/tags/%E7%89%A9%E7%90%86%E5%B1%82/" rel="tag"># 物理层</a>
+              <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/" rel="tag"># 计算机网络体系结构</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/10/02/%E5%85%B6%E4%BB%96/%E5%89%8D%E7%AB%AF/%E7%9C%9F%E9%A2%98/" rel="prev" title="">
+      <i class="fa fa-chevron-left"></i> 
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2021/10/02/3%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/2%20%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82/" rel="next" title="数据链路层">
+      数据链路层 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84"><span class="nav-number">1.</span> <span class="nav-text">计算机网络体系结构</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A6%82%E8%BF%B0"><span class="nav-number">1.1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E5%8F%82%E8%80%83%E6%A8%A1%E5%9E%8B"><span class="nav-number">1.2.</span> <span class="nav-text">体系结构参考模型</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%89%A9%E7%90%86%E5%B1%82"><span class="nav-number">2.</span> <span class="nav-text">物理层</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%80%9A%E4%BF%A1%E5%9F%BA%E7%A1%80"><span class="nav-number">2.1.</span> <span class="nav-text">通信基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A6%82%E5%BF%B5"><span class="nav-number">2.1.1.</span> <span class="nav-text">概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%F0%9F%94%BA%E5%A5%88%E6%B0%8F%E5%87%86%E5%88%99%E5%92%8C%E9%A6%99%E5%86%9C%E5%AE%9A%E7%90%86"><span class="nav-number">2.1.2.</span> <span class="nav-text">🔺奈氏准则和香农定理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%F0%9F%94%BA%E7%BC%96%E7%A0%81%E4%B8%8E%E8%B0%83%E5%88%B6"><span class="nav-number">2.1.3.</span> <span class="nav-text">🔺编码与调制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%F0%9F%94%BA%E6%95%B0%E6%8D%AE%E4%BA%A4%E6%8D%A2%E6%96%B9%E5%BC%8F"><span class="nav-number">2.1.4.</span> <span class="nav-text">🔺数据交换方式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BC%A0%E8%BE%93%E4%BB%8B%E8%B4%A8"><span class="nav-number">2.2.</span> <span class="nav-text">传输介质</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%F0%9F%94%BA%E7%89%A9%E7%90%86%E5%B1%82%E6%8E%A5%E5%8F%A3%E7%9A%84%E7%89%B9%E6%80%A7%EF%BC%88%E6%B3%84%E6%B0%94%E5%B7%A5%E7%A8%8B%EF%BC%89"><span class="nav-number">2.2.1.</span> <span class="nav-text">🔺物理层接口的特性（泄气工程）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%89%A9%E7%90%86%E5%B1%82%E8%AE%BE%E5%A4%87%EF%BC%9A%E4%B8%AD%E7%BB%A7%E5%99%A8%E3%80%81%E9%9B%86%E7%BA%BF%E5%99%A8"><span class="nav-number">2.3.</span> <span class="nav-text">物理层设备：中继器、集线器</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Ranye"
+      src="/images/avatar_my.gif">
+  <p class="site-author-name" itemprop="name">Ranye</p>
+  <div class="site-description" itemprop="description">弱小和无知不是生存的障碍，傲慢才是</div>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/DidRanyeStudyToday" title="GitHub → https://github.com/DidRanyeStudyToday" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:ranye2377210091@gmail.com" title="E-Mail → mailto:ranye2377210091@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2020 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Ranye</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : 'b0ad012e00fc77098cad',
+      clientSecret: 'b86792d1298a4be13412ece9d266e9660232b4c0',
+      repo        : 'blog_comment_repo',
+      owner       : 'DidRanyeStudyToday',
+      admin       : ['DidRanyeStudyToday'],
+      id          : '4d5e2023e2e118ad9b592435e3580fc9',
+        language: 'zh-CN',
+      distractionFreeMode: false
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>
