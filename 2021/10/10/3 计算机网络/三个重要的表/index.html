@@ -17,7 +17,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":400,"display":"always","padding":50,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"gitalk":{"order":-2}},"activeClass":"gitalk"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":400,"display":"always","padding":50,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"v","storage":true,"lazyload":false,"nav":{"gitalk":{"order":-2}}},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="转发表（数据链路层：网桥、交换机） 【考过大题】转发表的建立是被动的 即：当有一个数据帧从A发送到网桥的1号端口，转发表才知道A在1端口方向并登记 登记完毕，从已知的信息判断是进行转发还是丢弃 若网桥的转发表写了B在2号端口方向，自然转发到2号端口 若转发表什么都没写，就进行广播，每个端口都进行转发 若写了B在1号端口方向，但是数据帧是1号来的，则丢弃  ARP表（网络层：主机、路">
@@ -30,7 +30,7 @@
 <meta property="og:image" content="https://z3.ax1x.com/2021/10/10/5EmV7F.png">
 <meta property="og:image" content="https://z3.ax1x.com/2021/10/10/5EutSA.png">
 <meta property="article:published_time" content="2021-10-10T10:14:41.000Z">
-<meta property="article:modified_time" content="2021-10-10T11:26:29.354Z">
+<meta property="article:modified_time" content="2021-10-10T13:56:16.961Z">
 <meta property="article:author" content="Ranye">
 <meta property="article:tag" content="考研">
 <meta property="article:tag" content="计算机网络">
@@ -212,7 +212,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2021-10-10 18:14:41 / 修改时间：19:26:29" itemprop="dateCreated datePublished" datetime="2021-10-10T18:14:41+08:00">2021-10-10</time>
+              <time title="创建时间：2021-10-10 18:14:41 / 修改时间：21:56:16" itemprop="dateCreated datePublished" datetime="2021-10-10T18:14:41+08:00">2021-10-10</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -261,6 +261,7 @@
 <p><a target="_blank" rel="noopener" href="https://imgtu.com/i/5EutSA"><img src="https://z3.ax1x.com/2021/10/10/5EutSA.png" alt="5EutSA.png" /></a></p>
 <p>默认路由：不知道目的网络IP地址的时候，就填0.0.0.0，子网掩码也是0.0.0.0</p>
 <p>这样就会发到组长（网关）那里。让组长看看自己的路由表项有没有</p>
+<p>（网关：两个不同的网络的设备）</p>
 <p>如果组长也不知道，那么组长也填0，发给大组长。。。</p>
 <p>这个过程不会一直持续下去的，因为IP分组有一个TTL，每经过一个路由器TTL--，减到0就被丢弃了</p>
 <p>不会持续的另一个原因是，如果使用RIP算法，跳数16记为不可达，也会被丢弃</p>
@@ -274,7 +275,12 @@
 <li>路径最短</li>
 <li>正主（下一跳）发话必须更新</li>
 </ol>
-<h2 id="ospf">OSPF</h2>
+<h1 id="主机a请求baidu的全过程">主机A请求baidu的全过程</h1>
+<ol type="1">
+<li>向DNS服务器查找www.baidu.com的IP地址，得出IP为12.34.56.78</li>
+<li>A自身的IP为13.24.35.46，自身MAC地址为AS-DF-GH-JK-LL-ZX-CV-BN</li>
+<li></li>
+</ol>
 
     </div>
 
@@ -380,7 +386,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BD%AC%E5%8F%91%E8%A1%A8%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82%E7%BD%91%E6%A1%A5%E4%BA%A4%E6%8D%A2%E6%9C%BA"><span class="nav-number">1.</span> <span class="nav-text">转发表（数据链路层：网桥、交换机）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#arp%E8%A1%A8%E7%BD%91%E7%BB%9C%E5%B1%82%E4%B8%BB%E6%9C%BA%E8%B7%AF%E7%94%B1%E5%99%A8"><span class="nav-number">2.</span> <span class="nav-text">ARP表（网络层：主机、路由器）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%B7%AF%E7%94%B1%E8%A1%A8%E8%B7%AF%E7%94%B1%E5%99%A8"><span class="nav-number">3.</span> <span class="nav-text">路由表（路由器）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#rip"><span class="nav-number">3.1.</span> <span class="nav-text">RIP</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ospf"><span class="nav-number">3.2.</span> <span class="nav-text">OSPF</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BD%AC%E5%8F%91%E8%A1%A8%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82%E7%BD%91%E6%A1%A5%E4%BA%A4%E6%8D%A2%E6%9C%BA"><span class="nav-number">1.</span> <span class="nav-text">转发表（数据链路层：网桥、交换机）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#arp%E8%A1%A8%E7%BD%91%E7%BB%9C%E5%B1%82%E4%B8%BB%E6%9C%BA%E8%B7%AF%E7%94%B1%E5%99%A8"><span class="nav-number">2.</span> <span class="nav-text">ARP表（网络层：主机、路由器）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%B7%AF%E7%94%B1%E8%A1%A8%E8%B7%AF%E7%94%B1%E5%99%A8"><span class="nav-number">3.</span> <span class="nav-text">路由表（路由器）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#rip"><span class="nav-number">3.1.</span> <span class="nav-text">RIP</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%BB%E6%9C%BAa%E8%AF%B7%E6%B1%82baidu%E7%9A%84%E5%85%A8%E8%BF%87%E7%A8%8B"><span class="nav-number">4.</span> <span class="nav-text">主机A请求baidu的全过程</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
