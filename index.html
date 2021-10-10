@@ -180,6 +180,220 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/10/10/3%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BA%94%E7%A7%8D%E9%87%8D%E8%A6%81%E7%9A%84%E6%8A%A5%E6%96%87/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar_%E8%AF%A5%E8%B5%B7%E5%BA%8A%E4%BA%86.jpeg">
+      <meta itemprop="name" content="Ranye">
+      <meta itemprop="description" content="昨天不是刚起过床嘛">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ranye">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/10/10/3%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BA%94%E7%A7%8D%E9%87%8D%E8%A6%81%E7%9A%84%E6%8A%A5%E6%96%87/" class="post-title-link" itemprop="url">五种重要的报文</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-10-10 18:18:56 / 修改时间：18:27:28" itemprop="dateCreated datePublished" datetime="2021-10-10T18:18:56+08:00">2021-10-10</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%80%83%E7%A0%94/" itemprop="url" rel="index"><span itemprop="name">考研</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%80%83%E7%A0%94/408/" itemprop="url" rel="index"><span itemprop="name">408</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%80%83%E7%A0%94/408/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" itemprop="url" rel="index"><span itemprop="name">计算机网络</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="ip分组">IP分组</h1>
+<ol type="1">
+<li>首部固定部分为20B，首部最大值为60B</li>
+<li>总长度（1）+片偏移的单位（8）+首部长度（4）（“一种八片首饰”）</li>
+<li>标志位MF和DF在分片时的取值</li>
+<li>生存时间TTL，经过一个路由器减去1，直到为0</li>
+<li>首部校验和字段只校验首部</li>
+<li>源地址和目的地址字段长度都为4B</li>
+</ol>
+<h1 id="udp数据报">UDP数据报</h1>
+<ol type="1">
+<li>首部8B，由4个字段组成（都是2B）</li>
+<li>长度字段包括首部+数据部分</li>
+<li>检验和检验首部+数据部分（可选）</li>
+</ol>
+<h1 id="tcp报文段">TCP报文段</h1>
+<ol type="1">
+<li>首部固定部分为20B，最大值为60B（和IP分组一样）</li>
+<li>源端口和目的端口各占2B</li>
+<li>序号（本报文段第一个字节的序号）和确认号（期望收到下一个的序号）各占4B</li>
+<li>数据偏移=首部长度（4B整数倍）</li>
+<li>确认位ACK、同步位SYN、终止位FIN什么时候为0/1</li>
+<li>窗口字段表示允许对方发送的数据量（流量控制用）</li>
+</ol>
+<h1 id="http报文">HTTP报文</h1>
+<p>HTTP报文分为请求报文&amp;响应报文 请求报文： 1.请求行：请求方法（常用get/post）、请求URL、HTTP协议版本 2.首部行 3.请求体/实体主体 响应报文： 1.状态行 2.响应头部 3.响应体</p>
+<h1 id="mac帧">MAC帧</h1>
+<ol type="1">
+<li>前同步码8B</li>
+<li>MAC地址长度6B</li>
+<li>数据长度为46-1500B，首部和尾部是18B，因此最短帧长64B</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/10/10/3%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%B8%89%E4%B8%AA%E9%87%8D%E8%A6%81%E7%9A%84%E8%A1%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar_%E8%AF%A5%E8%B5%B7%E5%BA%8A%E4%BA%86.jpeg">
+      <meta itemprop="name" content="Ranye">
+      <meta itemprop="description" content="昨天不是刚起过床嘛">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ranye">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/10/10/3%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%B8%89%E4%B8%AA%E9%87%8D%E8%A6%81%E7%9A%84%E8%A1%A8/" class="post-title-link" itemprop="url">三个重要的表</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-10-10 18:14:41 / 修改时间：19:26:29" itemprop="dateCreated datePublished" datetime="2021-10-10T18:14:41+08:00">2021-10-10</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%80%83%E7%A0%94/" itemprop="url" rel="index"><span itemprop="name">考研</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%80%83%E7%A0%94/408/" itemprop="url" rel="index"><span itemprop="name">408</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%80%83%E7%A0%94/408/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" itemprop="url" rel="index"><span itemprop="name">计算机网络</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="转发表数据链路层网桥交换机">转发表（数据链路层：网桥、交换机）</h1>
+<p>【考过大题】转发表的建立是<strong>被动</strong>的</p>
+<p>即：当有一个数据帧从A发送到网桥的1号端口，转发表才知道A在1端口方向并登记</p>
+<p>登记完毕，从已知的信息判断是进行转发还是丢弃</p>
+<p>若网桥的转发表写了B在2号端口方向，自然转发到2号端口</p>
+<p>若转发表什么都没写，就进行广播，每个端口都进行转发</p>
+<p>若写了B在1号端口方向，但是数据帧是1号来的，则丢弃</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/5EmV7F"><img src="https://z3.ax1x.com/2021/10/10/5EmV7F.png" alt="5EmV7F.png" /></a></p>
+<h1 id="arp表网络层主机路由器">ARP表（网络层：主机、路由器）</h1>
+<p>关键词：<strong>广播</strong>。每10~20min更新一次</p>
+<p>主机/路由器当收到一个分组的时候，进行检查ARP高速缓存（ARP表）</p>
+<p>有就算了，没有的话进行<strong>广播</strong>，来问MAC地址</p>
+<p>方法：本来把这个分组的目的MAC地址填上<strong>FF-FF-FF-FF-FF-FF</strong>，这样它就变成了一个广播的分组，能发给所有的主机（同局域网内的）</p>
+<p>目的主机收到了分组，就会告诉源主机自己的MAC地址（向源主机<strong>单播</strong>一个ARP响应分组）</p>
+<h1 id="路由表路由器">路由表（路由器）</h1>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/5EutSA"><img src="https://z3.ax1x.com/2021/10/10/5EutSA.png" alt="5EutSA.png" /></a></p>
+<p>默认路由：不知道目的网络IP地址的时候，就填0.0.0.0，子网掩码也是0.0.0.0</p>
+<p>这样就会发到组长（网关）那里。让组长看看自己的路由表项有没有</p>
+<p>如果组长也不知道，那么组长也填0，发给大组长。。。</p>
+<p>这个过程不会一直持续下去的，因为IP分组有一个TTL，每经过一个路由器TTL--，减到0就被丢弃了</p>
+<p>不会持续的另一个原因是，如果使用RIP算法，跳数16记为不可达，也会被丢弃</p>
+<h2 id="rip">RIP</h2>
+<p>路由器L1会定时接到相邻路由器L2的整个路由表</p>
+<p>L1将能抄的抄到自己的路由表上，当然不要忘记把“距离”项+1，“下一跳”项填L2</p>
+<p>如果距离都到16了，那就是不可达了，这行不抄</p>
+<p>如果某一项，自己原来的距离比L2的还短/一样，不抄 （！！但是！也不是绝对的，如果原来的表项也是下一跳L2，那还是要更新的啊，说明现在网络拥堵了啊）</p>
+<ol type="1">
+<li>能不动就不动</li>
+<li>路径最短</li>
+<li>正主（下一跳）发话必须更新</li>
+</ol>
+<h2 id="ospf">OSPF</h2>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2021/10/09/3%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E8%AE%A1%E7%BD%91%E5%A4%A7%E9%A2%98/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -203,10 +417,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-10-09 20:41:11 / 修改时间：20:48:29" itemprop="dateCreated datePublished" datetime="2021-10-09T20:41:11+08:00">2021-10-09</time>
+              <time title="创建时间：2021-10-09 20:41:11" itemprop="dateCreated datePublished" datetime="2021-10-09T20:41:11+08:00">2021-10-09</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-10-10 18:12:08" itemprop="dateModified" datetime="2021-10-10T18:12:08+08:00">2021-10-10</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -1000,203 +1220,6 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2021/10/05/1%20%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/1%20%E5%87%BD%E6%95%B0%E3%80%81%E6%9E%81%E9%99%90%E3%80%81%E8%BF%9E%E7%BB%AD/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/10/05/1%20%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/7%20%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar_%E8%AF%A5%E8%B5%B7%E5%BA%8A%E4%BA%86.jpeg">
-      <meta itemprop="name" content="Ranye">
-      <meta itemprop="description" content="昨天不是刚起过床嘛">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Ranye">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/10/05/1%20%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/7%20%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/" class="post-title-link" itemprop="url">七、无穷级数</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-10-05 14:37:24" itemprop="dateCreated datePublished" datetime="2021-10-05T14:37:24+08:00">2021-10-05</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-10-07 00:19:23" itemprop="dateModified" datetime="2021-10-07T00:19:23+08:00">2021-10-07</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%80%83%E7%A0%94/" itemprop="url" rel="index"><span itemprop="name">考研</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%80%83%E7%A0%94/%E6%95%B0%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">数学</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%80%83%E7%A0%94/%E6%95%B0%E5%AD%A6/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">高等数学</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <!--  -->
-<!-- 1. 级数敛散性判断
-2. 求幂级数收敛域、收敛半径、收敛区间
-3. 求幂级数的$S(x)$
-4. 求数项级数之和 -->
-<!-- 1. [x] 理解常数项级数收敛、发散以及收敛级数的和的概念，掌握级数的基本性质及收敛的必要条件. -->
-<!-- 2. [x] 掌握几何级数与 p 级数的收敛与发散的条件. -->
-<!-- 3. [x] 掌握正项级数收敛性的比较判别法、比值判别法、根值判别法，会用积分判别法. -->
-<!-- 4. [x] 掌握交错级数的莱布尼茨判别法. -->
-<!-- 5. [x] 了解任意项级数绝对收敛与条件收敛的概念以及绝对收敛与收敛的关系. -->
-<!-- 6. [x] 了解函数项级数的收敛域及和函数的概念. -->
-<!-- 7. [x] 理解幂级数收敛半径的概念，并掌握幂级数的收敛半径、收敛区间及收敛域的求法. -->
-<ol start="8" type="1">
-<li><input type="checkbox" disabled="" checked="" />
-了解幂级数在其收敛区间内的基本性质（和函数的连续性、逐项求导和逐项积分），会求一些幂级数在收敛区间内的和函数，并会由此求出某些数项级数的和.</li>
-<li><input type="checkbox" disabled="" checked="" />
-了解函数展开为泰勒级数的充分必要条件. <!-- 10. [x] 掌握$e^x ,sinx ,cosx ,ln(1 +x)$ 及$(1 +x)^\alpha $的麦克劳林（Maclaurin）展开式，会用它们将一些简单函数间接展开为幂级数. --></li>
-<li><input type="checkbox" disabled="" checked="" />
-了解傅里叶级数的概念和狄利克雷收敛定理，会将定义在<span class="math inline">\([-l,l]\)</span>上的函数展开为傅里叶级数，会将定义在<span class="math inline">\([0,l]\)</span>上的函数展开为正弦级数与余弦级数，会写出傅里叶级数的和函数的表达式</li>
-</ol>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/10/05/1%20%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/7%20%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/10/03/%E6%94%BF%E6%B2%BB/2022%E8%85%BF%E5%A7%90%E8%80%83%E7%A0%94%E6%94%BF%E6%B2%BB%E6%8A%80%E5%B7%A7%E7%8F%AD%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar_%E8%AF%A5%E8%B5%B7%E5%BA%8A%E4%BA%86.jpeg">
-      <meta itemprop="name" content="Ranye">
-      <meta itemprop="description" content="昨天不是刚起过床嘛">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Ranye">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/10/03/%E6%94%BF%E6%B2%BB/2022%E8%85%BF%E5%A7%90%E8%80%83%E7%A0%94%E6%94%BF%E6%B2%BB%E6%8A%80%E5%B7%A7%E7%8F%AD%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">2022腿姐考研政治技巧班课程笔记</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-10-03 22:04:21" itemprop="dateCreated datePublished" datetime="2021-10-03T22:04:21+08:00">2021-10-03</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-10-05 20:23:42" itemprop="dateModified" datetime="2021-10-05T20:23:42+08:00">2021-10-05</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%80%83%E7%A0%94/" itemprop="url" rel="index"><span itemprop="name">考研</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%80%83%E7%A0%94/%E6%94%BF%E6%B2%BB/" itemprop="url" rel="index"><span itemprop="name">政治</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%80%83%E7%A0%94/%E6%94%BF%E6%B2%BB/%E9%A9%AC%E5%8E%9F/" itemprop="url" rel="index"><span itemprop="name">马原</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>马哲选择题的keywords和知识点</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/10/03/%E6%94%BF%E6%B2%BB/2022%E8%85%BF%E5%A7%90%E8%80%83%E7%A0%94%E6%94%BF%E6%B2%BB%E6%8A%80%E5%B7%A7%E7%8F%AD%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
