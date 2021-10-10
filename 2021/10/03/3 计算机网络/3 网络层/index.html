@@ -20,12 +20,12 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":400,"display":"always","padding":50,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"gitalk":{"order":-2}},"activeClass":"gitalk"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="（一）网络层的功能  异构网络互联 路由与转发   SDN基本概念  （二）路由算法  静态路由与动态路由 距离-向量路由算法 链路状态路由算法 层次路由  （三）IPv4 （32bit）  ✨IPv4分组 ✨✨IPv4地址与NAT ✨✨子网划分、路由聚集、子网掩码与CIDR ARP协议、DHCP协议与ICMP协议  （四）IPv6 （128bit）">
+  <meta name="description" content="（一）网络层的功能  异构网络互联 路由与转发  SDN基本概念  （二）路由算法  静态路由与动态路由 距离-向量路由算法 链路状态路由算法 层次路由  （三）IPv4 （32bit）  ✨IPv4分组 ✨✨IPv4地址与NAT ✨✨子网划分、路由聚集、子网掩码与CIDR ARP协议、DHCP协议与ICMP协议  （四）IPv6 （128bit）  IPv6的主要特点 IPv6地址  （五）路由">
 <meta property="og:type" content="article">
 <meta property="og:title" content="网络层">
 <meta property="og:url" content="http://example.com/2021/10/03/3%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/3%20%E7%BD%91%E7%BB%9C%E5%B1%82/index.html">
 <meta property="og:site_name" content="Ranye">
-<meta property="og:description" content="（一）网络层的功能  异构网络互联 路由与转发   SDN基本概念  （二）路由算法  静态路由与动态路由 距离-向量路由算法 链路状态路由算法 层次路由  （三）IPv4 （32bit）  ✨IPv4分组 ✨✨IPv4地址与NAT ✨✨子网划分、路由聚集、子网掩码与CIDR ARP协议、DHCP协议与ICMP协议  （四）IPv6 （128bit）">
+<meta property="og:description" content="（一）网络层的功能  异构网络互联 路由与转发  SDN基本概念  （二）路由算法  静态路由与动态路由 距离-向量路由算法 链路状态路由算法 层次路由  （三）IPv4 （32bit）  ✨IPv4分组 ✨✨IPv4地址与NAT ✨✨子网划分、路由聚集、子网掩码与CIDR ARP协议、DHCP协议与ICMP协议  （四）IPv6 （128bit）  IPv6的主要特点 IPv6地址  （五）路由">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://images2018.cnblogs.com/blog/1440532/201809/1440532-20180912093201807-306001370.png">
 <meta property="article:published_time" content="2021-10-03T13:20:53.000Z">
@@ -250,32 +250,33 @@
 
       
         <p>（一）网络层的功能</p>
-<ol type="1">
+<ol>
 <li>异构网络互联</li>
-<li>路由与转发 <!-- 3. 拥塞控制 --> <!-- 具体的不考 --></li>
+<li>路由与转发<!-- 3. 拥塞控制 -->
+<!-- 具体的不考 --></li>
 <li>SDN基本概念</li>
 </ol>
 <p>（二）路由算法</p>
-<ol type="1">
+<ol>
 <li>静态路由与动态路由</li>
 <li>距离-向量路由算法</li>
 <li>链路状态路由算法</li>
 <li>层次路由</li>
 </ol>
 <p>（三）IPv4 （32bit）</p>
-<ol type="1">
+<ol>
 <li>✨IPv4分组</li>
 <li>✨✨IPv4地址与NAT</li>
 <li>✨✨子网划分、路由聚集、子网掩码与CIDR</li>
 <li>ARP协议、DHCP协议与ICMP协议</li>
 </ol>
 <p>（四）IPv6 （128bit）</p>
-<ol type="1">
+<ol>
 <li>IPv6的主要特点</li>
 <li>IPv6地址</li>
 </ol>
 <p>（五）路由协议</p>
-<ol type="1">
+<ol>
 <li>自治系统</li>
 <li>域内路由与域间路由</li>
 <li>✨RIP路由协议</li>
@@ -283,71 +284,52 @@
 <li>✨BGP路由协议</li>
 </ol>
 <p>（六）IP组播</p>
-<ol type="1">
+<ol>
 <li>组播的概念</li>
 <li>IP组播地址</li>
 </ol>
 <p>（七）移动IP</p>
-<ol type="1">
+<ol>
 <li>移动IP的概念</li>
 <li>移动IP通信过程</li>
 </ol>
 <p>（八）网络层设备</p>
-<ol type="1">
+<ol>
 <li>路由器的组成和功能</li>
 <li>路由表与路由转发</li>
 </ol>
 <span id="more"></span>
-<h1 id="路由算法">路由算法</h1>
-<h2 id="距离-向量路由算法">距离-向量路由算法</h2>
-<p>所有结点 定期 传送 整个路由选择表 给 所有与之直接相邻的结点</p>
-<h2 id="链路状态路由算法">链路状态路由算法</h2>
-<p>每个结点 有 完全的网络拓扑信息 主动测试所有邻接结点的状态 定期 将链路状态 传播给 所有其他结点 （ 或称路由结点 ）</p>
-<h2 id="层次路由">层次路由</h2>
-<p>将互联网分为很多小的自治系统 每个系统内部可以选择自己喜欢的协议（内部网关协议IGP） 自治系统间需要统一（外部网关协议EGP ）</p>
-<h1 id="路由协议">路由协议</h1>
-<h2 id="自治系统域内路由与域间路由">自治系统、域内路由与域间路由</h2>
-<p>✨✨ |协 议 |RIP| OSPF |BGP| |----|----|----|----| |类 型 |内 部| 内 部| 外 部| |路由算法| 距离-向量 |链路状态 |路径-向量| |传递协议| UDP |IP |TCP| | 路径选择 |跳数最少 |代价最低 |较好，非最佳| |交换结点 |和本结点相邻的路由器| 网络中的所有路由器 |和本结点相邻的路由器| |交换内容 |当前本路由器知道的全部信息，即自己的路由表|与本路由器相邻的所有路由器的链路状态|首次 整个路由表;非首次 有变化的部分| ✨✨</p>
-<h2 id="内部网关协议igp">✨内部网关协议IGP</h2>
-<h3 id="路由信息协议-rip">✨路由信息协议 RIP</h3>
-<p>使用距离向量算法 最多允许15跳 ，超过15跳即为不可达 每30秒广播一次RIP路由更新信息 ，建立并维护路由表（ 动态路由表 ） RIP协议中每个网络的子网掩码必须相同 慢收敛现象：坏消息传得慢 UDP</p>
-<h3 id="开放最短路径优先协议-ospf">✨开放最短路径优先协议 OSPF</h3>
-<p>使用分布式链路状态路由算法 只有当链路状态发生变化时 ，路由器才用洪泛法向所有路由器发送此信息 ，并且更新过程收敛得快 OSPF向本自治系统中的所有路由器发送信息 （洪泛法） 发送的信息是与本路由器相邻的所有路由器的链路状态 直接用IP数据报传送 迪杰斯特拉算法</p>
+
+<h1 id="路由算法"><a href="#路由算法" class="headerlink" title="路由算法"></a>路由算法</h1><h2 id="距离-向量路由算法"><a href="#距离-向量路由算法" class="headerlink" title="距离-向量路由算法"></a>距离-向量路由算法</h2><p>所有结点<br>定期<br>传送<br>整个路由选择表<br>给<br>所有与之直接相邻的结点</p>
+<h2 id="链路状态路由算法"><a href="#链路状态路由算法" class="headerlink" title="链路状态路由算法"></a>链路状态路由算法</h2><p>每个结点<br>有<br>完全的网络拓扑信息<br>主动测试所有邻接结点的状态<br>定期<br>将链路状态<br>传播给<br>所有其他结点 （ 或称路由结点 ）</p>
+<h2 id="层次路由"><a href="#层次路由" class="headerlink" title="层次路由"></a>层次路由</h2><p>将互联网分为很多小的自治系统<br>每个系统内部可以选择自己喜欢的协议（内部网关协议IGP）<br>自治系统间需要统一（外部网关协议EGP  ）</p>
+<h1 id="路由协议"><a href="#路由协议" class="headerlink" title="路由协议"></a>路由协议</h1><h2 id="自治系统、域内路由与域间路由"><a href="#自治系统、域内路由与域间路由" class="headerlink" title="自治系统、域内路由与域间路由"></a>自治系统、域内路由与域间路由</h2><p>✨✨<br>|协 议 |RIP| OSPF |BGP|<br>|—-|—-|—-|—-|<br>|类 型 |内 部| 内 部| 外 部|<br>|路由算法| 距离-向量 |链路状态 |路径-向量|<br>|传递协议| UDP |IP |TCP|<br>| 路径选择 |跳数最少 |代价最低 |较好，非最佳|<br>|交换结点 |和本结点相邻的路由器| 网络中的所有路由器 |和本结点相邻的路由器|<br>|交换内容 |当前本路由器知道的全部信息，即自己的路由表|与本路由器相邻的所有路由器的链路状态|首次 整个路由表;非首次 有变化的部分|<br>✨✨</p>
+<h2 id="✨内部网关协议IGP"><a href="#✨内部网关协议IGP" class="headerlink" title="✨内部网关协议IGP"></a>✨内部网关协议IGP</h2><h3 id="✨路由信息协议-RIP"><a href="#✨路由信息协议-RIP" class="headerlink" title="✨路由信息协议 RIP"></a>✨路由信息协议 RIP</h3><p>使用距离向量算法<br>最多允许15跳 ，超过15跳即为不可达<br>每30秒广播一次RIP路由更新信息 ，建立并维护路由表（ 动态路由表 ）<br>RIP协议中每个网络的子网掩码必须相同<br>慢收敛现象：坏消息传得慢<br>UDP</p>
+<h3 id="✨开放最短路径优先协议-OSPF"><a href="#✨开放最短路径优先协议-OSPF" class="headerlink" title="✨开放最短路径优先协议 OSPF"></a>✨开放最短路径优先协议 OSPF</h3><p>使用分布式链路状态路由算法<br>只有当链路状态发生变化时 ，路由器才用洪泛法向所有路由器发送此信息 ，并且更新过程收敛得快<br>OSPF向本自治系统中的所有路由器发送信息 （洪泛法）<br>发送的信息是与本路由器相邻的所有路由器的链路状态<br>直接用IP数据报传送<br>迪杰斯特拉算法</p>
 <p>负载平衡 ：如果到同一个目的网络有多条相同代价的路径 ，那么可以将通信量分配给这几条路径</p>
-<h2 id="外部网关协议egp">外部网关协议EGP</h2>
-<h3 id="边界网关协议-bgp">✨边界网关协议 BGP</h3>
-<p>是路径向量路由选择协议</p>
+<h2 id="外部网关协议EGP"><a href="#外部网关协议EGP" class="headerlink" title="外部网关协议EGP"></a>外部网关协议EGP</h2><h3 id="✨边界网关协议-BGP"><a href="#✨边界网关协议-BGP" class="headerlink" title="✨边界网关协议 BGP"></a>✨边界网关协议 BGP</h3><p>是路径向量路由选择协议</p>
 <p>应用层协议 ，基于TCP</p>
-<p>每个自治系统的管理员要选择至少一个路由器作为该自治系统的 "BGP发言人〃 一个BGP发言人与其他自治系统中的BGP发言人要交换路由信息 ，先建立TCP连接 再利用BGP会话交换路由信息 所有BGP发言人都相互交换网络可达性的信息后 ，各BGP发言人就可找出到达各个自治系统的较好路由</p>
-<h1 id="ipv4">IPv4</h1>
-<p><img src="https://images2018.cnblogs.com/blog/1440532/201809/1440532-20180912093201807-306001370.png" /></p>
-<h2 id="ipv4分组">✨IPv4分组</h2>
-<p>字段：考的时候会告诉字段具体是什么，所以不用背。但是各个字段的单位要背（一种八片首饰 1B：总长度字段单位 8B：片偏移字段单位 首部长度字段单位：4B）</p>
+<p>每个自治系统的管理员要选择至少一个路由器作为该自治系统的 “BGP发言人〃<br>一个BGP发言人与其他自治系统中的BGP发言人要交换路由信息 ，先建立TCP连接<br>再利用BGP会话交换路由信息<br>所有BGP发言人都相互交换网络可达性的信息后 ，各BGP发言人就可找出到达各个自治系统的较好路由</p>
+<h1 id="IPv4"><a href="#IPv4" class="headerlink" title="IPv4"></a>IPv4</h1><p><img src="https://images2018.cnblogs.com/blog/1440532/201809/1440532-20180912093201807-306001370.png"></p>
+<h2 id="✨IPv4分组"><a href="#✨IPv4分组" class="headerlink" title="✨IPv4分组"></a>✨IPv4分组</h2><p>字段：考的时候会告诉字段具体是什么，所以不用背。但是各个字段的单位要背（一种八片首饰 1B：总长度字段单位 8B：片偏移字段单位 首部长度字段单位：4B）</p>
 <p>分片：以太网最大传送单元MTU为1500B，广域网MTU为576B</p>
-<h2 id="ipv4地址与nat">✨✨✨IPv4地址与NAT</h2>
-<p>给一个子网，问子网里可以有多少个地址（分配给多少个主机）</p>
+<h2 id="✨✨✨IPv4地址与NAT"><a href="#✨✨✨IPv4地址与NAT" class="headerlink" title="✨✨✨IPv4地址与NAT"></a>✨✨✨IPv4地址与NAT</h2><p>给一个子网，问子网里可以有多少个地址（分配给多少个主机）</p>
 <p>结合子网划分、路由聚集来考察</p>
 <p>在网络拓扑图中进行转发，IP地址要不要改变</p>
 <p>经过NAT路由器后IP地址怎么变化</p>
 <p>配置NAT表项</p>
-<h3 id="nat">NAT</h3>
-<p>将内部网络的私有IP地址转换为公有IP地址</p>
-<h2 id="子网划分路由聚集路由聚合构成超网子网掩码与cidr">✨✨子网划分、路由聚集（路由聚合、构成超网）、子网掩码与CIDR</h2>
-<p>子网划分：{网络号，子网号，主机号}</p>
-<p>CIDR（无分类域间路由选择）：IP={ &lt; 网络前缀&gt; , <主机号 > }，消除传统A、 B、 C类网络划分</p>
+<h3 id="NAT"><a href="#NAT" class="headerlink" title="NAT"></a>NAT</h3><p>将内部网络的私有IP地址转换为公有IP地址</p>
+<h2 id="✨✨子网划分、路由聚集（路由聚合、构成超网）、子网掩码与CIDR"><a href="#✨✨子网划分、路由聚集（路由聚合、构成超网）、子网掩码与CIDR" class="headerlink" title="✨✨子网划分、路由聚集（路由聚合、构成超网）、子网掩码与CIDR"></a>✨✨子网划分、路由聚集（路由聚合、构成超网）、子网掩码与CIDR</h2><p>子网划分：{网络号，子网号，主机号}</p>
+<p>CIDR（无分类域间路由选择）：IP={ &lt; 网络前缀&gt; , &lt;主机号 &gt; }，消除传统A、 B、 C类网络划分</p>
 <p>路由聚合、路由聚集、构成超网：网络前缀相同的连续IP地址组成的CIDR地址块</p>
-<h2 id="arp协议dhcp协议与icmp协议">ARP协议、DHCP协议与ICMP协议</h2>
-<p>ARP协议（地址解析协议）：IP地址-&gt;MAC地址</p>
-<p>DHCP（动态主机配置协议）：给主机动态地分配 IP地址 DHCP是应用层协议 它是基于UDP的 广播</p>
+<h2 id="ARP协议、DHCP协议与ICMP协议"><a href="#ARP协议、DHCP协议与ICMP协议" class="headerlink" title="ARP协议、DHCP协议与ICMP协议"></a>ARP协议、DHCP协议与ICMP协议</h2><p>ARP协议（地址解析协议）：IP地址-&gt;MAC地址</p>
+<p>DHCP（动态主机配置协议）：给主机动态地分配 IP地址<br>DHCP是应用层协议 它是基于UDP的<br>广播</p>
 <p>ICMP（网际控制报文协议）：让主机/路由器报告差错和异常情况给源点</p>
-<h1 id="ip组播">IP组播</h1>
-<p>组播：发给一个整个组</p>
+<h1 id="IP组播"><a href="#IP组播" class="headerlink" title="IP组播"></a>IP组播</h1><p>组播：发给一个整个组 </p>
 <p>组播地址：D类地址</p>
 <p>IGMP：互联网组管理协议，IP主机向任一个直接相邻的路由器报告他们的组成员情况</p>
-<h1 id="移动ip设备移动ip不动">移动IP：设备移动，IP不动</h1>
-<p>设备（移动结点）到了新地方的时候，有一个新管家（外部代理），他向这个新管家要一个新IP（转交地址），然后托新管家告诉老管家（归属代理）自己的新IP（&lt;固有地址，转交地址&gt;），以后要是有什么请求就转发给自己好了</p>
-<h1 id="网络层设备路由器">网络层设备：路由器</h1>
-
+<h1 id="移动IP：设备移动，IP不动"><a href="#移动IP：设备移动，IP不动" class="headerlink" title="移动IP：设备移动，IP不动"></a>移动IP：设备移动，IP不动</h1><p>设备（移动结点）到了新地方的时候，有一个新管家（外部代理），他向这个新管家要一个新IP（转交地址），然后托新管家告诉老管家（归属代理）自己的新IP（&lt;固有地址，转交地址&gt;），以后要是有什么请求就转发给自己好了</p>
+<h1 id="网络层设备：路由器"><a href="#网络层设备：路由器" class="headerlink" title="网络层设备：路由器"></a>网络层设备：路由器</h1>
     </div>
 
     
@@ -453,7 +435,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%B7%AF%E7%94%B1%E7%AE%97%E6%B3%95"><span class="nav-number">1.</span> <span class="nav-text">路由算法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B7%9D%E7%A6%BB-%E5%90%91%E9%87%8F%E8%B7%AF%E7%94%B1%E7%AE%97%E6%B3%95"><span class="nav-number">1.1.</span> <span class="nav-text">距离-向量路由算法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%93%BE%E8%B7%AF%E7%8A%B6%E6%80%81%E8%B7%AF%E7%94%B1%E7%AE%97%E6%B3%95"><span class="nav-number">1.2.</span> <span class="nav-text">链路状态路由算法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B1%82%E6%AC%A1%E8%B7%AF%E7%94%B1"><span class="nav-number">1.3.</span> <span class="nav-text">层次路由</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%B7%AF%E7%94%B1%E5%8D%8F%E8%AE%AE"><span class="nav-number">2.</span> <span class="nav-text">路由协议</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%87%AA%E6%B2%BB%E7%B3%BB%E7%BB%9F%E5%9F%9F%E5%86%85%E8%B7%AF%E7%94%B1%E4%B8%8E%E5%9F%9F%E9%97%B4%E8%B7%AF%E7%94%B1"><span class="nav-number">2.1.</span> <span class="nav-text">自治系统、域内路由与域间路由</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%86%85%E9%83%A8%E7%BD%91%E5%85%B3%E5%8D%8F%E8%AE%AEigp"><span class="nav-number">2.2.</span> <span class="nav-text">✨内部网关协议IGP</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B7%AF%E7%94%B1%E4%BF%A1%E6%81%AF%E5%8D%8F%E8%AE%AE-rip"><span class="nav-number">2.2.1.</span> <span class="nav-text">✨路由信息协议 RIP</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%80%E6%94%BE%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E4%BC%98%E5%85%88%E5%8D%8F%E8%AE%AE-ospf"><span class="nav-number">2.2.2.</span> <span class="nav-text">✨开放最短路径优先协议 OSPF</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%96%E9%83%A8%E7%BD%91%E5%85%B3%E5%8D%8F%E8%AE%AEegp"><span class="nav-number">2.3.</span> <span class="nav-text">外部网关协议EGP</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%B9%E7%95%8C%E7%BD%91%E5%85%B3%E5%8D%8F%E8%AE%AE-bgp"><span class="nav-number">2.3.1.</span> <span class="nav-text">✨边界网关协议 BGP</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ipv4"><span class="nav-number">3.</span> <span class="nav-text">IPv4</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#ipv4%E5%88%86%E7%BB%84"><span class="nav-number">3.1.</span> <span class="nav-text">✨IPv4分组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ipv4%E5%9C%B0%E5%9D%80%E4%B8%8Enat"><span class="nav-number">3.2.</span> <span class="nav-text">✨✨✨IPv4地址与NAT</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#nat"><span class="nav-number">3.2.1.</span> <span class="nav-text">NAT</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%90%E7%BD%91%E5%88%92%E5%88%86%E8%B7%AF%E7%94%B1%E8%81%9A%E9%9B%86%E8%B7%AF%E7%94%B1%E8%81%9A%E5%90%88%E6%9E%84%E6%88%90%E8%B6%85%E7%BD%91%E5%AD%90%E7%BD%91%E6%8E%A9%E7%A0%81%E4%B8%8Ecidr"><span class="nav-number">3.3.</span> <span class="nav-text">✨✨子网划分、路由聚集（路由聚合、构成超网）、子网掩码与CIDR</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#arp%E5%8D%8F%E8%AE%AEdhcp%E5%8D%8F%E8%AE%AE%E4%B8%8Eicmp%E5%8D%8F%E8%AE%AE"><span class="nav-number">3.4.</span> <span class="nav-text">ARP协议、DHCP协议与ICMP协议</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ip%E7%BB%84%E6%92%AD"><span class="nav-number">4.</span> <span class="nav-text">IP组播</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%A7%BB%E5%8A%A8ip%E8%AE%BE%E5%A4%87%E7%A7%BB%E5%8A%A8ip%E4%B8%8D%E5%8A%A8"><span class="nav-number">5.</span> <span class="nav-text">移动IP：设备移动，IP不动</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BD%91%E7%BB%9C%E5%B1%82%E8%AE%BE%E5%A4%87%E8%B7%AF%E7%94%B1%E5%99%A8"><span class="nav-number">6.</span> <span class="nav-text">网络层设备：路由器</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%B7%AF%E7%94%B1%E7%AE%97%E6%B3%95"><span class="nav-number">1.</span> <span class="nav-text">路由算法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B7%9D%E7%A6%BB-%E5%90%91%E9%87%8F%E8%B7%AF%E7%94%B1%E7%AE%97%E6%B3%95"><span class="nav-number">1.1.</span> <span class="nav-text">距离-向量路由算法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%93%BE%E8%B7%AF%E7%8A%B6%E6%80%81%E8%B7%AF%E7%94%B1%E7%AE%97%E6%B3%95"><span class="nav-number">1.2.</span> <span class="nav-text">链路状态路由算法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B1%82%E6%AC%A1%E8%B7%AF%E7%94%B1"><span class="nav-number">1.3.</span> <span class="nav-text">层次路由</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%B7%AF%E7%94%B1%E5%8D%8F%E8%AE%AE"><span class="nav-number">2.</span> <span class="nav-text">路由协议</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%87%AA%E6%B2%BB%E7%B3%BB%E7%BB%9F%E3%80%81%E5%9F%9F%E5%86%85%E8%B7%AF%E7%94%B1%E4%B8%8E%E5%9F%9F%E9%97%B4%E8%B7%AF%E7%94%B1"><span class="nav-number">2.1.</span> <span class="nav-text">自治系统、域内路由与域间路由</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E2%9C%A8%E5%86%85%E9%83%A8%E7%BD%91%E5%85%B3%E5%8D%8F%E8%AE%AEIGP"><span class="nav-number">2.2.</span> <span class="nav-text">✨内部网关协议IGP</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%9C%A8%E8%B7%AF%E7%94%B1%E4%BF%A1%E6%81%AF%E5%8D%8F%E8%AE%AE-RIP"><span class="nav-number">2.2.1.</span> <span class="nav-text">✨路由信息协议 RIP</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%9C%A8%E5%BC%80%E6%94%BE%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E4%BC%98%E5%85%88%E5%8D%8F%E8%AE%AE-OSPF"><span class="nav-number">2.2.2.</span> <span class="nav-text">✨开放最短路径优先协议 OSPF</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%96%E9%83%A8%E7%BD%91%E5%85%B3%E5%8D%8F%E8%AE%AEEGP"><span class="nav-number">2.3.</span> <span class="nav-text">外部网关协议EGP</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E2%9C%A8%E8%BE%B9%E7%95%8C%E7%BD%91%E5%85%B3%E5%8D%8F%E8%AE%AE-BGP"><span class="nav-number">2.3.1.</span> <span class="nav-text">✨边界网关协议 BGP</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#IPv4"><span class="nav-number">3.</span> <span class="nav-text">IPv4</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E2%9C%A8IPv4%E5%88%86%E7%BB%84"><span class="nav-number">3.1.</span> <span class="nav-text">✨IPv4分组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E2%9C%A8%E2%9C%A8%E2%9C%A8IPv4%E5%9C%B0%E5%9D%80%E4%B8%8ENAT"><span class="nav-number">3.2.</span> <span class="nav-text">✨✨✨IPv4地址与NAT</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#NAT"><span class="nav-number">3.2.1.</span> <span class="nav-text">NAT</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E2%9C%A8%E2%9C%A8%E5%AD%90%E7%BD%91%E5%88%92%E5%88%86%E3%80%81%E8%B7%AF%E7%94%B1%E8%81%9A%E9%9B%86%EF%BC%88%E8%B7%AF%E7%94%B1%E8%81%9A%E5%90%88%E3%80%81%E6%9E%84%E6%88%90%E8%B6%85%E7%BD%91%EF%BC%89%E3%80%81%E5%AD%90%E7%BD%91%E6%8E%A9%E7%A0%81%E4%B8%8ECIDR"><span class="nav-number">3.3.</span> <span class="nav-text">✨✨子网划分、路由聚集（路由聚合、构成超网）、子网掩码与CIDR</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ARP%E5%8D%8F%E8%AE%AE%E3%80%81DHCP%E5%8D%8F%E8%AE%AE%E4%B8%8EICMP%E5%8D%8F%E8%AE%AE"><span class="nav-number">3.4.</span> <span class="nav-text">ARP协议、DHCP协议与ICMP协议</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#IP%E7%BB%84%E6%92%AD"><span class="nav-number">4.</span> <span class="nav-text">IP组播</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%A7%BB%E5%8A%A8IP%EF%BC%9A%E8%AE%BE%E5%A4%87%E7%A7%BB%E5%8A%A8%EF%BC%8CIP%E4%B8%8D%E5%8A%A8"><span class="nav-number">5.</span> <span class="nav-text">移动IP：设备移动，IP不动</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BD%91%E7%BB%9C%E5%B1%82%E8%AE%BE%E5%A4%87%EF%BC%9A%E8%B7%AF%E7%94%B1%E5%99%A8"><span class="nav-number">6.</span> <span class="nav-text">网络层设备：路由器</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -618,7 +600,7 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
       clientSecret: 'b86792d1298a4be13412ece9d266e9660232b4c0',
       repo        : 'blog_comment_repo',
       owner       : 'DidRanyeStudyToday',
-      admin       : ['DidRanyeStudyToday,openseem'],
+      admin       : ['[object Object]'],
       id          : '2f2c7234bb3546d78661e2f7ba8346b1',
         language: 'zh-CN',
       distractionFreeMode: false

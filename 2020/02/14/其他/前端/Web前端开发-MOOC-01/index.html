@@ -246,346 +246,326 @@
       
         <p>更新至第三章 css样式 【完】</p>
 <span id="more"></span>
-<h2 id="css样式">css样式</h2>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span>&#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">12px</span>;</span><br><span class="line">  <span class="comment">/* 字号 */</span></span><br><span class="line">  <span class="attribute">color</span>: blue;</span><br><span class="line">  <span class="comment">/* 文字颜色 */</span></span><br><span class="line">  <span class="attribute">font-weight</span>: bold;</span><br><span class="line">  <span class="comment">/* 加粗 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="css添加方法">css添加方法</h3>
-<p>优先级：行内&gt;内嵌&gt;链接&gt;浏览器默认</p>
-<h4 id="行内">行内</h4>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span> = <span class="string">&quot;color:red&quot;</span>&gt;</span></span><br><span class="line">     balabala</span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h4 id="内嵌">内嵌</h4>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span>&gt;</span><span class="css"></span></span><br><span class="line"><span class="css">        <span class="selector-tag">p</span>&#123;</span></span><br><span class="line"><span class="css">  <span class="comment">/* 选择器 */</span></span></span><br><span class="line"><span class="css">            <span class="attribute">color</span>: red;</span></span><br><span class="line"><span class="css">        &#125;</span></span><br><span class="line"><span class="css">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h4 id="文件">文件</h4>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;css/style.css&quot;</span> /&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 链接到  样式表型的文件   路径为css/style.css --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h3 id="css选择器">css选择器</h3>
-<h4 id="标签选择器">标签选择器</h4>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span>&gt;</span><span class="css"></span></span><br><span class="line"><span class="css">  <span class="selector-tag">body</span>&#123;</span></span><br><span class="line"><span class="css">    <span class="attribute">background-color</span>: <span class="number">#ccc</span>;</span></span><br><span class="line"><span class="css">    <span class="attribute">text-align</span>: center;</span></span><br><span class="line"><span class="css">    <span class="attribute">font-size</span>: <span class="number">12px</span>;</span></span><br><span class="line"><span class="css">    <span class="attribute">font</span>: <span class="string">&quot;黑体&quot;</span>;</span></span><br><span class="line"><span class="css">    <span class="attribute">color</span>: red;</span></span><br><span class="line"><span class="css">  &#125;</span></span><br><span class="line"><span class="css">  <span class="comment">/* 主体 */</span></span></span><br><span class="line"><span class="css">  hr&#123;</span></span><br><span class="line"><span class="css">    <span class="attribute">width</span>: <span class="number">200px</span>;</span></span><br><span class="line"><span class="css">  &#125;</span></span><br><span class="line"><span class="css">  <span class="comment">/* 分割线 */</span></span></span><br><span class="line"><span class="css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h4 id="类别选择器">类别选择器</h4>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span>&gt;</span><span class="css"></span></span><br><span class="line"><span class="css">  <span class="selector-tag">p</span>&#123;<span class="attribute">font-size</span>:<span class="number">12px</span>;&#125;</span></span><br><span class="line"><span class="css">  <span class="selector-class">.one</span>&#123;<span class="attribute">font-size</span>:<span class="number">18px</span>;&#125;</span></span><br><span class="line"><span class="css">  <span class="selector-class">.two</span>&#123;<span class="attribute">font-size</span>:<span class="number">24px</span>&#125;</span></span><br><span class="line"><span class="css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="css样式"><a href="#css样式" class="headerlink" title="css样式"></a>css样式</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span>&#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">12px</span>;</span><br><span class="line">  <span class="comment">/* 字号 */</span></span><br><span class="line">  <span class="attribute">color</span>: blue;</span><br><span class="line">  <span class="comment">/* 文字颜色 */</span></span><br><span class="line">  <span class="attribute">font-weight</span>: bold;</span><br><span class="line">  <span class="comment">/* 加粗 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="css添加方法"><a href="#css添加方法" class="headerlink" title="css添加方法"></a>css添加方法</h3><p>优先级：行内&gt;内嵌&gt;链接&gt;浏览器默认</p>
+<h4 id="行内"><a href="#行内" class="headerlink" title="行内"></a>行内</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">style</span> = <span class="string">&quot;color:red&quot;</span>&gt;</span></span><br><span class="line">     balabala</span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="内嵌"><a href="#内嵌" class="headerlink" title="内嵌"></a>内嵌</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span>&gt;</span><span class="css"></span></span><br><span class="line"><span class="css">        <span class="selector-tag">p</span>&#123;</span></span><br><span class="line"><span class="css">  <span class="comment">/* 选择器 */</span></span></span><br><span class="line"><span class="css">            <span class="attribute">color</span>: red;</span></span><br><span class="line"><span class="css">        &#125;</span></span><br><span class="line"><span class="css">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="文件"><a href="#文件" class="headerlink" title="文件"></a>文件</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;css/style.css&quot;</span> /&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 链接到  样式表型的文件   路径为css/style.css --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="css选择器"><a href="#css选择器" class="headerlink" title="css选择器"></a>css选择器</h3><h4 id="标签选择器"><a href="#标签选择器" class="headerlink" title="标签选择器"></a>标签选择器</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span>&gt;</span><span class="css"></span></span><br><span class="line"><span class="css">  <span class="selector-tag">body</span>&#123;</span></span><br><span class="line"><span class="css">    <span class="attribute">background-color</span>: <span class="number">#ccc</span>;</span></span><br><span class="line"><span class="css">    <span class="attribute">text-align</span>: center;</span></span><br><span class="line"><span class="css">    <span class="attribute">font-size</span>: <span class="number">12px</span>;</span></span><br><span class="line"><span class="css">    <span class="attribute">font</span>: <span class="string">&quot;黑体&quot;</span>;</span></span><br><span class="line"><span class="css">    <span class="attribute">color</span>: red;</span></span><br><span class="line"><span class="css">  &#125;</span></span><br><span class="line"><span class="css">  <span class="comment">/* 主体 */</span></span></span><br><span class="line"><span class="css">  hr&#123;</span></span><br><span class="line"><span class="css">    <span class="attribute">width</span>: <span class="number">200px</span>;</span></span><br><span class="line"><span class="css">  &#125;</span></span><br><span class="line"><span class="css">  <span class="comment">/* 分割线 */</span></span></span><br><span class="line"><span class="css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="类别选择器"><a href="#类别选择器" class="headerlink" title="类别选择器"></a>类别选择器</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span>&gt;</span><span class="css"></span></span><br><span class="line"><span class="css">  <span class="selector-tag">p</span>&#123;<span class="attribute">font-size</span>:<span class="number">12px</span>;&#125;</span></span><br><span class="line"><span class="css">  <span class="selector-class">.one</span>&#123;<span class="attribute">font-size</span>:<span class="number">18px</span>;&#125;</span></span><br><span class="line"><span class="css">  <span class="selector-class">.two</span>&#123;<span class="attribute">font-size</span>:<span class="number">24px</span>&#125;</span></span><br><span class="line"><span class="css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span> bala <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">&quot;one&quot;</span>&gt;</span>bala<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">&quot;two&quot;</span>&gt;</span>bala<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h4 id="id选择器">ID选择器</h4>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span>&gt;</span><span class="css"></span></span><br><span class="line"><span class="css">  <span class="selector-id">#one</span>&#123;<span class="attribute">font-size</span>:<span class="number">12px</span>;&#125;</span></span><br><span class="line"><span class="css">  <span class="selector-id">#two</span>&#123;<span class="attribute">font-size</span>:<span class="number">24px</span>;&#125;</span></span><br><span class="line"><span class="css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="ID选择器"><a href="#ID选择器" class="headerlink" title="ID选择器"></a>ID选择器</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span>&gt;</span><span class="css"></span></span><br><span class="line"><span class="css">  <span class="selector-id">#one</span>&#123;<span class="attribute">font-size</span>:<span class="number">12px</span>;&#125;</span></span><br><span class="line"><span class="css">  <span class="selector-id">#two</span>&#123;<span class="attribute">font-size</span>:<span class="number">24px</span>;&#125;</span></span><br><span class="line"><span class="css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">&quot;one&quot;</span>&gt;</span>bala<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">&quot;two&quot;</span>&gt;</span>bala<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>ID选择器与类别选择器的区别： * 类别选择器可以多次引用、混用。混用以空格分开 * ID选择器在当前页面是“唯一的引用一次”，可以与class混用，但是不可以多个同时使用</p>
+
+<p>ID选择器与类别选择器的区别：</p>
+<ul>
+<li>类别选择器可以多次引用、混用。混用以空格分开</li>
+<li>ID选择器在当前页面是“唯一的引用一次”，可以与class混用，但是不可以多个同时使用 </li>
+</ul>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;id1&quot;</span> <span class="attr">class</span>=<span class="string">&quot;class1 class2&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h4 id="嵌套声明">嵌套声明</h4>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span>&gt;</span><span class="css"></span></span><br><span class="line"><span class="css">  <span class="selector-tag">p</span> <span class="selector-tag">span</span>&#123;</span></span><br><span class="line"><span class="css">    <span class="attribute">color</span>: red;</span></span><br><span class="line"><span class="css">  &#125;</span></span><br><span class="line"><span class="css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+<h4 id="嵌套声明"><a href="#嵌套声明" class="headerlink" title="嵌套声明"></a>嵌套声明</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span>&gt;</span><span class="css"></span></span><br><span class="line"><span class="css">  <span class="selector-tag">p</span> <span class="selector-tag">span</span>&#123;</span></span><br><span class="line"><span class="css">    <span class="attribute">color</span>: red;</span></span><br><span class="line"><span class="css">  &#125;</span></span><br><span class="line"><span class="css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>bala<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h4 id="集体声明">集体声明</h4>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span>&gt;</span><span class="css"></span></span><br><span class="line"><span class="css">  <span class="selector-tag">h1</span>,<span class="selector-tag">p</span>&#123;</span></span><br><span class="line"><span class="css">    <span class="attribute">text-align</span>:center;</span></span><br><span class="line"><span class="css">  &#125;</span></span><br><span class="line"><span class="css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="集体声明"><a href="#集体声明" class="headerlink" title="集体声明"></a>集体声明</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span>&gt;</span><span class="css"></span></span><br><span class="line"><span class="css">  <span class="selector-tag">h1</span>,<span class="selector-tag">p</span>&#123;</span></span><br><span class="line"><span class="css">    <span class="attribute">text-align</span>:center;</span></span><br><span class="line"><span class="css">  &#125;</span></span><br><span class="line"><span class="css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>bala<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>bala<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h4 id="全局声明">全局声明</h4>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span>&gt;</span><span class="css"></span></span><br><span class="line"><span class="css">* &#123;</span></span><br><span class="line"><span class="css">  <span class="attribute">text-align</span>:center;</span></span><br><span class="line"><span class="css">&#125;</span></span><br><span class="line"><span class="css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h3 id="css的文字样式">css的文字样式</h3>
-<h4 id="单位与颜色">单位与颜色</h4>
-<table>
+
+<h4 id="全局声明"><a href="#全局声明" class="headerlink" title="全局声明"></a>全局声明</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span>&gt;</span><span class="css"></span></span><br><span class="line"><span class="css">* &#123;</span></span><br><span class="line"><span class="css">  <span class="attribute">text-align</span>:center;</span></span><br><span class="line"><span class="css">&#125;</span></span><br><span class="line"><span class="css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="css的文字样式"><a href="#css的文字样式" class="headerlink" title="css的文字样式"></a>css的文字样式</h3><h4 id="单位与颜色"><a href="#单位与颜色" class="headerlink" title="单位与颜色"></a>单位与颜色</h4><table>
 <thead>
-<tr class="header">
+<tr>
 <th>单位</th>
 <th>描述</th>
 </tr>
 </thead>
-<tbody>
-<tr class="odd">
+<tbody><tr>
 <td>px</td>
 <td>像素</td>
 </tr>
-<tr class="even">
+<tr>
 <td>em</td>
 <td>字符</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>%</td>
 <td>百分比</td>
 </tr>
-</tbody>
-</table>
-<p>层次：<br />
-html —&gt; head/body —&gt; div —&gt; h1/p</p>
+</tbody></table>
+<p>层次：<br>html —&gt; head/body —&gt; div —&gt; h1/p</p>
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th>颜色</th>
 <th>描述</th>
 </tr>
 </thead>
-<tbody>
-<tr class="odd">
+<tbody><tr>
 <td>red</td>
 <td>颜色名</td>
 </tr>
-<tr class="even">
+<tr>
 <td>rgb(255,0,0)</td>
 <td>RGB值 0,0,0为黑</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>rgb(100%,0%,0%)</td>
 <td>RGB百分比值</td>
 </tr>
-<tr class="even">
+<tr>
 <td>rgba(255,0,0,1.0)</td>
 <td>RGB值和透明度 0透明，1完全不透明</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>#ff0000</td>
 <td>十六进制数 去掉重复位#f00</td>
 </tr>
-</tbody>
-</table>
-<h4 id="文本">文本</h4>
-<table>
+</tbody></table>
+<h4 id="文本"><a href="#文本" class="headerlink" title="文本"></a>文本</h4><table>
 <thead>
-<tr class="header">
+<tr>
 <th>属性</th>
 <th>描述</th>
 <th>取值</th>
 </tr>
 </thead>
-<tbody>
-<tr class="odd">
+<tbody><tr>
 <td>color</td>
 <td>文本颜色</td>
 <td>red #f00 rgb(255,0,0)</td>
 </tr>
-<tr class="even">
+<tr>
 <td>letter-spacing</td>
 <td>字符间距</td>
 <td>2px -3px</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>line-height</td>
 <td>行高</td>
 <td>14px 1.5em 120%</td>
 </tr>
-<tr class="even">
+<tr>
 <td>text-align</td>
 <td>对齐</td>
 <td>center left right justify</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>text-decoration</td>
 <td>装饰线</td>
 <td>none overline underline line-though</td>
 </tr>
-<tr class="even">
+<tr>
 <td>text-incent</td>
 <td>首行缩进</td>
 <td>2em</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <p>当line-height==height时，文字垂直居中</p>
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th>属性</th>
 <th>描述</th>
 <th>举例</th>
 </tr>
 </thead>
-<tbody>
-<tr class="odd">
+<tbody><tr>
 <td>font</td>
 <td>所有字体属性一块设置</td>
-<td>font:italic bond 18px/1.5em '幼圆'</td>
+<td>font:italic bond 18px/1.5em ‘幼圆’</td>
 </tr>
-<tr class="even">
+<tr>
 <td>font-family</td>
 <td>字体系列</td>
-<td>第一个没有就加载第二个...</td>
+<td>第一个没有就加载第二个…</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>font-size</td>
 <td>字号</td>
 <td>14px 120%</td>
 </tr>
-<tr class="even">
+<tr>
 <td>font-style</td>
 <td>斜体</td>
 <td>italic</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>font-weight</td>
 <td>粗体</td>
 <td>bold</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">font</span>:italic bond <span class="number">18px</span>/<span class="number">1.5em</span> <span class="string">&#x27;幼圆&#x27;</span>;</span><br><span class="line">//   斜体   粗体  字号/行高   字体 </span><br></pre></td></tr></table></figure>
-<h3 id="css的背景与超链接">css的背景与超链接</h3>
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
+
+<h3 id="css的背景与超链接"><a href="#css的背景与超链接" class="headerlink" title="css的背景与超链接"></a>css的背景与超链接</h3><table>
 <thead>
-<tr class="header">
+<tr>
 <th>背景属性</th>
 <th>举例</th>
 </tr>
 </thead>
-<tbody>
-<tr class="odd">
+<tbody><tr>
 <td>background</td>
 <td>background: #00FF00 url(bgimage.gif) no-repeat fixed top;</td>
 </tr>
-<tr class="even">
+<tr>
 <td>background-color</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>background-image</td>
-<td>background-image: url("../../media/examples/lizard.png");</td>
+<td>background-image: url(“../../media/examples/lizard.png”);</td>
 </tr>
-<tr class="even">
+<tr>
 <td>background-repeat</td>
 <td>repeat 棋盘状填充 </br> repeat-x/y 横/纵向填充一排/列</br> no-repeat 就一个</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">  <span class="attribute">height</span>:<span class="number">30px</span>;</span><br><span class="line">  <span class="attribute">width</span>:<span class="number">600px</span>;</span><br><span class="line">  <span class="attribute">background</span>: <span class="built_in">url</span>(<span class="string">&quot;images/bg1.gif&quot;</span>) repeat-x;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th>链接</th>
 <th>状态</th>
 </tr>
 </thead>
-<tbody>
-<tr class="odd">
+<tbody><tr>
 <td>a</td>
 <td>所有链接</td>
 </tr>
-<tr class="even">
+<tr>
 <td>a:link</td>
 <td>普通、未被访问的链接</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>a:visited</td>
 <td>用户已访问的链接</td>
 </tr>
-<tr class="even">
+<tr>
 <td>a:hover</td>
 <td>鼠标指针位于链接上方悬停</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>a:active</td>
 <td>链接被点击的时刻</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <p><kbd>:</kbd> 伪类选择器</p>
-<p>顺序：<br />
-a:link/visited -&gt; a:hover -&gt; a:active</p>
-<h3 id="列表与表格">列表与表格</h3>
-<h4 id="css列表">css列表</h4>
-<table>
+<p>顺序：<br>a:link/visited -&gt; a:hover -&gt; a:active</p>
+<h3 id="列表与表格"><a href="#列表与表格" class="headerlink" title="列表与表格"></a>列表与表格</h3><h4 id="css列表"><a href="#css列表" class="headerlink" title="css列表"></a>css列表</h4><table>
 <thead>
-<tr class="header">
+<tr>
 <th>列表属性</th>
 <th>描述</th>
 </tr>
 </thead>
-<tbody>
-<tr class="odd">
+<tbody><tr>
 <td>list-style</td>
 <td>所有列表属性</td>
 </tr>
-<tr class="even">
+<tr>
 <td>list-style-image</td>
 <td>为列表项标志设置图像</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>list-style-position</td>
 <td>标志的位置</td>
 </tr>
-<tr class="even">
+<tr>
 <td>list-style-type</td>
 <td>标志的类型</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th>list-style-type的取值</th>
 <th>样式</th>
 </tr>
 </thead>
-<tbody>
-<tr class="odd">
+<tbody><tr>
 <td>none</td>
 <td>无</td>
 </tr>
-<tr class="even">
+<tr>
 <td>disc</td>
 <td>默认，空心圆</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>circle</td>
 <td>空心圆</td>
 </tr>
-<tr class="even">
+<tr>
 <td>square</td>
 <td>实心方块</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>decimal</td>
 <td>数字</td>
 </tr>
-<tr class="even">
+<tr>
 <td>lower-roman</td>
 <td>小写罗马数字</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>upper-roman</td>
 <td>大写罗马数字</td>
 </tr>
-<tr class="even">
+<tr>
 <td>lower-alpha</td>
 <td>小写英文字母</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>upper-alpha</td>
 <td>大写英文字母</td>
 </tr>
-<tr class="even">
+<tr>
 <td>lower-Greek</td>
 <td>小写希腊字母</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>lower-latin</td>
 <td>小写拉丁字母</td>
 </tr>
-<tr class="even">
+<tr>
 <td>upper-latin</td>
 <td>大写拉丁字母</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th>list-style-positionq取值</th>
 <th></th>
 </tr>
 </thead>
-<tbody>
-<tr class="odd">
+<tbody><tr>
 <td>inside</td>
 <td>列表项标号在文字里</td>
 </tr>
-<tr class="even">
+<tr>
 <td>outside</td>
 <td>列表项标号在文字外</td>
 </tr>
-</tbody>
-</table>
-<figure>
-<img src="https://s2.ax1x.com/2020/02/20/3mpaqA.jpg" alt="3mpaqA.jpg" /><figcaption aria-hidden="true">3mpaqA.jpg</figcaption>
-</figure>
-<h4 id="css表格">css表格</h4>
-<p>设置表格的宽和高 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">table</span>&#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">500px</span>;</span><br><span class="line">  <span class="comment">/* 表格宽 */</span></span><br><span class="line">  <span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">  <span class="comment">/* 表格高 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure> 设置表格的框 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">table</span>,<span class="selector-tag">td</span>,<span class="selector-tag">th</span>&#123;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#eee</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/* table:外框  td:单个小框  th:表头 */</span></span><br></pre></td></tr></table></figure> 表格框合并 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">table</span>&#123;</span><br><span class="line">  <span class="attribute">border-collapse</span>:collapse;</span><br><span class="line"><span class="comment">/* 将框与框合并，（要不然就有两个框了） */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>奇偶选择器 <kbd>tr:nth-child(odd)</kbd>:奇数 <kbd>tr:nth-child(even)</kbd>:偶数</p>
+</tbody></table>
+<p><img src="https://s2.ax1x.com/2020/02/20/3mpaqA.jpg" alt="3mpaqA.jpg"></p>
+<h4 id="css表格"><a href="#css表格" class="headerlink" title="css表格"></a>css表格</h4><p>设置表格的宽和高</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">table</span>&#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">500px</span>;</span><br><span class="line">  <span class="comment">/* 表格宽 */</span></span><br><span class="line">  <span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">  <span class="comment">/* 表格高 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>设置表格的框</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">table</span>,<span class="selector-tag">td</span>,<span class="selector-tag">th</span>&#123;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#eee</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/* table:外框  td:单个小框  th:表头 */</span></span><br></pre></td></tr></table></figure>
+<p>表格框合并</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">table</span>&#123;</span><br><span class="line">  <span class="attribute">border-collapse</span>:collapse;</span><br><span class="line"><span class="comment">/* 将框与框合并，（要不然就有两个框了） */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>奇偶选择器<br><kbd>tr:nth-child(odd)</kbd>:奇数<br><kbd>tr:nth-child(even)</kbd>:偶数</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment">/* 将奇数行都变成#EAF2D3颜色，表头也算一行 */</span></span><br><span class="line"><span class="selector-tag">tr</span><span class="selector-pseudo">:nth-child</span>(odd)&#123;</span><br><span class="line">  <span class="attribute">background</span>: <span class="number">#EAF2D3</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
     </div>
@@ -692,7 +672,7 @@ a:link/visited -&gt; a:hover -&gt; a:active</p>
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#css%E6%A0%B7%E5%BC%8F"><span class="nav-number">1.</span> <span class="nav-text">css样式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#css%E6%B7%BB%E5%8A%A0%E6%96%B9%E6%B3%95"><span class="nav-number">1.1.</span> <span class="nav-text">css添加方法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%A1%8C%E5%86%85"><span class="nav-number">1.1.1.</span> <span class="nav-text">行内</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%86%85%E5%B5%8C"><span class="nav-number">1.1.2.</span> <span class="nav-text">内嵌</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%96%87%E4%BB%B6"><span class="nav-number">1.1.3.</span> <span class="nav-text">文件</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#css%E9%80%89%E6%8B%A9%E5%99%A8"><span class="nav-number">1.2.</span> <span class="nav-text">css选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%A0%87%E7%AD%BE%E9%80%89%E6%8B%A9%E5%99%A8"><span class="nav-number">1.2.1.</span> <span class="nav-text">标签选择器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%B1%BB%E5%88%AB%E9%80%89%E6%8B%A9%E5%99%A8"><span class="nav-number">1.2.2.</span> <span class="nav-text">类别选择器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#id%E9%80%89%E6%8B%A9%E5%99%A8"><span class="nav-number">1.2.3.</span> <span class="nav-text">ID选择器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B5%8C%E5%A5%97%E5%A3%B0%E6%98%8E"><span class="nav-number">1.2.4.</span> <span class="nav-text">嵌套声明</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%9B%86%E4%BD%93%E5%A3%B0%E6%98%8E"><span class="nav-number">1.2.5.</span> <span class="nav-text">集体声明</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%A8%E5%B1%80%E5%A3%B0%E6%98%8E"><span class="nav-number">1.2.6.</span> <span class="nav-text">全局声明</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#css%E7%9A%84%E6%96%87%E5%AD%97%E6%A0%B7%E5%BC%8F"><span class="nav-number">1.3.</span> <span class="nav-text">css的文字样式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8D%95%E4%BD%8D%E4%B8%8E%E9%A2%9C%E8%89%B2"><span class="nav-number">1.3.1.</span> <span class="nav-text">单位与颜色</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%96%87%E6%9C%AC"><span class="nav-number">1.3.2.</span> <span class="nav-text">文本</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#css%E7%9A%84%E8%83%8C%E6%99%AF%E4%B8%8E%E8%B6%85%E9%93%BE%E6%8E%A5"><span class="nav-number">1.4.</span> <span class="nav-text">css的背景与超链接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%97%E8%A1%A8%E4%B8%8E%E8%A1%A8%E6%A0%BC"><span class="nav-number">1.5.</span> <span class="nav-text">列表与表格</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#css%E5%88%97%E8%A1%A8"><span class="nav-number">1.5.1.</span> <span class="nav-text">css列表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#css%E8%A1%A8%E6%A0%BC"><span class="nav-number">1.5.2.</span> <span class="nav-text">css表格</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#css%E6%A0%B7%E5%BC%8F"><span class="nav-number">1.</span> <span class="nav-text">css样式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#css%E6%B7%BB%E5%8A%A0%E6%96%B9%E6%B3%95"><span class="nav-number">1.1.</span> <span class="nav-text">css添加方法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%A1%8C%E5%86%85"><span class="nav-number">1.1.1.</span> <span class="nav-text">行内</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%86%85%E5%B5%8C"><span class="nav-number">1.1.2.</span> <span class="nav-text">内嵌</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%96%87%E4%BB%B6"><span class="nav-number">1.1.3.</span> <span class="nav-text">文件</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#css%E9%80%89%E6%8B%A9%E5%99%A8"><span class="nav-number">1.2.</span> <span class="nav-text">css选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%A0%87%E7%AD%BE%E9%80%89%E6%8B%A9%E5%99%A8"><span class="nav-number">1.2.1.</span> <span class="nav-text">标签选择器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%B1%BB%E5%88%AB%E9%80%89%E6%8B%A9%E5%99%A8"><span class="nav-number">1.2.2.</span> <span class="nav-text">类别选择器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ID%E9%80%89%E6%8B%A9%E5%99%A8"><span class="nav-number">1.2.3.</span> <span class="nav-text">ID选择器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B5%8C%E5%A5%97%E5%A3%B0%E6%98%8E"><span class="nav-number">1.2.4.</span> <span class="nav-text">嵌套声明</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%9B%86%E4%BD%93%E5%A3%B0%E6%98%8E"><span class="nav-number">1.2.5.</span> <span class="nav-text">集体声明</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%A8%E5%B1%80%E5%A3%B0%E6%98%8E"><span class="nav-number">1.2.6.</span> <span class="nav-text">全局声明</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#css%E7%9A%84%E6%96%87%E5%AD%97%E6%A0%B7%E5%BC%8F"><span class="nav-number">1.3.</span> <span class="nav-text">css的文字样式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8D%95%E4%BD%8D%E4%B8%8E%E9%A2%9C%E8%89%B2"><span class="nav-number">1.3.1.</span> <span class="nav-text">单位与颜色</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%96%87%E6%9C%AC"><span class="nav-number">1.3.2.</span> <span class="nav-text">文本</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#css%E7%9A%84%E8%83%8C%E6%99%AF%E4%B8%8E%E8%B6%85%E9%93%BE%E6%8E%A5"><span class="nav-number">1.4.</span> <span class="nav-text">css的背景与超链接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%97%E8%A1%A8%E4%B8%8E%E8%A1%A8%E6%A0%BC"><span class="nav-number">1.5.</span> <span class="nav-text">列表与表格</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#css%E5%88%97%E8%A1%A8"><span class="nav-number">1.5.1.</span> <span class="nav-text">css列表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#css%E8%A1%A8%E6%A0%BC"><span class="nav-number">1.5.2.</span> <span class="nav-text">css表格</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -804,7 +784,7 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
       clientSecret: 'b86792d1298a4be13412ece9d266e9660232b4c0',
       repo        : 'blog_comment_repo',
       owner       : 'DidRanyeStudyToday',
-      admin       : ['DidRanyeStudyToday,openseem'],
+      admin       : ['[object Object]'],
       id          : '58a912926ea52ca6fd5cb5a4ffc176f2',
         language: 'zh-CN',
       distractionFreeMode: false

@@ -20,12 +20,12 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":400,"display":"always","padding":50,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"gitalk":{"order":-2}},"activeClass":"gitalk"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="了解微分方程及其阶、解、通解、初始条件和特解等概念.  掌握变量可分离的微分方程及一阶线性微分方程的解法.  会解齐次微分方程、伯努利方程和全微分方程，会用简单的变量代换解某些微分方程.  会用降阶法解下列形式的微分方程：\(y^{(n)}&#x3D;f(x)\)，\(y&#39;&#39;&#x3D;f(x,y&#39;)\)和\(y&#39;&#39;&#x3D;f(y,y&#39;)\)  理解线">
+  <meta name="description" content="了解微分方程及其阶、解、通解、初始条件和特解等概念.  掌握变量可分离的微分方程及一阶线性微分方程的解法.  会解齐次微分方程、伯努利方程和全微分方程，会用简单的变量代换解某些微分方程.  会用降阶法解下列形式的微分方程：$y^{(n)}&#x3D;f(x)$，$y’’&#x3D;f(x,y’)$和$y’’&#x3D;f(y,y’)$  理解线性微分方程解的性质及解的结构.  掌握二阶常系数齐次线性微分方程的解法，并会解某">
 <meta property="og:type" content="article">
 <meta property="og:title" content="八、常微分方程">
 <meta property="og:url" content="http://example.com/2021/10/06/1%20%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/8%20%E5%B8%B8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/index.html">
 <meta property="og:site_name" content="Ranye">
-<meta property="og:description" content="了解微分方程及其阶、解、通解、初始条件和特解等概念.  掌握变量可分离的微分方程及一阶线性微分方程的解法.  会解齐次微分方程、伯努利方程和全微分方程，会用简单的变量代换解某些微分方程.  会用降阶法解下列形式的微分方程：\(y^{(n)}&#x3D;f(x)\)，\(y&#39;&#39;&#x3D;f(x,y&#39;)\)和\(y&#39;&#39;&#x3D;f(y,y&#39;)\)  理解线">
+<meta property="og:description" content="了解微分方程及其阶、解、通解、初始条件和特解等概念.  掌握变量可分离的微分方程及一阶线性微分方程的解法.  会解齐次微分方程、伯努利方程和全微分方程，会用简单的变量代换解某些微分方程.  会用降阶法解下列形式的微分方程：$y^{(n)}&#x3D;f(x)$，$y’’&#x3D;f(x,y’)$和$y’’&#x3D;f(y,y’)$  理解线性微分方程解的性质及解的结构.  掌握二阶常系数齐次线性微分方程的解法，并会解某">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-10-06T09:32:53.000Z">
 <meta property="article:modified_time" content="2021-10-07T03:42:13.937Z">
@@ -247,45 +247,20 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <ol type="1">
-<li><input type="checkbox" disabled="" checked="" />
-了解微分方程及其阶、解、通解、初始条件和特解等概念.</li>
-<li><input type="checkbox" disabled="" checked="" />
-掌握变量可分离的微分方程及一阶线性微分方程的解法.</li>
-<li><input type="checkbox" disabled="" checked="" />
-会解齐次微分方程、伯努利方程和全微分方程，会用简单的变量代换解某些微分方程.</li>
-<li><input type="checkbox" disabled="" checked="" />
-会用降阶法解下列形式的微分方程：<span class="math inline">\(y^{(n)}=f(x)\)</span>，<span class="math inline">\(y&#39;&#39;=f(x,y&#39;)\)</span>和<span class="math inline">\(y&#39;&#39;=f(y,y&#39;)\)</span></li>
-<li><input type="checkbox" disabled="" checked="" />
-理解线性微分方程解的性质及解的结构.</li>
-<li><input type="checkbox" disabled="" checked="" />
-掌握二阶常系数齐次线性微分方程的解法，并会解某些高于二阶的常系数齐次线性微分方程.</li>
-<li><input type="checkbox" disabled="" checked="" />
-会解自由项为多项式、指数函数、正弦函数余弦函数以及它们的和与积的二阶常系数非齐次线性微分方程.</li>
-<li><input type="checkbox" disabled="" checked="" />
-会解欧拉方程.</li>
-<li><input type="checkbox" disabled="" checked="" />
-会用微分方程解决一些简单的应用问题.</li>
+        <ol>
+<li><input checked="" disabled="" type="checkbox"> 了解微分方程及其阶、解、通解、初始条件和特解等概念.</li>
+<li><input checked="" disabled="" type="checkbox"> 掌握变量可分离的微分方程及一阶线性微分方程的解法.</li>
+<li><input checked="" disabled="" type="checkbox"> 会解齐次微分方程、伯努利方程和全微分方程，会用简单的变量代换解某些微分方程.</li>
+<li><input checked="" disabled="" type="checkbox"> 会用降阶法解下列形式的微分方程：$y^{(n)}=f(x)$，$y’’=f(x,y’)$和$y’’=f(y,y’)$</li>
+<li><input checked="" disabled="" type="checkbox"> 理解线性微分方程解的性质及解的结构.</li>
+<li><input checked="" disabled="" type="checkbox"> 掌握二阶常系数齐次线性微分方程的解法，并会解某些高于二阶的常系数齐次线性微分方程.</li>
+<li><input checked="" disabled="" type="checkbox"> 会解自由项为多项式、指数函数、正弦函数余弦函数以及它们的和与积的二阶常系数非齐次线性微分方程.</li>
+<li><input checked="" disabled="" type="checkbox"> 会解欧拉方程.</li>
+<li><input checked="" disabled="" type="checkbox"> 会用微分方程解决一些简单的应用问题.</li>
 </ol>
 <span id="more"></span>
-<h1 id="常微分方程的基本概念">常微分方程的基本概念</h1>
-<h2 id="变量可分离的微分方程-fracdydx-varphi_1xvarphi_2y">变量可分离的微分方程 <span class="math inline">\(\frac{dy}{dx} = \varphi_1(x)\varphi_2(y)\)</span></h2>
-<h2 id="齐次微分方程-fracdydx-varphi-frac-yx">齐次微分方程 <span class="math inline">\(\frac{dy}{dx} = \varphi (\frac yx)\)</span></h2>
-<h2 id="一阶线性微分方程-fracdydx-pxy0">一阶线性微分方程 <span class="math inline">\(\frac{dy}{dx} + P(x)y=0\)</span></h2>
-<h2 id="伯努利bernoulli方程-fracdydx-pxyqxyn">伯努利（Bernoulli）方程 <span class="math inline">\(\frac{dy}{dx} + P(x)y=Q(x)y^n\)</span></h2>
-<h2 id="全微分方程-pxydx-qxydy0">全微分方程 <span class="math inline">\(P(x,y)dx + Q(x,y)dy=0\)</span></h2>
-<h2 id="可用简单的变量代换求解的某些微分方程">可用简单的变量代换求解的某些微分方程</h2>
-<h2 id="可降阶的高阶微分方程">可降阶的高阶微分方程</h2>
-<h2 id="yn-fx"><span class="math inline">\(y^{(n)} = f(x)\)</span></h2>
-<h2 id="fxyy0"><span class="math inline">\(f(x,y&#39;,y&#39;&#39;)=0\)</span></h2>
-<h2 id="fyyy0"><span class="math inline">\(f(y,y&#39;,y&#39;&#39;)=0\)</span></h2>
-<h2 id="线性微分方程解的性质及解的结构定理">线性微分方程解的性质及解的结构定理</h2>
-<h2 id="二阶常系数齐次线性微分方程">二阶常系数齐次线性微分方程</h2>
-<h2 id="高于二阶的某些常系数齐次线性微分方程">高于二阶的某些常系数齐次线性微分方程</h2>
-<h2 id="简单的二阶常系数非齐次线性微分方程">简单的二阶常系数非齐次线性微分方程</h2>
-<h2 id="欧拉euler方程">欧拉（Euler）方程</h2>
-<h2 id="微分方程的简单应用">微分方程的简单应用</h2>
 
+<h1 id="常微分方程的基本概念"><a href="#常微分方程的基本概念" class="headerlink" title="常微分方程的基本概念"></a>常微分方程的基本概念</h1><h2 id="变量可分离的微分方程-frac-dy-dx-varphi-1-x-varphi-2-y"><a href="#变量可分离的微分方程-frac-dy-dx-varphi-1-x-varphi-2-y" class="headerlink" title="变量可分离的微分方程 $\frac{dy}{dx} = \varphi_1(x)\varphi_2(y)$"></a>变量可分离的微分方程 $\frac{dy}{dx} = \varphi_1(x)\varphi_2(y)$</h2><h2 id="齐次微分方程-frac-dy-dx-varphi-frac-yx"><a href="#齐次微分方程-frac-dy-dx-varphi-frac-yx" class="headerlink" title="齐次微分方程 $\frac{dy}{dx} = \varphi (\frac yx)$"></a>齐次微分方程 $\frac{dy}{dx} = \varphi (\frac yx)$</h2><h2 id="一阶线性微分方程-frac-dy-dx-P-x-y-0"><a href="#一阶线性微分方程-frac-dy-dx-P-x-y-0" class="headerlink" title="一阶线性微分方程 $\frac{dy}{dx} + P(x)y=0$"></a>一阶线性微分方程 $\frac{dy}{dx} + P(x)y=0$</h2><h2 id="伯努利（Bernoulli）方程-frac-dy-dx-P-x-y-Q-x-y-n"><a href="#伯努利（Bernoulli）方程-frac-dy-dx-P-x-y-Q-x-y-n" class="headerlink" title="伯努利（Bernoulli）方程 $\frac{dy}{dx} + P(x)y=Q(x)y^n$"></a>伯努利（Bernoulli）方程 $\frac{dy}{dx} + P(x)y=Q(x)y^n$</h2><h2 id="全微分方程-P-x-y-dx-Q-x-y-dy-0"><a href="#全微分方程-P-x-y-dx-Q-x-y-dy-0" class="headerlink" title="全微分方程 $P(x,y)dx + Q(x,y)dy=0$"></a>全微分方程 $P(x,y)dx + Q(x,y)dy=0$</h2><h2 id="可用简单的变量代换求解的某些微分方程"><a href="#可用简单的变量代换求解的某些微分方程" class="headerlink" title="可用简单的变量代换求解的某些微分方程"></a>可用简单的变量代换求解的某些微分方程</h2><h2 id="可降阶的高阶微分方程"><a href="#可降阶的高阶微分方程" class="headerlink" title="可降阶的高阶微分方程"></a>可降阶的高阶微分方程</h2><h2 id="y-n-f-x"><a href="#y-n-f-x" class="headerlink" title="$y^{(n)} = f(x)$"></a>$y^{(n)} = f(x)$</h2><h2 id="f-x-y’-y’’-0"><a href="#f-x-y’-y’’-0" class="headerlink" title="$f(x,y’,y’’)=0$"></a>$f(x,y’,y’’)=0$</h2><h2 id="f-y-y’-y’’-0"><a href="#f-y-y’-y’’-0" class="headerlink" title="$f(y,y’,y’’)=0$"></a>$f(y,y’,y’’)=0$</h2><h2 id="线性微分方程解的性质及解的结构定理"><a href="#线性微分方程解的性质及解的结构定理" class="headerlink" title="线性微分方程解的性质及解的结构定理"></a>线性微分方程解的性质及解的结构定理</h2><h2 id="二阶常系数齐次线性微分方程"><a href="#二阶常系数齐次线性微分方程" class="headerlink" title="二阶常系数齐次线性微分方程"></a>二阶常系数齐次线性微分方程</h2><h2 id="高于二阶的某些常系数齐次线性微分方程"><a href="#高于二阶的某些常系数齐次线性微分方程" class="headerlink" title="高于二阶的某些常系数齐次线性微分方程"></a>高于二阶的某些常系数齐次线性微分方程</h2><h2 id="简单的二阶常系数非齐次线性微分方程"><a href="#简单的二阶常系数非齐次线性微分方程" class="headerlink" title="简单的二阶常系数非齐次线性微分方程"></a>简单的二阶常系数非齐次线性微分方程</h2><h2 id="欧拉（Euler）方程"><a href="#欧拉（Euler）方程" class="headerlink" title="欧拉（Euler）方程"></a>欧拉（Euler）方程</h2><h2 id="微分方程的简单应用"><a href="#微分方程的简单应用" class="headerlink" title="微分方程的简单应用"></a>微分方程的简单应用</h2>
     </div>
 
     
@@ -391,7 +366,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B8%B8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-number">1.</span> <span class="nav-text">常微分方程的基本概念</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%98%E9%87%8F%E5%8F%AF%E5%88%86%E7%A6%BB%E7%9A%84%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B-fracdydx-varphi_1xvarphi_2y"><span class="nav-number">1.1.</span> <span class="nav-text">变量可分离的微分方程 \(\frac{dy}{dx} &#x3D; \varphi_1(x)\varphi_2(y)\)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%BD%90%E6%AC%A1%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B-fracdydx-varphi-frac-yx"><span class="nav-number">1.2.</span> <span class="nav-text">齐次微分方程 \(\frac{dy}{dx} &#x3D; \varphi (\frac yx)\)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E9%98%B6%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B-fracdydx-pxy0"><span class="nav-number">1.3.</span> <span class="nav-text">一阶线性微分方程 \(\frac{dy}{dx} + P(x)y&#x3D;0\)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BC%AF%E5%8A%AA%E5%88%A9bernoulli%E6%96%B9%E7%A8%8B-fracdydx-pxyqxyn"><span class="nav-number">1.4.</span> <span class="nav-text">伯努利（Bernoulli）方程 \(\frac{dy}{dx} + P(x)y&#x3D;Q(x)y^n\)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%A8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B-pxydx-qxydy0"><span class="nav-number">1.5.</span> <span class="nav-text">全微分方程 \(P(x,y)dx + Q(x,y)dy&#x3D;0\)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%AF%E7%94%A8%E7%AE%80%E5%8D%95%E7%9A%84%E5%8F%98%E9%87%8F%E4%BB%A3%E6%8D%A2%E6%B1%82%E8%A7%A3%E7%9A%84%E6%9F%90%E4%BA%9B%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B"><span class="nav-number">1.6.</span> <span class="nav-text">可用简单的变量代换求解的某些微分方程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%AF%E9%99%8D%E9%98%B6%E7%9A%84%E9%AB%98%E9%98%B6%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B"><span class="nav-number">1.7.</span> <span class="nav-text">可降阶的高阶微分方程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#yn-fx"><span class="nav-number">1.8.</span> <span class="nav-text">\(y^{(n)} &#x3D; f(x)\)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#fxyy0"><span class="nav-number">1.9.</span> <span class="nav-text">\(f(x,y&#39;,y&#39;&#39;)&#x3D;0\)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#fyyy0"><span class="nav-number">1.10.</span> <span class="nav-text">\(f(y,y&#39;,y&#39;&#39;)&#x3D;0\)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E8%A7%A3%E7%9A%84%E6%80%A7%E8%B4%A8%E5%8F%8A%E8%A7%A3%E7%9A%84%E7%BB%93%E6%9E%84%E5%AE%9A%E7%90%86"><span class="nav-number">1.11.</span> <span class="nav-text">线性微分方程解的性质及解的结构定理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E9%98%B6%E5%B8%B8%E7%B3%BB%E6%95%B0%E9%BD%90%E6%AC%A1%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B"><span class="nav-number">1.12.</span> <span class="nav-text">二阶常系数齐次线性微分方程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%AB%98%E4%BA%8E%E4%BA%8C%E9%98%B6%E7%9A%84%E6%9F%90%E4%BA%9B%E5%B8%B8%E7%B3%BB%E6%95%B0%E9%BD%90%E6%AC%A1%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B"><span class="nav-number">1.13.</span> <span class="nav-text">高于二阶的某些常系数齐次线性微分方程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%80%E5%8D%95%E7%9A%84%E4%BA%8C%E9%98%B6%E5%B8%B8%E7%B3%BB%E6%95%B0%E9%9D%9E%E9%BD%90%E6%AC%A1%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B"><span class="nav-number">1.14.</span> <span class="nav-text">简单的二阶常系数非齐次线性微分方程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AC%A7%E6%8B%89euler%E6%96%B9%E7%A8%8B"><span class="nav-number">1.15.</span> <span class="nav-text">欧拉（Euler）方程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%9A%84%E7%AE%80%E5%8D%95%E5%BA%94%E7%94%A8"><span class="nav-number">1.16.</span> <span class="nav-text">微分方程的简单应用</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B8%B8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-number">1.</span> <span class="nav-text">常微分方程的基本概念</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%98%E9%87%8F%E5%8F%AF%E5%88%86%E7%A6%BB%E7%9A%84%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B-frac-dy-dx-varphi-1-x-varphi-2-y"><span class="nav-number">1.1.</span> <span class="nav-text">变量可分离的微分方程 $\frac{dy}{dx} &#x3D; \varphi_1(x)\varphi_2(y)$</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%BD%90%E6%AC%A1%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B-frac-dy-dx-varphi-frac-yx"><span class="nav-number">1.2.</span> <span class="nav-text">齐次微分方程 $\frac{dy}{dx} &#x3D; \varphi (\frac yx)$</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E9%98%B6%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B-frac-dy-dx-P-x-y-0"><span class="nav-number">1.3.</span> <span class="nav-text">一阶线性微分方程 $\frac{dy}{dx} + P(x)y&#x3D;0$</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BC%AF%E5%8A%AA%E5%88%A9%EF%BC%88Bernoulli%EF%BC%89%E6%96%B9%E7%A8%8B-frac-dy-dx-P-x-y-Q-x-y-n"><span class="nav-number">1.4.</span> <span class="nav-text">伯努利（Bernoulli）方程 $\frac{dy}{dx} + P(x)y&#x3D;Q(x)y^n$</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%A8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B-P-x-y-dx-Q-x-y-dy-0"><span class="nav-number">1.5.</span> <span class="nav-text">全微分方程 $P(x,y)dx + Q(x,y)dy&#x3D;0$</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%AF%E7%94%A8%E7%AE%80%E5%8D%95%E7%9A%84%E5%8F%98%E9%87%8F%E4%BB%A3%E6%8D%A2%E6%B1%82%E8%A7%A3%E7%9A%84%E6%9F%90%E4%BA%9B%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B"><span class="nav-number">1.6.</span> <span class="nav-text">可用简单的变量代换求解的某些微分方程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%AF%E9%99%8D%E9%98%B6%E7%9A%84%E9%AB%98%E9%98%B6%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B"><span class="nav-number">1.7.</span> <span class="nav-text">可降阶的高阶微分方程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#y-n-f-x"><span class="nav-number">1.8.</span> <span class="nav-text">$y^{(n)} &#x3D; f(x)$</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#f-x-y%E2%80%99-y%E2%80%99%E2%80%99-0"><span class="nav-number">1.9.</span> <span class="nav-text">$f(x,y’,y’’)&#x3D;0$</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#f-y-y%E2%80%99-y%E2%80%99%E2%80%99-0"><span class="nav-number">1.10.</span> <span class="nav-text">$f(y,y’,y’’)&#x3D;0$</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E8%A7%A3%E7%9A%84%E6%80%A7%E8%B4%A8%E5%8F%8A%E8%A7%A3%E7%9A%84%E7%BB%93%E6%9E%84%E5%AE%9A%E7%90%86"><span class="nav-number">1.11.</span> <span class="nav-text">线性微分方程解的性质及解的结构定理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E9%98%B6%E5%B8%B8%E7%B3%BB%E6%95%B0%E9%BD%90%E6%AC%A1%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B"><span class="nav-number">1.12.</span> <span class="nav-text">二阶常系数齐次线性微分方程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%AB%98%E4%BA%8E%E4%BA%8C%E9%98%B6%E7%9A%84%E6%9F%90%E4%BA%9B%E5%B8%B8%E7%B3%BB%E6%95%B0%E9%BD%90%E6%AC%A1%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B"><span class="nav-number">1.13.</span> <span class="nav-text">高于二阶的某些常系数齐次线性微分方程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%80%E5%8D%95%E7%9A%84%E4%BA%8C%E9%98%B6%E5%B8%B8%E7%B3%BB%E6%95%B0%E9%9D%9E%E9%BD%90%E6%AC%A1%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B"><span class="nav-number">1.14.</span> <span class="nav-text">简单的二阶常系数非齐次线性微分方程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AC%A7%E6%8B%89%EF%BC%88Euler%EF%BC%89%E6%96%B9%E7%A8%8B"><span class="nav-number">1.15.</span> <span class="nav-text">欧拉（Euler）方程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%9A%84%E7%AE%80%E5%8D%95%E5%BA%94%E7%94%A8"><span class="nav-number">1.16.</span> <span class="nav-text">微分方程的简单应用</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -556,7 +531,7 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
       clientSecret: 'b86792d1298a4be13412ece9d266e9660232b4c0',
       repo        : 'blog_comment_repo',
       owner       : 'DidRanyeStudyToday',
-      admin       : ['DidRanyeStudyToday,openseem'],
+      admin       : ['[object Object]'],
       id          : 'e43673f5060d473a7cd13a4b373f0f9f',
         language: 'zh-CN',
       distractionFreeMode: false

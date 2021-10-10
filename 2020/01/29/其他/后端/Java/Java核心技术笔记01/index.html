@@ -20,12 +20,12 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":400,"display":"always","padding":50,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"gitalk":{"order":-2}},"activeClass":"gitalk"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="page from 63 控制流程">
+  <meta name="description" content="page from 63控制流程">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java核心技术笔记01">
 <meta property="og:url" content="http://example.com/2020/01/29/%E5%85%B6%E4%BB%96/%E5%90%8E%E7%AB%AF/Java/Java%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B001/index.html">
 <meta property="og:site_name" content="Ranye">
-<meta property="og:description" content="page from 63 控制流程">
+<meta property="og:description" content="page from 63控制流程">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-01-29T01:46:19.000Z">
 <meta property="article:modified_time" content="2021-10-05T11:42:39.199Z">
@@ -242,27 +242,20 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h4 id="page-from-63">page from 63</h4>
-<h2 id="控制流程">控制流程</h2>
-<span id="more"></span>
-<h3 id="块作用域">块作用域</h3>
-<table>
-<tr>
-<td bgcolor="orang">
+        <h4 id="page-from-63"><a href="#page-from-63" class="headerlink" title="page from 63"></a>page from 63</h4><h2 id="控制流程"><a href="#控制流程" class="headerlink" title="控制流程"></a>控制流程</h2><span id="more"></span>
+
+<h3 id="块作用域"><a href="#块作用域" class="headerlink" title="块作用域"></a>块作用域</h3><table><tr><td bgcolor=orang>
 不能在嵌套的两个块中声明同名变量
-</td>
-</tr>
-</table>
+</td></tr></table>
+
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(string[] args)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n;</span><br><span class="line">    balabalabalabala...</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">int</span> n; <span class="comment">//不可！！！</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="条件语句">条件语句</h3>
-<p><kbd>if</kbd></p>
-<h3 id="循环语句">循环语句</h3>
-<p><kbd>while</kbd> <kbd>do while</kbd> <kbd>for</kbd></p>
-<h3 id="多重选择">多重选择</h3>
-<p><kbd>switch</kbd></p>
+
+<h3 id="条件语句"><a href="#条件语句" class="headerlink" title="条件语句"></a>条件语句</h3><p><kbd>if</kbd></p>
+<h3 id="循环语句"><a href="#循环语句" class="headerlink" title="循环语句"></a>循环语句</h3><p><kbd>while</kbd>  <kbd>do while</kbd>  <kbd>for</kbd></p>
+<h3 id="多重选择"><a href="#多重选择" class="headerlink" title="多重选择"></a>多重选择</h3><p><kbd>switch</kbd></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">switch</span>(<span class="keyword">char</span>/<span class="keyword">byte</span>/<span class="keyword">short</span>/<span class="keyword">int</span>/字符串字面量)&#123;</span><br><span class="line">    <span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">    ...</span><br><span class="line">    <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">default</span>:</span><br><span class="line">    ...</span><br><span class="line">    <span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="中断控制流程语句">中断控制流程语句</h3>
-<p><kbd>goto</kbd> <kbd>break</kbd> <kbd>continue</kbd></p>
+
+<h3 id="中断控制流程语句"><a href="#中断控制流程语句" class="headerlink" title="中断控制流程语句"></a>中断控制流程语句</h3><p><kbd>goto</kbd> <kbd>break</kbd> <kbd>continue</kbd></p>
 
     </div>
 
@@ -480,7 +473,7 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
       clientSecret: 'b86792d1298a4be13412ece9d266e9660232b4c0',
       repo        : 'blog_comment_repo',
       owner       : 'DidRanyeStudyToday',
-      admin       : ['DidRanyeStudyToday,openseem'],
+      admin       : ['[object Object]'],
       id          : 'd663ff88e28634529a11b76b6de0dfb1',
         language: 'zh-CN',
       distractionFreeMode: false

@@ -240,100 +240,107 @@
       
         <p>python的time库</p>
 <span id="more"></span>
-<h2 id="time库">time库</h2>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br></pre></td></tr></table></figure>
-<h3 id="time">time()</h3>
-<p><strong>time.time()</strong> 获取当前时间戳（一个浮点数）</p>
+
+<h2 id="time库"><a href="#time库" class="headerlink" title="time库"></a>time库</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br></pre></td></tr></table></figure>
+
+<h3 id="time"><a href="#time" class="headerlink" title="time()"></a>time()</h3><p><strong>time.time()</strong> 获取当前时间戳（一个浮点数）</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span> (time.time())</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>1580290639.0466638</p>
 </blockquote>
-<p>只可表示 <strong>1970</strong> ~ <strong>2038</strong></p>
-<h3 id="ctime">ctime()</h3>
-<p><strong>ctime</strong> 以易读方式表示 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span> (time.ctime())</span><br></pre></td></tr></table></figure> &gt;Wed Jan 29 17:50:18 2020 &gt;</p>
-<h3 id="gmtime">gmtime()</h3>
-<p><strong>time.gmtime()</strong> 返回计算机可处理的时间格式</p>
+<p>只可表示 <strong>1970</strong> ~ <strong>2038</strong>  </p>
+<h3 id="ctime"><a href="#ctime" class="headerlink" title="ctime()"></a>ctime()</h3><p><strong>ctime</strong> 以易读方式表示</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span> (time.ctime())</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>Wed Jan 29 17:50:18 2020</p>
+</blockquote>
+<h3 id="gmtime"><a href="#gmtime" class="headerlink" title="gmtime()"></a>gmtime()</h3><p><strong>time.gmtime()</strong> 返回计算机可处理的时间格式</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span> (time.gmtime())</span><br><span class="line"><span class="comment">#获得的时间是服务器时间</span></span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>time.struct_time(tm_year=2020, tm_mon=1, tm_mday=29, tm_hour=17, tm_min=23, tm_sec=55, tm_wday=2, tm_yday=29, tm_isdst=0)</p>
 </blockquote>
-<h3 id="时间格式化与-strfitime-tpl-ts-striptime-str-tpl">时间格式化与 strfitime ( tpl , ts )、striptime ( str , tpl )</h3>
-<table>
+<h3 id="时间格式化与-strfitime-tpl-ts-、striptime-str-tpl"><a href="#时间格式化与-strfitime-tpl-ts-、striptime-str-tpl" class="headerlink" title="时间格式化与 strfitime ( tpl , ts )、striptime ( str , tpl )"></a>时间格式化与 strfitime ( tpl , ts )、striptime ( str , tpl )</h3><table>
 <thead>
-<tr class="header">
-<th style="text-align: center;">格式</th>
-<th style="text-align: center;">意义</th>
-<th style="text-align: center;">举例</th>
+<tr>
+<th align="center">格式</th>
+<th align="center">意义</th>
+<th align="center">举例</th>
 </tr>
 </thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">%Y</td>
-<td style="text-align: center;">年</td>
-<td style="text-align: center;">2020</td>
+<tbody><tr>
+<td align="center">%Y</td>
+<td align="center">年</td>
+<td align="center">2020</td>
 </tr>
-<tr class="even">
-<td style="text-align: center;">%m</td>
-<td style="text-align: center;">月</td>
-<td style="text-align: center;">1</td>
+<tr>
+<td align="center">%m</td>
+<td align="center">月</td>
+<td align="center">1</td>
 </tr>
-<tr class="odd">
-<td style="text-align: center;">%B</td>
-<td style="text-align: center;">月</td>
-<td style="text-align: center;">January</td>
+<tr>
+<td align="center">%B</td>
+<td align="center">月</td>
+<td align="center">January</td>
 </tr>
-<tr class="even">
-<td style="text-align: center;">%b</td>
-<td style="text-align: center;">月</td>
-<td style="text-align: center;">Jau</td>
+<tr>
+<td align="center">%b</td>
+<td align="center">月</td>
+<td align="center">Jau</td>
 </tr>
-<tr class="odd">
-<td style="text-align: center;">%d</td>
-<td style="text-align: center;">日</td>
-<td style="text-align: center;">29</td>
+<tr>
+<td align="center">%d</td>
+<td align="center">日</td>
+<td align="center">29</td>
 </tr>
-<tr class="even">
-<td style="text-align: center;">%A</td>
-<td style="text-align: center;">星期几</td>
-<td style="text-align: center;">Wednesday</td>
+<tr>
+<td align="center">%A</td>
+<td align="center">星期几</td>
+<td align="center">Wednesday</td>
 </tr>
-<tr class="odd">
-<td style="text-align: center;">%a</td>
-<td style="text-align: center;">星期几</td>
-<td style="text-align: center;">Wed</td>
+<tr>
+<td align="center">%a</td>
+<td align="center">星期几</td>
+<td align="center">Wed</td>
 </tr>
-<tr class="even">
-<td style="text-align: center;">%H</td>
-<td style="text-align: center;">时</td>
-<td style="text-align: center;">17</td>
+<tr>
+<td align="center">%H</td>
+<td align="center">时</td>
+<td align="center">17</td>
 </tr>
-<tr class="odd">
-<td style="text-align: center;">%I</td>
-<td style="text-align: center;">时</td>
-<td style="text-align: center;">5</td>
+<tr>
+<td align="center">%I</td>
+<td align="center">时</td>
+<td align="center">5</td>
 </tr>
-<tr class="even">
-<td style="text-align: center;">%p</td>
-<td style="text-align: center;">上下午</td>
-<td style="text-align: center;">PM</td>
+<tr>
+<td align="center">%p</td>
+<td align="center">上下午</td>
+<td align="center">PM</td>
 </tr>
-<tr class="odd">
-<td style="text-align: center;">%M</td>
-<td style="text-align: center;">分</td>
-<td style="text-align: center;">44</td>
+<tr>
+<td align="center">%M</td>
+<td align="center">分</td>
+<td align="center">44</td>
 </tr>
-<tr class="even">
-<td style="text-align: center;">%S</td>
-<td style="text-align: center;">秒</td>
-<td style="text-align: center;">26</td>
+<tr>
+<td align="center">%S</td>
+<td align="center">秒</td>
+<td align="center">26</td>
 </tr>
-</tbody>
-</table>
-<p><strong>striftime（tpl，ts）</strong> 第一个参数是输出的时间格式，第二个是获得的时间<br />
-返回一个字符串 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span> (time.strftime(<span class="string">&quot;%Y-%m-%d %H:%M:%S&quot;</span>,time.gmtime()))</span><br><span class="line"><span class="comment">#输出服务器当前的时间</span></span><br></pre></td></tr></table></figure> &gt;2020-01-29 09:59:09 &gt;</p>
-<p><strong>striptime（str，tpl）</strong> 的第一个参数是字符串形式的时间值，第二个参数是输入的形式<br />
-返回一个计算机时间 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">strptime(<span class="string">&quot;2020-01-29 09:59:09&quot;</span>, <span class="string">&quot;%Y-%m-%d %H:%M:%S&quot;</span>)</span><br></pre></td></tr></table></figure> &gt;time.struct_time(tm_year=2020, tm_mon=1, tm_mday=29, tm_hour=9, tm_min=59, tm_sec=9, tm_wday=2, tm_yday=29, tm_isdst=-1) &gt;</p>
-<p><strong>pref_counter()</strong> 程序计时函数，返回一个CPU级别的精确时间计数值，单位为秒，由于这个计数值起点不确定，连续调用差值才有意义 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>start = time.pref_counter()</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>end = time.pref_counter()</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>end - start</span><br></pre></td></tr></table></figure></p>
+</tbody></table>
+<p><strong>striftime（tpl，ts）</strong> 第一个参数是输出的时间格式，第二个是获得的时间<br>返回一个字符串</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span> (time.strftime(<span class="string">&quot;%Y-%m-%d %H:%M:%S&quot;</span>,time.gmtime()))</span><br><span class="line"><span class="comment">#输出服务器当前的时间</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>2020-01-29 09:59:09</p>
+</blockquote>
+<p><strong>striptime（str，tpl）</strong> 的第一个参数是字符串形式的时间值，第二个参数是输入的形式<br>返回一个计算机时间</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">strptime(<span class="string">&quot;2020-01-29 09:59:09&quot;</span>, <span class="string">&quot;%Y-%m-%d %H:%M:%S&quot;</span>)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>time.struct_time(tm_year=2020, tm_mon=1, tm_mday=29, tm_hour=9, tm_min=59, tm_sec=9, tm_wday=2, tm_yday=29, tm_isdst=-1)</p>
+</blockquote>
+<p><strong>pref_counter()</strong> 程序计时函数，返回一个CPU级别的精确时间计数值，单位为秒，由于这个计数值起点不确定，连续调用差值才有意义</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>start = time.pref_counter()</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>end = time.pref_counter()</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>end - start</span><br></pre></td></tr></table></figure>
+
 <p><strong>sleep(s)</strong> 使程序休眠s秒。s可以是浮点数</p>
 
     </div>
@@ -440,7 +447,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#time%E5%BA%93"><span class="nav-number">1.</span> <span class="nav-text">time库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#time"><span class="nav-number">1.1.</span> <span class="nav-text">time()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ctime"><span class="nav-number">1.2.</span> <span class="nav-text">ctime()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#gmtime"><span class="nav-number">1.3.</span> <span class="nav-text">gmtime()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%97%B6%E9%97%B4%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%B8%8E-strfitime-tpl-ts-striptime-str-tpl"><span class="nav-number">1.4.</span> <span class="nav-text">时间格式化与 strfitime ( tpl , ts )、striptime ( str , tpl )</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#time%E5%BA%93"><span class="nav-number">1.</span> <span class="nav-text">time库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#time"><span class="nav-number">1.1.</span> <span class="nav-text">time()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ctime"><span class="nav-number">1.2.</span> <span class="nav-text">ctime()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#gmtime"><span class="nav-number">1.3.</span> <span class="nav-text">gmtime()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%97%B6%E9%97%B4%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%B8%8E-strfitime-tpl-ts-%E3%80%81striptime-str-tpl"><span class="nav-number">1.4.</span> <span class="nav-text">时间格式化与 strfitime ( tpl , ts )、striptime ( str , tpl )</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -552,7 +559,7 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
       clientSecret: 'b86792d1298a4be13412ece9d266e9660232b4c0',
       repo        : 'blog_comment_repo',
       owner       : 'DidRanyeStudyToday',
-      admin       : ['DidRanyeStudyToday,openseem'],
+      admin       : ['[object Object]'],
       id          : 'dc7daf7f9b4d4bc26795f664d18f6b33',
         language: 'zh-CN',
       distractionFreeMode: false

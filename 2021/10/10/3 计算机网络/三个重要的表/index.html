@@ -20,12 +20,12 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":400,"display":"always","padding":50,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"gitalk":{"order":-2}},"activeClass":"gitalk"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="转发表（数据链路层：网桥、交换机） 【考过大题】转发表的建立是被动的 即：当有一个数据帧从A发送到网桥的1号端口，转发表才知道A在1端口方向并登记 登记完毕，从已知的信息判断是进行转发还是丢弃 若网桥的转发表写了B在2号端口方向，自然转发到2号端口 若转发表什么都没写，就进行广播，每个端口都进行转发 若写了B在1号端口方向，但是数据帧是1号来的，则丢弃  ARP表（网络层：主机、路">
+  <meta name="description" content="转发表（数据链路层：网桥、交换机）【考过大题】转发表的建立是被动的 即：当有一个数据帧从A发送到网桥的1号端口，转发表才知道A在1端口方向并登记 登记完毕，从已知的信息判断是进行转发还是丢弃 若网桥的转发表写了B在2号端口方向，自然转发到2号端口 若转发表什么都没写，就进行广播，每个端口都进行转发 若写了B在1号端口方向，但是数据帧是1号来的，则丢弃  ARP表（网络层：主机、路由器）关键词：广播">
 <meta property="og:type" content="article">
 <meta property="og:title" content="三个重要的表">
 <meta property="og:url" content="http://example.com/2021/10/10/3%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%B8%89%E4%B8%AA%E9%87%8D%E8%A6%81%E7%9A%84%E8%A1%A8/index.html">
 <meta property="og:site_name" content="Ranye">
-<meta property="og:description" content="转发表（数据链路层：网桥、交换机） 【考过大题】转发表的建立是被动的 即：当有一个数据帧从A发送到网桥的1号端口，转发表才知道A在1端口方向并登记 登记完毕，从已知的信息判断是进行转发还是丢弃 若网桥的转发表写了B在2号端口方向，自然转发到2号端口 若转发表什么都没写，就进行广播，每个端口都进行转发 若写了B在1号端口方向，但是数据帧是1号来的，则丢弃  ARP表（网络层：主机、路">
+<meta property="og:description" content="转发表（数据链路层：网桥、交换机）【考过大题】转发表的建立是被动的 即：当有一个数据帧从A发送到网桥的1号端口，转发表才知道A在1端口方向并登记 登记完毕，从已知的信息判断是进行转发还是丢弃 若网桥的转发表写了B在2号端口方向，自然转发到2号端口 若转发表什么都没写，就进行广播，每个端口都进行转发 若写了B在1号端口方向，但是数据帧是1号来的，则丢弃  ARP表（网络层：主机、路由器）关键词：广播">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://z3.ax1x.com/2021/10/10/5EmV7F.png">
 <meta property="og:image" content="https://z3.ax1x.com/2021/10/10/5EutSA.png">
@@ -243,41 +243,36 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="转发表数据链路层网桥交换机">转发表（数据链路层：网桥、交换机）</h1>
-<p>【考过大题】转发表的建立是<strong>被动</strong>的</p>
+        <h1 id="转发表（数据链路层：网桥、交换机）"><a href="#转发表（数据链路层：网桥、交换机）" class="headerlink" title="转发表（数据链路层：网桥、交换机）"></a>转发表（数据链路层：网桥、交换机）</h1><p>【考过大题】转发表的建立是<strong>被动</strong>的</p>
 <p>即：当有一个数据帧从A发送到网桥的1号端口，转发表才知道A在1端口方向并登记</p>
 <p>登记完毕，从已知的信息判断是进行转发还是丢弃</p>
 <p>若网桥的转发表写了B在2号端口方向，自然转发到2号端口</p>
 <p>若转发表什么都没写，就进行广播，每个端口都进行转发</p>
 <p>若写了B在1号端口方向，但是数据帧是1号来的，则丢弃</p>
-<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/5EmV7F"><img src="https://z3.ax1x.com/2021/10/10/5EmV7F.png" alt="5EmV7F.png" /></a></p>
-<h1 id="arp表网络层主机路由器">ARP表（网络层：主机、路由器）</h1>
-<p>关键词：<strong>广播</strong>。每10~20min更新一次</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/5EmV7F"><img src="https://z3.ax1x.com/2021/10/10/5EmV7F.png" alt="5EmV7F.png"></a></p>
+<h1 id="ARP表（网络层：主机、路由器）"><a href="#ARP表（网络层：主机、路由器）" class="headerlink" title="ARP表（网络层：主机、路由器）"></a>ARP表（网络层：主机、路由器）</h1><p>关键词：<strong>广播</strong>。每10~20min更新一次</p>
 <p>主机/路由器当收到一个分组的时候，进行检查ARP高速缓存（ARP表）</p>
 <p>有就算了，没有的话进行<strong>广播</strong>，来问MAC地址</p>
 <p>方法：本来把这个分组的目的MAC地址填上<strong>FF-FF-FF-FF-FF-FF</strong>，这样它就变成了一个广播的分组，能发给所有的主机（同局域网内的）</p>
-<p>目的主机收到了分组，就会告诉源主机自己的MAC地址（向源主机<strong>单播</strong>一个ARP响应分组）</p>
-<h1 id="路由表路由器">路由表（路由器）</h1>
-<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/5EutSA"><img src="https://z3.ax1x.com/2021/10/10/5EutSA.png" alt="5EutSA.png" /></a></p>
+<p>目的主机收到了分组，就会告诉源主机自己的MAC地址（向源主机<strong>单播</strong>一个ARP响应分组） </p>
+<h1 id="路由表（路由器）"><a href="#路由表（路由器）" class="headerlink" title="路由表（路由器）"></a>路由表（路由器）</h1><p><a target="_blank" rel="noopener" href="https://imgtu.com/i/5EutSA"><img src="https://z3.ax1x.com/2021/10/10/5EutSA.png" alt="5EutSA.png"></a></p>
 <p>默认路由：不知道目的网络IP地址的时候，就填0.0.0.0，子网掩码也是0.0.0.0</p>
 <p>这样就会发到组长（网关）那里。让组长看看自己的路由表项有没有</p>
 <p>（网关：两个不同的网络的设备）</p>
 <p>如果组长也不知道，那么组长也填0，发给大组长。。。</p>
-<p>这个过程不会一直持续下去的，因为IP分组有一个TTL，每经过一个路由器TTL--，减到0就被丢弃了</p>
+<p>这个过程不会一直持续下去的，因为IP分组有一个TTL，每经过一个路由器TTL–，减到0就被丢弃了</p>
 <p>不会持续的另一个原因是，如果使用RIP算法，跳数16记为不可达，也会被丢弃</p>
-<h2 id="rip">RIP</h2>
-<p>路由器L1会定时接到相邻路由器L2的整个路由表</p>
+<h2 id="RIP"><a href="#RIP" class="headerlink" title="RIP"></a>RIP</h2><p>路由器L1会定时接到相邻路由器L2的整个路由表</p>
 <p>L1将能抄的抄到自己的路由表上，当然不要忘记把“距离”项+1，“下一跳”项填L2</p>
 <p>如果距离都到16了，那就是不可达了，这行不抄</p>
-<p>如果某一项，自己原来的距离比L2的还短/一样，不抄 （！！但是！也不是绝对的，如果原来的表项也是下一跳L2，那还是要更新的啊，说明现在网络拥堵了啊）</p>
-<ol type="1">
+<p>如果某一项，自己原来的距离比L2的还短/一样，不抄<br>（！！但是！也不是绝对的，如果原来的表项也是下一跳L2，那还是要更新的啊，说明现在网络拥堵了啊）</p>
+<ol>
 <li>能不动就不动</li>
 <li>路径最短</li>
 <li>正主（下一跳）发话必须更新</li>
 </ol>
-<h1 id="主机a请求baidu的全过程">主机A请求baidu的全过程</h1>
-<ol type="1">
-<li>向DNS服务器查找www.baidu.com的IP地址，得出IP为12.34.56.78</li>
+<h1 id="主机A请求baidu的全过程"><a href="#主机A请求baidu的全过程" class="headerlink" title="主机A请求baidu的全过程"></a>主机A请求baidu的全过程</h1><ol>
+<li>向DNS服务器查找<a target="_blank" rel="noopener" href="http://www.baidu.com的ip地址,得出ip为12.34.56.78/">www.baidu.com的IP地址，得出IP为12.34.56.78</a></li>
 <li>A自身的IP为13.24.35.46，自身MAC地址为AS-DF-GH-JK-LL-ZX-CV-BN</li>
 <li></li>
 </ol>
@@ -386,7 +381,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BD%AC%E5%8F%91%E8%A1%A8%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82%E7%BD%91%E6%A1%A5%E4%BA%A4%E6%8D%A2%E6%9C%BA"><span class="nav-number">1.</span> <span class="nav-text">转发表（数据链路层：网桥、交换机）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#arp%E8%A1%A8%E7%BD%91%E7%BB%9C%E5%B1%82%E4%B8%BB%E6%9C%BA%E8%B7%AF%E7%94%B1%E5%99%A8"><span class="nav-number">2.</span> <span class="nav-text">ARP表（网络层：主机、路由器）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%B7%AF%E7%94%B1%E8%A1%A8%E8%B7%AF%E7%94%B1%E5%99%A8"><span class="nav-number">3.</span> <span class="nav-text">路由表（路由器）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#rip"><span class="nav-number">3.1.</span> <span class="nav-text">RIP</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%BB%E6%9C%BAa%E8%AF%B7%E6%B1%82baidu%E7%9A%84%E5%85%A8%E8%BF%87%E7%A8%8B"><span class="nav-number">4.</span> <span class="nav-text">主机A请求baidu的全过程</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BD%AC%E5%8F%91%E8%A1%A8%EF%BC%88%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82%EF%BC%9A%E7%BD%91%E6%A1%A5%E3%80%81%E4%BA%A4%E6%8D%A2%E6%9C%BA%EF%BC%89"><span class="nav-number">1.</span> <span class="nav-text">转发表（数据链路层：网桥、交换机）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ARP%E8%A1%A8%EF%BC%88%E7%BD%91%E7%BB%9C%E5%B1%82%EF%BC%9A%E4%B8%BB%E6%9C%BA%E3%80%81%E8%B7%AF%E7%94%B1%E5%99%A8%EF%BC%89"><span class="nav-number">2.</span> <span class="nav-text">ARP表（网络层：主机、路由器）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%B7%AF%E7%94%B1%E8%A1%A8%EF%BC%88%E8%B7%AF%E7%94%B1%E5%99%A8%EF%BC%89"><span class="nav-number">3.</span> <span class="nav-text">路由表（路由器）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#RIP"><span class="nav-number">3.1.</span> <span class="nav-text">RIP</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%BB%E6%9C%BAA%E8%AF%B7%E6%B1%82baidu%E7%9A%84%E5%85%A8%E8%BF%87%E7%A8%8B"><span class="nav-number">4.</span> <span class="nav-text">主机A请求baidu的全过程</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -551,7 +546,7 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
       clientSecret: 'b86792d1298a4be13412ece9d266e9660232b4c0',
       repo        : 'blog_comment_repo',
       owner       : 'DidRanyeStudyToday',
-      admin       : ['DidRanyeStudyToday,openseem'],
+      admin       : ['[object Object]'],
       id          : '4fa9e2f9df0ec03cbc41dc98d7ad9516',
         language: 'zh-CN',
       distractionFreeMode: false
