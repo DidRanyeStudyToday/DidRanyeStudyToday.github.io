@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>hexo nexT主题 增加gitalk的管理员</title>
+      <link href="/2021/10/10/%E5%85%B6%E4%BB%96/%E9%9B%B6%E6%95%A3%E9%97%AE%E9%A2%98/hexo-nexT%E4%B8%BB%E9%A2%98-%E5%A2%9E%E5%8A%A0gitalk%E7%9A%84%E7%AE%A1%E7%90%86%E5%91%98/"/>
+      <url>/2021/10/10/%E5%85%B6%E4%BB%96/%E9%9B%B6%E6%95%A3%E9%97%AE%E9%A2%98/hexo-nexT%E4%B8%BB%E9%A2%98-%E5%A2%9E%E5%8A%A0gitalk%E7%9A%84%E7%AE%A1%E7%90%86%E5%91%98/</url>
+      
+        <content type="html"><![CDATA[<p>打开<kbd>themes/next/layout/_third-party/comments/gitalk.swig</kbd></p><p>Line 15</p><pre><code>      // admin       : [&#39;&#123;&#123; theme.gitalk.admin_user &#125;&#125;&#39;],    admin       : [&#39;admin1&#39;, &#39;admin2&#39;],</code></pre><p>nexT的写法真是让人迷惑 <img src="https://user-images.githubusercontent.com/51332690/136702919-2561849d-09e8-4b44-82c9-a727b77e8dc9.jpg" alt="_C})K_F 51%CTJ`5N%)GK6N" /></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 零散问题 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> nexT </tag>
+            
+            <tag> gitalk </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>冲突域和广播域</title>
       <link href="/2021/10/10/3%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E5%86%B2%E7%AA%81%E5%9F%9F%E5%92%8C%E5%B9%BF%E6%92%AD%E5%9F%9F/"/>
       <url>/2021/10/10/3%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E5%86%B2%E7%AA%81%E5%9F%9F%E5%92%8C%E5%B9%BF%E6%92%AD%E5%9F%9F/</url>
@@ -1340,7 +1369,7 @@
       
         <tags>
             
-            <tag> 小问题 </tag>
+            <tag> python </tag>
             
             <tag> VScode </tag>
             
