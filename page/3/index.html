@@ -17,7 +17,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":400,"display":"hide","padding":50,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"gitalk":{"order":-2}},"activeClass":"gitalk"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":400,"display":"always","padding":50,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"gitalk":{"order":-2}},"activeClass":"gitalk"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="昨天不是刚起过床嘛">
@@ -176,6 +176,106 @@
 
           <div class="content index posts-expand">
             
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/08/30/%E5%85%B6%E4%BB%96/%E5%89%8D%E7%AB%AF/%E7%9C%9F%E9%A2%98/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar_%E8%AF%A5%E8%B5%B7%E5%BA%8A%E4%BA%86.jpeg">
+      <meta itemprop="name" content="Ranye">
+      <meta itemprop="description" content="昨天不是刚起过床嘛">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ranye">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/08/30/%E5%85%B6%E4%BB%96/%E5%89%8D%E7%AB%AF/%E7%9C%9F%E9%A2%98/" class="post-title-link" itemprop="url">面试中遇到的一些不限前端的问题</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-08-30 18:41:36" itemprop="dateCreated datePublished" datetime="2021-08-30T18:41:36+08:00">2021-08-30</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-10-05 19:48:19" itemprop="dateModified" datetime="2021-10-05T19:48:19+08:00">2021-10-05</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%89%8D%E7%AB%AF/%E9%9D%A2%E8%AF%95/" itemprop="url" rel="index"><span itemprop="name">面试</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>内存堆/栈 栈:局部变量和函数参数，函数调用后返回的地址/值。（为运行函数而分配的局部变量、函数参数、函数调用后返回地址等存放在栈区） 堆:使用new/malloc进行分配，使用delete或delete[]释放 1、栈区（stack）― 由编译器自动分配释放 ，存放函数的参数值，局部变量的值等。其操作方式类似于数据结构中的栈。 2、堆区（heap） ― 一般由程序员分配释放， 若程序员不释放，程序结束时可能由OS回收 。注意它与数据结构中的堆是两回事，分配方式倒是类似于链表 3、全局区（静态区）（static）―，全局变量和静态变量的存储是放在一块的，初始化的全局变量和静态变量在一块区域， 未初始化的全局变量和未初始化的静态变量在相邻的另一块区域。 - 程序结束后有系统释放 4、文字常量区 ―常量字符串就是放在这里的。 程序结束后由系统释放 5、程序代码区―存放函数体的二进制代码。 int a = 0; 全局初始化区 char *p1; 全局未初始化区 main() { int b; 栈</p>
+<p>char s[] = “abc”; 栈</p>
+<p>char *p2; 栈</p>
+<p>char *p3 = “123456”; 123456\0在常量区，p3在栈上。</p>
+<p>static int c =0； 全局（静态）初始化区</p>
+<p>p1 = (char <em>)malloc(10); p2 = (char </em>)malloc(20);</p>
+<p>浏览器地址栏输入网址后会发生什么？具体的流程有哪些？ 1. 浏览器根据请求的URL交给DNS域名解析，找到真实IP，向服务器发起请求； 2. 服务器交给后台处理完成后返回数据，浏览器接收文件（HTML、JS、CSS、图象等）； 3. 浏览器对加载到的资源（HTML、JS、CSS等）进行语法解析，建立相应的内部数据结构（如HTML的DOM）； 4. 载入解析到的资源文件，渲染页面，完成。</p>
+<p>GET和POST两种基本请求方法的区别 最直观的区别就是GET把参数包含在URL中，POST通过request body传递参数。 GET在浏览器回退时是无害的，而POST会再次提交请求。 GET产生的URL地址可以被Bookmark，而POST不可以。 GET请求只能进行url编码，而POST支持多种编码方式。 GET请求参数会被完整保留在浏览器历史记录里，而POST中的参数不会被保留。 GET请求在URL中传送的参数是有长度限制的，而POST么有。 对参数的数据类型，GET只接受ASCII字符，而POST没有限制。 GET比POST更不安全，因为参数直接暴露在URL上，所以不能用来传递敏感信息。 GET参数通过URL传递，POST放在Request body中。</p>
+<p>HTTP协议 超文本传输协议 Hyper Text Transfer Protocol 通常运行在TCP之上。它指定了客户端可能发送给服务器什么样的消息以及得到什么样的响应。</p>
+<p>HTTP 返回状态码 1xx 信息，服务器收到请求，需要请求者继续执行操作； 2xx 成功，操作被成功接收并处理； 3xx 重定向，需要进一步的操作以完成请求； 　　例如，浏览器可能不得不请求服务器上的不同的页面，或通过代理服务器重复该请求。 4xx 客户端错误，请求包含语法错误或无法完成请求； 5xx 服务器错误，服务器在处理请求的过程中发生了错误；</p>
+<p>100 - Continue 继续；初始的请求已经接受，客户应当继续发送请求的其余部分 101 - Switching Protocols 切换协议</p>
+<p>200 - OK 正常；</p>
+<p>301 - Moved Permanently 永久移动； 302 - Found 发现；　该资源原本确实存在，但已经被临时改变了位置</p>
+<p>400 - Bad Request 错误请求； 　　请求出现语法错误 401 - Unauthorized 未授权；用户没有访问权限，需要进行身份认证。 403 - Forbidden 禁止访问；服务器理解客户的请求，但拒绝处理它。通常由于服务器上文件或目录的权限设置导致 404 - Not Found 找不到；</p>
+<p>500 - Internal Server Error 服务器内部错误； 502 - Bad Gateway 错误的网关</p>
+<pre><code>function count()&#123;
+    for (let i=0; i&lt;5; i++) &#123;
+        setTimeout(() =&gt; console.log(i), 1000*i)
+    &#125;
+&#125;</code></pre>
+<p>什么是「闭包」。 「函数」和「函数内部能访问到的变量」的总和，就是一个闭包。 闭包就是能够读取其他函数内部变量的函数。例如在javascript中，只有函数内部的子函数才能读取局部变量，所以闭包可以理解成“定义在一个函数内部的函数“。在本质上，闭包是将函数内部和函数外部连接起来的桥梁。 「闭包」的作用是什么。</p>
+<p>0.1 + 0.2 === 0.30000000000000004？ IEEE 754 浮点数编码方式 短浮点数 长浮点数 1 8 23 1 11 52 数符 阶码 尾数 -1的s次方乘1.m乘2的e-127/1023</p>
+<p>key的作用主要是为了高效的更新虚拟DOM</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
       
   
   
@@ -909,102 +1009,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/05/07/%E5%85%B6%E4%BB%96/%E5%89%8D%E7%AB%AF/node-js%E7%AC%94%E8%AE%B0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar_%E8%AF%A5%E8%B5%B7%E5%BA%8A%E4%BA%86.jpeg">
-      <meta itemprop="name" content="Ranye">
-      <meta itemprop="description" content="昨天不是刚起过床嘛">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Ranye">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/05/07/%E5%85%B6%E4%BB%96/%E5%89%8D%E7%AB%AF/node-js%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">node.js笔记</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-05-07 08:27:28" itemprop="dateCreated datePublished" datetime="2020-05-07T08:27:28+08:00">2020-05-07</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-10-05 19:50:20" itemprop="dateModified" datetime="2021-10-05T19:50:20+08:00">2021-10-05</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%89%8D%E7%AB%AF/%E8%BF%9B%E9%98%B6/" itemprop="url" rel="index"><span itemprop="name">进阶</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="node.js的repl">node.js的REPL</h1>
-<ul>
-<li>简单运算</li>
-<li>使用变量
-<ul>
-<li>var: 不显示（undefined）</li>
-<li>不适用var: 直接显示结果</li>
-</ul></li>
-<li>支持多行表达式</li>
-<li>下划线<kbd>_</kbd>获取上一个表达式的运算结果</li>
-<li>ctrl + c - 退出当前终端</li>
-<li>向上/向下键 - 查看输入的历史命令</li>
-<li>tab 键 - 列出当前命令</li>
-<li>.help</li>
-<li>.break</li>
-<li>.save + filename</li>
-<li>.load + filename</li>
-</ul>
-<h1 id="node.js-回调函数">node.js 回调函数</h1>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1074,9 +1078,6 @@
   <div class="links-of-author motion-element">
       <span class="links-of-author-item">
         <a href="https://github.com/DidRanyeStudyToday" title="GitHub → https://github.com/DidRanyeStudyToday" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
-      </span>
-      <span class="links-of-author-item">
-        <a href="mailto:ranye2377210091@gmail.com" title="E-Mail → mailto:ranye2377210091@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
       </span>
   </div>
 
