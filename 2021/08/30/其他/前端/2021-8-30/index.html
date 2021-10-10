@@ -17,7 +17,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":400,"display":"always","padding":50,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"gitalk":{"order":-2}},"activeClass":"gitalk"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":400,"display":"post","padding":50,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"gitalk":{"order":-2}},"activeClass":"gitalk"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="仅记载真实面试中出现的（阿里前端）">
@@ -246,66 +246,67 @@
       
         <p>仅记载真实面试中出现的（阿里前端）</p>
 <span id="more"></span>
-
-<h1 id="html"><a href="#html" class="headerlink" title="html"></a>html</h1><ol>
-<li><p>块级元素和行内元素的区别</p>
+<h1 id="html">html</h1>
+<ol type="1">
+<li>块级元素和行内元素的区别
 <ul>
-<li>行内元素a,img,input,lable,select,span,textarea,font：　　<ul>
+<li>行内元素a,img,input,lable,select,span,textarea,font：　　
+<ul>
 <li>可多个并排</li>
 <li>不可设置宽高</li>
-</ul>
-</li>
-<li>块级元素div,p,table,form,h*,dl,ol,ul,li：<ul>
+</ul></li>
+<li>块级元素div,p,table,form,h*,dl,ol,ul,li：
+<ul>
 <li>不可</li>
-<li>可（宽度默认父级的100%<h1 id="css"><a href="#css" class="headerlink" title="css"></a>css</h1></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>块居中</p>
+<li>可（宽度默认父级的100% # css</li>
+</ul></li>
+</ul></li>
+<li>块居中
 <ul>
-<li>x<ul>
-<li><strong>块内行</strong>父text-align: center </li>
-<li><strong>块内块</strong>子margin: 0 auto </li>
+<li>x
+<ul>
+<li><strong>块内行</strong>父text-align: center</li>
+<li><strong>块内块</strong>子margin: 0 auto</li>
 <li><strong>多块</strong>子display: inline-block（套1） 父text-align: center</li>
-</ul>
-</li>
-<li>y<br>  * </li>
-</ul>
-</li>
-<li><p>position</p>
+</ul></li>
+<li>y
 <ul>
-<li>absolute    <ul>
+<li></li>
+</ul></li>
+</ul></li>
+<li>position
+<ul>
+<li>absolute
+<ul>
 <li>生成绝对定位的元素，相对于 static 定位以外的第一个父元素进行定位。</li>
-<li>元素的位置通过 “left”, “top”, “right” 以及 “bottom” 属性进行规定。</li>
-</ul>
-</li>
-<li>fixed    <ul>
+<li>元素的位置通过 "left", "top", "right" 以及 "bottom" 属性进行规定。</li>
+</ul></li>
+<li>fixed
+<ul>
 <li>生成绝对定位的元素，相对于浏览器窗口进行定位。</li>
-<li>元素的位置通过 “left”, “top”, “right” 以及 “bottom” 属性进行规定。</li>
-</ul>
-</li>
-<li>relative    <ul>
+<li>元素的位置通过 "left", "top", "right" 以及 "bottom" 属性进行规定。</li>
+</ul></li>
+<li>relative
+<ul>
 <li>生成相对定位的元素，相对于其正常位置进行定位。</li>
-<li>因此，”left:20” 会向元素的 LEFT 位置添加 20 像素。</li>
-</ul>
-</li>
-<li>static    <ul>
+<li>因此，"left:20" 会向元素的 LEFT 位置添加 20 像素。</li>
+</ul></li>
+<li>static
+<ul>
 <li>默认值。没有定位，元素出现在正常的流中（忽略 top, bottom, * left, right 或者 z-index 声明）。</li>
-<li>inherit    规定应该从父元素继承 position 属性的值。</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>充满页面<br>div {<br>position: absolute;<br>top: 0;<br>bottom: 0;<br>}<br>.children{<br> height: calc(100% - 187px);<br>}</p>
-</li>
+<li>inherit 规定应该从父元素继承 position 属性的值。</li>
+</ul></li>
+</ul></li>
+<li>充满页面 div { position: absolute; top: 0; bottom: 0; } .children{ height: calc(100% - 187px); }</li>
 </ol>
-<h1 id="http"><a href="#http" class="headerlink" title="http"></a>http</h1><ol>
-<li>如何post图像（文件）？<br>rfc186用以支持文件上传。所以Content-Type的类型扩充了multipart/form-data用以支持向服务器发送二进制数据。因此发送post请求时候，表单属性enctype共有二个值可选，这个属性管理的是表单的MIME编码：</li>
+<h1 id="http">http</h1>
+<ol type="1">
+<li>如何post图像（文件）？ rfc186用以支持文件上传。所以Content-Type的类型扩充了multipart/form-data用以支持向服务器发送二进制数据。因此发送post请求时候，表单属性enctype共有二个值可选，这个属性管理的是表单的MIME编码：</li>
 </ol>
-<p>①application/x-www-form-urlencoded(默认值)<br>②multipart/form-data<br>其实form表单在你不写enctype属性时，也默认为其添加了enctype属性值，默认值是enctype=“application/x- www-form-urlencoded”.<br>原文：<a target="_blank" rel="noopener" href="https://blog.csdn.net/xiaojianpitt/article/details/6856536">https://blog.csdn.net/xiaojianpitt/article/details/6856536</a></p>
+<p>①application/x-www-form-urlencoded(默认值) ②multipart/form-data 其实form表单在你不写enctype属性时，也默认为其添加了enctype属性值，默认值是enctype=“application/x- www-form-urlencoded”. 原文：https://blog.csdn.net/xiaojianpitt/article/details/6856536</p>
 <p>表单如下：</p>
-<h1 id="疑问"><a href="#疑问" class="headerlink" title="疑问"></a>疑问</h1><p>post和get</p>
+<h1 id="疑问">疑问</h1>
+<p>post和get</p>
 
     </div>
 
@@ -413,7 +414,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#html"><span class="nav-number">1.</span> <span class="nav-text">html</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#css"><span class="nav-number">2.</span> <span class="nav-text">css</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#http"><span class="nav-number">3.</span> <span class="nav-text">http</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%96%91%E9%97%AE"><span class="nav-number">4.</span> <span class="nav-text">疑问</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#html"><span class="nav-number">1.</span> <span class="nav-text">html</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#http"><span class="nav-number">2.</span> <span class="nav-text">http</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%96%91%E9%97%AE"><span class="nav-number">3.</span> <span class="nav-text">疑问</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -525,7 +526,7 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
       clientSecret: 'b86792d1298a4be13412ece9d266e9660232b4c0',
       repo        : 'blog_comment_repo',
       owner       : 'DidRanyeStudyToday',
-      admin       : ['[object Object]'],
+      admin       : ['DidRanyeStudyToday,openseem'],
       id          : '59b515a76b029b3e7de6c3c90c605c35',
         language: 'zh-CN',
       distractionFreeMode: false

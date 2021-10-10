@@ -17,7 +17,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":400,"display":"always","padding":50,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"gitalk":{"order":-2}},"activeClass":"gitalk"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":400,"display":"post","padding":50,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"gitalk":{"order":-2}},"activeClass":"gitalk"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="昨天不是刚起过床嘛">
@@ -314,7 +314,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="IP分组"><a href="#IP分组" class="headerlink" title="IP分组"></a>IP分组</h1><ol>
+          <h1 id="ip分组">IP分组</h1>
+<ol type="1">
 <li>首部固定部分为20B，首部最大值为60B</li>
 <li>总长度（1）+片偏移的单位（8）+首部长度（4）（“一种八片首饰”）</li>
 <li>标志位MF和DF在分片时的取值</li>
@@ -322,12 +323,14 @@
 <li>首部校验和字段只校验首部</li>
 <li>源地址和目的地址字段长度都为4B</li>
 </ol>
-<h1 id="UDP数据报"><a href="#UDP数据报" class="headerlink" title="UDP数据报"></a>UDP数据报</h1><ol>
+<h1 id="udp数据报">UDP数据报</h1>
+<ol type="1">
 <li>首部8B，由4个字段组成（都是2B）</li>
 <li>长度字段包括首部+数据部分</li>
 <li>检验和检验首部+数据部分（可选）</li>
 </ol>
-<h1 id="TCP报文段"><a href="#TCP报文段" class="headerlink" title="TCP报文段"></a>TCP报文段</h1><ol>
+<h1 id="tcp报文段">TCP报文段</h1>
+<ol type="1">
 <li>首部固定部分为20B，最大值为60B（和IP分组一样）</li>
 <li>源端口和目的端口各占2B</li>
 <li>序号（本报文段第一个字节的序号）和确认号（期望收到下一个的序号）各占4B</li>
@@ -335,8 +338,10 @@
 <li>确认位ACK、同步位SYN、终止位FIN什么时候为0/1</li>
 <li>窗口字段表示允许对方发送的数据量（流量控制用）</li>
 </ol>
-<h1 id="HTTP报文"><a href="#HTTP报文" class="headerlink" title="HTTP报文"></a>HTTP报文</h1><p>HTTP报文分为请求报文&amp;响应报文<br>请求报文：<br>1.请求行：请求方法（常用get/post）、请求URL、HTTP协议版本 2.首部行 3.请求体/实体主体<br>响应报文：<br>1.状态行 2.响应头部 3.响应体</p>
-<h1 id="MAC帧"><a href="#MAC帧" class="headerlink" title="MAC帧"></a>MAC帧</h1><ol>
+<h1 id="http报文">HTTP报文</h1>
+<p>HTTP报文分为请求报文&amp;响应报文 请求报文： 1.请求行：请求方法（常用get/post）、请求URL、HTTP协议版本 2.首部行 3.请求体/实体主体 响应报文： 1.状态行 2.响应头部 3.响应体</p>
+<h1 id="mac帧">MAC帧</h1>
+<ol type="1">
 <li>前同步码8B</li>
 <li>MAC地址长度6B</li>
 <li>数据长度为46-1500B，首部和尾部是18B，因此最短帧长64B</li>
@@ -416,36 +421,41 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="转发表（数据链路层：网桥、交换机）"><a href="#转发表（数据链路层：网桥、交换机）" class="headerlink" title="转发表（数据链路层：网桥、交换机）"></a>转发表（数据链路层：网桥、交换机）</h1><p>【考过大题】转发表的建立是<strong>被动</strong>的</p>
+          <h1 id="转发表数据链路层网桥交换机">转发表（数据链路层：网桥、交换机）</h1>
+<p>【考过大题】转发表的建立是<strong>被动</strong>的</p>
 <p>即：当有一个数据帧从A发送到网桥的1号端口，转发表才知道A在1端口方向并登记</p>
 <p>登记完毕，从已知的信息判断是进行转发还是丢弃</p>
 <p>若网桥的转发表写了B在2号端口方向，自然转发到2号端口</p>
 <p>若转发表什么都没写，就进行广播，每个端口都进行转发</p>
 <p>若写了B在1号端口方向，但是数据帧是1号来的，则丢弃</p>
-<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/5EmV7F"><img src="https://z3.ax1x.com/2021/10/10/5EmV7F.png" alt="5EmV7F.png"></a></p>
-<h1 id="ARP表（网络层：主机、路由器）"><a href="#ARP表（网络层：主机、路由器）" class="headerlink" title="ARP表（网络层：主机、路由器）"></a>ARP表（网络层：主机、路由器）</h1><p>关键词：<strong>广播</strong>。每10~20min更新一次</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/5EmV7F"><img src="https://z3.ax1x.com/2021/10/10/5EmV7F.png" alt="5EmV7F.png" /></a></p>
+<h1 id="arp表网络层主机路由器">ARP表（网络层：主机、路由器）</h1>
+<p>关键词：<strong>广播</strong>。每10~20min更新一次</p>
 <p>主机/路由器当收到一个分组的时候，进行检查ARP高速缓存（ARP表）</p>
 <p>有就算了，没有的话进行<strong>广播</strong>，来问MAC地址</p>
 <p>方法：本来把这个分组的目的MAC地址填上<strong>FF-FF-FF-FF-FF-FF</strong>，这样它就变成了一个广播的分组，能发给所有的主机（同局域网内的）</p>
-<p>目的主机收到了分组，就会告诉源主机自己的MAC地址（向源主机<strong>单播</strong>一个ARP响应分组） </p>
-<h1 id="路由表（路由器）"><a href="#路由表（路由器）" class="headerlink" title="路由表（路由器）"></a>路由表（路由器）</h1><p><a target="_blank" rel="noopener" href="https://imgtu.com/i/5EutSA"><img src="https://z3.ax1x.com/2021/10/10/5EutSA.png" alt="5EutSA.png"></a></p>
+<p>目的主机收到了分组，就会告诉源主机自己的MAC地址（向源主机<strong>单播</strong>一个ARP响应分组）</p>
+<h1 id="路由表路由器">路由表（路由器）</h1>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/5EutSA"><img src="https://z3.ax1x.com/2021/10/10/5EutSA.png" alt="5EutSA.png" /></a></p>
 <p>默认路由：不知道目的网络IP地址的时候，就填0.0.0.0，子网掩码也是0.0.0.0</p>
 <p>这样就会发到组长（网关）那里。让组长看看自己的路由表项有没有</p>
 <p>（网关：两个不同的网络的设备）</p>
 <p>如果组长也不知道，那么组长也填0，发给大组长。。。</p>
-<p>这个过程不会一直持续下去的，因为IP分组有一个TTL，每经过一个路由器TTL–，减到0就被丢弃了</p>
+<p>这个过程不会一直持续下去的，因为IP分组有一个TTL，每经过一个路由器TTL--，减到0就被丢弃了</p>
 <p>不会持续的另一个原因是，如果使用RIP算法，跳数16记为不可达，也会被丢弃</p>
-<h2 id="RIP"><a href="#RIP" class="headerlink" title="RIP"></a>RIP</h2><p>路由器L1会定时接到相邻路由器L2的整个路由表</p>
+<h2 id="rip">RIP</h2>
+<p>路由器L1会定时接到相邻路由器L2的整个路由表</p>
 <p>L1将能抄的抄到自己的路由表上，当然不要忘记把“距离”项+1，“下一跳”项填L2</p>
 <p>如果距离都到16了，那就是不可达了，这行不抄</p>
-<p>如果某一项，自己原来的距离比L2的还短/一样，不抄<br>（！！但是！也不是绝对的，如果原来的表项也是下一跳L2，那还是要更新的啊，说明现在网络拥堵了啊）</p>
-<ol>
+<p>如果某一项，自己原来的距离比L2的还短/一样，不抄 （！！但是！也不是绝对的，如果原来的表项也是下一跳L2，那还是要更新的啊，说明现在网络拥堵了啊）</p>
+<ol type="1">
 <li>能不动就不动</li>
 <li>路径最短</li>
 <li>正主（下一跳）发话必须更新</li>
 </ol>
-<h1 id="主机A请求baidu的全过程"><a href="#主机A请求baidu的全过程" class="headerlink" title="主机A请求baidu的全过程"></a>主机A请求baidu的全过程</h1><ol>
-<li>向DNS服务器查找<a target="_blank" rel="noopener" href="http://www.baidu.com的ip地址,得出ip为12.34.56.78/">www.baidu.com的IP地址，得出IP为12.34.56.78</a></li>
+<h1 id="主机a请求baidu的全过程">主机A请求baidu的全过程</h1>
+<ol type="1">
+<li>向DNS服务器查找www.baidu.com的IP地址，得出IP为12.34.56.78</li>
 <li>A自身的IP为13.24.35.46，自身MAC地址为AS-DF-GH-JK-LL-ZX-CV-BN</li>
 <li></li>
 </ol>
@@ -530,38 +540,49 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="链路层（2）"><a href="#链路层（2）" class="headerlink" title="链路层（2）"></a>链路层（2）</h1><h2 id="GBN"><a href="#GBN" class="headerlink" title="GBN"></a>GBN</h2><ol>
+          <h1 id="链路层2">链路层（2）</h1>
+<h2 id="gbn">GBN</h2>
+<ol type="1">
 <li>帧顺序</li>
 <li>信道利用率</li>
 </ol>
-<h2 id="CSNA-CD"><a href="#CSNA-CD" class="headerlink" title="CSNA/CD"></a>CSNA/CD</h2><ol>
+<h2 id="csnacd">CSNA/CD</h2>
+<ol type="1">
 <li>检测到冲突的时间</li>
 <li>有效数据传输率</li>
 </ol>
-<h1 id="网络层（5）"><a href="#网络层（5）" class="headerlink" title="网络层（5）"></a>网络层（5）</h1><h2 id="地址问题"><a href="#地址问题" class="headerlink" title="地址问题"></a>地址问题</h2><ol>
-<li>子网划分<ul>
+<h1 id="网络层5">网络层（5）</h1>
+<h2 id="地址问题">地址问题</h2>
+<ol type="1">
+<li>子网划分
+<ul>
 <li>定长子网划分</li>
 <li>变长子网划分</li>
-</ul>
-</li>
+</ul></li>
 <li>路由聚合（构造路由表）</li>
 </ol>
-<h2 id="报文段问题"><a href="#报文段问题" class="headerlink" title="报文段问题"></a>报文段问题</h2><ol>
+<h2 id="报文段问题">报文段问题</h2>
+<ol type="1">
 <li>数据报分片</li>
 </ol>
-<h2 id="路由问题"><a href="#路由问题" class="headerlink" title="路由问题"></a>路由问题</h2><ol>
+<h2 id="路由问题">路由问题</h2>
+<ol type="1">
 <li>路由选择与转发（转接口+能收到数据报的设备）</li>
 <li>路由协议</li>
 </ol>
-<h1 id="混合层"><a href="#混合层" class="headerlink" title="混合层"></a>混合层</h1><h2 id="网络层-链路层"><a href="#网络层-链路层" class="headerlink" title="网络层+链路层"></a>网络层+链路层</h2><ol>
+<h1 id="混合层">混合层</h1>
+<h2 id="网络层链路层">网络层+链路层</h2>
+<ol type="1">
 <li>网络拓扑+mac帧</li>
 <li>设备选择</li>
 </ol>
-<h2 id="网络层-传输层"><a href="#网络层-传输层" class="headerlink" title="网络层+传输层"></a>网络层+传输层</h2><ol>
+<h2 id="网络层传输层">网络层+传输层</h2>
+<ol type="1">
 <li>网络拓扑+TCP（过程+报文段）</li>
 <li>数据报报文+TCP段</li>
 </ol>
-<h2 id="网络层-应用层（-链路层）"><a href="#网络层-应用层（-链路层）" class="headerlink" title="网络层+应用层（+链路层）"></a>网络层+应用层（+链路层）</h2><ol>
+<h2 id="网络层应用层链路层">网络层+应用层（+链路层）</h2>
+<ol type="1">
 <li>报文字段+应用层应用（Web）</li>
 </ol>
 
@@ -645,16 +666,25 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <ol>
-<li><input checked="" disabled="" type="checkbox"> 了解微分方程及其阶、解、通解、初始条件和特解等概念.</li>
-<li><input checked="" disabled="" type="checkbox"> 掌握变量可分离的微分方程及一阶线性微分方程的解法.</li>
-<li><input checked="" disabled="" type="checkbox"> 会解齐次微分方程、伯努利方程和全微分方程，会用简单的变量代换解某些微分方程.</li>
-<li><input checked="" disabled="" type="checkbox"> 会用降阶法解下列形式的微分方程：$y^{(n)}=f(x)$，$y’’=f(x,y’)$和$y’’=f(y,y’)$</li>
-<li><input checked="" disabled="" type="checkbox"> 理解线性微分方程解的性质及解的结构.</li>
-<li><input checked="" disabled="" type="checkbox"> 掌握二阶常系数齐次线性微分方程的解法，并会解某些高于二阶的常系数齐次线性微分方程.</li>
-<li><input checked="" disabled="" type="checkbox"> 会解自由项为多项式、指数函数、正弦函数余弦函数以及它们的和与积的二阶常系数非齐次线性微分方程.</li>
-<li><input checked="" disabled="" type="checkbox"> 会解欧拉方程.</li>
-<li><input checked="" disabled="" type="checkbox"> 会用微分方程解决一些简单的应用问题.</li>
+          <ol type="1">
+<li><input type="checkbox" disabled="" checked="" />
+了解微分方程及其阶、解、通解、初始条件和特解等概念.</li>
+<li><input type="checkbox" disabled="" checked="" />
+掌握变量可分离的微分方程及一阶线性微分方程的解法.</li>
+<li><input type="checkbox" disabled="" checked="" />
+会解齐次微分方程、伯努利方程和全微分方程，会用简单的变量代换解某些微分方程.</li>
+<li><input type="checkbox" disabled="" checked="" />
+会用降阶法解下列形式的微分方程：<span class="math inline">\(y^{(n)}=f(x)\)</span>，<span class="math inline">\(y&#39;&#39;=f(x,y&#39;)\)</span>和<span class="math inline">\(y&#39;&#39;=f(y,y&#39;)\)</span></li>
+<li><input type="checkbox" disabled="" checked="" />
+理解线性微分方程解的性质及解的结构.</li>
+<li><input type="checkbox" disabled="" checked="" />
+掌握二阶常系数齐次线性微分方程的解法，并会解某些高于二阶的常系数齐次线性微分方程.</li>
+<li><input type="checkbox" disabled="" checked="" />
+会解自由项为多项式、指数函数、正弦函数余弦函数以及它们的和与积的二阶常系数非齐次线性微分方程.</li>
+<li><input type="checkbox" disabled="" checked="" />
+会解欧拉方程.</li>
+<li><input type="checkbox" disabled="" checked="" />
+会用微分方程解决一些简单的应用问题.</li>
 </ol>
           <!--noindex-->
             <div class="post-button">
@@ -738,15 +768,23 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <ol>
-<li><input checked="" disabled="" type="checkbox"> 理解二重积分、三重积分的概念，了解重积分的性质，了解二重积分的中值定理.</li>
-<li><input checked="" disabled="" type="checkbox"> 掌握二重积分的计算方法（直角坐标、极坐标），会计算三重积分（直角坐标柱面坐标、球面坐标）.</li>
-<li><input checked="" disabled="" type="checkbox"> 理解两类曲线积分的概念，了解两类曲线积分的性质及两类曲线积分的关系.</li>
-<li><input checked="" disabled="" type="checkbox"> 掌握计算两类曲线积分的方法.</li>
-<li><input checked="" disabled="" type="checkbox"> 掌握格林公式并会运用平面曲线积分与路径无关的条件，会求二元函数全微分的原函数.</li>
-<li><input checked="" disabled="" type="checkbox"> 了解两类曲面积分的概念、性质及两类曲面积分的关系，掌握计算两类曲面积分的方法，掌握用高斯公式计算曲面积分的方法，并会用斯托克斯公式计算曲线积分.</li>
-<li><input checked="" disabled="" type="checkbox"> 了解散度与旋度的概念，并会计算.</li>
-<li><input checked="" disabled="" type="checkbox"> 会用重积分、曲线积分及曲面积分求一些几何量与物理量（平面图形的面积、体积、曲面面积、弧长、质量、质心、形心、转动惯量、引力、功及流量等）.</li>
+          <ol type="1">
+<li><input type="checkbox" disabled="" checked="" />
+理解二重积分、三重积分的概念，了解重积分的性质，了解二重积分的中值定理.</li>
+<li><input type="checkbox" disabled="" checked="" />
+掌握二重积分的计算方法（直角坐标、极坐标），会计算三重积分（直角坐标柱面坐标、球面坐标）.</li>
+<li><input type="checkbox" disabled="" checked="" />
+理解两类曲线积分的概念，了解两类曲线积分的性质及两类曲线积分的关系.</li>
+<li><input type="checkbox" disabled="" checked="" />
+掌握计算两类曲线积分的方法.</li>
+<li><input type="checkbox" disabled="" checked="" />
+掌握格林公式并会运用平面曲线积分与路径无关的条件，会求二元函数全微分的原函数.</li>
+<li><input type="checkbox" disabled="" checked="" />
+了解两类曲面积分的概念、性质及两类曲面积分的关系，掌握计算两类曲面积分的方法，掌握用高斯公式计算曲面积分的方法，并会用斯托克斯公式计算曲线积分.</li>
+<li><input type="checkbox" disabled="" checked="" />
+了解散度与旋度的概念，并会计算.</li>
+<li><input type="checkbox" disabled="" checked="" />
+会用重积分、曲线积分及曲面积分求一些几何量与物理量（平面图形的面积、体积、曲面面积、弧长、质量、质心、形心、转动惯量、引力、功及流量等）.</li>
 </ol>
           <!--noindex-->
             <div class="post-button">
@@ -830,16 +868,25 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <ol>
-<li><input checked="" disabled="" type="checkbox"> 理解多元函数的概念，理解二元函数的几何意义.</li>
-<li><input checked="" disabled="" type="checkbox"> 了解二元函数的极限与连续的概念以及有界闭区城上连续函数的性质.</li>
-<li><input checked="" disabled="" type="checkbox"> 理解多元函数偏导数和全微分的概念，会求全微分，了解全微分存在的必要条件和充分条件，了解全微分形式的不变性.</li>
-<li><input checked="" disabled="" type="checkbox"> 理解方向导数与梯度的概念，并掌握其计算方法.</li>
-<li><input checked="" disabled="" type="checkbox"> 掌握多元复合函数一阶、二阶偏导数的求法.</li>
-<li><input checked="" disabled="" type="checkbox"> 了解隐函数存在定理，会求多元隐函数的偏导数.</li>
-<li><input checked="" disabled="" type="checkbox"> 了解空间曲线的切线和法平面及曲面的切平面和法线的概念，会求它们的方程.</li>
-<li><input checked="" disabled="" type="checkbox"> 了解二元函数的二阶泰勒公式.</li>
-<li><input checked="" disabled="" type="checkbox"> 理解多元函数极值和条件很值的概念，掌握多元函数极值存在的必要条件，了解二元函数极值存在的充分条件，会求二元函数的极值，会用拉格朗日乘数法求条件极值，会求简单多元函数的最大值和最小值，并会解决一些简单的应用问题.</li>
+          <ol type="1">
+<li><input type="checkbox" disabled="" checked="" />
+理解多元函数的概念，理解二元函数的几何意义.</li>
+<li><input type="checkbox" disabled="" checked="" />
+了解二元函数的极限与连续的概念以及有界闭区城上连续函数的性质.</li>
+<li><input type="checkbox" disabled="" checked="" />
+理解多元函数偏导数和全微分的概念，会求全微分，了解全微分存在的必要条件和充分条件，了解全微分形式的不变性.</li>
+<li><input type="checkbox" disabled="" checked="" />
+理解方向导数与梯度的概念，并掌握其计算方法.</li>
+<li><input type="checkbox" disabled="" checked="" />
+掌握多元复合函数一阶、二阶偏导数的求法.</li>
+<li><input type="checkbox" disabled="" checked="" />
+了解隐函数存在定理，会求多元隐函数的偏导数.</li>
+<li><input type="checkbox" disabled="" checked="" />
+了解空间曲线的切线和法平面及曲面的切平面和法线的概念，会求它们的方程.</li>
+<li><input type="checkbox" disabled="" checked="" />
+了解二元函数的二阶泰勒公式.</li>
+<li><input type="checkbox" disabled="" checked="" />
+理解多元函数极值和条件很值的概念，掌握多元函数极值存在的必要条件，了解二元函数极值存在的充分条件，会求二元函数的极值，会用拉格朗日乘数法求条件极值，会求简单多元函数的最大值和最小值，并会解决一些简单的应用问题.</li>
 </ol>
           <!--noindex-->
             <div class="post-button">
@@ -924,14 +971,21 @@
 
       
           <!-- 1. [x] 理解空间直角坐标系，理解向量的概念及其表示. -->
-<ol start="2">
-<li><input checked="" disabled="" type="checkbox"> 掌握向量的运算（线性运算、数量积、向量积、混合积），了解两个向量垂直、平行的条件.</li>
-<li><input checked="" disabled="" type="checkbox"> 理解单位向量、方向数与方向余弦、向量的坐标表达式，掌握用坐标表达式进行向量运算的方法.</li>
-<li><input checked="" disabled="" type="checkbox"> 掌握平面方程和直线方程及其求法.</li>
-<li><input checked="" disabled="" type="checkbox"> 会求平面与平面、平面与直线、直线与直线之间的夹角，并会利用平面、直线的相互关系（平行、垂直、相交等）解决有关问题.<!-- 6. [x] 会求点到直线以及点到平面的距离. --></li>
-<li><input checked="" disabled="" type="checkbox"> 了解曲面方程和空间曲线方程的概念.</li>
-<li><input checked="" disabled="" type="checkbox"> 了解常用二次曲面的方程及其图形，会求简单的柱面和旋转曲面的方程.</li>
-<li><input checked="" disabled="" type="checkbox"> 了解空间曲线的参数方程和一般方程.了解空间曲线在坐标平面上的投影，并会求该投影曲线的方程.</li>
+<ol start="2" type="1">
+<li><input type="checkbox" disabled="" checked="" />
+掌握向量的运算（线性运算、数量积、向量积、混合积），了解两个向量垂直、平行的条件.</li>
+<li><input type="checkbox" disabled="" checked="" />
+理解单位向量、方向数与方向余弦、向量的坐标表达式，掌握用坐标表达式进行向量运算的方法.</li>
+<li><input type="checkbox" disabled="" checked="" />
+掌握平面方程和直线方程及其求法.</li>
+<li><input type="checkbox" disabled="" checked="" />
+会求平面与平面、平面与直线、直线与直线之间的夹角，并会利用平面、直线的相互关系（平行、垂直、相交等）解决有关问题. <!-- 6. [x] 会求点到直线以及点到平面的距离. --></li>
+<li><input type="checkbox" disabled="" checked="" />
+了解曲面方程和空间曲线方程的概念.</li>
+<li><input type="checkbox" disabled="" checked="" />
+了解常用二次曲面的方程及其图形，会求简单的柱面和旋转曲面的方程.</li>
+<li><input type="checkbox" disabled="" checked="" />
+了解空间曲线的参数方程和一般方程.了解空间曲线在坐标平面上的投影，并会求该投影曲线的方程.</li>
 </ol>
           <!--noindex-->
             <div class="post-button">
@@ -1015,13 +1069,19 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <ol>
-<li><input checked="" disabled="" type="checkbox"> 理解原函数的概念，理解不定积分和定积分的概念.</li>
-<li><input checked="" disabled="" type="checkbox"> 掌握不定积分的基本公式，掌握不定积分和定积分的性质及定积分中值定理，掌握换元积分法与分部积分法.</li>
-<li><input checked="" disabled="" type="checkbox"> 会求有理函数、三角函数有理式和简单无理函数的积分.</li>
-<li><input checked="" disabled="" type="checkbox"> 理解积分上限的函数，会求它的导数，掌握牛顿一莱布尼茨公式.</li>
-<li><input checked="" disabled="" type="checkbox"> 理解反常积分的概念，了解反常积分收敛的比较判别法，会计算反常积分.</li>
-<li><input checked="" disabled="" type="checkbox"> 掌握用定积分表达和计算一些几何量与物理量（平面图形的面积、平面曲线的弧长、旋转体的体积及侧面积、平行截面面积为已知的立体体积、功、引力、压力、质心、形心等）及函数的平均值</li>
+          <ol type="1">
+<li><input type="checkbox" disabled="" checked="" />
+理解原函数的概念，理解不定积分和定积分的概念.</li>
+<li><input type="checkbox" disabled="" checked="" />
+掌握不定积分的基本公式，掌握不定积分和定积分的性质及定积分中值定理，掌握换元积分法与分部积分法.</li>
+<li><input type="checkbox" disabled="" checked="" />
+会求有理函数、三角函数有理式和简单无理函数的积分.</li>
+<li><input type="checkbox" disabled="" checked="" />
+理解积分上限的函数，会求它的导数，掌握牛顿一莱布尼茨公式.</li>
+<li><input type="checkbox" disabled="" checked="" />
+理解反常积分的概念，了解反常积分收敛的比较判别法，会计算反常积分.</li>
+<li><input type="checkbox" disabled="" checked="" />
+掌握用定积分表达和计算一些几何量与物理量（平面图形的面积、平面曲线的弧长、旋转体的体积及侧面积、平行截面面积为已知的立体体积、功、引力、压力、质心、形心等）及函数的平均值</li>
 </ol>
           <!--noindex-->
             <div class="post-button">
@@ -1111,16 +1171,25 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <ol>
-<li><input checked="" disabled="" type="checkbox"> 理解导数和微分的概念，理解导数与微分的关系，理解导数的几何意义，会求平面曲线的切线方程和法线方程，了解导数的物理意义，会用导数描述一些物理量，理解函数的可导性与连续性之间的关系.</li>
-<li><input checked="" disabled="" type="checkbox"> 掌握导数的四则运算法则和复合函数的求导法则，掌握基本初等函数的导数公式.了解微分的四则运算法则和一阶微分形式的不变性，会求函数的微分.</li>
-<li><input checked="" disabled="" type="checkbox"> 了解高阶导数的概念，会求简单函数的高阶导数.</li>
-<li><input checked="" disabled="" type="checkbox"> 会求分段函数的导数，会求隐函数和由参数方程所确定的函数以及反函数的导数.</li>
-<li><input checked="" disabled="" type="checkbox"> 理解并会用罗尔（Rolle）定理、拉格朗日（Lagrange）中值定理和泰勒（Taylor）定理，了解并会用柯西（Cauchy）中值定理.</li>
-<li><input checked="" disabled="" type="checkbox"> 掌握用洛必达法则求未定式极限的方法.</li>
-<li><input checked="" disabled="" type="checkbox"> 理解函数的极值概念，掌握用导数判断函数的单调性和求函数极值的方法，掌握函数最大值和最小值的求法及其应用.</li>
-<li><input checked="" disabled="" type="checkbox"> 会用导数判断函数图形的凹凸性（注：在区间$(a,b)$内，设函数$ f (x) $具有二阶导数.当 $f”(x) &gt; 0$ 时，$f (x)$ 的图形是凹的；当 $f”(x) &lt; 0$ 时， $f (x)$ 的图形是凸的），会求函数图形的拐点以及水平、铅直和斜渐近线，会描绘函数的图形.</li>
-<li><input checked="" disabled="" type="checkbox"> 了解曲率、曲率圆与曲率半径的概念，会计算曲率和曲率半径.</li>
+          <ol type="1">
+<li><input type="checkbox" disabled="" checked="" />
+理解导数和微分的概念，理解导数与微分的关系，理解导数的几何意义，会求平面曲线的切线方程和法线方程，了解导数的物理意义，会用导数描述一些物理量，理解函数的可导性与连续性之间的关系.</li>
+<li><input type="checkbox" disabled="" checked="" />
+掌握导数的四则运算法则和复合函数的求导法则，掌握基本初等函数的导数公式.了解微分的四则运算法则和一阶微分形式的不变性，会求函数的微分.</li>
+<li><input type="checkbox" disabled="" checked="" />
+了解高阶导数的概念，会求简单函数的高阶导数.</li>
+<li><input type="checkbox" disabled="" checked="" />
+会求分段函数的导数，会求隐函数和由参数方程所确定的函数以及反函数的导数.</li>
+<li><input type="checkbox" disabled="" checked="" />
+理解并会用罗尔（Rolle）定理、拉格朗日（Lagrange）中值定理和泰勒（Taylor）定理，了解并会用柯西（Cauchy）中值定理.</li>
+<li><input type="checkbox" disabled="" checked="" />
+掌握用洛必达法则求未定式极限的方法.</li>
+<li><input type="checkbox" disabled="" checked="" />
+理解函数的极值概念，掌握用导数判断函数的单调性和求函数极值的方法，掌握函数最大值和最小值的求法及其应用.</li>
+<li><input type="checkbox" disabled="" checked="" />
+会用导数判断函数图形的凹凸性（注：在区间<span class="math inline">\((a,b)\)</span>内，设函数$ f (x) $具有二阶导数.当 <span class="math inline">\(f&quot;(x) &gt; 0\)</span> 时，<span class="math inline">\(f (x)\)</span> 的图形是凹的；当 <span class="math inline">\(f&quot;(x) &lt; 0\)</span> 时， <span class="math inline">\(f (x)\)</span> 的图形是凸的），会求函数图形的拐点以及水平、铅直和斜渐近线，会描绘函数的图形.</li>
+<li><input type="checkbox" disabled="" checked="" />
+了解曲率、曲率圆与曲率半径的概念，会计算曲率和曲率半径.</li>
 </ol>
           <!--noindex-->
             <div class="post-button">

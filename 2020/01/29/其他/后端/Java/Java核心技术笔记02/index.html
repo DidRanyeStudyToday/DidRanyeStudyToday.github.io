@@ -17,15 +17,15 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":400,"display":"always","padding":50,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"gitalk":{"order":-2}},"activeClass":"gitalk"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":400,"display":"post","padding":50,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"gitalk":{"order":-2}},"activeClass":"gitalk"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="page from 76大数值使用 java.math包 中的两个类： BigInteger 和 BigDecimal。">
+  <meta name="description" content="page from 76 大数值 使用 java.math包 中的两个类： BigInteger 和 BigDecimal。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java核心技术笔记02">
 <meta property="og:url" content="http://example.com/2020/01/29/%E5%85%B6%E4%BB%96/%E5%90%8E%E7%AB%AF/Java/Java%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B002/index.html">
 <meta property="og:site_name" content="Ranye">
-<meta property="og:description" content="page from 76大数值使用 java.math包 中的两个类： BigInteger 和 BigDecimal。">
+<meta property="og:description" content="page from 76 大数值 使用 java.math包 中的两个类： BigInteger 和 BigDecimal。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-01-29T02:48:55.000Z">
 <meta property="article:modified_time" content="2021-10-05T11:42:43.889Z">
@@ -242,25 +242,25 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h5 id="page-from-76"><a href="#page-from-76" class="headerlink" title="page from 76"></a>page from 76</h5><h2 id="大数值"><a href="#大数值" class="headerlink" title="大数值"></a>大数值</h2><p>使用 <strong>java.math包</strong> 中的两个类： <strong>BigInteger</strong> 和 <strong>BigDecimal</strong>。  </p>
+        <h5 id="page-from-76">page from 76</h5>
+<h2 id="大数值">大数值</h2>
+<p>使用 <strong>java.math包</strong> 中的两个类： <strong>BigInteger</strong> 和 <strong>BigDecimal</strong>。</p>
 <span id="more"></span>
-
-<h3 id="valueOf-NaN"><a href="#valueOf-NaN" class="headerlink" title="valueOf"></a>valueOf</h3><p><strong>静态的valueOf</strong> 方法可以将普通的数值转换为大数值</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">BigInteger a=BigInteger.valueOf(<span class="number">100</span>);</span><br><span class="line">BigDecimal b=BigDecimal.valueOf(<span class="number">100</span>);</span><br></pre></td></tr></table></figure>
-
-
-<h3 id="add、substract、multiply、divide、mod"><a href="#add、substract、multiply、divide、mod" class="headerlink" title="add、substract、multiply、divide、mod"></a>add、substract、multiply、divide、mod</h3><table><tr><td bgcolor=orang>
+<h3 id="valueof">valueOf</h3>
+<p><strong>静态的valueOf</strong> 方法可以将普通的数值转换为大数值 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">BigInteger a=BigInteger.valueOf(<span class="number">100</span>);</span><br><span class="line">BigDecimal b=BigDecimal.valueOf(<span class="number">100</span>);</span><br></pre></td></tr></table></figure></p>
+<h3 id="addsubstractmultiplydividemod">add、substract、multiply、divide、mod</h3>
+<table>
+<tr>
+<td bgcolor="orang">
 不能使用算数运算符处理大数值
-</table></tr></td>
-
-<p>而应使用BigInteger类中的 <strong>add</strong> 、 <strong>substract</strong> 、  <strong>multiply</strong> 、 <strong>divide</strong> 和 <strong>mod</strong> 方法。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">BigInteger c=d.add(e);</span><br><span class="line"><span class="comment">//c=d+e</span></span><br><span class="line"></span><br><span class="line">BigDecimal f=g.multiply(h.add(BigDecimal.valueOf(<span class="number">2</span>)));</span><br><span class="line"><span class="comment">//f=g*(h+2)</span></span><br><span class="line"></span><br><span class="line">BigDecimal a2=b2.divide(c2,BigDecimal.ROUND_HALF_UP);</span><br><span class="line"><span class="comment">//a2=b2/c2 结果四舍五入</span></span><br></pre></td></tr></table></figure>
-
-
-<p><kbd>add</kbd> <kbd>substract</kbd> <kbd>multiply</kbd> <kbd>divide</kbd> <kbd>mod</kbd>  </p>
-<h3 id="compareTo"><a href="#compareTo" class="headerlink" title="compareTo"></a>compareTo</h3><p><strong>int compareTo ( BigInteger other ) :</strong>  </p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">result = a.compareTo(b);</span><br><span class="line"><span class="comment">// 若a==b，返回 0；</span></span><br><span class="line"><span class="comment">// 若a&lt; b，返回负数；</span></span><br><span class="line"><span class="comment">// 若a&gt; b，返回正数</span></span><br></pre></td></tr></table></figure>
-
+</table>
+</tr>
+</td>
+<p>而应使用BigInteger类中的 <strong>add</strong> 、 <strong>substract</strong> 、 <strong>multiply</strong> 、 <strong>divide</strong> 和 <strong>mod</strong> 方法。 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">BigInteger c=d.add(e);</span><br><span class="line"><span class="comment">//c=d+e</span></span><br><span class="line"></span><br><span class="line">BigDecimal f=g.multiply(h.add(BigDecimal.valueOf(<span class="number">2</span>)));</span><br><span class="line"><span class="comment">//f=g*(h+2)</span></span><br><span class="line"></span><br><span class="line">BigDecimal a2=b2.divide(c2,BigDecimal.ROUND_HALF_UP);</span><br><span class="line"><span class="comment">//a2=b2/c2 结果四舍五入</span></span><br></pre></td></tr></table></figure></p>
+<p><kbd>add</kbd> <kbd>substract</kbd> <kbd>multiply</kbd> <kbd>divide</kbd> <kbd>mod</kbd></p>
+<h3 id="compareto">compareTo</h3>
+<p><strong>int compareTo ( BigInteger other ) :</strong><br />
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">result = a.compareTo(b);</span><br><span class="line"><span class="comment">// 若a==b，返回 0；</span></span><br><span class="line"><span class="comment">// 若a&lt; b，返回负数；</span></span><br><span class="line"><span class="comment">// 若a&gt; b，返回正数</span></span><br></pre></td></tr></table></figure></p>
 
     </div>
 
@@ -366,7 +366,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#page-from-76"><span class="nav-number">1.</span> <span class="nav-text">page from 76</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%A7%E6%95%B0%E5%80%BC"><span class="nav-number"></span> <span class="nav-text">大数值</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#valueOf-NaN"><span class="nav-number"></span> <span class="nav-text">valueOf</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#add%E3%80%81substract%E3%80%81multiply%E3%80%81divide%E3%80%81mod"><span class="nav-number"></span> <span class="nav-text">add、substract、multiply、divide、mod</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#compareTo"><span class="nav-number"></span> <span class="nav-text">compareTo</span></a></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#page-from-76"><span class="nav-number">1.</span> <span class="nav-text">page from 76</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%A7%E6%95%B0%E5%80%BC"><span class="nav-number"></span> <span class="nav-text">大数值</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#valueof"><span class="nav-number"></span> <span class="nav-text">valueOf</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#addsubstractmultiplydividemod"><span class="nav-number"></span> <span class="nav-text">add、substract、multiply、divide、mod</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#compareto"><span class="nav-number"></span> <span class="nav-text">compareTo</span></a></div>
       </div>
       <!--/noindex-->
 
@@ -478,7 +478,7 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
       clientSecret: 'b86792d1298a4be13412ece9d266e9660232b4c0',
       repo        : 'blog_comment_repo',
       owner       : 'DidRanyeStudyToday',
-      admin       : ['[object Object]'],
+      admin       : ['DidRanyeStudyToday,openseem'],
       id          : '79675a34f545fc8a1be664063094f2bf',
         language: 'zh-CN',
       distractionFreeMode: false

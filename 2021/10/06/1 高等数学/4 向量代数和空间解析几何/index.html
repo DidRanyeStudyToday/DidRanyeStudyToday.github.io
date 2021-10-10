@@ -17,15 +17,15 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":400,"display":"always","padding":50,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"gitalk":{"order":-2}},"activeClass":"gitalk"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":400,"display":"post","padding":50,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"gitalk":{"order":-2}},"activeClass":"gitalk"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="掌握向量的运算（线性运算、数量积、向量积、混合积），了解两个向量垂直、平行的条件.  理解单位向量、方向数与方向余弦、向量的坐标表达式，掌握用坐标表达式进行向量运算的方法.  掌握平面方程和直线方程及其求法.  会求平面与平面、平面与直线、直线与直线之间的夹角，并会利用平面、直线的相互关系（平行、垂直、相交等）解决有关问题.  了解曲面方程和空间曲线方程的概念.  了解常用二次曲面的方程及其">
+  <meta name="description" content="掌握向量的运算（线性运算、数量积、向量积、混合积），了解两个向量垂直、平行的条件.  理解单位向量、方向数与方向余弦、向量的坐标表达式，掌握用坐标表达式进行向量运算的方法.  掌握平面方程和直线方程及其求法.  会求平面与平面、平面与直线、直线与直线之间的夹角，并会利用平面、直线的相互关系（平行、垂直、相交等）解决有关问题.   了解曲面方程和空间曲线方程的概念.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="四、向量代数和空间解析几何">
 <meta property="og:url" content="http://example.com/2021/10/06/1%20%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/4%20%E5%90%91%E9%87%8F%E4%BB%A3%E6%95%B0%E5%92%8C%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95/index.html">
 <meta property="og:site_name" content="Ranye">
-<meta property="og:description" content="掌握向量的运算（线性运算、数量积、向量积、混合积），了解两个向量垂直、平行的条件.  理解单位向量、方向数与方向余弦、向量的坐标表达式，掌握用坐标表达式进行向量运算的方法.  掌握平面方程和直线方程及其求法.  会求平面与平面、平面与直线、直线与直线之间的夹角，并会利用平面、直线的相互关系（平行、垂直、相交等）解决有关问题.  了解曲面方程和空间曲线方程的概念.  了解常用二次曲面的方程及其">
+<meta property="og:description" content="掌握向量的运算（线性运算、数量积、向量积、混合积），了解两个向量垂直、平行的条件.  理解单位向量、方向数与方向余弦、向量的坐标表达式，掌握用坐标表达式进行向量运算的方法.  掌握平面方程和直线方程及其求法.  会求平面与平面、平面与直线、直线与直线之间的夹角，并会利用平面、直线的相互关系（平行、垂直、相交等）解决有关问题.   了解曲面方程和空间曲线方程的概念.">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-10-06T09:27:31.000Z">
 <meta property="article:modified_time" content="2021-10-06T15:42:45.897Z">
@@ -242,30 +242,39 @@
 
       
         <!-- 1. [x] 理解空间直角坐标系，理解向量的概念及其表示. -->
-<ol start="2">
-<li><input checked="" disabled="" type="checkbox"> 掌握向量的运算（线性运算、数量积、向量积、混合积），了解两个向量垂直、平行的条件.</li>
-<li><input checked="" disabled="" type="checkbox"> 理解单位向量、方向数与方向余弦、向量的坐标表达式，掌握用坐标表达式进行向量运算的方法.</li>
-<li><input checked="" disabled="" type="checkbox"> 掌握平面方程和直线方程及其求法.</li>
-<li><input checked="" disabled="" type="checkbox"> 会求平面与平面、平面与直线、直线与直线之间的夹角，并会利用平面、直线的相互关系（平行、垂直、相交等）解决有关问题.<!-- 6. [x] 会求点到直线以及点到平面的距离. --></li>
-<li><input checked="" disabled="" type="checkbox"> 了解曲面方程和空间曲线方程的概念.</li>
-<li><input checked="" disabled="" type="checkbox"> 了解常用二次曲面的方程及其图形，会求简单的柱面和旋转曲面的方程.</li>
-<li><input checked="" disabled="" type="checkbox"> 了解空间曲线的参数方程和一般方程.了解空间曲线在坐标平面上的投影，并会求该投影曲线的方程.</li>
+<ol start="2" type="1">
+<li><input type="checkbox" disabled="" checked="" />
+掌握向量的运算（线性运算、数量积、向量积、混合积），了解两个向量垂直、平行的条件.</li>
+<li><input type="checkbox" disabled="" checked="" />
+理解单位向量、方向数与方向余弦、向量的坐标表达式，掌握用坐标表达式进行向量运算的方法.</li>
+<li><input type="checkbox" disabled="" checked="" />
+掌握平面方程和直线方程及其求法.</li>
+<li><input type="checkbox" disabled="" checked="" />
+会求平面与平面、平面与直线、直线与直线之间的夹角，并会利用平面、直线的相互关系（平行、垂直、相交等）解决有关问题. <!-- 6. [x] 会求点到直线以及点到平面的距离. --></li>
+<li><input type="checkbox" disabled="" checked="" />
+了解曲面方程和空间曲线方程的概念.</li>
+<li><input type="checkbox" disabled="" checked="" />
+了解常用二次曲面的方程及其图形，会求简单的柱面和旋转曲面的方程.</li>
+<li><input type="checkbox" disabled="" checked="" />
+了解空间曲线的参数方程和一般方程.了解空间曲线在坐标平面上的投影，并会求该投影曲线的方程.</li>
 </ol>
 <span id="more"></span>
-
-<p>向量的概念 向量的线性运算 向量的数量积和向量积 向量的混合积 两向量<br>垂直、平行的条件 两向量的夹角 向量的坐标表达式及其运算 单位向量 方向数<br>与方向余弦 曲面方程和空间曲线方程的概念 平面方程 直线方程 平面与平面、<br>平面与直线、直线与直线的夹角以及平行、垂直的条件 点到平面和点到直线的距离<br>球面 柱面 旋转曲面 常用的二次曲面方程及其图形 空间曲线的参数方程和一般<br>方程 空间曲线在坐标面上的投影曲线方程</p>
-<h1 id="求夹角"><a href="#求夹角" class="headerlink" title="求夹角"></a>求夹角</h1><h1 id="根据与点、线、面的几何关系求面、线"><a href="#根据与点、线、面的几何关系求面、线" class="headerlink" title="根据与点、线、面的几何关系求面、线"></a>根据与点、线、面的几何关系求面、线</h1><ul>
+<p>向量的概念 向量的线性运算 向量的数量积和向量积 向量的混合积 两向量 垂直、平行的条件 两向量的夹角 向量的坐标表达式及其运算 单位向量 方向数 与方向余弦 曲面方程和空间曲线方程的概念 平面方程 直线方程 平面与平面、 平面与直线、直线与直线的夹角以及平行、垂直的条件 点到平面和点到直线的距离 球面 柱面 旋转曲面 常用的二次曲面方程及其图形 空间曲线的参数方程和一般 方程 空间曲线在坐标面上的投影曲线方程</p>
+<h1 id="求夹角">求夹角</h1>
+<h1 id="根据与点线面的几何关系求面线">根据与点、线、面的几何关系求面、线</h1>
+<ul>
 <li>线面过点：点代入</li>
-<li>面 // 线：$\vec n $⊥$l$</li>
-<li>面⊥线：$\vec n$ // $l$</li>
-<li>面 // 面：$\vec n$ // $\vec n_1$</li>
-<li>面⊥面：$\vec n ×\vec n_1= \vec0$</li>
+<li>面 // 线：$n <span class="math inline">\(⊥\)</span>l$</li>
+<li>面⊥线：<span class="math inline">\(\vec n\)</span> // <span class="math inline">\(l\)</span></li>
+<li>面 // 面：<span class="math inline">\(\vec n\)</span> // <span class="math inline">\(\vec n_1\)</span></li>
+<li>面⊥面：<span class="math inline">\(\vec n ×\vec n_1= \vec0\)</span></li>
 </ul>
-<h1 id="求距离"><a href="#求距离" class="headerlink" title="求距离"></a>求距离</h1><ul>
-<li>点到直线<br>取$l$上一点$M_0$，</li>
-<li>点到面$d=\frac{|Ax_1+By_1+Cz_1+D|}{\sqrt{A^2+B^2+C^2}}$</li>
+<h1 id="求距离">求距离</h1>
+<ul>
+<li>点到直线 取<span class="math inline">\(l\)</span>上一点<span class="math inline">\(M_0\)</span>，</li>
+<li>点到面<span class="math inline">\(d=\frac{|Ax_1+By_1+Cz_1+D|}{\sqrt{A^2+B^2+C^2}}\)</span></li>
 <li>线到面：线上取一点，计算点到面距离</li>
-<li>面到面$d=\frac{|D_1-D_2|}{\sqrt{A^2+B^2+C^2}}$</li>
+<li>面到面<span class="math inline">\(d=\frac{|D_1-D_2|}{\sqrt{A^2+B^2+C^2}}\)</span></li>
 </ul>
 
     </div>
@@ -373,7 +382,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B1%82%E5%A4%B9%E8%A7%92"><span class="nav-number">1.</span> <span class="nav-text">求夹角</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%A0%B9%E6%8D%AE%E4%B8%8E%E7%82%B9%E3%80%81%E7%BA%BF%E3%80%81%E9%9D%A2%E7%9A%84%E5%87%A0%E4%BD%95%E5%85%B3%E7%B3%BB%E6%B1%82%E9%9D%A2%E3%80%81%E7%BA%BF"><span class="nav-number">2.</span> <span class="nav-text">根据与点、线、面的几何关系求面、线</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B1%82%E8%B7%9D%E7%A6%BB"><span class="nav-number">3.</span> <span class="nav-text">求距离</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B1%82%E5%A4%B9%E8%A7%92"><span class="nav-number">1.</span> <span class="nav-text">求夹角</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%A0%B9%E6%8D%AE%E4%B8%8E%E7%82%B9%E7%BA%BF%E9%9D%A2%E7%9A%84%E5%87%A0%E4%BD%95%E5%85%B3%E7%B3%BB%E6%B1%82%E9%9D%A2%E7%BA%BF"><span class="nav-number">2.</span> <span class="nav-text">根据与点、线、面的几何关系求面、线</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B1%82%E8%B7%9D%E7%A6%BB"><span class="nav-number">3.</span> <span class="nav-text">求距离</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -538,7 +547,7 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
       clientSecret: 'b86792d1298a4be13412ece9d266e9660232b4c0',
       repo        : 'blog_comment_repo',
       owner       : 'DidRanyeStudyToday',
-      admin       : ['[object Object]'],
+      admin       : ['DidRanyeStudyToday,openseem'],
       id          : '0654a680d5d320cc64d4cdca821e59e5',
         language: 'zh-CN',
       distractionFreeMode: false
