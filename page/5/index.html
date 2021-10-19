@@ -180,6 +180,210 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/05/05/%E5%85%B6%E4%BB%96/%E5%90%8E%E7%AB%AF/Java/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Java%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar_%E8%AF%A5%E8%B5%B7%E5%BA%8A%E4%BA%86.jpeg">
+      <meta itemprop="name" content="Ranye">
+      <meta itemprop="description" content="昨天不是刚起过床嘛">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ranye">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/05/05/%E5%85%B6%E4%BB%96/%E5%90%8E%E7%AB%AF/Java/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Java%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">深入理解Java虚拟机笔记</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-05 21:01:31" itemprop="dateCreated datePublished" datetime="2020-05-05T21:01:31+08:00">2020-05-05</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-10-05 19:40:22" itemprop="dateModified" datetime="2021-10-05T19:40:22+08:00">2021-10-05</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%90%8E%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">后端</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%90%8E%E7%AB%AF/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="第二章-java内存区域与内存溢出异常">第二章 Java内存区域与内存溢出异常</h1>
+<h2 id="运行时数据区域">2.2 运行时数据区域</h2>
+<ul>
+<li>程序计数器：
+<ul>
+<li>当前线程所执行的字节码的行号指示器</li>
+<li>线程私有</li>
+</ul></li>
+<li>Java虚拟机栈：
+<ul>
+<li>虚拟机执行Java方法（字节码）服务</li>
+<li>栈帧：每个方法被执行，Java虚拟机都会创建一个栈帧用于存储局部变量表、操作数栈、动态连接、方法出口等信息。每一个方法被调用直至执行完毕的过程，就对应着一个栈帧在虚拟机栈中从入栈到出栈的过程</li>
+<li>线程私有</li>
+</ul></li>
+<li>本地方法栈：
+<ul>
+<li>虚拟机使用到的本地方法服务</li>
+</ul></li>
+<li>Java堆
+<ul>
+<li>被所有线程共享</li>
+<li>存放对象实例</li>
+<li>是垃圾收集器管理的内存区域</li>
+</ul></li>
+<li>方法区
+<ul>
+<li>被所有线程共享</li>
+</ul></li>
+<li>运行时常量池
+<ul>
+<li>属于方法区</li>
+<li>常量不一定要在编译时放入</li>
+</ul></li>
+<li>直接内存
+<ul>
+<li>不属于Java虚拟机运行时数据区，不在虚拟机内存</li>
+<li>只受本机内存限制</li>
+</ul></li>
+</ul>
+<h2 id="hotspot虚拟机对象探秘">2.3 HotSpot虚拟机对象探秘</h2>
+<ul>
+<li>创建
+<ul>
+<li>【类加载检查】当Java虚拟机遇到一条字节码new指令时，首先将去检查这个指令的参数是否能在常量池中定位到 一个类的符号引用，并且检查这个符号引用代表的类是否已被加载、解析和初始化过。如果没有，那 必须先执行相应的类加载过程</li>
+<li>【分配内存：指针碰撞/空闲列表】虚拟机将为新生对象分配内存。对象所需内存的大小在类加载完成 后便可完全确定。为对象分配空间的任务实际上便等同于把一块确定 大小的内存块从Java堆中划分出来。假设Java堆中内存是绝对规整的，所有被使用过的内存都被放在一 边，空闲的内存被放在另一边，中间放着一个指针作为分界点的指示器，那所分配内存就仅仅是把那 个指针向空闲空间方向挪动一段与对象大小相等的距离，这种分配方式称为“指针碰撞”。但如果Java堆中的内存并不是规整的，已被使用的内存和空闲的内存相互交错在一起，那 就没有办法简单地进行指针碰撞了，虚拟机就必须维护一个列表，记录上哪些内存块是可用的，在分 配的时候从列表中找到一块足够大的空间划分给对象实例，并更新列表上的记录，这种分配方式称 为“空闲列表”</li>
+</ul></li>
+<li>对象的内存布局
+<ul>
+<li>对象头</li>
+<li>实例数据</li>
+<li>对齐填充</li>
+</ul></li>
+<li>对象的访问定位
+<ul>
+<li>句柄访问</li>
+<li>直接指针访问</li>
+</ul></li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/04/03/%E5%B7%A5%E5%85%B7/latex%E5%AD%A6%E4%B9%A0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar_%E8%AF%A5%E8%B5%B7%E5%BA%8A%E4%BA%86.jpeg">
+      <meta itemprop="name" content="Ranye">
+      <meta itemprop="description" content="昨天不是刚起过床嘛">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ranye">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/04/03/%E5%B7%A5%E5%85%B7/latex%E5%AD%A6%E4%B9%A0/" class="post-title-link" itemprop="url">latex学习</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-04-03 15:20:42" itemprop="dateCreated datePublished" datetime="2020-04-03T15:20:42+08:00">2020-04-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-10-03 21:25:33" itemprop="dateModified" datetime="2021-10-03T21:25:33+08:00">2021-10-03</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><span class="math inline">\(\Gamma\)</span>、<span class="math inline">\(\iota\)</span>、<span class="math inline">\(\sigma\)</span>、<span class="math inline">\(\phi\)</span>、<span class="math inline">\(\upsilon\)</span>、<span class="math inline">\(\Pi\)</span>、<span class="math inline">\(\Bbbk\)</span>、<span class="math inline">\(\heartsuit\)</span>、<span class="math inline">\(\int\)</span>、<span class="math inline">\(\oint\)</span></p>
+<p><span class="math inline">\(\tan\)</span>、<span class="math inline">\(\sin\)</span>、<span class="math inline">\(\cos\)</span>、<span class="math inline">\(\lg\)</span>、<span class="math inline">\(\arcsin\)</span>、<span class="math inline">\(\arctan\)</span>、<span class="math inline">\(\min\)</span>、<span class="math inline">\(\max\)</span>、<span class="math inline">\(\exp\)</span>、<span class="math inline">\(\log\)</span></p>
+<p><span class="math inline">\(+\)</span>、<span class="math inline">\(-\)</span>、<span class="math inline">\(=\)</span>、<span class="math inline">\(&gt;\)</span>、<span class="math inline">\(&lt;\)</span>、<span class="math inline">\(\times\)</span>、<span class="math inline">\(\div\)</span>、<span class="math inline">\(\equiv\)</span>、<span class="math inline">\(\leq\)</span>、<span class="math inline">\(\geq\)</span>、<span class="math inline">\(\neq\)</span></p>
+<p><span class="math inline">\(\cup\)</span>、<span class="math inline">\(\cap\)</span>、<span class="math inline">\(\in\)</span>、<span class="math inline">\(\notin\)</span>、<span class="math inline">\(\ni\)</span>、<span class="math inline">\(\subset\)</span>、<span class="math inline">\(\subseteq\)</span>、<span class="math inline">\(\supset\)</span>、<span class="math inline">\(\supseteq\)</span>、<span class="math inline">\(\infty\)</span></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$\Gamma$、$\iota$、$\sigma$、$\phi$、$\upsilon$、$\Pi$、$\Bbbk$、$\heartsuit$、$\int$、$\oint$</span><br><span class="line"></span><br><span class="line">$\tan$、$\sin$、$\cos$、$\lg$、$\arcsin$、$\arctan$、$\min$、$\max$、$\exp$、$\log$</span><br><span class="line"></span><br><span class="line">$+$、$-$、$=$、$&gt;$、$&lt;$、$\times$、$\div$、$\equiv$、$\leq$、$\geq$、$\neq$  </span><br><span class="line"></span><br><span class="line">$\cup$、$\cap$、$\in$、$\notin$、$\ni$、$\subset$、$\subseteq$、$\supset$、$\supseteq$、$\infty$</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2020/03/05/%E5%B7%A5%E5%85%B7/tex%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -859,168 +1063,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/01/29/%E5%85%B6%E4%BB%96/%E9%9B%B6%E6%95%A3%E9%97%AE%E9%A2%98/%E4%BD%BF%E7%94%A8VSCode%E7%BC%96%E5%86%99python%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar_%E8%AF%A5%E8%B5%B7%E5%BA%8A%E4%BA%86.jpeg">
-      <meta itemprop="name" content="Ranye">
-      <meta itemprop="description" content="昨天不是刚起过床嘛">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Ranye">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/01/29/%E5%85%B6%E4%BB%96/%E9%9B%B6%E6%95%A3%E9%97%AE%E9%A2%98/%E4%BD%BF%E7%94%A8VSCode%E7%BC%96%E5%86%99python%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3/" class="post-title-link" itemprop="url">使用VSCode编写python中文乱码解决</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-01-29 17:00:32" itemprop="dateCreated datePublished" datetime="2020-01-29T17:00:32+08:00">2020-01-29</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-10-10 23:29:09" itemprop="dateModified" datetime="2021-10-10T23:29:09+08:00">2021-10-10</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E9%9B%B6%E6%95%A3%E9%97%AE%E9%A2%98/" itemprop="url" rel="index"><span itemprop="name">零散问题</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>加入代码头</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/01/29/%E5%85%B6%E4%BB%96/%E9%9B%B6%E6%95%A3%E9%97%AE%E9%A2%98/%E4%BD%BF%E7%94%A8VSCode%E7%BC%96%E5%86%99python%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/01/29/%E5%85%B6%E4%BB%96/%E5%BE%85%E5%AD%A6%E8%AF%BE%E7%A8%8B/python%E5%9F%BA%E7%A1%80%E5%8C%97%E7%90%86%E5%B7%A5MOOC01/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar_%E8%AF%A5%E8%B5%B7%E5%BA%8A%E4%BA%86.jpeg">
-      <meta itemprop="name" content="Ranye">
-      <meta itemprop="description" content="昨天不是刚起过床嘛">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Ranye">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/01/29/%E5%85%B6%E4%BB%96/%E5%BE%85%E5%AD%A6%E8%AF%BE%E7%A8%8B/python%E5%9F%BA%E7%A1%80%E5%8C%97%E7%90%86%E5%B7%A5MOOC01/" class="post-title-link" itemprop="url">python基础北理工MOOC01</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-01-29 16:29:32" itemprop="dateCreated datePublished" datetime="2020-01-29T16:29:32+08:00">2020-01-29</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-10-05 19:34:41" itemprop="dateModified" datetime="2021-10-05T19:34:41+08:00">2021-10-05</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E9%9D%9E%E4%BD%93%E7%B3%BB%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">非体系学习</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>python的time库</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/01/29/%E5%85%B6%E4%BB%96/%E5%BE%85%E5%AD%A6%E8%AF%BE%E7%A8%8B/python%E5%9F%BA%E7%A1%80%E5%8C%97%E7%90%86%E5%B7%A5MOOC01/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1175,6 +1217,59 @@
   
 
   
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 
