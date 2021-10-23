@@ -28,7 +28,7 @@
 <meta property="og:description" content="知识补全： 十字链表： 每个结点 不仅有它作为源点的链表 还有它作为目标点的链表 这不是两个链表，是通过交错链接达成的 最小生成树： 连通所有点的树，要求树所有边的权值之和最小 以下两个算法都是紧紧抓住“最小”和“连通”，一个是已知连通找最小，一个是已知最小找连通 Prim算法：用于稠密图 树每次选择一个边来进行扩展，选择哪一个呢？当然是一头树内，一头树外的边中最短的哪一个 Krus">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-10-19T06:34:33.000Z">
-<meta property="article:modified_time" content="2021-10-19T07:14:29.006Z">
+<meta property="article:modified_time" content="2021-10-19T12:12:31.583Z">
 <meta property="article:author" content="Ranye">
 <meta name="twitter:card" content="summary">
 
@@ -207,7 +207,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2021-10-19 14:34:33 / 修改时间：15:14:29" itemprop="dateCreated datePublished" datetime="2021-10-19T14:34:33+08:00">2021-10-19</time>
+              <time title="创建时间：2021-10-19 14:34:33 / 修改时间：20:12:31" itemprop="dateCreated datePublished" datetime="2021-10-19T14:34:33+08:00">2021-10-19</time>
             </span>
 
           
@@ -232,7 +232,12 @@
 <p>直接把边排个序，找出最小的n-1条边就是了。当然其中有跳过的（比如有12 23了，13虽然小也不要它）</p>
 <p><strong>单源最短路径</strong></p>
 <p>求A点到所有点的最小值</p>
-<p>Dijkstra：每次拉一个点O（已知的距离A最近的点）进来点集<em>S</em>，看看如果从它那里经过能不能近一点（AO+OX&lt;AX） <em>S</em>里的点可以确定</p>
+<p>Dijkstra：每次拉一个点O（已知的距离A最近的点）进来点集<em>S</em>，看看如果从O那里经过能不能近一点（AO+OX&lt;AX，X不在S内） <em>S</em>里的点可以确定</p>
+<p>Floyd：每次看一个点，看这个点能拉近哪些路径的距离</p>
+<p><strong>拓扑排序</strong>：每次删除没有前驱的顶点 <strong>逆拓扑排序</strong>：每次删除没有后继的顶点</p>
+<p><strong>关键路径</strong>：最大路径 <strong>关键活动</strong>：关键路径上的点</p>
+<p>用逆拓扑排序求其各活动最迟发生时间</p>
+<p>适当缩短关键活动的时间可以减少总工期</p>
 
     </div>
 
@@ -272,8 +277,8 @@
       <i class="fa fa-chevron-left"></i> 查找
     </a></div>
       <div class="post-nav-item">
-    <a href="/2021/12/25/ToDo/" rel="next" title="ToDo">
-      ToDo <i class="fa fa-chevron-right"></i>
+    <a href="/2021/10/23/%E5%85%B6%E4%BB%96/%E9%9B%B6%E6%95%A3%E9%97%AE%E9%A2%98/%E6%9C%B4%E7%B4%A0BST%E7%9A%84%E5%B9%B3%E5%9D%87%E9%AB%98%E5%BA%A6/" rel="next" title="朴素BST的平均高度">
+      朴素BST的平均高度 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>

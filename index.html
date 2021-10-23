@@ -363,6 +363,96 @@ IO系统</li>
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/10/23/%E5%85%B6%E4%BB%96/%E9%9B%B6%E6%95%A3%E9%97%AE%E9%A2%98/%E6%9C%B4%E7%B4%A0BST%E7%9A%84%E5%B9%B3%E5%9D%87%E9%AB%98%E5%BA%A6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar_%E8%AF%A5%E8%B5%B7%E5%BA%8A%E4%BA%86.jpeg">
+      <meta itemprop="name" content="Ranye">
+      <meta itemprop="description" content="昨天不是刚起过床嘛">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ranye">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/10/23/%E5%85%B6%E4%BB%96/%E9%9B%B6%E6%95%A3%E9%97%AE%E9%A2%98/%E6%9C%B4%E7%B4%A0BST%E7%9A%84%E5%B9%B3%E5%9D%87%E9%AB%98%E5%BA%A6/" class="post-title-link" itemprop="url">朴素BST的平均高度</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-10-23 12:37:15 / 修改时间：13:08:42" itemprop="dateCreated datePublished" datetime="2021-10-23T12:37:15+08:00">2021-10-23</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E9%9B%B6%E6%95%A3%E9%97%AE%E9%A2%98/" itemprop="url" rel="index"><span itemprop="name">零散问题</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>我们知道朴素二叉搜索树会退化为队列，这时search()的时间复杂度为<span class="math inline">\(O(n)\)</span></p>
+<p>一般地，search()的时间复杂度为<span class="math inline">\(O(h)\)</span>，<span class="math inline">\(h\)</span>为BST高度</p>
+<p>那么朴素BST的平均高度是多少呢？</p>
+<p>以下有两种统计口径：</p>
+<ol type="1">
+<li>随机生成</li>
+</ol>
+<p>将一组数以随机的顺序插入BST中，求BST的平均高度</p>
+<p><img src="https://img-blog.csdnimg.cn/20190713212149152.png" /></p>
+<p>平均高度为<span class="math inline">\(logn\)</span></p>
+<ol start="2" type="1">
+<li>随机组成</li>
+</ol>
+<p>异构BST高度进行平均</p>
+<p>结果为<span class="math inline">\(Catalan(n)\)</span></p>
+<p>平均查找长度为<span class="math inline">\(O(\sqrt n)\)</span></p>
+<hr />
+<p>两个结论哪个更为可信呢？</p>
+<p>答案：后者。前者中不同的关键码序列会生成同一棵BST</p>
+<hr />
+<p>我的疑惑：统计口径2更符合实际的前提是，每一种拓扑排列权值相同。但是事实真的是如此吗？</p>
+<p>统计口径1不正说明，有些拓扑结构更容易出现（213 231是同一种拓扑结构）吗？</p>
+<p>尝试解答：虽然不能给出严格证明，但是直观来看，经过无数此增删改，树每一种拓扑结构的概率应该趋于相同</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2021/10/19/5%20%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/4%20%E5%9B%BE/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -388,7 +478,7 @@ IO系统</li>
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2021-10-19 14:34:33 / 修改时间：15:14:29" itemprop="dateCreated datePublished" datetime="2021-10-19T14:34:33+08:00">2021-10-19</time>
+              <time title="创建时间：2021-10-19 14:34:33 / 修改时间：20:12:31" itemprop="dateCreated datePublished" datetime="2021-10-19T14:34:33+08:00">2021-10-19</time>
             </span>
 
           
@@ -413,7 +503,12 @@ IO系统</li>
 <p>直接把边排个序，找出最小的n-1条边就是了。当然其中有跳过的（比如有12 23了，13虽然小也不要它）</p>
 <p><strong>单源最短路径</strong></p>
 <p>求A点到所有点的最小值</p>
-<p>Dijkstra：每次拉一个点O（已知的距离A最近的点）进来点集<em>S</em>，看看如果从它那里经过能不能近一点（AO+OX&lt;AX） <em>S</em>里的点可以确定</p>
+<p>Dijkstra：每次拉一个点O（已知的距离A最近的点）进来点集<em>S</em>，看看如果从O那里经过能不能近一点（AO+OX&lt;AX，X不在S内） <em>S</em>里的点可以确定</p>
+<p>Floyd：每次看一个点，看这个点能拉近哪些路径的距离</p>
+<p><strong>拓扑排序</strong>：每次删除没有前驱的顶点 <strong>逆拓扑排序</strong>：每次删除没有后继的顶点</p>
+<p><strong>关键路径</strong>：最大路径 <strong>关键活动</strong>：关键路径上的点</p>
+<p>用逆拓扑排序求其各活动最迟发生时间</p>
+<p>适当缩短关键活动的时间可以减少总工期</p>
 
       
     </div>
@@ -981,132 +1076,6 @@ IO系统</li>
 <li>向DNS服务器查找www.baidu.com的IP地址，得出IP为12.34.56.78</li>
 <li>A自身的IP为13.24.35.46，自身MAC地址为AS-DF-GH-JK-LL-ZX-CV-BN</li>
 <li></li>
-</ol>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/10/09/3%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E8%AE%A1%E7%BD%91%E5%A4%A7%E9%A2%98/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar_%E8%AF%A5%E8%B5%B7%E5%BA%8A%E4%BA%86.jpeg">
-      <meta itemprop="name" content="Ranye">
-      <meta itemprop="description" content="昨天不是刚起过床嘛">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Ranye">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/10/09/3%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E8%AE%A1%E7%BD%91%E5%A4%A7%E9%A2%98/" class="post-title-link" itemprop="url">计网大题</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-10-09 20:41:11" itemprop="dateCreated datePublished" datetime="2021-10-09T20:41:11+08:00">2021-10-09</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-10-10 18:12:08" itemprop="dateModified" datetime="2021-10-10T18:12:08+08:00">2021-10-10</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%80%83%E7%A0%94/" itemprop="url" rel="index"><span itemprop="name">考研</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%80%83%E7%A0%94/408/" itemprop="url" rel="index"><span itemprop="name">408</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%80%83%E7%A0%94/408/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" itemprop="url" rel="index"><span itemprop="name">计算机网络</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="链路层2">链路层（2）</h1>
-<h2 id="gbn">GBN</h2>
-<ol type="1">
-<li>帧顺序</li>
-<li>信道利用率</li>
-</ol>
-<h2 id="csnacd">CSNA/CD</h2>
-<ol type="1">
-<li>检测到冲突的时间</li>
-<li>有效数据传输率</li>
-</ol>
-<h1 id="网络层5">网络层（5）</h1>
-<h2 id="地址问题">地址问题</h2>
-<ol type="1">
-<li>子网划分
-<ul>
-<li>定长子网划分</li>
-<li>变长子网划分</li>
-</ul></li>
-<li>路由聚合（构造路由表）</li>
-</ol>
-<h2 id="报文段问题">报文段问题</h2>
-<ol type="1">
-<li>数据报分片</li>
-</ol>
-<h2 id="路由问题">路由问题</h2>
-<ol type="1">
-<li>路由选择与转发（转接口+能收到数据报的设备）</li>
-<li>路由协议</li>
-</ol>
-<h1 id="混合层">混合层</h1>
-<h2 id="网络层链路层">网络层+链路层</h2>
-<ol type="1">
-<li>网络拓扑+mac帧</li>
-<li>设备选择</li>
-</ol>
-<h2 id="网络层传输层">网络层+传输层</h2>
-<ol type="1">
-<li>网络拓扑+TCP（过程+报文段）</li>
-<li>数据报报文+TCP段</li>
-</ol>
-<h2 id="网络层应用层链路层">网络层+应用层（+链路层）</h2>
-<ol type="1">
-<li>报文字段+应用层应用（Web）</li>
 </ol>
 
       
