@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>Samsung Advanced 真题1 dfs</title>
+      <link href="/2022/01/10/Sumsang-Advanced-%E7%9C%9F%E9%A2%981-dfs/"/>
+      <url>/2022/01/10/Sumsang-Advanced-%E7%9C%9F%E9%A2%981-dfs/</url>
+      
+        <content type="html"><![CDATA[<h2 id="题意">题意</h2><p>大将军A要通过许多被士兵驻守的险关。</p><p>每道关卡都要收过路费，但是两倍的过路费可以收买里面的士兵为自己人。</p><p>当然，不想交钱就要和士兵battle，这会损耗自己的兵力（伤敌一千自损一千）。</p><p>注意，这种花钱的雇佣兵只为A打3次仗。每次打仗时，A的士兵全员出动。</p><p>要解决的问题是：最少要花多少钱，能让A成功过关？</p><h2 id="题解">题解</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">// army[i] 代表已经经过 i 次战斗的士兵。因为每次士兵都是一拥而上，所以不必区分各个士兵原来归属哪个关卡</span></span><br><span class="line"><span class="keyword">int</span> army[<span class="number">3</span>];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">dfs</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="comment">// + dfs 层数为 N 时更新ans</span></span><br><span class="line">    <span class="comment">// + sum_money &gt; ans 时剪枝</span></span><br><span class="line">    <span class="built_in">pass</span>();</span><br><span class="line">    <span class="built_in">recruit</span>();</span><br><span class="line">    <span class="built_in">battle</span>();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">void</span> pass / <span class="built_in">recruit</span> ()&#123;</span><br><span class="line">    <span class="comment">// + 维护原状态</span></span><br><span class="line">    <span class="comment">// + 买路/雇佣</span></span><br><span class="line">    <span class="built_in">dfs</span>(+<span class="number">1</span>);</span><br><span class="line">    <span class="comment">// + 恢复原状态</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">battle</span> <span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="comment">// + 维护原状态</span></span><br><span class="line">    <span class="comment">// + 掰头</span></span><br><span class="line">    <span class="comment">// 更新 army[]</span></span><br><span class="line">    army[<span class="number">2</span>] = army[<span class="number">1</span>];</span><br><span class="line">    army[<span class="number">1</span>] = army[<span class="number">0</span>];</span><br><span class="line">    army[<span class="number">0</span>] = <span class="number">0</span>;</span><br><span class="line">    <span class="built_in">dfs</span>(+<span class="number">1</span>);</span><br><span class="line">    <span class="comment">// + 恢复原状态</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 算法 </category>
+          
+          <category> Samsung </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> dfs </tag>
+            
+            <tag> Samsung </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>ToDo</title>
       <link href="/2021/12/25/ToDo/"/>
       <url>/2021/12/25/ToDo/</url>

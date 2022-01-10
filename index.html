@@ -180,6 +180,85 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/01/10/Sumsang-Advanced-%E7%9C%9F%E9%A2%981-dfs/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar/avatar_%E4%B8%87%E5%9C%A3%E8%8A%82.png">
+      <meta itemprop="name" content="Ranye">
+      <meta itemprop="description" content="万圣节！我是女巫~">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ranye">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/01/10/Sumsang-Advanced-%E7%9C%9F%E9%A2%981-dfs/" class="post-title-link" itemprop="url">Samsung Advanced 真题1 dfs</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-01-10 23:09:56 / 修改时间：23:35:56" itemprop="dateCreated datePublished" datetime="2022-01-10T23:09:56+08:00">2022-01-10</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%AE%97%E6%B3%95/" itemprop="url" rel="index"><span itemprop="name">算法</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%AE%97%E6%B3%95/Samsung/" itemprop="url" rel="index"><span itemprop="name">Samsung</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="题意">题意</h2>
+<p>大将军A要通过许多被士兵驻守的险关。</p>
+<p>每道关卡都要收过路费，但是两倍的过路费可以收买里面的士兵为自己人。</p>
+<p>当然，不想交钱就要和士兵battle，这会损耗自己的兵力（伤敌一千自损一千）。</p>
+<p>注意，这种花钱的雇佣兵只为A打3次仗。每次打仗时，A的士兵全员出动。</p>
+<p>要解决的问题是：最少要花多少钱，能让A成功过关？</p>
+<h2 id="题解">题解</h2>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">// army[i] 代表已经经过 i 次战斗的士兵。因为每次士兵都是一拥而上，所以不必区分各个士兵原来归属哪个关卡</span></span><br><span class="line"><span class="keyword">int</span> army[<span class="number">3</span>];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">dfs</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="comment">// + dfs 层数为 N 时更新ans</span></span><br><span class="line">    <span class="comment">// + sum_money &gt; ans 时剪枝</span></span><br><span class="line">    <span class="built_in">pass</span>();</span><br><span class="line">    <span class="built_in">recruit</span>();</span><br><span class="line">    <span class="built_in">battle</span>();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">void</span> pass / <span class="built_in">recruit</span> ()&#123;</span><br><span class="line">    <span class="comment">// + 维护原状态</span></span><br><span class="line">    <span class="comment">// + 买路/雇佣</span></span><br><span class="line">    <span class="built_in">dfs</span>(+<span class="number">1</span>);</span><br><span class="line">    <span class="comment">// + 恢复原状态</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">battle</span> <span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="comment">// + 维护原状态</span></span><br><span class="line">    <span class="comment">// + 掰头</span></span><br><span class="line">    <span class="comment">// 更新 army[]</span></span><br><span class="line">    army[<span class="number">2</span>] = army[<span class="number">1</span>];</span><br><span class="line">    army[<span class="number">1</span>] = army[<span class="number">0</span>];</span><br><span class="line">    army[<span class="number">0</span>] = <span class="number">0</span>;</span><br><span class="line">    <span class="built_in">dfs</span>(+<span class="number">1</span>);</span><br><span class="line">    <span class="comment">// + 恢复原状态</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2021/12/25/ToDo/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -971,72 +1050,6 @@ IO系统</li>
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/10/18/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar/avatar_%E4%B8%87%E5%9C%A3%E8%8A%82.png">
-      <meta itemprop="name" content="Ranye">
-      <meta itemprop="description" content="万圣节！我是女巫~">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Ranye">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/10/18/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/" class="post-title-link" itemprop="url">学习方法1</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2021-10-18 00:18:35 / 修改时间：00:31:01" itemprop="dateCreated datePublished" datetime="2021-10-18T00:18:35+08:00">2021-10-18</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p><strong>关键词</strong>：费曼、作息</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/10/18/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1130,7 +1143,7 @@ IO系统</li>
 <div class="copyright">
   
   &copy; 2020 – 
-  <span itemprop="copyrightYear">2021</span>
+  <span itemprop="copyrightYear">2022</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
